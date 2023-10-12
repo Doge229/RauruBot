@@ -1,6 +1,7 @@
 # RauruBot
 
 Developed by Doge229 for use in select Discord servers:
+-RauruBot Devlab
 -Zelda: Tears of the Kingdom
 
 DISCLAIMER: RauruBot is not designed for use in unauthorized servers. Any unintended behavior as a result of using him or his code on unauthorized servers is not my responsibility. 
