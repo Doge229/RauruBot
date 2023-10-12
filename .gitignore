@@ -1,0 +1,5 @@
+.lh/
+__pycache__/
+cogs/__pycache__
+blacklist.json
+tokens.py

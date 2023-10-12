@@ -1,0 +1,40 @@
+Large Scale
+- blacklist cmds
+  -default return for empty var-positional args
+  -hide help
+-compedium cmd - data sheet search
+-multi-server
+  - upgrade "system" channels for online/offline messages
+  -slash commands
+  -server specific blacklist
+  - role ids
+  -errors say what server
+  -server specific info commands
+-server control integration
+-all logs, togglable
+- delete specific message and last message
+-reminder
+-make cogs and module load/reload look nice
+
+Slash Commands
+-sync command
+
+
+Small Scale
+-all stats https://youtu.be/Ayy-vpqJK_w
+-explevelsandroles
+-save last message id for every ctx.send
+-greatfairy
+-cherry24minutes
+-gleeokstrat heads
+-dev only dm invites
+-totals counters quest and char prof
+-transferpicsandvids also USB https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable
+-update DM error
+-direct img link
+
+
+Stuff to Make
+-mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
+https://discord.com/channels/1111764095826415678/1111764453910917190/1158064435127140452
+-all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686
