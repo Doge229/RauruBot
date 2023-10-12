@@ -11,17 +11,12 @@ RauruBot is a discord bot designed to provide information and resources about th
 
 
 Massive thanks to:
--Everyone who helped with development, cause discord.py has really bad documentation
--Everyone on the TOTK Data Collection and Research Discord server who provided information about the game
+-Zanaras, for helping with development and server setup
+-Everyone else who helped with development, cause discord.py has really bad documentation
+-Everyone on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game
 -savage13 and the Object Map team
 -Austin John Plays on Youtube
 -Suishi on Youtube
 -riso for their UI icons
 -Shozutko for their map images, and work on various resource documents
 -Everyone else in the botw and totk communities who have created resources for these games
-
-
-
-
-
-Nintendo is the owner of the game "The Legend of Zelda: Tears of the Kingdom" and all of it's characters. I do not own any part of either.
