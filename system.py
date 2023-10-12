@@ -3,6 +3,9 @@ import os
 import datetime
 import inspect
 import discord
+from discord.ext import commands
+from discord import app_commands
+import messages
 import config
 import json
 
@@ -19,6 +22,7 @@ ERRORLOGGING = True
 ACTIVEBOTTOKEN = None
 ACTIVEBOTSYSTEMCHANNELID = None
 
+# Setup
 def setactivebot():
     global ACTIVEBOTTOKEN
     global ACTIVEBOTSYSTEMCHANNELID
@@ -29,6 +33,7 @@ def setactivebot():
         ACTIVEBOTTOKEN = config.RAURUBOT_TOKEN
         ACTIVEBOTSYSTEMCHANNELID = config.DEVSERVER_RAURUSYSTEMID
 
+# Blacklist
 def load_blacklist():
     global DICT_BLACKLIST
     
@@ -62,11 +67,11 @@ def save_blacklist():
     except:
         print(console_base('Error') + f'Unable to save blacklist!')
 
-
+# Logging
 def console_base(logtype):
     return f'[{datetime.datetime.now()}] [{logtype}] '
 
-
+# Checks
 def check_admin(ctx, frombanned = False):
     if ctx.guild:
         for roleid in config.ADMINROLES:
@@ -103,7 +108,7 @@ def slashcheck_admin(interaction, frombanned = False):
             return True
         else:
             if not frombanned:
-                print(console_base('System') + f'{interaction.user} was blocked from using command: {interaction.command}; by: {inspect.currentframe().f_code.co_name}')
+                print(console_base('System') + f'{interaction.user} was blocked from using command: {interaction.command.name}; by: {inspect.currentframe().f_code.co_name}')
                 return False
             return False
     else:
@@ -114,7 +119,32 @@ def slashcheck_banned(interaction):
         if not str(interaction.user.id) in DICT_BLACKLIST:
             return True
         else:
-            print(console_base('System') + f'{interaction.user} was blocked from using command: {interaction.command}; by: {inspect.currentframe().f_code.co_name}')
+            print(console_base('System') + f'{interaction.user} was blocked from using command: {interaction.command.name}; by: {inspect.currentframe().f_code.co_name}')
             return False
     else:
         return True
+    
+# Error handling
+async def on_command_error(ctx, error):
+    global ERRORLOGGING
+    if isinstance(error, commands.NoPrivateMessage):
+        await ctx.send(messages.ERROR_NODM)
+    elif isinstance(error, commands.errors.CheckFailure):
+        await ctx.send(messages.ERROR_BADROLE)
+    elif isinstance(error, commands.MissingRequiredArgument):
+        if str(ctx.command) == 'blacklist':
+            await ctx.send(messages.ERROR_BLACKLIST)
+        else:
+            await ctx.send(messages.ERROR_UNKNOWNCMD)
+        
+    elif ERRORLOGGING == True:
+            print(error)
+
+async def on_app_command_error(interaction, error):
+    global ERRORLOGGING
+    if isinstance(error, app_commands.CheckFailure):
+        await interaction.response.send_message(messages.ERROR_BADROLE)
+        
+    elif ERRORLOGGING == True:
+        print(error)
+

@@ -2,6 +2,7 @@
 import os
 import discord
 from discord.ext import commands
+from discord import app_commands
 import system
 import messages
 import config
@@ -31,24 +32,18 @@ async def on_ready():
     system.load_blacklist()
 
     await loadextensions()
-    
-#@RauruBot.event
-#async def on_command_error(ctx, error):
-#    if isinstance(error, commands.NoPrivateMessage):
-#        await ctx.send(messages.ERROR_NODM)
-#    elif isinstance(error, commands.errors.CheckFailure):
-#        await ctx.send(messages.ERROR_BADROLE)
-#    elif isinstance(error, commands.MissingRequiredArgument):
-#        if str(ctx.command) == 'blacklist':
-#            await ctx.send(messages.ERROR_BLACKLIST)
-#            #print(error)
-#        else:
-#            await ctx.send(messages.ERROR_UNKNOWNCMD)
-#    elif system.ERRORLOGGING == True:
-#        print(error)
+
+# Error listeners
+@RauruBot.event
+async def on_command_error(ctx, error):
+    await system.on_command_error(ctx, error)
+
+@RauruBot.tree.error
+async def on_app_command_error(interaction, error):
+    await system.on_app_command_error(interaction, error)
 
 
-#Cogs
+# Cogs
 async def loadextensions():
     for cog in os.listdir(system.DIR_COGS):
         if cog.endswith('.py') == True:
