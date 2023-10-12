@@ -13,6 +13,7 @@ RauruBot is a discord bot designed to provide information and resources about th
 Massive thanks to:
 -Everyone who helped with development, cause discord.py has really bad documentation
 -Everyone on the TOTK Data Collection and Research Discord server who provided information about the game
+-savage13 and the Object Map team
 -Austin John Plays on Youtube
 -Suishi on Youtube
 -riso for their UI icons
