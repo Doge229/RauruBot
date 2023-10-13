@@ -1,24 +1,35 @@
 Large Scale
 - blacklist cmds
   -default return for empty var-positional args
-  -hide help
 -compedium cmd - data sheet search
 -multi-server
-  - upgrade "system" channels for online/offline messages
   -slash commands
   -server specific blacklist
   - role ids
   -errors say what server
   -server specific info commands
--server control integration
 -all logs, togglable
-- delete specific message and last message
+- replace sending messages so that message ID is saved
 -reminder
 -make cogs and module load/reload look nice
 
 Slash Commands
--sync command
+-Tag and info
+-help commands
+  -make one for info
+  -remove info
+  -eeror msgs
 
+Tags to info-ize
+-userauru
+-imageperm/imgperms
+-spoiler
+-totkexpert
+-rule913/piracy/to
+-shrinefinder
+
+re-make sync
+view tree?
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w
@@ -35,6 +46,8 @@ Small Scale
 -credit-ish info on load
 -all the cherrytrees in totk
 -tagdefense enemy's base attack damage
+-objmap terms
+-combine botinfo and userauru
 
 
 Stuff to Make
