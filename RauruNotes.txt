@@ -34,6 +34,7 @@ Small Scale
 -direct img link
 -credit-ish info on load
 -all the cherrytrees in totk
+-tagdefense enemy's base attack damage
 
 
 Stuff to Make
