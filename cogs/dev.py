@@ -50,6 +50,21 @@ class Dev(commands.Cog):
         print(system.console_base('System') + f"tree synced to {ret}/{len(guilds)} guilds by: {ctx.author}")
         print(guilds)
 
+    @commands.command()
+    @commands.guild_only()
+    @commands.is_owner()
+    async def sync2(self, ctx, spec: Literal["*", "^"]):
+
+        #sync global
+        #clear and sync global
+
+        #sync guild spec
+        #clear and sync guild spec
+
+        #copy and sync global to guild
+
+        return
+
     #region Test Commands
     @commands.command(name='msgtest', hidden=True)
     @commands.guild_only()
