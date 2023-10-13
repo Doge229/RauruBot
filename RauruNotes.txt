@@ -33,6 +33,7 @@ Small Scale
 -update DM error
 -direct img link
 -credit-ish info on load
+-all the cherrytrees in totk
 
 
 Stuff to Make
