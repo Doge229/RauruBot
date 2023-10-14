@@ -12,15 +12,15 @@ class tagslash(commands.Cog):
         self.bot = bot
         super().__init__()
     
-    @app_commands.command(name='tag', description='This is my main command for information! Try using <helpcommand>!')
+    @app_commands.command(name='tag', description='This is my main command for information! Try using /tag help!')
     @app_commands.check(system.slashcheck_banned)
-    async def tagslash(self, interaction: discord.Interaction, *, options: str):
+    async def tagslash(self, interaction: discord.Interaction, *, option: str):
         ANSWER = ''
         IMAGEPATH = ''
 
         EPHEMERAL = False
 
-        arg = options.lower().replace("s ", "")
+        arg = option.lower().replace("s ", "")
         arg = arg.replace(" ", "")
         if arg[-1] == 's':
             arg = arg[:-1]
@@ -28,29 +28,22 @@ class tagslash(commands.Cog):
         match arg:
             case 'help':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_COMMANDS
+                ANSWER = messages.HELP_TAG
             case 'help1':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_COMMANDS
-            case 'help2':
-                EPHEMERAL = True
-                ANSWER = messages.HELP_COMMANDS2
+                ANSWER = messages.HELP_TAG
             case 'helppage1':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_COMMANDS
-            case 'helppage2':
-                EPHEMERAL = True
-                ANSWER = messages.HELP_COMMANDS2
-            case 'helphere':
-                ANSWER = messages.HELP_COMMANDS
-            case 'helphere1':
-                ANSWER = messages.HELP_COMMANDS
-            case 'helphere2':
-                ANSWER = messages.HELP_COMMANDS2
-            case 'helpherepage1':
-                ANSWER = messages.HELP_COMMANDS
-            case 'helpherepage2':
-                ANSWER = messages.HELP_COMMANDS2
+                ANSWER = messages.HELP_TAG
+            case 'showhelp':
+                ANSWER = messages.HELP_TAG
+            case 'showhelp1':
+                ANSWER = messages.HELP_TAG
+            case 'showhelppage1':
+                ANSWER = messages.HELP_TAG
+
+            case 'botinfo':
+                ANSWER = messages.BOT_INFO
 
             # Story Stuff
             case 'ringruin':

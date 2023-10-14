@@ -6,7 +6,7 @@ BOT_ONLINEPERSON = ''''''
 BOT_OFFLINESIMPLE = '''RauruBot is shutting down'''
 BOT_OFFLINEPERSON = '''Now it is up to you, Link...........'''
 
-ERROR_UNKNOWNCMD = '''My apologies, I'm afraid I don't recognize that command. Use `?tag help` to see available commands.'''
+ERROR_UNKNOWNCMD = '''My apologies, I'm afraid I don't recognize that command. Use `/help` to see available commands.'''
 ERROR_BLACKLIST = '''My apologies, but I'm afraid I don't understand that blacklist command. Use `@Rauru#6248 blacklisthelp` to see how to use the blacklist command.'''
 ERROR_NODM = '''My apologies, but commands are only available inside servers.'''
 ERROR_BADROLE = '''My apologies, but you lack the appropriate role for this command.'''
@@ -72,6 +72,84 @@ Here are some of my commands:
 
 `Page 2 of 2`
 '''
+
+HELP_GENERAL = '''
+Here are some of my commands:
+
+`/help [option]`
+    `[page number]`, `show [page number]`
+    -See what commands I have available
+
+`/tag help`
+    -See what options I have for `/tag`
+
+`/info help`
+    -See what options I have for `/info`
+
+`/find [search terms]`
+    -You can use this command to create an Object Map link with search terms integrated into it. Just put the exact text (including spaces and punctuation) for your search terms after the command.
+
+`/coordconvert [Object Map coordinates]`
+    -You can use this command to convert the coordinate of an object from the Object Map into its shown in-game coordinates.
+    -Just copy the coordinates of the object's position directly from the Object Map, then paste it in.
+    
+    For Example:
+    `/coordconvert -579.73, 129.61, -524.79` will give you the in-game coords: `-580, -525, 25`
+
+`/findpristine [weapon name]`
+    -You can use this command to create an Object Map link that will show which Depths Ghosts can spawn a weapon.
+
+`/finddispenser [device name]`
+    -You can use this command to see which Device Dispensers are most likely to dispense a specific Zonai Device.
+'''
+
+HELP_TAG = '''
+Here are my options for `/tag`:
+
+`/tag [option]`
+    **Command Help**
+    `help [page number], showhelp [page number]`
+    -*Note: Page number defaults to the 1st page if not specified*
+    
+    **Story Stuff**
+    `ringruins, postgame, permaquests, trueend, elitepics, josha`
+    **Farming Stuff**
+    `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, earlyrupees`
+    **Durability**
+    `octorok, repairlegendary, legendarylist, fusedurability, pristine`
+    **Mechanics and Hints**
+    `mastersword, cherry/cherrytrees, bargainer/bargainerstatues, amiiborespawnalt/duskbow/whitesword`
+    `botwdata, coordsystem, depthsmirror, deviceshop, ritofabric, hornedstatue, mat253/sunpumpkin`
+    `elementdmg, missablelocations, midairwing, truedmg, botwarmor/missingarmor, moatchasm`
+    `control5/jumpslash, breakitdown/pelison, gleeokstrat, dugby`
+    **Effects and Builds**
+    `defense, bestarmor, moisture, weatherattack, gloomattackresist, slipresist, attackstacking, boneprof`
+    `backscratcher, lynelfragile, dmgcalc`
+    **Reference Info**
+    `tracker, maps, objectmap, echodatasheet, phildatasheet, worldexp, templescaling, sagelevel, objectterms`
+    `beedletrades, cooking, hoverbike, mapcompletion, recipecalc, armorcalc, amiibodrops, glitchsheet`
+    `hoverbike4.0, cookcalc, constructfarm, shrinefinder, transferpics, levelcards, objectsheet`
+    `dondon, arrowfarm`
+    **Meta Info**
+    `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck, betterpics`
+    `whereDLC`
+    **Reference Images**
+    `horseupgrades, ascendmap, cherrymap, dmgformula, invupgrades, shrinecounts, miskobanner`
+    `armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals`
+    `zonaitotals, dragontotals`
+'''
+HELP_INFO_GENERALSERVER = '''
+Here are my options for `/info`:
+
+`/info [option]`
+    **Command Help**
+    `help [page number], showhelp [page number]`
+    -*Note: Page number defaults to the 1st page if not specified*
+
+    **Server Stuff**
+    `userauru, imgperms, spoiler, totkexpert, piracy/tos`
+'''
+
 HELP_NOTIFY = '''Sending you a list of my commands'''
 HELP_NOTIFYERROR1 = '''My apologies'''
 HELP_NOTIFYERROR2 = ''', but I can't send you a list of my commands. Please try using `?tag helphere` in a bot channel.'''

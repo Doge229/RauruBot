@@ -14,11 +14,12 @@ Large Scale
 -make cogs and module load/reload look nice
 
 Slash Commands
--Tag and info
+- Tag and info
+  - command descriptions
 -help commands
-  -make one for info
-  -remove info
-  -eeror msgs
+  - make one for info
+  - remove info from tag
+  - error msgs
 
 Tags to info-ize
 -userauru
@@ -27,9 +28,6 @@ Tags to info-ize
 -totkexpert
 -rule913/piracy/to
 -shrinefinder
-
-re-make sync
-view tree?
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w
@@ -49,6 +47,7 @@ Small Scale
 -objmap terms
 -combine botinfo and userauru
 -help in bot activity
+-trilbyvalley
 
 Stuff to Make
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782

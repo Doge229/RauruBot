@@ -27,50 +27,23 @@ class Tag(commands.Cog):
         match arg:
             case 'help':
                 USER = ctx.author
-                ANSWER = messages.HELP_COMMANDS
+                ANSWER = messages.HELP_TAG
             case 'help1':
                 USER = ctx.author
-                ANSWER = messages.HELP_COMMANDS
-            case 'help2':
-                USER = ctx.author
-                ANSWER = messages.HELP_COMMANDS2
+                ANSWER = messages.HELP_TAG
             case 'helppage1':
                 USER = ctx.author
-                ANSWER = messages.HELP_COMMANDS
-            case 'helppage2':
-                USER = ctx.author
-                ANSWER = messages.HELP_COMMANDS2
+                ANSWER = messages.HELP_TAG
             case 'helphere':
-                ANSWER = messages.HELP_COMMANDS
+                ANSWER = messages.HELP_TAG
             case 'helphere1':
-                ANSWER = messages.HELP_COMMANDS
-            case 'helphere2':
-                ANSWER = messages.HELP_COMMANDS2
+                ANSWER = messages.HELP_TAG
             case 'helpherepage1':
-                ANSWER = messages.HELP_COMMANDS
-            case 'helpherepage2':
-                ANSWER = messages.HELP_COMMANDS2
+                ANSWER = messages.HELP_TAG
 
-            # Server Stuff
             case 'botinfo':
                 ANSWER = messages.BOT_INFO
-            case 'userauru':
-                ANSWER = messages.INFO_USERAURU
-            case 'imageperm':
-                ANSWER = messages.HELP_IMGPERM
-            case 'imgperm':
-                ANSWER = messages.HELP_IMGPERM
-            case 'spoiler':
-                ANSWER = messages.HELP_SPOILERTAG
-            case 'totkexpert':
-                ANSWER = messages.HELP_EXPERTROLE
-            case 'rule913':
-                ANSWER = messages.HELP_RULE913
-            case 'piracy':
-                ANSWER = messages.HELP_RULE913
-            case 'to':
-                ANSWER = messages.HELP_RULE913
-
+            
             # Story Stuff
             case 'ringruin':
                 ANSWER = messages.INFO_RINGRUINQUEST

@@ -13,21 +13,38 @@ class infoslash(commands.Cog):
         self.bot = bot
         super().__init__()
     
-    @app_commands.command(name='info', description='This is my command for server-specific information. Use <help command>?')
+    @app_commands.command(name='info', description='This is my command for server-specific information. Use /info help')
     @app_commands.guilds(discord.Object(config.DEVSERVERID), discord.Object(config.GENSERVERID))
     @app_commands.check(system.slashcheck_banned)
-    async def infoslash1(self, interaction: discord.Interaction, *, options: str):
+    async def infoslash1(self, interaction: discord.Interaction, *, option: str):
         ANSWER = ''
         IMAGEPATH = ''
 
         EPHEMERAL = False
 
-        arg = options.lower().replace("s ", "")
+        arg = option.lower().replace("s ", "")
         arg = arg.replace(" ", "")
         if arg[-1] == 's':
             arg = arg[:-1]
 
         match arg:
+            case 'help':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_INFO_GENERALSERVER
+            case 'help1':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_INFO_GENERALSERVER
+            case 'helppage1':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_INFO_GENERALSERVER
+            case 'showhelp':
+                ANSWER = messages.HELP_INFO_GENERALSERVER
+            case 'showhelp1':
+                ANSWER = messages.HELP_INFO_GENERALSERVER
+            case 'showhelppage1':
+                ANSWER = messages.HELP_INFO_GENERALSERVER
+
+
             case 'userauru':
                 ANSWER = messages.INFO_USERAURU
             case 'imageperm':

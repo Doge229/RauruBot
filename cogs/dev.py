@@ -2,7 +2,7 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import Greedy
-from typing import Literal, Optional
+from typing import Literal
 import importlib
 import system
 import messages
