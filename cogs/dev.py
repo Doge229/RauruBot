@@ -19,51 +19,74 @@ class Dev(commands.Cog):
     @commands.command()
     @commands.guild_only()
     @commands.is_owner()
-    async def sync(self, ctx, guilds: Greedy[discord.Object], spec: Optional[Literal["~", "*", "^"]] = None):
-        if not guilds:
-            if spec == "~":
-                synced = await self.bot.tree.sync(guild=ctx.guild)
-            elif spec == "*":
-                self.bot.tree.copy_global_to(guild=ctx.guild)
-                synced = await self.bot.tree.sync(guild=ctx.guild)
-            elif spec == "^":
-                self.bot.tree.clear_commands(guild=ctx.guild)
-                await self.bot.tree.sync(guild=ctx.guild)
-                synced = []
-            else:
-                synced = await self.bot.tree.sync()
+    async def sync(self, ctx, mode: Literal["*", "*^", ">", "~", "~^"], guilds: Greedy[discord.Object]):
+        tree = self.bot.tree
+        globally = True
 
-            await ctx.send(f"Synced {len(synced)} commands {'globally' if spec is None else 'to the current guild.'}")
-            print(system.console_base('System') + f"{len(synced)} commands synced {'globally' if spec is None else f'to {ctx.guild}.'} by: {ctx.author}")
+        if not guilds:
+            #Sync to global tree
+            if mode == "*":
+                synced = await tree.sync()
+            #Clear commands and sync to global tree
+            elif mode == "*^":
+                tree.clear_commands(guild=None)
+                synced = await tree.sync()
+            #Copy global to guild tree and sync to guild tree
+            elif mode == ">":
+                tree.copy_global_to(guild=ctx.guild)
+                synced = await tree.sync(guild=ctx.guild)
+                globally = False
+            #Sync guild-specific commands and sync to guild tree
+            elif mode == "~":
+                synced = await tree.sync(guild=ctx.guild)
+                globally = False
+            #Clear guild-specific commands and sync to guild tree
+            elif mode == "~^":
+                tree.clear_commands(guild=ctx.guild)
+                synced = await tree.sync(guild=ctx.guild)
+                globally = False
+            
+            await ctx.send(f"Synced {len(synced)} commands {'globally' if globally else 'to the current guild.'}")
+            print(system.console_base('System') + f"{len(synced)} commands synced {'globally' if globally else f'to {ctx.guild}.'} by: {ctx.author}")
             return
 
-        ret = 0
-        for guild in guilds:
-            try:
-                await self.bot.tree.sync(guild=guild)
-            except discord.HTTPException:
-                pass
-            else:
-                ret += 1
 
+        #Copy global to guild tree and sync to guild tree
+        if mode == ">":
+            ret = 0
+            for guild in guilds:
+                try:
+                    tree.copy_global_to(guild=guild)
+                    await tree.sync(guild=guild)
+                except discord.HTTPException:
+                    pass
+                else:
+                    ret += 1
+        #Sync guild-specific commands and sync to guild tree
+        elif mode == "~":
+            ret = 0
+            for guild in guilds:
+                try:
+                    await tree.sync(guild=guild)
+                except discord.HTTPException:
+                    pass
+                else:
+                    ret += 1
+        #Clear guild-specific commands and sync to guild tree
+        elif mode == "~^":
+            ret = 0
+            for guild in guilds:
+                try:
+                    tree.clear_commands(guild=guild)
+                    await tree.sync(guild=guild)
+                except discord.HTTPException:
+                    pass
+                else:
+                    ret += 1
+            
         await ctx.send(f"Synced the tree to {ret}/{len(guilds)} guilds.")
         print(system.console_base('System') + f"tree synced to {ret}/{len(guilds)} guilds by: {ctx.author}")
         print(guilds)
-
-    @commands.command()
-    @commands.guild_only()
-    @commands.is_owner()
-    async def sync2(self, ctx, spec: Literal["*", "^"]):
-
-        #sync global
-        #clear and sync global
-
-        #sync guild spec
-        #clear and sync guild spec
-
-        #copy and sync global to guild
-
-        return
 
     #region Test Commands
     @commands.command(name='msgtest', hidden=True)
