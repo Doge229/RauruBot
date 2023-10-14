@@ -34,11 +34,11 @@ class Tag(commands.Cog):
             case 'helppage1':
                 USER = ctx.author
                 ANSWER = messages.HELP_TAG
-            case 'helphere':
+            case 'showhelp':
                 ANSWER = messages.HELP_TAG
-            case 'helphere1':
+            case 'showhelp1':
                 ANSWER = messages.HELP_TAG
-            case 'helpherepage1':
+            case 'showhelppage1':
                 ANSWER = messages.HELP_TAG
 
             case 'botinfo':

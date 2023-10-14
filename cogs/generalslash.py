@@ -71,7 +71,7 @@ class generalslash(commands.Cog):
 
         await interaction.response.send_message(ANSWER)
 
-    @app_commands.command(name='coordconvert', description='Convert the coordinates of an object on the Object Map to in-game coordinates')
+    @app_commands.command(name='coordconvert', description='Copy the coordinates of an object on the Object Map here to convert them to in-game coords.')
     @commands.guild_only()
     @app_commands.check(system.slashcheck_banned)
     async def coordconverter(self, interaction: discord.Interaction, *, coordinates: str):
