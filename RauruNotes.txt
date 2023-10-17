@@ -48,6 +48,10 @@ Small Scale
 -combine botinfo and userauru
 -help in bot activity
 -trilbyvalley
+-flux constructs blood moon
+-profile pic cycling
+-findpristine Npc_MinusFieldGhost_000
+-replace ' with %27
 
 Stuff to Make
 -remaster Pristine
