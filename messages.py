@@ -174,7 +174,7 @@ Here's how to use my blacklist command:
 # region Server Stuff
 BOT_INFO = '''Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links.'''
 INFO_USERAURU = '''
-I have a lot of useful information and links. Please feel free to use `?tag help` and use as many of my commands as you like in <#811092574672388106> or <#1145875241080475658>.
+I have a lot of useful information and links. Please feel free to use `/help` and use as many of my commands as you like in <#811092574672388106> or <#1145875241080475658>.
 '''
 HELP_IMGPERM = '''
 In order to be able to post images or embed other stuff on this server, you'll need to reach **Traveler** rank (Level 3) or above. 
