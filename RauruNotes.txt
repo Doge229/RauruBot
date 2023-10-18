@@ -1,38 +1,17 @@
 Large Scale
-- blacklist cmds
-  -default return for empty var-positional args
 -compedium cmd - data sheet search
 -multi-server
-  -slash commands
   -server specific blacklist
-  - role ids
   -errors say what server
   -server specific info commands
 -all logs, togglable
-- replace sending messages so that message ID is saved
+-replace sending messages so that message ID is saved
 -reminder
 -make cogs and module load/reload look nice
-
-Slash Commands
-- Tag and info
-  - command descriptions
--help commands
-  - make one for info
-  - remove info from tag
-  - error msgs
-
-Tags to info-ize
--userauru
--imageperm/imgperms
--spoiler
--totkexpert
--rule913/piracy/to
--shrinefinder
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w
 -explevelsandroles
--save last message id for every ctx.send
 -greatfairy
 -cherry24minutes
 -gleeokstrat heads
@@ -51,7 +30,6 @@ Small Scale
 -flux constructs blood moon
 -profile pic cycling
 -findpristine Npc_MinusFieldGhost_000
--replace ' with %27
 
 Stuff to Make
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
