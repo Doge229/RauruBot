@@ -9,6 +9,19 @@ Large Scale
 -reminder
 -make cogs and module load/reload look nice
 
+Refactor
+-replace ctx.send and response.send_message
+-rework deleting messages
+-rework reload commands
+-take a look at the config?
+-rework speak commands
+-investigate sync more?
+-listen for server join and setup authorization
+-expand logging and write to file
+-rework blacklist and make it server-specific
+-look through and reword messages.py
+-single function for both message and slash commands
+
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w
 -explevelsandroles
@@ -32,7 +45,7 @@ Small Scale
 -findpristine Npc_MinusFieldGhost_000
 
 Stuff to Make
--remaster Pristine
+- remaster Pristine
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
 https://discord.com/channels/1111764095826415678/1111764453910917190/1158064435127140452
 -all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686
