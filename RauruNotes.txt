@@ -13,7 +13,7 @@ Refactor
 -replace ctx.send and response.send_message
 -rework deleting messages
 -rework reload commands
--take a look at the config?
+- take a look at the config
 -rework speak commands
 -investigate sync more?
 -listen for server join and setup authorization
@@ -21,6 +21,7 @@ Refactor
 -rework blacklist and make it server-specific
 -look through and reword messages.py
 -single function for both message and slash commands
+-arg cleanup method
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w

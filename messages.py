@@ -10,6 +10,7 @@ ERROR_UNKNOWNCMD = '''My apologies, I'm afraid I don't recognize that command. U
 ERROR_BLACKLIST = '''My apologies, but I'm afraid I don't understand that blacklist command. Use `@Rauru#6248 blacklisthelp` to see how to use the blacklist command.'''
 ERROR_NODM = '''My apologies, but commands are only available inside servers.'''
 ERROR_BADROLE = '''My apologies, but you lack the appropriate role for this command.'''
+
 ERROR_BADCOORDS = '''My apologies, but I cannot convert those coordinates.'''
 # endregion
 
@@ -172,40 +173,42 @@ Here's how to use my blacklist command:
 '''
 
 # region Server Stuff
-BOT_INFO = '''Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links.'''
-INFO_USERAURU = '''
-I have a lot of useful information and links. Please feel free to use `/help` and use as many of my commands as you like in <#811092574672388106> or <#1145875241080475658>.
-'''
-HELP_IMGPERM = '''
-In order to be able to post images or embed other stuff on this server, you'll need to reach **Traveler** rank (Level 3) or above. 
-Use `/level` in #bot-fun to view your current level information.
+#BOT_INFO = '''Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links.'''
+INFO_RAURUBOT = '''
+Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links. 
+Please feel free to use `/help` and use as many of my commands as you like in a bot channel.
 '''
 HELP_SPOILERTAG = '''
 Please spoiler tag any main story spoilers outside of spoiler-friendly channels. You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
 You can spoiler tag images **when attaching** them by clicking the small eye icon above them if you're on desktop, or by tapping and holding on the image if you are on mobile.
+'''
+
+HELP_IMGPERM = '''
+In order to be able to post images or embed other stuff on this server, you will need to reach **Traveler** rank (Level 3) or above. 
+Use `/level` in #bot-fun to view your current level information.
 '''
 HELP_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help assist and guide members with their gameplay. Although it does not come with any moderation tools, TOTK Expert are given Manage Messages permission so they can pin any important information in any channel.'''
 HELP_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
 # endregion
 
 # region Story Stuff
-INFO_RINGRUINQUEST = '''The main quest ||"Secret of the Ring Ruins"|| can be begun by speaking to Tauro and Paya in Kakariko Village after you\'ve completed ||"Crisis at Hyrule Castle"||.'''
+INFO_RINGRUINQUEST = '''The main quest ||"Secret of the Ring Ruins"|| can be begun by speaking to Tauro and Paya in Kakariko Village after you have completed ||"Crisis at Hyrule Castle"||.'''
 INFO_POSTGAME = '''
 Legend of Zelda games do not generally have a post-game. Instead, TotK reverts you to your last save before the finale and adds a little star to it. This will:
- -Add a percentage counter for your map completion to your Purah Pad
- -Add totals counters for your quests to your Purah Pad
+ -Add a counter to your Purah Pad that tracks your *map completion* percentage
+ -Add counters to your Purah Pad that tracks your total quests and character profiles
  -Unlock the option to purchase Elite Enemy Compendium pictures from Robbie
- -Carry over any pictures and Compendium entries you got during the finale
+ -Carry over any pictures and Compendium entries you obtained during the finale
  -Add ||Zelda's Sage symbol to the loading screen||
 '''
 INFO_PERMQUESTS = '''You cannot permanently complete the quests ||"Destroy Ganondorf"|| or ||"Find Princess Zelda"||, as they are completed during the finale of the game.'''
-INFO_TRUEEND = '''If you have collected every memory, then ||a new cutscene featuring all the Sages will play after the credits.||'''
-INFO_ELITEPIC = '''After beating the game, you get the option to purchase Elite Enemy Pictures for your Compendium from Robbie.'''
-INFO_JOSHA = '''Josha is the head of Depths Research and can be found in her workshop in Lookout Landing. She provides a number of quests designed to lead you to important locations in the Depths, so anytime you have a question about the Depths it might be a good idea to see if she has any information for you.'''
+INFO_TRUEEND = '''If you have collected every memory, then ||a new cutscene featuring all of the Sages will play after the credits.||'''
+INFO_ELITEPIC = '''After beating the game, you unlock the option to purchase Elite Enemy Pictures for your Compendium from Robbie.'''
+INFO_JOSHA = '''Josha is Purah's head of Depths Research and can be found in her workshop in Lookout Landing. She provides a number of quests designed to lead you to important locations within the Depths, so anytime you have a question about the Depths it might be a good idea to see if she has any information for you.'''
 # endregion
 
 # region Farming Stuff
-INFO_BLOODMOON = '''Every 168 unpaused minutes, the game will attempt to trigger a Blood Moon on the next night. If you are in a shrine or the Depths, the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier and Captain Constructs do not respawn on Blood Moons however; Their respawn mechanics are still being investigated.'''
+INFO_BLOODMOON = '''Every 168 minutes of unpaused gameplay, the game will attempt to trigger a Blood Moon on the next night. If you are in a shrine or the Depths, then the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier, Captain, and Flux Constructs do not respawn on Blood Moons however; Their respawn mechanics are still being investigated.'''
 POINT_FORCEMOON = '''
 Here's are some links to examples of how to force a Blood Moon to occur in TotK:
 Rock Wall Opal Method:
@@ -214,7 +217,7 @@ Water Shock Method:
 <https://youtu.be/WU01EY3dGc8>
 '''
 INFO_MATERIALTIMER = '''TotK's map is divided into a 10x8 grid of "cells". Every minute that you are not in a map cell, there is an additive chance that every material and animal in that cell will respawn.'''
-INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by waiting at a campfire or bed, then reloading the shop by fast traveling, or saving and reloading. Shops that are menus only require passing time, as opening the shop causes them to reload.'''
+INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by waiting at a campfire or bed, then reloading the shop by fast traveling, or saving and reloading. Menu-based shops only require passing time, as opening the shop causes them to reload.'''
 INFO_CHARGEFARM = '''
 You can farm Crystallized Charges by:
 -Defeating ||Master Kohga at each Abandoned Mine he appears at|| and ||each Temple Boss Rematch||, all of which each give a chest containing a Huge Crystallized Charge(worth 100 normal Crystallized Charges) the first time you defeat them.
@@ -240,7 +243,7 @@ INFO_OCTOROK = '''
 You can repair and modify any non-Legendary equipment by dropping it on the ground in front of a Rock Octorok in Eldin Canyon. 
 The Octorok will restore the Base and Bonus Durability of the equipment, as well as any equipment (not materials) fused to it. 
 
-In addition, Rock Octoroks will modify the base equipment that they repair, from Tier 0 (no modifier) to Tier 1 (blue/white), Tier 1 to Tier 2 (orange), or Tier 2 to Tier 2. The modifier applied by the Octorok is random, based on the available modifiers for that equipment and the tier it is upgrading to. 
+In addition, Rock Octoroks will modify the base equipment that they repair, from Tier 0 (no modifier) to Tier 1 (blue/white icon), Tier 1 to Tier 2 (orange icon), or Tier 2 to Tier 2. The modifier applied by the Octorok is random, based on the available modifiers for that equipment and the tier it is upgrading to. 
 Please take a look at this spreadsheet to see the available modifiers and values for each modifier: 
 <https://docs.google.com/spreadsheets/d/18pNtDx3z-8CwGJRmlW574xbQ6VphQOkvpZhClpOEVDA/edit#gid=328867100> 
 
@@ -282,27 +285,26 @@ INFO_FUSEDURABILITY = '''
 Each weapon has a Base Durability and a Bonus Durability, which is unlocked while something is fused to the weapon. 
 Bonus Durability Values: 
 -Stal Enemy Arms = 3 
--Gerudo Weapons excluding the Scimitar of the Seven = 5 
+-Gerudo Weapons, excluding the Scimitar of the Seven = 5 
 -Tree Branches, Tools, Rusty Weapons, Royal Guard Weapons, and Gloom Weapons = 10 
 -All other weapons = 25 
 
-Bonus Durability is inherent to the base weapon, and any Bonus Durability used will not be restored by fusing something else to the base weapon. Aside from materials that break in one hit such as Gibdo Bones and Ancient Blades, all materials will last until the base weapon breaks. When fusing equipment to a weapon, the base weapon will still unlock its Bonus Durability, but the fused equipment will not. The durability of both will be drained on hit.
+Bonus Durability is a property of the base weapon, and any Bonus Durability used will not be restored by fusing something else to the base weapon. Aside from materials that break in one hit, such as Gibdo Bones and Ancient Blades, all materials will last until the base weapon breaks. When fusing equipment to a weapon, the base weapon will still unlock its Bonus Durability, but the fused equipment will not. The durability of both equipment will be drained on hit.
 
-When fusing equipment to a weapon or shield, the fused equipment will lose its modifier, but its Bonus Durability will be restored to maximum, if it is a weapon.
+When fusing equipment to a weapon or shield, the fused equipment will lose its modifier, but if it is a weapon, its Bonus Durability will be restored to maximum.
 '''
 POINT_WEAPONSINTACT = '''
-Here's a link to an explanation on Pristine Weapons in TotK: 
-<https://www.reddit.com/r/tearsofthekingdom/comments/13uqo9h/everything_you_need_to_know_about_nondecayed/>
-Please note: Throwing a Decayed weapon against terrain to break it will NOT unlock it's Pristine variant in the Depths.
+Here's a link to an explanation of Pristine weapon mechanics in TotK:
+<https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing>
 '''
 # endregion
 
 # region Mechanics and Hints
 INFO_MASTERSWORD = '''The Master Sword has a base damage of 30, which increases to 45 when it is Awakened (nearby Gloom enemies). It has a Base Durability of 40 and a Bonus Durability of 25, but it does not currently recharge its Bonus Durability, meaning that after it runs out of energy for the first time it will only ever have a Total Durability of 40. When facing Phantom Ganon or ||Ganondorf||, it's base damage increases to 60, and it does not lose any durability on use.'''
-INFO_CHERRY = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for a decent amount of time.'''
-INFO_BARGAINERSTATUES = '''Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 in Lookout Landing, and 6 found within the Depths. Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. The Bargainer Statues in the Depths will also sell most Amiibo weapons and armor to you after you have obtained them once.'''
+INFO_CHERRY = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
+INFO_BARGAINERSTATUES = '''Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. The Bargainer Statues **in the Depths** will also sell most Amiibo weapons and armor to you after you have obtained them once.'''
 INFO_ALTAMIIBOWEAPONSOURCE = '''
-The White Sword of the Sky and the Dusk Bow cannot be repurchased from Baragainer Statues. Instead, the Dusk Bow can found at the top of Hyrule Castle every Blood Moon. The White Sword of the Sky can be reobtained from the Mother Goddess Statue by bringing her Dinraal's Claw, Farosh's Claw, and Naydra's Claw.
+The White Sword of the Sky and the Dusk Bow cannot be purchased from Baragainer Statues. Instead, the Dusk Bow can found at the top of Hyrule Castle every Blood Moon. The White Sword of the Sky can be reobtained from the Mother Goddess Statue by bringing her Dinraal's Claw, Farosh's Claw, and Naydra's Claw.
 '''
 INFO_BOTWDATA = '''
 TotK automatically imports your BotW normal mode data upon creating a new game for TotK. The imported data includes: 

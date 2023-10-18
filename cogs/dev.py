@@ -133,14 +133,14 @@ class Dev(commands.Cog):
 
         match arg:
             case 'totkgen':
-                SPEAKCHANNELID = config.GENSERVER_TGENCHANNELID
+                SPEAKCHANNELID = config.GENSERVERCHANNELID_TGEN
             case 'qc':
-                SPEAKCHANNELID = config.GENSERVER_QCCHANNELID
+                SPEAKCHANNELID = config.GENSERVERCHANNELID_QC
             case 'botfun':
-                SPEAKCHANNELID = config.GENSERVER_BFCHANNELID
+                SPEAKCHANNELID = config.GENSERVERCHANNELID_BF
 
             case _:
-                SPEAKCHANNELID = config.GENSERVER_BFCHANNELID
+                SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
 
         await ctx.send(f'Speak Channel Set: {SPEAKCHANNELID}')
     #endregion
