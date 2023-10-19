@@ -300,7 +300,7 @@ Here's a link to an explanation of Pristine weapon mechanics in TotK:
 # endregion
 
 # region Mechanics and Hints
-INFO_MASTERSWORD = '''The Master Sword has a base damage of 30, which increases to 45 when it is Awakened (nearby Gloom enemies). It has a Base Durability of 40 and a Bonus Durability of 25, but it does not currently recharge its Bonus Durability, meaning that after it runs out of energy for the first time it will only ever have a Total Durability of 40. When facing Phantom Ganon or ||Ganondorf||, it's base damage increases to 60, and it does not lose any durability on use.'''
+INFO_MASTERSWORD = '''The Master Sword has a base damage of 30, which increases to 45 when it is Awakened (nearby Gloom-Wreathed enemies). It has a Base Durability of 40 and a Bonus Durability of 25, but it does not currently recharge its Bonus Durability, meaning that after it runs out of energy for the first time it will only ever have a Total Durability of 40. When facing Phantom Ganon or ||Ganondorf||, it's base damage increases to 60, and it does not lose any durability on use.'''
 INFO_CHERRY = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
 INFO_BARGAINERSTATUES = '''Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. The Bargainer Statues **in the Depths** will also sell most Amiibo weapons and armor to you after you have obtained them once.'''
 INFO_ALTAMIIBOWEAPONSOURCE = '''
@@ -311,17 +311,17 @@ TotK automatically imports your BotW normal mode data upon creating a new game f
 -Any registered horses you had, including unique horses, which will not spawn in TotK if you import them. 
 -Your Champion's Ballad Photo, if you hung it on the wall in Link's House in BotW.
 '''
-INFO_COORDSYSTEM = '''TotK uses two different coordinate systems, one that is shown to the player, and one that is used internally. You can think of the shown coordinates as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height. The internal coordinate system can be visualized as X, Y + 105, -Z.'''
+INFO_COORDSYSTEM = '''TotK uses two different coordinate systems, one that is shown to the player, and one that is used internally. You can think of the shown coordinates as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height. The internal coordinate system can then be visualized as X, Y + 105, -Z.'''
 INFO_DEPTHSMIRROR = '''
-Hyrule's Depths mirror its Surface; Terrain is usually inverted, and bodies of water on the Surface are usually impassable walls in the Depths. 
-If you don't yet have the map for the area of the Depths you are in, you can leave your map on the Surface to display the Surface on your Minimap, aiding in navigation.
+Hyrule's Depths mirror its Surface; Terrain elevation is usually inverted, and bodies of water on the Surface are almost always impassable walls in the Depths. 
+If you are in an area of the Depths and you do not have the map for it yet, try opening your Surface map and then closing it. This will display the Surface on your minimap, aiding in navigation.
 '''
 INFO_DEVICESHOP = '''After you have fully upgraded your Energy Cell to 48 total Energy Wells, you can use your Crystallized Charges at Crystal Refineries to purchase any Zonai Device. Each device costs 3 Charges per capsule, except for Big Batteries, which are 30 Charges each.'''
 INFO_RITOFABRIC = '''The Original and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
 INFO_HORNEDSTATUE = '''After completing one part of "Regional Phenomena", a new opening can be found in the Emergency Shelter in Lookout Landing, through which you will find a statue with an ominous aura. This Horned Statue will allow you to trade Heart Containers for Stamina Vessels, and vice versa, at the cost of 20 rupees each.'''
 INFO_SUNPUMPKIN = '''Compendium Entry #253 is the ||Sun Pumpkin||, a material that is not found within Hyrule until the completion of the quest "Homegrown in Hateno", which you can begin by speaking to Reede in the fields near the entrance to Hateno Village, after completing "The Mayoral Election".'''
 INFO_BASEELEMENTALDMG = '''
-Each enemy takes a specific amount of damage from each element. You can find the exact numbers for each enemy on the Monsters tab of Phil's Data Sheet: 
+Every enemy takes a specific amount of base damage from each element, although some element sources can have a bonus damage that is added to the base damage. You can find the exact numbers for each enemy's base elemental damage taken on the Monsters tab of Phil's Data Sheet:
 <https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit#gid=143376740&range=A1>
 '''
 INFO_MISSABLELOCATIONS = '''
@@ -355,10 +355,10 @@ Retsam Grove
 Blupee Burrow 
 Applean Grove
 ||
-Original message by 𝓣𝓻𝓲⃤
+Original message by Dixon#8583
 '''
 INFO_MIDAIRWING = '''
-Here are the steps to deploy a Wing midair in TotK: 
+Here are the steps to deploy a Wing midair in TotK:
 1. Let the Left Stick go neutral while paragliding, so that Link is falling straight down.
 2. Open the Quick Menu or Pause Menu and drop a Wing.
 3. Close the menu, then immediately tilt the Left Stick up to move forward.
@@ -366,10 +366,10 @@ Here are the steps to deploy a Wing midair in TotK:
 '''
 INFO_TRUEDAMAGE = '''
 In TotK, the shown damage numbers for spears and two-handed weapons do not reflect their actual damage dealt. 
--The shown damage for spears is divided by 1.3268, which means that spears deal roughly 25 percent less damage per hit than shown. 
+-The shown damage for spears is divided by roughly 1.3268, which means that spears deal roughly 25 percent less damage per hit than shown. 
 -The shown damage for two-handed weapons is divided by 0.95, which means that two-handed weapons deal roughly 5 percent more damage than shown.
 
-These multipliers also affect modifiers to the weapon, such as the Fused item, Attack Up from a modifier, and Zonaite-Powered/Strong Fusion. They do not apply to temporary weapon buffs, such as those from the Attack Up effect, or conditional weapon abilities like Water Warrior.
+These multipliers also affect modifiers to the weapon, such as the Fused item, Attack Up from a modifier, and Zonaite-Powered/Strong Fusion. They do not apply to temporary weapon buffs, such as those from the Attack Up effect, or conditional weapon Traits like Water Warrior.
 '''
 INFO_MISSINGARMOR = '''
 The following armors from BotW are not available in TotK:
@@ -382,13 +382,13 @@ The following armors from BotW are not available in TotK:
 -Thunder Helm (replaced by Lightning Helm)
 -Champion's Tunic (nerfed into Tunic of Memories)
 '''
-INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try them again.'''
+INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
 INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the west side of the island for a small opening with a Chasm inside.'''
 INFO_BREAKITDOWN = '''
 You can break down most Fused weapons and shields into their base equipment and Fuse material by paying 20 rupees to Pelison at the Break-a-Part Shop in Tarrey Town. 
 '''
 INFO_GLEEOKSTRAT = '''
-The trick to taking down Gleeoks is to use Eyeball arrows while avoiding its attacks or staying behind cover. Multi-shot bows are strongly recommended for this.
+The trick to taking down a Gleeok is to use Eyeball arrows while avoiding its attacks or staying behind cover. Multi-shot bows are strongly recommended for this.
 Flame Gleeoks take 2x damage from ice attacks and 1.5x damage from water attacks.
 Frost Gleeoks take 2x damage from fire attacks.
 '''
@@ -401,7 +401,7 @@ Dugby's second quest is "The Ancient City Gorondia?", and requires the completio
 
 # region Effects and Builds
 INFO_DEFENSESTAT = '''
-Every enemy attack has two components: the enemy's base damage, and the damage of the weapon they are holding. The damage you take from the attack is then calculated by subtracting your total defense from the enemy attack.
+Every enemy attack has two components: the enemy's base damage for that specific attack, plus the damage of the weapon they are holding(if applicable to that attack). The damage you take from the attack is then calculated by subtracting your total defense from the enemy attack.
 '''
 INFO_BESTARMOR = '''
 There isn't really a "best" armor in TotK, but some sets are useful for specific things. 
@@ -415,7 +415,7 @@ For maximum defense, you might want:
  -The Barbarian Set and the Fierce Deity Set are identical stat-wise. The only differences between the two are visual design and upgrade materials. 
 
  For Maximum Damage: 
- -Both the Radiant Set and the Evil Spirit Set grant Bone Proficiency, which when paired with a Molduga Jaw weapon and lvl 3 Attack Up from a meal grants the best damage increase.
+ -Both the Radiant Set and the Evil Spirit Set grant Bone Proficiency, which when paired with a Molduga Jaw weapon and lvl 3 Attack Up from a meal grants the highest damage increase.
  '''
 INFO_MOISTURE = '''The Froggy armor set pieces each have a hidden effect called Moisturizing, which increases the length of time that Link will be wet for, up to a max of 4 minutes.'''
 INFO_WEATHERATK = '''The Weather Attack effects do not increase physical weapon damage. They add an elemental AoE to combo finishers and charge attacks, which increases in size with higher effect levels and has a bonus elemental damage of 5, regardless of level. The Weather Charge set bonus just gives you Quick Charge when active.'''
@@ -423,7 +423,7 @@ INFO_GLOOMATKRES = '''The Gloom Attack Resist set bonus does not have any impact
 INFO_SLIPRESIST = '''Slip Resistance increases the amount of time that Link can climb on slippery surfaces before slipping. With levels 1/2/3 of Slip Resistance, Link will be able to climb on slippery surfaces for 6/8/10 seconds before slipping. Slip Proof is the Froggy Armor set bonus, and makes Link immune to slipping.'''
 INFO_ATKSTACK = '''The Attack Up effect can only stack up to a total of level 3 (for 1.5x damage), combining both armor and meal effects.'''
 INFO_BONEPROF = '''
-"(Stal) Disguise; Bone Weap. Prof." is the set bonus for the Evil Spirit set and Radiant set.
+"[Stal] Disguise; Bone Weap. Prof." is the set bonus for the Evil Spirit set and Radiant set.
 The Bone Proficiency effect multiplies bone weapon damage by 1.8x, and stacks with lvl 3 Attack Up from a meal.
 
 The Evil Spirit set pieces each have Stealth Up cannot be upgraded, and together grant the set bonus at base level. The Evil Spirit set can be acquired by ||completing the quests that begin at each of the three labyrinths.||
@@ -432,7 +432,7 @@ The Radiant set has no innate effects, but can be upgraded and grants the set bo
 '''
 INFO_BACKSCRATCH = '''
 The current maximum damage that you can consistently output can be referred to as a Lynel Backscratcher build. Take a Pristine Royal Guard's Claymore with a +10 Attack Up modifier, fuse a Molduga Jaw to it, then wear it down until it has 1 durability left. 
-Then wear a Bone Proficiency armor set and eat a level 3 Attack Up meal, and take the weapon and only use it for mounted attacks on a Lynel. The mounted attacks take no durability, so you can continually deal critical hit damage. 
+Then wear a Bone Proficiency armor set and eat a level 3 Attack Up meal, and take the weapon and only use it for mounted attacks on a Lynel. The mounted attacks take no durability, so you can continually deal last hit critical damage with the almost broken claymore. 
 
 Here is the full math behind this:
 rounddown(42 Base Weapon Damage + rounddown((10 Modifier Buff + 32 Molduga Jaw Fuse Damage)/0.95 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
@@ -456,6 +456,7 @@ Zelda Universe: <https://zeldamaps.com/?game=TotK>
 Zelda Dungeon: <https://www.zeldadungeon.net/tears-of-the-kingdom-interactive-map/> 
 AeonSake: <https://totk.aeonsake.com/> 
 
+The Object Map doesn't have the same features as other interactive maps, but it is still very useful. Use `/tag objectmap` for more info.
 Object Map: <https://objmap-totk.zeldamods.org/#/map/z2,0,0>
 '''
 INFO_OBJECTMAP = '''
@@ -470,6 +471,7 @@ https://objmap-totk.zeldamods.org/#/map/z2,0,0
 `cave` 
 `sky`
 -You can filter your search by scaling or non-scaling objects using `scale:1` or `scale:0`, respectively.
+-Use `/tag objectterms` to see some useful terms and actor names.
 '''
 INFO_USEFULOBJECTTERMS = '''
 Here are some terms/actor names that might be useful when using the Object Map:
@@ -561,11 +563,14 @@ https://www.reddit.com/r/TOTK/comments/15d3ksj/proving_grounds_shrines_construct
 POINT_SHRINEFINDER = '''
 Here's a link to a website that can help you find what Shrines and Lightroots you are missing:
 <https://www.haokepeng.com/zelda>
-If you are having trouble using this site, please feel free to head to <#753016129328250964> and post screenshots of your maps so the experts can help you find what you're missing.
+If you are having trouble using this site, please feel free to head to <#753016129328250964> and post screenshots of your maps so someone can help you find what you're missing.
 '''
 POINT_TRANSFERSCREENSHOTS = '''
-Here's a link to an article explaining how to transfer screenshots from your switch to your smartphone:
-<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how%20to%20transfer%20Screenshots%20and%20Video%20Captures%20to%20a%20Smart%20Device%20Wirelessly>
+Here are some links to guides on how to transfer screenshots and clips from your Switch:
+Transfer to your smartphone with a QR code:
+<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>
+Transfer to your computer via USB:
+<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>
 '''
 POINT_LEVELCARDS = '''
 Here's a link to a gallery of level cards for you to use with Arcane's `/card image set` command:
@@ -687,13 +692,13 @@ IMAGE_OTHERPARTTOTAL = '''Here are the totals for Other Monster Parts required t
 IMAGE_CRITTERTOTAL = '''Here are the totals for Critters required to upgrade every armor in TotK:'''
 
 IMAGE_ASCENDMAP = '''Here is a map of all the Ascend Points within the Depths:'''
-IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Trees:'''
+IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Trees in TotK:'''
 IMAGE_MISKOBANNER = '''The Great Bandit Misko left distinct banners along the path to their treasure. The banners don't point directly to the treasure, but you can follow from one banner to the next to find the hidden spoils.'''
 IMAGE_DMGFORMULA = '''
 Here is the damage formula for Link's attacks in TotK; for more information, please check out the Damage Calculations Doc:
 <https://docs.google.com/document/d/1K5hLcxfnvSnY-nsIP-n8Ew7rm9EkqHtnn6iJqOnxlng/edit?usp=sharing>
 '''
-IMAGE_INVENTORYUPGRADES = '''Here are all of the Inventory upgrade costs:'''
+IMAGE_INVENTORYUPGRADES = '''Here are all of the Inventory upgrade costs for TotK:'''
 IMAGE_SHRINECOUNTS = '''Here are the totals of each type of Shrine of Light in TotK:'''
 # endregion
 
