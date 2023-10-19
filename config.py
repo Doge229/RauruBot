@@ -1,7 +1,7 @@
 # config.py
 import tokens
 
-TESTMODE = False
+TESTMODE = True
 
 # Servers
 DEVSERVERID = 1124106113852379156

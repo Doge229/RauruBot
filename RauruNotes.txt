@@ -47,7 +47,7 @@ Small Scale
 -findpristine Npc_MinusFieldGhost_000
 
 Stuff to Make
-- remaster Pristine
+- remaster Pristine https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
 https://discord.com/channels/1111764095826415678/1111764453910917190/1158064435127140452
 -all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686
