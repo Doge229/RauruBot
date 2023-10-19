@@ -19,7 +19,8 @@ Refactor
 -listen for server join and setup authorization
 -expand logging and write to file
 -rework blacklist and make it server-specific
--look through and reword messages.py
+- look through and reword messages.py
+-rename messages in messages.py
 -single function for both message and slash commands
 -arg cleanup method
 
