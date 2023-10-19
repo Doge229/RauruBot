@@ -153,7 +153,7 @@ Here are my options for `/info`:
 
 HELP_NOTIFY = '''Sending you a list of my commands'''
 HELP_NOTIFYERROR1 = '''My apologies'''
-HELP_NOTIFYERROR2 = ''', but I can't send you a list of my commands. Please try using `?tag helphere` in a bot channel.'''
+HELP_NOTIFYERROR2 = ''', but I can't send you a list of my commands. Please try using `?tag showhelp` in a bot channel.'''
 
 HELP_BLACKLIST = '''
 Here's how to use my blacklist command: 
@@ -379,6 +379,7 @@ The following armors from BotW are not available in TotK:
 -Salvager's Set
 -Ancient Set
 -Gerudo Vai Set
+-Phantom Ganon Set (renamed to Evil Spirit Set)
 -Thunder Helm (replaced by Lightning Helm)
 -Champion's Tunic (nerfed into Tunic of Memories)
 '''
