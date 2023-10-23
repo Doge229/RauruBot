@@ -8,7 +8,7 @@ BOT_OFFLINEPERSON = '''Now it is up to you, Link...........'''
 
 ERROR_UNKNOWNCMD = '''My apologies, I'm afraid I don't recognize that command. Use `/help` to see available commands.'''
 ERROR_BLACKLIST = '''My apologies, but I'm afraid I don't understand that blacklist command. Use `@Rauru#6248 blacklisthelp` to see how to use the blacklist command.'''
-ERROR_NODM = '''My apologies, but commands are only available inside servers.'''
+ERROR_GUILDONLY = '''My apologies, but commands are only available inside servers.'''
 ERROR_BADROLE = '''My apologies, but you lack the appropriate role for this command.'''
 
 ERROR_BADCOORDS = '''My apologies, but I cannot convert those coordinates.'''
@@ -301,15 +301,15 @@ Here's a link to an explanation of Pristine weapon mechanics in TotK:
 
 # region Mechanics and Hints
 INFO_MASTERSWORD = '''The Master Sword has a base damage of 30, which increases to 45 when it is Awakened (nearby Gloom-Wreathed enemies). It has a Base Durability of 40 and a Bonus Durability of 25, but it does not currently recharge its Bonus Durability, meaning that after it runs out of energy for the first time it will only ever have a Total Durability of 40. When facing Phantom Ganon or ||Ganondorf||, it's base damage increases to 60, and it does not lose any durability on use.'''
-INFO_CHERRY = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
-INFO_BARGAINERSTATUES = '''Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. The Bargainer Statues **in the Depths** will also sell most Amiibo weapons and armor to you after you have obtained them once.'''
+INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
+INFO_BARGAINERSTATUE = '''Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. The Bargainer Statues **in the Depths** will also sell most Amiibo weapons and armor to you after you have obtained them once.'''
 INFO_ALTAMIIBOWEAPONSOURCE = '''
 The White Sword of the Sky and the Dusk Bow cannot be purchased from Baragainer Statues. Instead, the Dusk Bow can found at the top of Hyrule Castle every Blood Moon. The White Sword of the Sky can be reobtained from the Mother Goddess Statue by bringing her Dinraal's Claw, Farosh's Claw, and Naydra's Claw.
 '''
 INFO_BOTWDATA = '''
-TotK automatically imports your BotW normal mode data upon creating a new game for TotK. The imported data includes: 
--Any registered horses you had, including unique horses, which will not spawn in TotK if you import them. 
--Your Champion's Ballad Photo, if you hung it on the wall in Link's House in BotW.
+TotK automatically imports some of your BotW *Normal Mode* data into TotK:
+-When you talk to a stablehand for the first time, any registered horses you had in BotW will be in your stables, including any unique horses, which will not spawn in TotK's world if you import them.
+-If you hang your Champion's Ballad photo from Kass on the wall in Link's House in BotW, then the photo will be in Zelda's House in TotK. This can be done at any point in your TotK playthrough.
 '''
 INFO_COORDSYSTEM = '''TotK uses two different coordinate systems, one that is shown to the player, and one that is used internally. You can think of the shown coordinates as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height. The internal coordinate system can then be visualized as X, Y + 105, -Z.'''
 INFO_DEPTHSMIRROR = '''
@@ -669,7 +669,7 @@ To downpatch to 1.0, you will need to have a physical copy of the game, and to f
 
 If you have access to a Switch with a version between 1.0 and current patch, you can match your update with it after factory resetting your Switch.
 '''
-INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Home Screen.'''
+INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
 POINT_BETTERPHOTOS = '''
 Here's a link to a guide on taking higher quality photos in TotK:
 https://youtu.be/Bi7BC4wSjI8

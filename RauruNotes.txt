@@ -10,7 +10,7 @@ Large Scale
 -make cogs and module load/reload look nice
 
 Refactor
--replace ctx.send and response.send_message
+- replace ctx.send and response.send_message
 -rework deleting messages
 -rework reload commands
 - take a look at the config
@@ -20,9 +20,10 @@ Refactor
 -expand logging and write to file
 -rework blacklist and make it server-specific
 - look through and reword messages.py
--rename messages in messages.py
+- rename messages in messages.py
+-rework help messages after commands
 -single function for both message and slash commands
--arg cleanup method
+- arg cleanup method
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w

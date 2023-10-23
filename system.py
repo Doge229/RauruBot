@@ -28,10 +28,10 @@ def setactivebot():
     global ACTIVEBOTSYSTEMCHANNELID
     if config.TESTMODE:
         ACTIVEBOTTOKEN = config.TESTBOT_TOKEN
-        ACTIVEBOTSYSTEMCHANNELID = config.DEVSERVER_TSTRAURUSYSCHANNELID
+        ACTIVEBOTSYSTEMCHANNELID = config.DEVSERVERCHANNELID_TSTRAURUSYS
     else:
         ACTIVEBOTTOKEN = config.RAURUBOT_TOKEN
-        ACTIVEBOTSYSTEMCHANNELID = config.DEVSERVER_RAURUSYSCHANNELID
+        ACTIVEBOTSYSTEMCHANNELID = config.DEVSERVERCHANNELID_RAURUSYS
 
 # Blacklist
 def load_blacklist():
@@ -123,7 +123,34 @@ def slashcheck_banned(interaction):
             return False
     else:
         return True
+
+# Other System functions
+async def respond(context: discord.Object, message: str, file = None, ephemeral: bool = False):
     
+    if type(context) == discord.ext.commands.Context:
+        print('test1')
+        if file:
+            await context.send(message, file=file)
+        else:
+            print('test2')
+            await context.send(message)
+        return
+    
+    elif type(context) == discord.Interaction:
+        if file:
+            await context.response.send_message(message, file=file, ephemeral=ephemeral)
+        else:
+            await context.response.send_message(message, ephemeral=ephemeral)
+        return
+
+def argcleanup(arg: str):
+    arg2 = arg.lower().replace("s ", "")
+    arg2 = arg2.replace(" ", "")
+    if arg2[-1] == 's':
+        arg2 = arg2[:-1]
+
+    return arg2
+
 # Error handling
 async def on_command_error(ctx, error):
     global ERRORLOGGING
