@@ -10,6 +10,13 @@ class GeneralCalls(commands.Cog):
     def __init__(self, bot) -> None:
         self.bot = bot
         super().__init__()
+
+    
+    @app_commands.command(name='help', description='See what commands I have!')
+    @app_commands.check(system.slashcheck_banned)
+    async def generalhelp(self, interaction: discord.Interaction, *, option: str):
+        await General.generalhelp(context=interaction, arg=option)
+
     
     @commands.command(name='tag')
     @commands.guild_only()
@@ -56,7 +63,6 @@ class GeneralCalls(commands.Cog):
         await General.findpristine(context=ctx, arg=arg)
 
     @app_commands.command(name='findpristine', description='Create an Object Map link that shows all the Depths Ghosts that can spawn a specific weapon')
-    @commands.guild_only()
     @app_commands.check(system.slashcheck_banned)
     async def findpristineslash(self, interaction: discord.Interaction, *, weaponname: str):
         await General.findpristine(context=interaction, arg=weaponname)
@@ -69,7 +75,6 @@ class GeneralCalls(commands.Cog):
         await General.finddispenser(context=ctx, arg=arg)
     
     @app_commands.command(name='finddispenser', description='See which Device Dispensers can dispense a specific Zonai Device capsule')
-    @commands.guild_only()
     @app_commands.check(system.slashcheck_banned)
     async def finddispenserslash(self, interaction: discord.Interaction, *, device: str):
         await General.finddispenser(context=interaction, arg=device)

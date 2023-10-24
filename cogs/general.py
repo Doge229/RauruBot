@@ -14,6 +14,32 @@ class General(commands.Cog):
         self.bot = bot
         super().__init__()
 
+    async def generalhelp(context, arg):
+        ANSWER = ''
+        EPHEMERAL = False
+
+        arg = system.argcleanup(arg)
+        
+        match arg:
+            case '':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERAL
+            case '1':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERAL
+            case 'show':
+                ANSWER = messages.HELP_GENERAL
+            case 'show1':
+                ANSWER = messages.HELP_GENERAL
+            case 'showpage1':
+                ANSWER = messages.HELP_GENERAL
+            
+            case _:
+                ANSWER = messages.ERROR_UNKNOWNCMD
+        
+        await system.respond(context, ANSWER, hidden=EPHEMERAL)
+
+
     async def objmaplinkcreator(context, arg):
         ANSWER = ''
         LAYER = 'Surface'

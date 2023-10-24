@@ -5,6 +5,7 @@ import discord
 from discord.ext import commands
 import system
 import messages
+import config
 
 
 class Tag(commands.Cog):
@@ -28,8 +29,42 @@ class Tag(commands.Cog):
 
             # endregion
 
-            # region Server Stuff
-
+            # region General Server Stuff
+            case 'imageperm':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_IMGPERM
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'imgperm':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_IMGPERM
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'spoiler':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_SPOILERTAG
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'totkexpert':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_EXPERTROLE
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'rule913':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_RULE913
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'piracy':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_RULE913
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'to':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_RULE913
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             # endregion
 
             # region Story Stuff
