@@ -125,22 +125,20 @@ def slashcheck_banned(interaction):
         return True
 
 # Other System functions
-async def respond(context: discord.Object, message: str, file = None, ephemeral: bool = False):
+async def respond(context: discord.Object, message: str, image = None, hidden: bool = False):
     
     if type(context) == discord.ext.commands.Context:
-        print('test1')
-        if file:
-            await context.send(message, file=file)
+        if image:
+            await context.send(message, file=image)
         else:
-            print('test2')
             await context.send(message)
         return
     
     elif type(context) == discord.Interaction:
-        if file:
-            await context.response.send_message(message, file=file, ephemeral=ephemeral)
+        if image:
+            await context.response.send_message(message, file=image, ephemeral=hidden)
         else:
-            await context.response.send_message(message, ephemeral=ephemeral)
+            await context.response.send_message(message, ephemeral=hidden)
         return
 
 def argcleanup(arg: str):

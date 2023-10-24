@@ -24,6 +24,8 @@ Refactor
 -rework help messages after commands
 -single function for both message and slash commands
 - arg cleanup method
+-from file import method for stuffs
+-combine check_ with slashcheck_
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w
