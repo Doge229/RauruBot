@@ -14,78 +14,16 @@ ERROR_BADROLE = '''My apologies, but you lack the appropriate role for this comm
 ERROR_BADCOORDS = '''My apologies, but I cannot convert those coordinates.'''
 # endregion
 
-HELP_COMMANDS = '''
-Here are some of my commands:
-
-`?tag [argument]`
-    **Command Help**
-    `help [page number], helphere [page number]`
-    -*Note: Page number defaults to the 1st page if not specified*
-    
-    **Server Stuff**
-    `botinfo, userauru, imgperms, spoiler, totkexpert, piracy/tos`
-    **Story Stuff**
-    `ringruins, postgame, permaquests, trueend, elitepics, josha`
-    **Farming Stuff**
-    `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, earlyrupees`
-    **Durability**
-    `octorok, repairlegendary, legendarylist, fusedurability, pristine`
-    **Mechanics and Hints**
-    `mastersword, cherry/cherrytrees, bargainer/bargainerstatues, amiiborespawnalt/duskbow/whitesword`
-    `botwdata, coordsystem, depthsmirror, deviceshop, ritofabric, hornedstatue, mat253/sunpumpkin`
-    `elementdmg, missablelocations, midairwing, truedmg, botwarmor/missingarmor, moatchasm`
-    `control5/jumpslash, breakitdown/pelison, gleeokstrat, dugby`
-    **Effects and Builds**
-    `defense, bestarmor, moisture, weatherattack, gloomattackresist, slipresist, attackstacking, boneprof`
-    `backscratcher, lynelfragile, dmgcalc`
-    **Reference Info**
-    `tracker, maps, objectmap, echodatasheet, phildatasheet, worldexp, templescaling, sagelevel, objectterms`
-    `beedletrades, cooking, hoverbike, mapcompletion, recipecalc, armorcalc, amiibodrops, glitchsheet`
-    `hoverbike4.0, cookcalc, constructfarm, shrinefinder, transferpics, levelcards, objectsheet`
-    `dondon, arrowfarm`
-    **Meta Info**
-    `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck, betterpics, whereDLC`
-    **Reference Images**
-    `horseupgrades, ascendmap, cherrymap, dmgformula, invupgrades, shrinecounts, miskobanner`
-    `armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals`
-    `zonaitotals, dragontotals`
-    
-`Page 1 of 2`
-'''
-HELP_COMMANDS2 = '''
-Here are some of my commands:
-
-`?createobjlink [search terms]`, `?find [search terms]`
-    -You can use this command to create an Object Map link with search terms integrated into it. Just put the exact text (including spaces and punctuation) after the command.
-
-`?coordconvert [Object Map coordinates]`
-    -You can use this command to convert the coordinate of an object from the Object Map into its shown in-game coordinates.
-    -Just copy the coordinates of the object's position directly from the Object Map, then paste it after `?coordconvert `.
-    
-    For Example:
-    `?coordconvert -579.73, 129.61, -524.79` will give you the in-game coords: `-580, -525, 25`
-
-`?findpristine [weapon name]`
-    -You can use this command to create an Object Map link that will show which Depths Ghosts can spawn a weapon.
-
-`?finddispenser [device name]`, `?dispenser [device name]`
-    -You can use this command to see which Device Dispensers are most likely to dispense a specific Zonai Device.
-
-`Page 2 of 2`
-'''
-
 HELP_GENERAL = '''
 Here are some of my commands:
 
 `/help [option]`
     `[page number]`, `show [page number]`
     -See what commands I have available
+    -*Note: Page number defaults to the 1st page if not specified*
 
 `/tag help`
     -See what options I have for `/tag`
-
-`/info help`
-    -See what options I have for `/info`
 
 `/find [search terms]`
     -You can use this command to create an Object Map link with search terms integrated into it. Just put the exact text (including spaces and punctuation) for your search terms after the command.
@@ -104,51 +42,47 @@ Here are some of my commands:
     -You can use this command to see which Device Dispensers are most likely to dispense a specific Zonai Device.
 '''
 
-HELP_TAG = '''
-Here are my options for `/tag`:
+HELP_TAGBASE = '''
+Here are the options for my `tag` command:
 
-`/tag [option]`
+`/tag [argument]`
     **Command Help**
-    `help [page number], showhelp [page number]`
+    `help [page number], help show [page number]`
     -*Note: Page number defaults to the 1st page if not specified*
-    
+'''
+
+HELP_GENSERVERTAGS = '''
+    **Server Stuff**
+    `imgperms, spoiler, totkexpert, piracy/tos`
+'''
+
+HELP_TAG1 = '''
     **Story Stuff**
-    `ringruins, postgame, permaquests, trueend, elitepics, josha`
+    `postgame, permaquests, elitepics, ringruins, josha, trueend`
     **Farming Stuff**
     `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, earlyrupees`
-    **Durability**
-    `octorok, repairlegendary, legendarylist, fusedurability, pristine`
+    **Equipment Info**
+    `octorok, repairlegendary, legendarylist, fusedurability, pristineweapons, mastersword, truedmg`
+    `amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor, breakitdown/pelison`
     **Mechanics and Hints**
-    `mastersword, cherry/cherrytrees, bargainer/bargainerstatues, amiiborespawnalt/duskbow/whitesword`
-    `botwdata, coordsystem, depthsmirror, deviceshop, ritofabric, hornedstatue, mat253/sunpumpkin`
-    `elementdmg, missablelocations, midairwing, truedmg, botwarmor/missingarmor, moatchasm`
-    `control5/jumpslash, breakitdown/pelison, gleeokstrat, dugby`
+    `cherry/cherrytrees, bargainer/bargainerstatues, botwdata, coordsystem, depthsmirror, deviceshop`
+    `ritofabric, hornedstatue, mat253/sunpumpkin, elementdmg, missablelocations, midairwing, moatchasm`
+    `control5/jumpslash, gleeokstrat, dugby, miskobanner`
     **Effects and Builds**
     `defense, bestarmor, moisture, weatherattack, gloomattackresist, slipresist, attackstacking, boneprof`
     `backscratcher, lynelfragile, dmgcalc`
-    **Reference Info**
-    `tracker, maps, objectmap, echodatasheet, phildatasheet, worldexp, templescaling, sagelevel, objectterms`
-    `beedletrades, cooking, hoverbike, mapcompletion, recipecalc, armorcalc, amiibodrops, glitchsheet`
-    `hoverbike4.0, cookcalc, constructfarm, shrinefinder, transferpics, levelcards, objectsheet`
+    **Useful Links and Stuff**
+    `tracker, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, worldexp, templescaling`
+    `sagelevel, beedletrades, cooking, hoverbike, hoverbike4.0, mapcompletion, recipecalc, armorcalc`
+    `amiibodrops, glitchsheet, cookcalc, constructfarm, shrinefinder, transferpics, levelcards, objectsheet`
     `dondon, arrowfarm`
     **Meta Info**
-    `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck, betterpics`
-    `whereDLC`
+    `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck`
+    `betterpics, whereDLC`
     **Reference Images**
-    `horseupgrades, ascendmap, cherrymap, dmgformula, invupgrades, shrinecounts, miskobanner`
+    `horseupgrades, ascendmap, cherryymap, dmgformula, invupgrades, shrinecounts`
     `armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals`
     `zonaitotals, dragontotals`
-'''
-HELP_INFO_GENERALSERVER = '''
-Here are my options for `/info`:
-
-`/info [option]`
-    **Command Help**
-    `help [page number], showhelp [page number]`
-    -*Note: Page number defaults to the 1st page if not specified*
-
-    **Server Stuff**
-    `userauru, imgperms, spoiler, totkexpert, piracy/tos`
 '''
 
 HELP_NOTIFY = '''Sending you a list of my commands'''

@@ -16,17 +16,64 @@ class Tag(commands.Cog):
     async def tag(context, arg):
         ANSWER = ''
         IMAGE = None
-
-        EPHERMERAL = False
+        EPHEMERAL = False
 
         arg = system.argcleanup(arg)
 
         match arg:
             case 'botinfo':
                 ANSWER = messages.INFO_RAURUBOT
+            case 'userauru':
+                ANSWER = messages.INFO_RAURUBOT
 
-            # region Help Stuff
+            # region General Help Stuff
+            case 'helpgeneral':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERAL
+            case 'helpgeneral1':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERAL
+            case 'helpgeneralshow':
+                ANSWER = messages.HELP_GENERAL
+            case 'helpgeneralshow1':
+                ANSWER = messages.HELP_GENERAL
+            # endregion
 
+            # region Tag Help Stuff
+            case 'help':
+                EPHEMERAL = True
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                else:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+            case 'help1':
+                EPHEMERAL = True
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                else:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+            case 'helppage1':
+                EPHEMERAL = True
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                else:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+            case 'helpshow':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                else:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+            case 'helpshow1':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                else:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+            case 'helpshowpage1':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                else:
+                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+                
             # endregion
 
             # region General Server Stuff
@@ -156,6 +203,8 @@ class Tag(commands.Cog):
             case 'ritofabric':
                 ANSWER = messages.INFO_RITOFABRIC
             case 'hornedstatue':
+                ANSWER = messages.INFO_HORNEDSTATUE
+            case 'hornedone':
                 ANSWER = messages.INFO_HORNEDSTATUE
             case 'mat253':
                 ANSWER = messages.INFO_SUNPUMPKIN
@@ -409,7 +458,7 @@ class Tag(commands.Cog):
             case _:
                 ANSWER = messages.ERROR_UNKNOWNCMD
 
-        await system.respond(context, ANSWER, image=IMAGE, hidden=EPHERMERAL)
+        await system.respond(context, ANSWER, image=IMAGE, hidden=EPHEMERAL)
 
 async def setup(bot):
     await bot.add_cog(Tag(bot))

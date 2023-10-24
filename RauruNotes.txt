@@ -8,6 +8,7 @@ Large Scale
 -replace sending messages so that message ID is saved
 -reminder
 -make cogs and module load/reload look nice
+-lock channels that bot can't access for slash commands
 
 Refactor
 - replace ctx.send and response.send_message
@@ -21,8 +22,8 @@ Refactor
 -rework blacklist and make it server-specific
 - look through and reword messages.py
 - rename messages in messages.py
--rework help messages after commands
--single function for both message and slash commands
+- rework help messages after commands
+- single function for both message and slash commands
 - arg cleanup method
 -from file import method for stuffs
 -combine check_ with slashcheck_

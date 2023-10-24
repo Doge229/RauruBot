@@ -128,11 +128,32 @@ def slashcheck_banned(interaction):
 async def respond(context: discord.Object, message: str, image = None, hidden: bool = False):
     
     if type(context) == discord.ext.commands.Context:
-        if image:
-            await context.send(message, file=image)
+        if hidden:
+            USER = context.author
+            if image:
+                try:
+                    await USER.send(message, file=image)
+                    NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
+                    await context.reply(NOTIFY)
+                except:
+                    NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
+                    await context.reply(NOTIFY)
+            else:
+                try:
+                    await USER.send(message)
+                    NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
+                    await context.reply(NOTIFY)
+                except:
+                    NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
+                    await context.reply(NOTIFY)
+            return
+
         else:
-            await context.send(message)
-        return
+            if image:
+                await context.send(message, file=image)
+            else:
+                await context.send(message)
+            return
     
     elif type(context) == discord.Interaction:
         if image:
