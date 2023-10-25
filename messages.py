@@ -96,13 +96,13 @@ Here's how to use my blacklist command:
 `@Rauru#6248 blacklist show`
     -Shows the currently blacklisted users and the reasons they were blacklisted
 
-`@Rauru#6248 blacklist add <userid> <reason(optional)>`
+`@Rauru#6248 blacklist add [userid] [reason(optional)]`
     -Adds a user to the blacklist. Add information after the userid to save the reason they were blacklisted, or other info.
 
-`@Rauru#6248 blacklist remove <userid>`
+`@Rauru#6248 blacklist remove [userid]`
     -Remove a user from the blacklist
 
-`@Rauru#6248 blacklist update <userid> <reason(optional)>`
+`@Rauru#6248 blacklist update [userid] [reason(optional)]`
     -Update a user's blacklist reason/info
 '''
 
