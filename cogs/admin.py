@@ -1,8 +1,9 @@
 # admin.py
+
 from discord.ext import commands
 import system
 import messages
-import config
+
 
 class Admin(commands.Cog):
     def __init__(self, bot) -> None:

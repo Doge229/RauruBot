@@ -1,4 +1,5 @@
 # dev.py
+
 import discord
 from discord.ext import commands
 from discord.ext.commands import Greedy
@@ -10,6 +11,7 @@ import config
 
 LASTMESSAGEID = None
 SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
+
 
 class Dev(commands.Cog):
     def __init__(self, bot) -> None:

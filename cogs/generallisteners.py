@@ -1,4 +1,5 @@
 # generalcalls.py
+
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -6,7 +7,8 @@ import system
 from .general import General
 from .tag import Tag
 
-class GeneralCalls(commands.Cog):
+
+class GeneralListeners(commands.Cog):
     def __init__(self, bot) -> None:
         self.bot = bot
         super().__init__()
@@ -80,4 +82,4 @@ class GeneralCalls(commands.Cog):
         await General.finddispenser(context=interaction, arg=device)
 
 async def setup(bot):
-    await bot.add_cog(GeneralCalls(bot))
+    await bot.add_cog(GeneralListeners(bot))

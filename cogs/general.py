@@ -2,8 +2,6 @@
 
 import discord
 from discord.ext import commands
-from discord import app_commands
-from discord.ext.commands import Greedy
 import system
 import messages
 import random
