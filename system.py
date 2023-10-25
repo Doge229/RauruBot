@@ -72,57 +72,83 @@ def console_base(logtype):
     return f'[{datetime.datetime.now()}] [{logtype}] '
 
 # Checks
-def check_admin(ctx, frombanned = False):
-    if ctx.guild:
-        for roleid in config.ADMINROLES:
-            if discord.utils.get(ctx.guild.roles, id=roleid) in ctx.author.roles:
-                return True
-        
-        if ctx.author.id in config.BOT_AUTHADMINS:
-            return True
-        else:
-            if not frombanned:
-                print(console_base('System') + f'{ctx.author} was blocked from using command: {ctx.message.content}; by: {inspect.currentframe().f_code.co_name}')
-                return False
-            return False
-    else:
-        return False
-    
-def check_banned(ctx):
-    if not check_admin(ctx, True):
-        if not str(ctx.author.id) in DICT_BLACKLIST:
-            return True
-        else:
-            print(console_base('System') + f'{ctx.author} was blocked from using command: {ctx.message.content}; by: {inspect.currentframe().f_code.co_name}')
-            return False
-    else:
-        return True
+def check_admin(context, frombanned = False):
+    if type(context) == discord.ext.commands.Context:
+        if context.guild:
+            for roleid in config.ADMINROLES:
+                if discord.utils.get(context.guild.roles, id=roleid) in context.author.roles:
+                    return True
 
-def slashcheck_admin(interaction, frombanned = False):
-    if interaction.guild:
-        for roleid in config.ADMINROLES:
-            if discord.utils.get(interaction.guild.roles, id=roleid) in interaction.user.roles:
+            if context.author.id in config.BOT_AUTHADMINS:
                 return True
-        
-        if interaction.user.id in config.BOT_AUTHADMINS:
-            return True
-        else:
-            if not frombanned:
-                print(console_base('System') + f'{interaction.user} was blocked from using command: {interaction.command.name}; by: {inspect.currentframe().f_code.co_name}')
+            else:
+                if not frombanned:
+                    print(console_base('System') + f'{context.author} was blocked from using command: {context.message.content}; by: {inspect.currentframe().f_code.co_name}')
+                    return False
                 return False
-            return False
-    else:
-        return False
-    
-def slashcheck_banned(interaction):
-    if not slashcheck_admin(interaction, True):
-        if not str(interaction.user.id) in DICT_BLACKLIST:
-            return True
         else:
-            print(console_base('System') + f'{interaction.user} was blocked from using command: {interaction.command.name}; by: {inspect.currentframe().f_code.co_name}')
             return False
-    else:
-        return True
+
+    elif type(context) == discord.Interaction:
+        if context.guild:
+            for roleid in config.ADMINROLES:
+                if discord.utils.get(context.guild.roles, id=roleid) in context.user.roles:
+                    return True
+
+            if context.user.id in config.BOT_AUTHADMINS:
+                return True
+            else:
+                if not frombanned:
+                    print(console_base('System') + f'{context.user} was blocked from using command: {context.command.name}; by: {inspect.currentframe().f_code.co_name}')
+                    return False
+                return False
+        else:
+            return False
+
+def check_banned(context):
+    if type(context) == discord.ext.commands.Context:
+        if not check_admin(context, True):
+            if not str(context.author.id) in DICT_BLACKLIST:
+                return True
+            else:
+                print(console_base('System') + f'{context.author} was blocked from using command: {context.message.content}; by: {inspect.currentframe().f_code.co_name}')
+                return False
+        else:
+            return True
+    
+    elif type(context) == discord.Interaction:
+        if not check_admin(context, True):
+            if not str(context.user.id) in DICT_BLACKLIST:
+                return True
+            else:
+                print(console_base('System') + f'{context.user} was blocked from using command: {context.command.name}; by: {inspect.currentframe().f_code.co_name}')
+                return False
+        else:
+            return True
+
+# Error handling
+async def on_command_error(ctx, error):
+    global ERRORLOGGING
+    if isinstance(error, commands.NoPrivateMessage):
+        await ctx.send(messages.ERROR_NODM)
+    elif isinstance(error, commands.errors.CheckFailure):
+        await ctx.send(messages.ERROR_BADROLE)
+    elif isinstance(error, commands.MissingRequiredArgument):
+        if str(ctx.command) == 'blacklist':
+            await ctx.send(messages.ERROR_BLACKLIST)
+        else:
+            await ctx.send(messages.ERROR_UNKNOWNCMD)
+        
+    elif ERRORLOGGING == True:
+            print(error)
+
+async def on_app_command_error(interaction, error):
+    global ERRORLOGGING
+    if isinstance(error, app_commands.CheckFailure):
+        await interaction.response.send_message(messages.ERROR_BADROLE)
+        
+    elif ERRORLOGGING == True:
+        print(error)
 
 # Other System functions
 async def respond(context: discord.Object, message: str, image = None, hidden: bool = False):
@@ -169,28 +195,3 @@ def argcleanup(arg: str):
         arg2 = arg2[:-1]
 
     return arg2
-
-# Error handling
-async def on_command_error(ctx, error):
-    global ERRORLOGGING
-    if isinstance(error, commands.NoPrivateMessage):
-        await ctx.send(messages.ERROR_NODM)
-    elif isinstance(error, commands.errors.CheckFailure):
-        await ctx.send(messages.ERROR_BADROLE)
-    elif isinstance(error, commands.MissingRequiredArgument):
-        if str(ctx.command) == 'blacklist':
-            await ctx.send(messages.ERROR_BLACKLIST)
-        else:
-            await ctx.send(messages.ERROR_UNKNOWNCMD)
-        
-    elif ERRORLOGGING == True:
-            print(error)
-
-async def on_app_command_error(interaction, error):
-    global ERRORLOGGING
-    if isinstance(error, app_commands.CheckFailure):
-        await interaction.response.send_message(messages.ERROR_BADROLE)
-        
-    elif ERRORLOGGING == True:
-        print(error)
-

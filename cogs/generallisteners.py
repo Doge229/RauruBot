@@ -13,7 +13,7 @@ class GeneralCalls(commands.Cog):
 
     
     @app_commands.command(name='help', description='See what commands I have!')
-    @app_commands.check(system.slashcheck_banned)
+    @app_commands.check(system.check_banned)
     async def generalhelp(self, interaction: discord.Interaction, *, option: str):
         await General.generalhelp(context=interaction, arg=option)
 
@@ -25,7 +25,7 @@ class GeneralCalls(commands.Cog):
         await Tag.tag(context=ctx, arg=arg)
     
     @app_commands.command(name='tag', description='This is my main command for information! Try using /tag help!')
-    @app_commands.check(system.slashcheck_banned)
+    @app_commands.check(system.check_banned)
     async def tagslash(self, interaction: discord.Interaction, *, option: str):
         await Tag.tag(context=interaction, arg=option)
 
@@ -38,7 +38,7 @@ class GeneralCalls(commands.Cog):
 
     @app_commands.command(name='find', description='Create an Object Map link with your search terms integrated into it')
     @commands.guild_only()
-    @app_commands.check(system.slashcheck_banned)
+    @app_commands.check(system.check_banned)
     async def objmaplinkcreatorslash(self, interaction: discord.Interaction, *, searchterms: str):
         await General.objmaplinkcreator(context=interaction, arg=searchterms)
 
@@ -51,7 +51,7 @@ class GeneralCalls(commands.Cog):
     
     @app_commands.command(name='coordconvert', description='Copy the coordinates of an object on the Object Map here to convert them to in-game coords.')
     @commands.guild_only()
-    @app_commands.check(system.slashcheck_banned)
+    @app_commands.check(system.check_banned)
     async def coordconverterslash(self, interaction: discord.Interaction, *, coordinates: str):
         await General.coordconverter(context=interaction, arg=coordinates)
 
@@ -63,7 +63,7 @@ class GeneralCalls(commands.Cog):
         await General.findpristine(context=ctx, arg=arg)
 
     @app_commands.command(name='findpristine', description='Create an Object Map link that shows all the Depths Ghosts that can spawn a specific weapon')
-    @app_commands.check(system.slashcheck_banned)
+    @app_commands.check(system.check_banned)
     async def findpristineslash(self, interaction: discord.Interaction, *, weaponname: str):
         await General.findpristine(context=interaction, arg=weaponname)
 
@@ -75,7 +75,7 @@ class GeneralCalls(commands.Cog):
         await General.finddispenser(context=ctx, arg=arg)
     
     @app_commands.command(name='finddispenser', description='See which Device Dispensers can dispense a specific Zonai Device capsule')
-    @app_commands.check(system.slashcheck_banned)
+    @app_commands.check(system.check_banned)
     async def finddispenserslash(self, interaction: discord.Interaction, *, device: str):
         await General.finddispenser(context=interaction, arg=device)
 
