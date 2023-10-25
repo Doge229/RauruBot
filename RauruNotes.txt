@@ -30,25 +30,24 @@ Refactor
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w
--explevelsandroles
+-explevelsandroles with image
 -greatfairy
--cherry24minutes
--gleeokstrat heads
--dev only dm invites
--totals counters quest and char prof
--transferpicsandvids also USB https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable
--update DM error
+- cherry24minutes
+- gleeokstrat heads
+- totals counters quest and char prof
+- transferpicsandvids also USB https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable
+- update DM error
 -direct img link
 -credit-ish info on load
--all the cherrytrees in totk
--tagdefense enemy's base attack damage
--objmap terms
--combine botinfo and userauru
+- all the cherrytrees in totk
+- tagdefense enemy's base attack damage
+- objmap terms
+- combine botinfo and userauru
 -help in bot activity
 -trilbyvalley
--flux constructs blood moon
+- flux constructs blood moon
 -profile pic cycling
--findpristine Npc_MinusFieldGhost_000
+- findpristine Npc_MinusFieldGhost_000
 -shield Fuse mechanics
 
 Stuff to Make

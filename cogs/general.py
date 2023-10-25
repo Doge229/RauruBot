@@ -90,7 +90,7 @@ class General(commands.Cog):
         TERMS = TERMS.replace("'", "%20")
         TERMS = TERMS.replace("-", "%20")
 
-        LINK = messages.COMMAND_OBJMAPBASELINK +'Depths?q=minusfieldghost%20' + TERMS
+        LINK = messages.COMMAND_OBJMAPBASELINK +'Depths?q=%22Npc_MinusFieldGhost_000%22%20' + TERMS
         ANSWER = messages.COMMAND_FINDPRISTINE1 + '`' + arg + '`:\n' + LINK
 
         await system.respond(context, ANSWER)

@@ -74,7 +74,7 @@ HELP_TAG1 = '''
     **Useful Links and Stuff**
     `tracker, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, worldexp, templescaling`
     `sagelevel, beedletrades, cooking, hoverbike, hoverbike4.0, mapcompletion, recipecalc, armorcalc`
-    `amiibodrops, glitchsheet, cookcalc, constructfarm, shrinefinder, transferpics, levelcards, objectsheet`
+    `amiibodrops, glitchsheet, cookcalc, constructfarm, shrinefinder, transferalbum, levelcards, objectsheet`
     `dondon, arrowfarm`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck`
@@ -87,7 +87,7 @@ HELP_TAG1 = '''
 
 HELP_NOTIFY = '''Sending you a list of my commands'''
 HELP_NOTIFYERROR1 = '''My apologies'''
-HELP_NOTIFYERROR2 = ''', but I can't send you a list of my commands. Please try using `?tag showhelp` in a bot channel.'''
+HELP_NOTIFYERROR2 = ''', but I can't send you a list of my commands. Please try using `/tag help show` in a bot channel.'''
 
 HELP_BLACKLIST = '''
 Here's how to use my blacklist command: 
@@ -324,8 +324,8 @@ You can break down most Fused weapons and shields into their base equipment and 
 '''
 INFO_GLEEOKSTRAT = '''
 The trick to taking down a Gleeok is to use Eyeball arrows while avoiding its attacks or staying behind cover. Multi-shot bows are strongly recommended for this.
-Flame Gleeoks take 2x damage from ice attacks and 1.5x damage from water attacks.
-Frost Gleeoks take 2x damage from fire attacks.
+Flame Gleeok heads take 2x damage from ice attacks and 1.5x damage from water attacks.
+Frost Gleeok heads take 2x damage from fire attacks.
 '''
 INFO_DUGBY = '''
 Dugby's first quest is "The Ancient City Gorondia!", and has no pre-requisites in order to unlock. Dugby can be found at `1744, 2585, 427` for this quest.
@@ -500,7 +500,7 @@ Here's a link to a website that can help you find what Shrines and Lightroots yo
 <https://www.haokepeng.com/zelda>
 If you are having trouble using this site, please feel free to head to <#753016129328250964> and post screenshots of your maps so someone can help you find what you're missing.
 '''
-POINT_TRANSFERSCREENSHOTS = '''
+POINT_TRANSFERALBUM = '''
 Here are some links to guides on how to transfer screenshots and clips from your Switch:
 Transfer to your smartphone with a QR code:
 <https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>

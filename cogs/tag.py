@@ -290,6 +290,12 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_OBJECTMAP
             case 'objectterm':
                 ANSWER = messages.INFO_USEFULOBJECTTERMS
+            case 'objterm':
+                ANSWER = messages.INFO_USEFULOBJECTTERMS
+            case 'objectmapterm':
+                ANSWER = messages.INFO_USEFULOBJECTTERMS
+            case 'objmapterm':
+                ANSWER = messages.INFO_USEFULOBJECTTERMS
             case 'echodatasheet':
                 ANSWER = messages.POINT_DATAECHO
             case 'phildatasheet':
@@ -332,12 +338,14 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_CONSTRUCTHORNFARM
             case 'shrinefinder':
                 ANSWER = messages.POINT_SHRINEFINDER
-            case 'sendscreenshot':
-                ANSWER = messages.POINT_TRANSFERSCREENSHOTS
-            case 'transferscreenshot':
-                ANSWER = messages.POINT_TRANSFERSCREENSHOTS
+            case 'transferalbum':
+                ANSWER = messages.POINT_TRANSFERALBUM
             case 'transferpic':
-                ANSWER = messages.POINT_TRANSFERSCREENSHOTS
+                ANSWER = messages.POINT_TRANSFERALBUM
+            case 'transferclip':
+                ANSWER = messages.POINT_TRANSFERALBUM
+            case 'transfervid':
+                ANSWER = messages.POINT_TRANSFERALBUM
             case 'levelcard':
                 ANSWER = messages.POINT_LEVELCARDS
             case 'lvlcard':
