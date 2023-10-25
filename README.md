@@ -3,6 +3,7 @@
 Developed by Doge229 for use in select Discord servers:
 -RauruBot Devlab
 -Zelda: Tears of the Kingdom
+-TotK Data Collection and Research
 
 DISCLAIMER: RauruBot is not designed for use in unauthorized servers. Any unintended behavior as a result of using him or his code on unauthorized servers is not my responsibility. 
 You are of course welcome to provide feedback or suggestions through the issues tracker.
