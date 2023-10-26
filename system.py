@@ -9,12 +9,14 @@ from discord import app_commands
 import messages
 import config
 import json
+import random
 
 DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR_RESOURCE = os.path.join(DIR_ROOT, 'resources')
 DIR_DATA = os.path.join(DIR_ROOT, 'data.json')
 DIR_BLACKLIST = os.path.join(DIR_ROOT, 'blacklist.json')
 DIR_COGS = os.path.join(DIR_ROOT, 'cogs')
+DIR_ICONS = os.path.join(DIR_ROOT, 'boticons')
 
 DICT_BLACKLIST = {}
 
@@ -154,6 +156,84 @@ async def on_app_command_error(interaction, error):
         print(error)
 
 # Other System functions
+async def setprofilepic(bot, option):
+    IMAGEPATH = ''
+    PRIDEPATH = 'prideicons'
+    IMAGENAME = ''
+    PRIDE = False
+
+    OPTION = argcleanup(option)
+
+    match OPTION:
+        case 'default':
+            if not config.TESTMODE:
+                IMAGENAME = 'rauruicon.jpg'
+            else:
+                IMAGENAME = 'testrauruicon.jpg'
+
+        case 'rauru':
+            IMAGENAME = 'rauruicon.jpg'
+        case 'testrauru':
+            IMAGENAME = 'testrauruicon.jpg'
+        
+        case 'funny':
+            IMAGENAME = 'rauruiconfunny.jpg'
+
+        case 'pride':
+            PRIDE = True
+            OPTIONS = os.listdir(os.path.join(DIR_ICONS, PRIDEPATH))
+            CHOICE = random.randint(1, len(OPTIONS))
+
+            IMAGENAME = OPTIONS[CHOICE - 1]
+        
+        case 'prideace':
+            PRIDE = True
+            IMAGENAME = 'rauruacepride.jpg'
+        case 'pridebi':
+            PRIDE = True
+            IMAGENAME = 'raurubisexualpride.jpg'
+        case 'pridegay':
+            PRIDE = True
+            IMAGENAME = 'raurugaypride.jpg'
+        case 'pridegenderfluid':
+            PRIDE = True
+            IMAGENAME = 'raurugenderfluidpride.jpg'
+        case 'pridelesbian':
+            PRIDE = True
+            IMAGENAME = 'raurulesbianpride.jpg'
+        case 'pridenb':
+            PRIDE = True
+            IMAGENAME = 'raurunonbinarypride.jpg'
+        case 'pridepan':
+            PRIDE = True
+            IMAGENAME = 'raurupansexualpride.jpg'
+        case 'pridegeneral':
+            PRIDE = True
+            IMAGENAME = 'raurupride.jpg'
+        case 'pridetrans':
+            PRIDE = True
+            IMAGENAME = 'raurutranspride.jpg'
+
+
+        case _:
+            if not config.TESTMODE:
+                IMAGENAME = 'rauruicon.jpg'
+            else:
+                IMAGENAME = 'testrauruicon.jpg'
+    
+    if PRIDE:
+        IMAGEPATH = os.path.join(DIR_ICONS, PRIDEPATH, IMAGENAME)
+    else:
+        IMAGEPATH = os.path.join(DIR_ICONS, IMAGENAME)
+    
+    with open(IMAGEPATH, 'rb') as image:
+        await bot.user.edit(avatar=image.read())
+    await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} profile picture set to: {IMAGENAME}')
+    print(console_base('System') + f'{bot.user.name} profile picture set to: {IMAGENAME}')
+
+    return IMAGENAME
+
+
 async def respond(context: discord.Object, message: str, image = None, hidden: bool = False):
     
     if type(context) == discord.ext.commands.Context:

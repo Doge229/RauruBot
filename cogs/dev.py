@@ -92,13 +92,11 @@ class Dev(commands.Cog):
 
     #region Test Commands
     @commands.command(name='msgtest', hidden=True)
-    @commands.guild_only()
     @commands.is_owner()
     async def msgtest(self, ctx):
         await system.respond(ctx, messages.BOT_INFO)
 
     @commands.command(name='commandtest', aliases=['cmdtest'])
-    @commands.guild_only()
     @commands.is_owner()
     async def commandtest(self, ctx):
         async for guild in self.bot.fetch_guilds(limit=150):
@@ -199,8 +197,13 @@ class Dev(commands.Cog):
     #endregion
 
     #region Managment Commands
+    @commands.command(name='profpic')
+    @commands.is_owner()
+    async def profilepic(self, ctx, arg):
+        IMAGENAME = await system.setprofilepic(self.bot, arg)
+        await system.respond(ctx, f'Profile picture set to: {IMAGENAME}')
+
     @commands.command(name='reloadmodule', aliases=['rldmodule'])
-    @commands.guild_only()
     @commands.is_owner()
     async def reloadmodule(self, ctx, arg):
 
@@ -238,7 +241,6 @@ class Dev(commands.Cog):
         await system.respond(ctx, f'Error Logging now set to {system.ERRORLOGGING}')
 
     @commands.command(name='listservers')
-    @commands.guild_only()
     @commands.is_owner()
     async def listservers(self, ctx):
         async for guild in self.bot.fetch_guilds(limit=150):
@@ -246,7 +248,6 @@ class Dev(commands.Cog):
             print(GUILD)
 
     @commands.command(name='leaveunauthserver')
-    @commands.guild_only()
     @commands.is_owner()
     async def leaveunauthservers(self, ctx):
         print('Leaving unauthorized servers....')
