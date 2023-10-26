@@ -45,10 +45,11 @@ Small Scale
 -help in bot activity
 -trilbyvalley
 - flux constructs blood moon
--profile pic cycling
+- profile pic changing
 - findpristine Npc_MinusFieldGhost_000
 -shield Fuse mechanics
 - rework online and offline messages
+-freelynelbows https://www.youtube.com/watch?v=EvkR-10p2t4
 
 Stuff to Make
 - remaster Pristine https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing
