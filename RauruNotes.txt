@@ -8,31 +8,50 @@ Large Scale
 -replace sending messages so that message ID is saved
 -reminder
 -make cogs and module load/reload look nice
+-lock channels that bot can't access for slash commands
+
+Refactor
+- replace ctx.send and response.send_message
+- rework deleting messages
+- rework reload commands
+- take a look at the config
+- rework speak commands
+- listen for server join and setup authorization
+-expand logging and write to file
+- rework blacklist and make it server-specific
+- look through and reword messages.py
+- rename messages in messages.py
+- rework help messages after commands
+- single function for both message and slash commands
+- arg cleanup method
+-from file import method for stuffs
+- combine check_ with slashcheck_
 
 Small Scale
 -all stats https://youtu.be/Ayy-vpqJK_w
--explevelsandroles
+-explevelsandroles with image
 -greatfairy
--cherry24minutes
--gleeokstrat heads
--dev only dm invites
--totals counters quest and char prof
--transferpicsandvids also USB https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable
--update DM error
+- cherry24minutes
+- gleeokstrat heads
+- totals counters quest and char prof
+- transferpicsandvids also USB https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable
+- update DM error
 -direct img link
 -credit-ish info on load
--all the cherrytrees in totk
--tagdefense enemy's base attack damage
--objmap terms
--combine botinfo and userauru
+- all the cherrytrees in totk
+- tagdefense enemy's base attack damage
+- objmap terms
+- combine botinfo and userauru
 -help in bot activity
 -trilbyvalley
--flux constructs blood moon
+- flux constructs blood moon
 -profile pic cycling
--findpristine Npc_MinusFieldGhost_000
+- findpristine Npc_MinusFieldGhost_000
+-shield Fuse mechanics
+- rework online and offline messages
 
 Stuff to Make
--remaster Pristine
+- remaster Pristine https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
 https://discord.com/channels/1111764095826415678/1111764453910917190/1158064435127140452
 -all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686

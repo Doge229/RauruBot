@@ -1,18 +1,44 @@
 # general.py
+
+import discord
 from discord.ext import commands
 import system
 import messages
 import random
 
+
 class General(commands.Cog):
     def __init__(self, bot) -> None:
         self.bot = bot
         super().__init__()
-    
-    @commands.command(name='createobjlink', aliases=['createobjectlink', 'find'])
-    @commands.guild_only()
-    @commands.check(system.check_banned)
-    async def objmaplinkcreator(self, ctx, *, arg):
+
+    async def generalhelp(context, arg):
+        ANSWER = ''
+        EPHEMERAL = False
+
+        arg = system.argcleanup(arg)
+        
+        match arg:
+            case '':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERAL
+            case '1':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERAL
+            case 'show':
+                ANSWER = messages.HELP_GENERAL
+            case 'show1':
+                ANSWER = messages.HELP_GENERAL
+            case 'showpage1':
+                ANSWER = messages.HELP_GENERAL
+            
+            case _:
+                ANSWER = messages.ERROR_UNKNOWNCMD
+        
+        await system.respond(context, ANSWER, hidden=EPHEMERAL)
+
+
+    async def objmaplinkcreator(context, arg):
         ANSWER = ''
         LAYER = 'Surface'
 
@@ -23,22 +49,17 @@ class General(commands.Cog):
         TERMS = TERMS.replace("'", "%20")
         TERMS = TERMS.replace("-", "%20")
 
-
         if 'sky' in TERMS.lower() and not 'not sky' in arg.lower():
             LAYER = 'Sky'
         elif 'depths' in TERMS.lower() and not 'not depths' in arg.lower():
             LAYER = 'Depths'
 
-
         LINK = messages.COMMAND_OBJMAPBASELINK + LAYER + '?q=' + TERMS
         ANSWER = messages.COMMAND_OBJMAPTERMS + '`' + arg + '`:\n' + LINK + '\n' + messages.COMMAND_OBJMAPNOTE
 
-        await ctx.send(ANSWER)
+        await system.respond(context, ANSWER)
 
-    @commands.command(name='coordconvert')
-    @commands.guild_only()
-    @commands.check(system.check_banned)
-    async def coordconverter(self, ctx, *, arg):
+    async def coordconverter(context, arg):
         ANSWER = ''
 
         try:
@@ -55,12 +76,9 @@ class General(commands.Cog):
         except:
             ANSWER = messages.ERROR_BADCOORDS
 
-        await ctx.send(ANSWER)
+        await system.respond(context, ANSWER)
 
-    @commands.command(name='findpristine')
-    @commands.guild_only()
-    @commands.check(system.check_banned)
-    async def findpristine (self, ctx, *, arg):
+    async def findpristine(context, arg):
         ANSWER = ''
 
         TERMS = arg
@@ -70,24 +88,18 @@ class General(commands.Cog):
         TERMS = TERMS.replace("'", "%20")
         TERMS = TERMS.replace("-", "%20")
 
-        LINK = messages.COMMAND_OBJMAPBASELINK +'Depths?q=minusfieldghost%20' + TERMS
+        LINK = messages.COMMAND_OBJMAPBASELINK +'Depths?q=%22Npc_MinusFieldGhost_000%22%20' + TERMS
         ANSWER = messages.COMMAND_FINDPRISTINE1 + '`' + arg + '`:\n' + LINK
 
-        await ctx.send(ANSWER)
+        await system.respond(context, ANSWER)
 
-    @commands.command(name='finddispenser', aliases=['dispenser'])
-    @commands.guild_only()
-    @commands.check(system.check_banned)
-    async def finddispenser(self, ctx, *, arg):
+    async def finddispenser(context, arg):
         ANSWER = ''
         DISPENSERS = ''
         VALID = True
-
         TERM = arg
-        arg = arg.lower().replace("s ", "")
-        arg = arg.replace(" ", "")
-        if arg[-1] == 's':
-            arg = arg[:-1]
+
+        arg = system.argcleanup(arg)
 
         match arg:
             case 'fan':
@@ -99,7 +111,7 @@ class General(commands.Cog):
             case 'balloon':
                 DISPENSERS = messages.DISP_BALLOON
             case 'rocket':
-                DISPENSERS = messages.DISP_ROCKET
+               DISPENSERS = messages.DISP_ROCKET
             case 'timebomb':
                 DISPENSERS = messages.DISP_TIMEBOMB
             case 'portablepot':
@@ -145,7 +157,6 @@ class General(commands.Cog):
                 DISPENSERS = messages.DISP_HOMINGCART
             case 'constructhead':
                 DISPENSERS = messages.DISP_CONSTRUCTHEAD
-
             case _:
                 VALID = False
                 ANSWER = messages.ERROR_UNKNOWNCMD
@@ -153,16 +164,13 @@ class General(commands.Cog):
         if VALID:
             ANSWER = messages.DISP_BASE + f'`{TERM}`' + messages.DISP_BASE2 + f'\n' + DISPENSERS
 
-        await ctx.send(ANSWER)
+        await system.respond(context, ANSWER)
 
-    @commands.command(name='hi', aliases=['hello'])
-    @commands.guild_only()
-    @commands.check(system.check_banned)
-    async def hello(self, ctx):
+    async def hello(context):
         ANSWER = ''
-
+    
         CHOICE = random.randint(1, 6)
-
+    
         match CHOICE:
             case 1:
                 ANSWER = messages.COMMAND_HELLO1
@@ -171,13 +179,23 @@ class General(commands.Cog):
             case 3:
                 ANSWER = messages.COMMAND_HELLO3
             case 4:
-                ANSWER = f'{messages.COMMAND_HELLO1[:-1]} <@{ctx.author.id}>!'
+                if type(context) == discord.ext.commands.Context:
+                    ANSWER = f'{messages.COMMAND_HELLO1[:-1]} <@{context.author.id}>!'
+                elif type(context) == discord.Interaction:
+                    ANSWER = f'{messages.COMMAND_HELLO1[:-1]} <@{context.user.id}>!'
             case 5:
-                ANSWER = f'{messages.COMMAND_HELLO2[:-1]} <@{ctx.author.id}>!'
+                if type(context) == discord.ext.commands.Context:
+                    ANSWER = f'{messages.COMMAND_HELLO2[:-1]} <@{context.author.id}>!'
+                elif type(context) == discord.Interaction:
+                    ANSWER = f'{messages.COMMAND_HELLO2[:-1]} <@{context.user.id}>!'
             case 6:
-                ANSWER = f'{messages.COMMAND_HELLO3[:-1]} <@{ctx.author.id}>!'
+                if type(context) == discord.ext.commands.Context:
+                    ANSWER = f'{messages.COMMAND_HELLO3[:-1]} <@{context.author.id}>!'
+                elif type(context) == discord.Interaction:
+                    ANSWER = f'{messages.COMMAND_HELLO3[:-1]} <@{context.user.id}>!'
         
-        await ctx.send(ANSWER)
+        await system.respond(context, ANSWER)
+
 
 async def setup(bot):
     await bot.add_cog(General(bot))

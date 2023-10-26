@@ -1,8 +1,8 @@
 # main.py
+
 import os
 import discord
 from discord.ext import commands
-from discord import app_commands
 import system
 import messages
 import config
@@ -17,21 +17,32 @@ RauruBot = commands.Bot(command_prefix=[f'<@&{USERID_SELF}> ', f'<@{USERID_SELF}
 
 @RauruBot.event
 async def on_ready():
+    system.load_blacklist()
+    await loadextensions()
+
 
     print(system.console_base('System') + f'{RauruBot.user.name} is online')
     print(system.console_base('System') + f'Current File Directory: {system.DIR_ROOT}')
-    
     # Online Message
     try:
         channel = RauruBot.get_channel(system.ACTIVEBOTSYSTEMCHANNELID)
         
-        await channel.send(messages.BOT_ONLINESIMPLE)
+        await system.send(RauruBot, system.ACTIVEBOTSYSTEMCHANNELID, f'{RauruBot.user.name}' + messages.BOT_ONLINESIMPLE)
     except:
         print(system.console_base('Error') + f'Unable to send Online Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
-    
-    system.load_blacklist()
 
-    await loadextensions()
+@RauruBot.event
+async def on_guild_join(guild):
+    if not guild.id in config.AUTHSERVERS:
+        print(system.console_base('System') + f'Detected unauthorized guild: {guild.name}')
+        try:
+            await system.send(RauruBot, guild.system_channel.id, f'Unauthorized server detected!\nLeaving unauthorized server: {guild.name}!')
+        except:
+            print(system.console_base('Error') + f'Unable to send warning message to: {guild.name}')
+        await guild.leave()
+        print(system.console_base('System') + f'Unauthtorized guild left: {guild.name}')
+
+    return
 
 # Error listeners
 @RauruBot.event
@@ -65,13 +76,14 @@ async def reloadcog(ctx, arg):
         ANSWER = 'Unable to reload Cog!'
         print(system.console_base('Error') + f'cogs.{arg} failed to be reloaded by: {ctx.author}')
     
-    await ctx.send(ANSWER)
+    await system.respond(ctx, ANSWER)
 
 @RauruBot.command(name='reloadallcogs', aliases=['rldallcogs'])
 @commands.is_owner()
 async def reloadallcogs(ctx):
     ANSWER = 'Reloaded Cogs: `'
     ANSWER2 = 'Loaded Cogs: `'
+    LOADED = False
 
     for cog in os.listdir(system.DIR_COGS):
         if cog.endswith('.py') == True:
@@ -80,12 +92,14 @@ async def reloadallcogs(ctx):
                 ANSWER += cog + '`, `'
                 print(system.console_base('System') + f'cogs.{cog} reloaded by: {ctx.author}')
             except:
+                LOADED = True
                 await RauruBot.load_extension(f'cogs.{cog[:-3]}')
                 ANSWER2 += cog + '`, `'
                 print(system.console_base('System') + f'cogs.{cog} loaded by: {ctx.author}')
     
-    await ctx.send(ANSWER)
-    await ctx.send(ANSWER2)
+    await system.respond(ctx, ANSWER)
+    if LOADED:
+        await system.respond(ctx, ANSWER2)
 
 
 system.setactivebot()
