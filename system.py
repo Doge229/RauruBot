@@ -9,12 +9,14 @@ from discord import app_commands
 import messages
 import config
 import json
+import random
 
 DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR_RESOURCE = os.path.join(DIR_ROOT, 'resources')
 DIR_DATA = os.path.join(DIR_ROOT, 'data.json')
 DIR_BLACKLIST = os.path.join(DIR_ROOT, 'blacklist.json')
 DIR_COGS = os.path.join(DIR_ROOT, 'cogs')
+DIR_ICONS = os.path.join(DIR_ROOT, 'boticons')
 
 DICT_BLACKLIST = {}
 
@@ -23,12 +25,14 @@ ERRORLOGGING = True
 ACTIVEBOTTOKEN = None
 ACTIVEBOTSYSTEMCHANNELID = None
 
+MESSAGEHISTORY = []
+
 # Setup
 def setactivebot():
     global ACTIVEBOTTOKEN
     global ACTIVEBOTSYSTEMCHANNELID
     if config.TESTMODE:
-        ACTIVEBOTTOKEN = config.TESTBOT_TOKEN
+        ACTIVEBOTTOKEN = config.TESTRAURUBOT_TOKEN
         ACTIVEBOTSYSTEMCHANNELID = config.DEVSERVERCHANNELID_TSTRAURUSYS
     else:
         ACTIVEBOTTOKEN = config.RAURUBOT_TOKEN
@@ -131,14 +135,14 @@ def check_banned(context):
 async def on_command_error(ctx, error):
     global ERRORLOGGING
     if isinstance(error, commands.NoPrivateMessage):
-        await ctx.send(messages.ERROR_NODM)
+        await respond(ctx, messages.ERROR_NODM)
     elif isinstance(error, commands.errors.CheckFailure):
-        await ctx.send(messages.ERROR_BADROLE)
+        await respond(ctx, messages.ERROR_BADROLE)
     elif isinstance(error, commands.MissingRequiredArgument):
         if str(ctx.command) == 'blacklist':
-            await ctx.send(messages.ERROR_BLACKLIST)
+            await respond(ctx, messages.ERROR_BLACKLIST)
         else:
-            await ctx.send(messages.ERROR_UNKNOWNCMD)
+            await respond(ctx, messages.ERROR_UNKNOWNCMD)
         
     elif ERRORLOGGING == True:
             print(error)
@@ -146,12 +150,90 @@ async def on_command_error(ctx, error):
 async def on_app_command_error(interaction, error):
     global ERRORLOGGING
     if isinstance(error, app_commands.CheckFailure):
-        await interaction.response.send_message(messages.ERROR_BADROLE)
+        await respond(interaction, messages.ERROR_BADROLE)
         
     elif ERRORLOGGING == True:
         print(error)
 
 # Other System functions
+async def setprofilepic(bot, option):
+    IMAGEPATH = ''
+    PRIDEPATH = 'prideicons'
+    IMAGENAME = ''
+    PRIDE = False
+
+    OPTION = argcleanup(option)
+
+    match OPTION:
+        case 'default':
+            if not config.TESTMODE:
+                IMAGENAME = 'rauruicon.jpg'
+            else:
+                IMAGENAME = 'testrauruicon.jpg'
+
+        case 'rauru':
+            IMAGENAME = 'rauruicon.jpg'
+        case 'testrauru':
+            IMAGENAME = 'testrauruicon.jpg'
+        
+        case 'funny':
+            IMAGENAME = 'rauruiconfunny.jpg'
+
+        case 'pride':
+            PRIDE = True
+            OPTIONS = os.listdir(os.path.join(DIR_ICONS, PRIDEPATH))
+            CHOICE = random.randint(1, len(OPTIONS))
+
+            IMAGENAME = OPTIONS[CHOICE - 1]
+        
+        case 'prideace':
+            PRIDE = True
+            IMAGENAME = 'rauruacepride.jpg'
+        case 'pridebi':
+            PRIDE = True
+            IMAGENAME = 'raurubisexualpride.jpg'
+        case 'pridegay':
+            PRIDE = True
+            IMAGENAME = 'raurugaypride.jpg'
+        case 'pridegenderfluid':
+            PRIDE = True
+            IMAGENAME = 'raurugenderfluidpride.jpg'
+        case 'pridelesbian':
+            PRIDE = True
+            IMAGENAME = 'raurulesbianpride.jpg'
+        case 'pridenb':
+            PRIDE = True
+            IMAGENAME = 'raurunonbinarypride.jpg'
+        case 'pridepan':
+            PRIDE = True
+            IMAGENAME = 'raurupansexualpride.jpg'
+        case 'pridegeneral':
+            PRIDE = True
+            IMAGENAME = 'raurupride.jpg'
+        case 'pridetrans':
+            PRIDE = True
+            IMAGENAME = 'raurutranspride.jpg'
+
+
+        case _:
+            if not config.TESTMODE:
+                IMAGENAME = 'rauruicon.jpg'
+            else:
+                IMAGENAME = 'testrauruicon.jpg'
+    
+    if PRIDE:
+        IMAGEPATH = os.path.join(DIR_ICONS, PRIDEPATH, IMAGENAME)
+    else:
+        IMAGEPATH = os.path.join(DIR_ICONS, IMAGENAME)
+    
+    with open(IMAGEPATH, 'rb') as image:
+        await bot.user.edit(avatar=image.read())
+    await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} profile picture set to: {IMAGENAME}')
+    print(console_base('System') + f'{bot.user.name} profile picture set to: {IMAGENAME}')
+
+    return IMAGENAME
+
+
 async def respond(context: discord.Object, message: str, image = None, hidden: bool = False):
     
     if type(context) == discord.ext.commands.Context:
@@ -161,33 +243,52 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
                 try:
                     await USER.send(message, file=image)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY)
             else:
                 try:
                     await USER.send(message)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    await context.reply(NOTIFY)
-            return
+                    msg = await context.reply(NOTIFY)
 
         else:
             if image:
-                await context.send(message, file=image)
+                msg = await context.send(message, file=image)
             else:
-                await context.send(message)
-            return
+                msg = await context.send(message)
     
     elif type(context) == discord.Interaction:
         if image:
-            await context.response.send_message(message, file=image, ephemeral=hidden)
+            msg = await context.response.send_message(message, file=image, ephemeral=hidden)
         else:
-            await context.response.send_message(message, ephemeral=hidden)
-        return
+            msg = await context.response.send_message(message, ephemeral=hidden)
+    
+    storemessageid(msg)
+    return msg
+
+async def send(bot, channelid: int, message: str, image = None):
+    channel = bot.get_channel(channelid)
+    if image:
+        msg = await channel.send(message, file=image)
+    else:
+        msg = await channel.send(message)
+    
+    storemessageid(msg)
+    return msg
+
+def storemessageid(message: discord.Message):
+    global MESSAGEHISTORY
+
+    if len(MESSAGEHISTORY) >= 10:
+        MESSAGEHISTORY.pop(0)
+    
+    MESSAGEHISTORY.append([message.channel.id, message.id])
+
 
 def argcleanup(arg: str):
     arg2 = arg.lower().replace("s ", "")

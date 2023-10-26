@@ -1,14 +1,14 @@
 # messages.py
 
 # region System
-BOT_ONLINESIMPLE = '''RauruBot is now online'''
+BOT_ONLINESIMPLE = '''Bot is now online'''
 BOT_ONLINEPERSON = ''''''
-BOT_OFFLINESIMPLE = '''RauruBot is shutting down'''
+BOT_OFFLINESIMPLE = '''Bot is shutting down'''
 BOT_OFFLINEPERSON = '''Now it is up to you, Link...........'''
 
 ERROR_UNKNOWNCMD = '''My apologies, I'm afraid I don't recognize that command. Use `/help` to see available commands.'''
 ERROR_BLACKLIST = '''My apologies, but I'm afraid I don't understand that blacklist command. Use `@Rauru#6248 blacklisthelp` to see how to use the blacklist command.'''
-ERROR_GUILDONLY = '''My apologies, but commands are only available inside servers.'''
+ERROR_GUILDONLY = '''My apologies, but my commands are only available inside servers.'''
 ERROR_BADROLE = '''My apologies, but you lack the appropriate role for this command.'''
 
 ERROR_BADCOORDS = '''My apologies, but I cannot convert those coordinates.'''

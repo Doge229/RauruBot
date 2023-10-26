@@ -1,6 +1,5 @@
 # admin.py
 
-import discord
 from discord.ext import commands
 import system
 import messages
@@ -15,15 +14,13 @@ class Admin(commands.Cog):
     @commands.guild_only()
     @commands.check(system.check_admin)
     async def shutdown(self, ctx):
-    
         try:
-            channel = self.bot.get_channel(system.ACTIVEBOTSYSTEMCHANNELID)
             if not ctx.channel.id == system.ACTIVEBOTSYSTEMCHANNELID:
-                await channel.send(messages.BOT_OFFLINESIMPLE)
+                await system.send(self.bot, system.ACTIVEBOTSYSTEMCHANNELID, f'{self.bot.user.name}' + messages.BOT_OFFLINESIMPLE)
         except:
             print(system.console_base('System') + f'Unable to send Offline Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
 
-        await ctx.send(messages.BOT_OFFLINEPERSON)
+        await system.respond(ctx, messages.BOT_OFFLINEPERSON)
         await self.bot.close()
         print(system.console_base('System') + f'{self.bot.user.name} was shutdown by command from: {ctx.author}')
 

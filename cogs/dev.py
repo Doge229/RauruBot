@@ -8,8 +8,8 @@ import importlib
 import system
 import messages
 import config
+import asyncio
 
-LASTMESSAGEID = None
 SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
 
 
@@ -48,7 +48,7 @@ class Dev(commands.Cog):
                 synced = await tree.sync(guild=ctx.guild)
                 globally = False
             
-            await ctx.send(f"Synced {len(synced)} commands {'globally' if globally else 'to the current guild.'}")
+            await system.respond(ctx, f"Synced {len(synced)} commands {'globally' if globally else 'to the current guild.'}")
             print(system.console_base('System') + f"{len(synced)} commands synced {'globally' if globally else f'to {ctx.guild}.'} by: {ctx.author}")
             return
 
@@ -86,19 +86,17 @@ class Dev(commands.Cog):
                 else:
                     ret += 1
             
-        await ctx.send(f"Synced the tree to {ret}/{len(guilds)} guilds.")
+        await system.respond(ctx, f"Synced the tree to {ret}/{len(guilds)} guilds.")
         print(system.console_base('System') + f"tree synced to {ret}/{len(guilds)} guilds by: {ctx.author}")
         print(guilds)
 
     #region Test Commands
     @commands.command(name='msgtest', hidden=True)
-    @commands.guild_only()
     @commands.is_owner()
     async def msgtest(self, ctx):
-        await ctx.send(messages.BOT_INFO)
+        await system.respond(ctx, messages.BOT_INFO)
 
     @commands.command(name='commandtest', aliases=['cmdtest'])
-    @commands.guild_only()
     @commands.is_owner()
     async def commandtest(self, ctx):
         async for guild in self.bot.fetch_guilds(limit=150):
@@ -109,84 +107,103 @@ class Dev(commands.Cog):
     #region Speak Commands
 
     @commands.command(name='spk', aliases=['speak'])
-    @commands.dm_only()
     @commands.is_owner()
     async def speak(self, ctx, *, arg):
-        global LASTMESSAGEID
-        channel = self.bot.get_channel(SPEAKCHANNELID)
-
-        await ctx.send(f'Speaking in channel: {SPEAKCHANNELID}')
-        msg = await channel.send(arg)
-        LASTMESSAGEID = msg.id
+        await system.send(self.bot, SPEAKCHANNELID, arg)
+        msg = await system.respond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}')
+        if ctx.channel.id == SPEAKCHANNELID:
+            await asyncio.sleep(1)
+            await msg.delete()
 
     @commands.command(name='stspk', aliases=['setspeak'])
-    @commands.dm_only()
     @commands.is_owner()
-    async def setspeak(self, ctx, arg):
+    async def setspeak(self, ctx, channelid):
         global SPEAKCHANNELID
-        SPEAKCHANNELID = int(arg.replace(" ", ""))
-        await ctx.send(f'Speak Channel Set: {SPEAKCHANNELID}')
+        try:
+            channelid = int(channelid.replace(" ", ""))
+            IDUSED = True
+        except:
+            IDUSED = False
 
-    @commands.command(name='stspk2', aliases=['setspeak2'])
-    @commands.dm_only()
-    @commands.is_owner()
-    async def setspeak2(self, ctx, arg):
-        global SPEAKCHANNELID
+        if IDUSED:
+            SPEAKCHANNELID = channelid
+        else:
+            match channelid:
+                case 'totkgen':
+                    SPEAKCHANNELID = config.GENSERVERCHANNELID_TGEN
+                case 'qc':
+                    SPEAKCHANNELID = config.GENSERVERCHANNELID_QC
+                case 'botfun':
+                    SPEAKCHANNELID = config.GENSERVERCHANNELID_BF
 
-        match arg:
-            case 'totkgen':
-                SPEAKCHANNELID = config.GENSERVERCHANNELID_TGEN
-            case 'qc':
-                SPEAKCHANNELID = config.GENSERVERCHANNELID_QC
-            case 'botfun':
-                SPEAKCHANNELID = config.GENSERVERCHANNELID_BF
-
-            case _:
-                SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
-
-        await ctx.send(f'Speak Channel Set: {SPEAKCHANNELID}')
+                case _:
+                    SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
+        msg = await system.respond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}')
+        if ctx.channel.id == SPEAKCHANNELID:
+            await asyncio.sleep(1)
+            await msg.delete()
     #endregion
 
     #region Delete Commands
-    @commands.command(name='deletemessage', aliases=['delmsg'])
+    @commands.command(name='dellast')
     @commands.is_owner()
-    async def deletemessage(self, ctx, arg, arg2):
-
-        channel = self.bot.get_channel(int(arg.replace(" ", "")))
+    async def deletestoredmessage(self, ctx, arg: int = 1):
+        if len(system.MESSAGEHISTORY) == 0:
+            await system.respond(ctx, 'No stored messages to delete!')
         
-        message = await channel.fetch_message(int(arg2.replace(" ", "")))
+        count = arg
+        errors = 0
 
-        await message.delete()
-        print(system.console_base('System') + f'Message was deleted by: {ctx.author}\n\tMessage: {message}')
-    
-    @commands.command(name='deletemessage2', aliases=['delmsg2'])
+        while (count > 0):
+            count -= 1
+            try:
+                msginfo = system.MESSAGEHISTORY.pop()
+                channel = self.bot.get_channel(msginfo[0])
+                message = await channel.fetch_message(msginfo[1])
+
+                await message.delete()
+                print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+            except:
+                print(system.console_base('Error') + f'Failed to delete message!')
+                errors += 1
+
+        print(system.console_base('System') + f'{arg} message(s) deleted by {ctx.author.name}')
+        msg = await system.respond(ctx, f'Deleted the last {arg} message(s). {errors} deletions failed.')
+        await asyncio.sleep(3)
+        await msg.delete()
+
+    @commands.command(name='delmsg')
     @commands.is_owner()
-    async def deletemessage2(self, ctx, arg):
+    async def deletespecificmessage(self, ctx, messageid, channelid = None):
+        messageid = int(messageid.replace(" ", ""))
+        if not channelid:
+            channelid = ctx.channel.id
+        else:
+            channelid = int(channelid.replace(" ", ""))
         
-        message = await ctx.channel.fetch_message(int(arg.replace(" ", "")))
+        try:
+            channel = self.bot.get_channel(channelid)
+            message = await channel.fetch_message(messageid)
 
-        await message.delete()
-        print(system.console_base('System') + f'Message was deleted by: {ctx.author}\n\tMessage: {message}')
-
-    @commands.command(name='deletelastmessage', aliases=['dellast'])
-    @commands.is_owner()
-    async def deletelastmessage(self, ctx):
-        global LASTMESSAGEID
-        if LASTMESSAGEID == None:
-            await ctx.send('Last message not found!')
-            return
-
-        channel = self.bot.get_channel(SPEAKCHANNELID)
-        message = await channel.fetch_message(LASTMESSAGEID)
-
-        await message.delete()
-        print(system.console_base('System') + f'Last message was deleted by: {ctx.author}\n\tMessage: {message}')
-
+            await message.delete()
+            print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+            msg = await system.respond(ctx, f'Deleted message: {messageid}')
+            await asyncio.sleep(3)
+            await msg.delete()
+        except:
+            msg = await system.respond(ctx, f'Unable to delete message: {messageid}')
+            await asyncio.sleep(3)
+            await msg.delete()
     #endregion
 
     #region Managment Commands
+    @commands.command(name='profpic')
+    @commands.is_owner()
+    async def profilepic(self, ctx, arg):
+        IMAGENAME = await system.setprofilepic(self.bot, arg)
+        await system.respond(ctx, f'Profile picture set to: {IMAGENAME}')
+
     @commands.command(name='reloadmodule', aliases=['rldmodule'])
-    @commands.guild_only()
     @commands.is_owner()
     async def reloadmodule(self, ctx, arg):
 
@@ -210,7 +227,7 @@ class Dev(commands.Cog):
             ANSWER = 'Unable to reload Module!'
             print(system.console_base('System') + f'Module: {arg} failed to be reloaded by: {ctx.author}')
 
-        await ctx.send(ANSWER)
+        await system.respond(ctx, ANSWER)
     
     @commands.command(name='toglog')
     @commands.is_owner()
@@ -221,10 +238,9 @@ class Dev(commands.Cog):
             system.ERRORLOGGING = False
 
         print(system.console_base('System') + f'Error Logging was set to: {system.ERRORLOGGING} by: {ctx.author}')
-        await ctx.send(f'Error Logging now set to {system.ERRORLOGGING}')
+        await system.respond(ctx, f'Error Logging now set to {system.ERRORLOGGING}')
 
     @commands.command(name='listservers')
-    @commands.guild_only()
     @commands.is_owner()
     async def listservers(self, ctx):
         async for guild in self.bot.fetch_guilds(limit=150):
@@ -232,7 +248,6 @@ class Dev(commands.Cog):
             print(GUILD)
 
     @commands.command(name='leaveunauthserver')
-    @commands.guild_only()
     @commands.is_owner()
     async def leaveunauthservers(self, ctx):
         print('Leaving unauthorized servers....')

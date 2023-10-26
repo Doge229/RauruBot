@@ -12,12 +12,11 @@ Large Scale
 
 Refactor
 - replace ctx.send and response.send_message
--rework deleting messages
--rework reload commands
+- rework deleting messages
+- rework reload commands
 - take a look at the config
--rework speak commands
--investigate sync more?
--listen for server join and setup authorization
+- rework speak commands
+- listen for server join and setup authorization
 -expand logging and write to file
 - rework blacklist and make it server-specific
 - look through and reword messages.py
@@ -49,8 +48,12 @@ Small Scale
 -profile pic cycling
 - findpristine Npc_MinusFieldGhost_000
 -shield Fuse mechanics
+<<<<<<< HEAD
 -rework online and offline messages
 -details in bargainer
+=======
+- rework online and offline messages
+>>>>>>> 9f91a1876831421551276d8956d8c3d33e38a05d
 
 Stuff to Make
 - remaster Pristine https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing
