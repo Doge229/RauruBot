@@ -14,9 +14,7 @@ class Admin(commands.Cog):
     @commands.guild_only()
     @commands.check(system.check_admin)
     async def shutdown(self, ctx):
-    
         try:
-            channel = self.bot.get_channel(system.ACTIVEBOTSYSTEMCHANNELID)
             if not ctx.channel.id == system.ACTIVEBOTSYSTEMCHANNELID:
                 await system.send(self.bot, system.ACTIVEBOTSYSTEMCHANNELID, f'{self.bot.user.name}' + messages.BOT_OFFLINESIMPLE)
         except:

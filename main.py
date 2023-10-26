@@ -31,6 +31,16 @@ async def on_ready():
     except:
         print(system.console_base('Error') + f'Unable to send Online Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
 
+@RauruBot.event
+async def on_guild_join(guild):
+    if not guild.id in config.AUTHSERVERS:
+        await system.send(RauruBot, guild.system_channel.id, f'Unauthorized server detected!\nLeaving unauthorized server: {guild.name}!')
+        print(system.console_base('System') + f'Detected unauthorized guild: {guild.name}')
+        await guild.leave()
+        print(system.console_base('System') + f'Unauthtorized guild left: {guild.name}')
+
+    return
+
 # Error listeners
 @RauruBot.event
 async def on_command_error(ctx, error):
@@ -70,6 +80,7 @@ async def reloadcog(ctx, arg):
 async def reloadallcogs(ctx):
     ANSWER = 'Reloaded Cogs: `'
     ANSWER2 = 'Loaded Cogs: `'
+    LOADED = False
 
     for cog in os.listdir(system.DIR_COGS):
         if cog.endswith('.py') == True:
@@ -78,12 +89,14 @@ async def reloadallcogs(ctx):
                 ANSWER += cog + '`, `'
                 print(system.console_base('System') + f'cogs.{cog} reloaded by: {ctx.author}')
             except:
+                LOADED = True
                 await RauruBot.load_extension(f'cogs.{cog[:-3]}')
                 ANSWER2 += cog + '`, `'
                 print(system.console_base('System') + f'cogs.{cog} loaded by: {ctx.author}')
     
     await system.respond(ctx, ANSWER)
-    await system.respond(ctx, ANSWER2)
+    if LOADED:
+        await system.respond(ctx, ANSWER2)
 
 
 system.setactivebot()
