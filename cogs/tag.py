@@ -112,6 +112,12 @@ class Tag(commands.Cog):
                     ANSWER = messages.HELP_RULE913
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'rolereward':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_ROLEREWARDS
+                    IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'rolerewards.jpg'))
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             # endregion
 
             # region Story Stuff
@@ -171,6 +177,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_WEAPONSINTACT
             case 'pristineweapon':
                 ANSWER = messages.POINT_WEAPONSINTACT
+            case 'shieldfuse':
+                ANSWER = messages.INFO_SHIELDFUSE
             # endregion
 
             # region Mechanics and Hints
@@ -242,6 +250,12 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_GLEEOKSTRAT
             case 'dugby':
                 ANSWER = messages.INFO_DUGBY
+            case 'trilbyvalley':
+                ANSWER = messages.INFO_TRILBYVALLEY
+            case 'greatfairy':
+                ANSWER = messages.INFO_GREATFAIRYQUEST
+            case 'greatfairie':
+                ANSWER = messages.INFO_GREATFAIRYQUEST
             # endregion
 
             # region Effects and Builds
@@ -356,6 +370,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_DONDON
             case 'arrowfarm':
                 ANSWER = messages.POINT_ARROWFARM
+            case 'freelynelbow':
+                ANSWER = messages.POINT_FREELYNELBOWS
             # endregion
 
             # region Meta Info

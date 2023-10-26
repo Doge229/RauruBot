@@ -53,7 +53,7 @@ Here are the options for my `tag` command:
 
 HELP_GENSERVERTAGS = '''
     **Server Stuff**
-    `imgperms, spoiler, totkexpert, piracy/tos`
+    `imgperms, spoiler, totkexpert, piracy/tos, rolerewards`
 '''
 
 HELP_TAG1 = '''
@@ -63,11 +63,11 @@ HELP_TAG1 = '''
     `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, earlyrupees`
     **Equipment Info**
     `octorok, repairlegendary, legendarylist, fusedurability, pristineweapons, mastersword, truedmg`
-    `amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor, breakitdown/pelison`
+    `amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor, breakitdown/pelison, shieldfuse`
     **Mechanics and Hints**
     `cherry/cherrytrees, bargainer/bargainerstatues, botwdata, coordsystem, depthsmirror, deviceshop`
     `ritofabric, hornedstatue, mat253/sunpumpkin, elementdmg, missablelocations, midairwing, moatchasm`
-    `control5/jumpslash, gleeokstrat, dugby, miskobanner`
+    `control5/jumpslash, gleeokstrat, dugby, miskobanner, trilbyvalley, greatfairy`
     **Effects and Builds**
     `defense, bestarmor, moisture, weatherattack, gloomattackresist, slipresist, attackstacking, boneprof`
     `backscratcher, lynelfragile, dmgcalc`
@@ -75,7 +75,7 @@ HELP_TAG1 = '''
     `tracker, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, worldexp, templescaling`
     `sagelevel, beedletrades, cooking, hoverbike, hoverbike4.0, mapcompletion, recipecalc, armorcalc`
     `amiibodrops, glitchsheet, cookcalc, constructfarm, shrinefinder, transferalbum, levelcards, objectsheet`
-    `dondon, arrowfarm`
+    `dondon, arrowfarm, freelynelbows`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck`
     `betterpics, whereDLC`
@@ -119,10 +119,11 @@ You can spoiler tag images **when attaching** them by clicking the small eye ico
 
 HELP_IMGPERM = '''
 In order to be able to post images or embed other stuff on this server, you will need to reach **Traveler** rank (Level 3) or above. 
-Use `/level` in #bot-fun to view your current level information.
+Use `/level` in <#811092574672388106> to view your current level information.
 '''
 HELP_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help assist and guide members with their gameplay. Although it does not come with any moderation tools, TOTK Expert are given Manage Messages permission so they can pin any important information in any channel.'''
 HELP_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
+INFO_ROLEREWARDS = '''You can earn Arcane experience once per minute by chatting. After earning enough experience, you will level up. At certain level thresholds, Arcane will award you a role. You can use `/level` in <#811092574672388106> to see your current level information. If you are missing a role that you qualify for, feel free to ask for assistance in <#798676709117132810>.'''
 # endregion
 
 # region Story Stuff
@@ -231,6 +232,12 @@ POINT_WEAPONSINTACT = '''
 Here's a link to an explanation of Pristine weapon mechanics in TotK:
 <https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing>
 '''
+INFO_SHIELDFUSE = '''
+Shield Fusions are primarily used for utility. 
+-When Fused to a shield, most objects without special properties will only increase the damage of Link's parry attack. 
+-The only object that increases a shield's guard stat is the Long Lava Slab, which increases it by 1.
+-Shields do not have Bonus Durability, meaning that they do not get any increase in durability when Fused.
+'''
 # endregion
 
 # region Mechanics and Hints
@@ -331,6 +338,10 @@ INFO_DUGBY = '''
 Dugby's first quest is "The Ancient City Gorondia!", and has no pre-requisites in order to unlock. Dugby can be found at `1744, 2585, 427` for this quest.
 
 Dugby's second quest is "The Ancient City Gorondia?", and requires the completion of "Yunobo of Goron City" and at least 30 minutes of unpaused gameplay to have passed since the completion of his first quest. Dugby can be found at `1614, 2399, 397` for this quest.
+'''
+INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
+INFO_GREATFAIRYQUEST = '''
+After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!", you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy".
 '''
 # endregion
 
@@ -524,6 +535,10 @@ Drop Table Sheet: <https://docs.google.com/spreadsheets/d/1bj_1KHBFgr-1tyc1HJIHT
 POINT_ARROWFARM = '''
 Here's a link to a guide on farming arrows in TotK:
 https://youtu.be/wR-6ThhtO5U
+'''
+POINT_FREELYNELBOWS = '''
+Here's a link to a guide on obtaining free Lynel Bows in TotK:
+https://youtu.be/EvkR-10p2t4
 '''
 # endregion
 

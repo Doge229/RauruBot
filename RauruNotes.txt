@@ -28,9 +28,8 @@ Refactor
 - combine check_ with slashcheck_
 
 Small Scale
--all stats https://youtu.be/Ayy-vpqJK_w
--explevelsandroles with image
--greatfairy
+- explevelsandroles with image
+- greatfairy
 - cherry24minutes
 - gleeokstrat heads
 - totals counters quest and char prof
@@ -42,18 +41,18 @@ Small Scale
 - tagdefense enemy's base attack damage
 - objmap terms
 - combine botinfo and userauru
--help in bot activity
--trilbyvalley
+- help in bot activity
+- trilbyvalley
 - flux constructs blood moon
 - profile pic changing
 - findpristine Npc_MinusFieldGhost_000
--shield Fuse mechanics
+- shield Fuse mechanics
 -details in bargainer
 - rework online and offline messages
--freelynelbows https://www.youtube.com/watch?v=EvkR-10p2t4
+- freelynelbows https://www.youtube.com/watch?v=EvkR-10p2t4
 
 Stuff to Make
 - remaster Pristine https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
 https://discord.com/channels/1111764095826415678/1111764453910917190/1158064435127140452
--all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686
+-all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686 https://youtu.be/Ayy-vpqJK_w
