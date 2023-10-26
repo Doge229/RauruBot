@@ -71,6 +71,9 @@ HELP_TAG1 = '''
     **Effects and Builds**
     `defense, bestarmor, moisture, weatherattack, gloomattackresist, slipresist, attackstacking, boneprof`
     `backscratcher, lynelfragile, dmgcalc`
+Page 1 of 2
+'''
+HELP_TAG2 = '''
     **Useful Links and Stuff**
     `tracker, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, worldexp, templescaling`
     `sagelevel, beedletrades, cooking, hoverbike, hoverbike4.0, mapcompletion, recipecalc, armorcalc`
@@ -83,6 +86,7 @@ HELP_TAG1 = '''
     `horseupgrades, ascendmap, cherryymap, dmgformula, invupgrades, shrinecounts`
     `armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals`
     `zonaitotals, dragontotals`
+Page 2 of 2
 '''
 
 HELP_NOTIFY = '''Sending you a list of my commands'''

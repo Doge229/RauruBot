@@ -73,6 +73,16 @@ class Tag(commands.Cog):
                     ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
                 else:
                     ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+            case 'help2':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
+            case 'helppage2':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
+            case 'helpshow2':
+                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
+            case 'helpshowpage2':
+                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
                 
             # endregion
 

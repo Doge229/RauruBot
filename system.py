@@ -264,11 +264,13 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
     
     elif type(context) == discord.Interaction:
         if image:
-            msg = await context.response.send_message(message, file=image, ephemeral=hidden)
+           await context.response.send_message(message, file=image, ephemeral=hidden)
+           msg = await context.original_response()
         else:
-            msg = await context.response.send_message(message, ephemeral=hidden)
-    
-    storemessageid(msg)
+           await context.response.send_message(message, ephemeral=hidden)
+           msg = await context.original_response()
+
+    storemessageid(context.channel.id, msg.id)
     return msg
 
 async def send(bot, channelid: int, message: str, image = None):
@@ -278,16 +280,16 @@ async def send(bot, channelid: int, message: str, image = None):
     else:
         msg = await channel.send(message)
     
-    storemessageid(msg)
+    storemessageid(channelid, msg.id)
     return msg
 
-def storemessageid(message: discord.Message):
+def storemessageid(channelid: int, messageid: int):
     global MESSAGEHISTORY
 
     if len(MESSAGEHISTORY) >= 10:
         MESSAGEHISTORY.pop(0)
     
-    MESSAGEHISTORY.append([message.channel.id, message.id])
+    MESSAGEHISTORY.append([channelid, messageid])
 
 
 def argcleanup(arg: str):
