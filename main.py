@@ -17,21 +17,19 @@ RauruBot = commands.Bot(command_prefix=[f'<@&{USERID_SELF}> ', f'<@{USERID_SELF}
 
 @RauruBot.event
 async def on_ready():
+    system.load_blacklist()
+    await loadextensions()
+
 
     print(system.console_base('System') + f'{RauruBot.user.name} is online')
     print(system.console_base('System') + f'Current File Directory: {system.DIR_ROOT}')
-    
     # Online Message
     try:
         channel = RauruBot.get_channel(system.ACTIVEBOTSYSTEMCHANNELID)
         
-        await channel.send(messages.BOT_ONLINESIMPLE)
+        await channel.send(f'{RauruBot.user.name}' + messages.BOT_ONLINESIMPLE)
     except:
         print(system.console_base('Error') + f'Unable to send Online Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
-    
-    system.load_blacklist()
-
-    await loadextensions()
 
 # Error listeners
 @RauruBot.event

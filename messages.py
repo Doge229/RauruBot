@@ -1,9 +1,9 @@
 # messages.py
 
 # region System
-BOT_ONLINESIMPLE = '''RauruBot is now online'''
+BOT_ONLINESIMPLE = '''Bot is now online'''
 BOT_ONLINEPERSON = ''''''
-BOT_OFFLINESIMPLE = '''RauruBot is shutting down'''
+BOT_OFFLINESIMPLE = '''Bot is shutting down'''
 BOT_OFFLINEPERSON = '''Now it is up to you, Link...........'''
 
 ERROR_UNKNOWNCMD = '''My apologies, I'm afraid I don't recognize that command. Use `/help` to see available commands.'''

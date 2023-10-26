@@ -1,6 +1,5 @@
 # admin.py
 
-import discord
 from discord.ext import commands
 import system
 import messages
@@ -19,7 +18,7 @@ class Admin(commands.Cog):
         try:
             channel = self.bot.get_channel(system.ACTIVEBOTSYSTEMCHANNELID)
             if not ctx.channel.id == system.ACTIVEBOTSYSTEMCHANNELID:
-                await channel.send(messages.BOT_OFFLINESIMPLE)
+                await channel.send(f'{self.bot.user.name}' + messages.BOT_OFFLINESIMPLE)
         except:
             print(system.console_base('System') + f'Unable to send Offline Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
 
