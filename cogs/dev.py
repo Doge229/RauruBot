@@ -109,42 +109,41 @@ class Dev(commands.Cog):
     #region Speak Commands
 
     @commands.command(name='spk', aliases=['speak'])
-    @commands.dm_only()
     @commands.is_owner()
     async def speak(self, ctx, *, arg):
-        global LASTMESSAGEID
-        channel = self.bot.get_channel(SPEAKCHANNELID)
-
-        await ctx.send(f'Speaking in channel: {SPEAKCHANNELID}')
-        msg = await system.send(self.bot, SPEAKCHANNELID, arg)
-        LASTMESSAGEID = msg.id
+        await system.send(self.bot, SPEAKCHANNELID, arg)
+        msg = await system.respond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}')
+        if ctx.channel.id == SPEAKCHANNELID:
+            await asyncio.sleep(1)
+            await msg.delete()
 
     @commands.command(name='stspk', aliases=['setspeak'])
-    @commands.dm_only()
     @commands.is_owner()
-    async def setspeak(self, ctx, arg):
+    async def setspeak(self, ctx, channelid):
         global SPEAKCHANNELID
-        SPEAKCHANNELID = int(arg.replace(" ", ""))
-        await ctx.send(f'Speak Channel Set: {SPEAKCHANNELID}')
+        try:
+            channelid = int(channelid.replace(" ", ""))
+            IDUSED = True
+        except:
+            IDUSED = False
 
-    @commands.command(name='stspk2', aliases=['setspeak2'])
-    @commands.dm_only()
-    @commands.is_owner()
-    async def setspeak2(self, ctx, arg):
-        global SPEAKCHANNELID
+        if IDUSED:
+            SPEAKCHANNELID = channelid
+        else:
+            match channelid:
+                case 'totkgen':
+                    SPEAKCHANNELID = config.GENSERVERCHANNELID_TGEN
+                case 'qc':
+                    SPEAKCHANNELID = config.GENSERVERCHANNELID_QC
+                case 'botfun':
+                    SPEAKCHANNELID = config.GENSERVERCHANNELID_BF
 
-        match arg:
-            case 'totkgen':
-                SPEAKCHANNELID = config.GENSERVERCHANNELID_TGEN
-            case 'qc':
-                SPEAKCHANNELID = config.GENSERVERCHANNELID_QC
-            case 'botfun':
-                SPEAKCHANNELID = config.GENSERVERCHANNELID_BF
-
-            case _:
-                SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
-
-        await ctx.send(f'Speak Channel Set: {SPEAKCHANNELID}')
+                case _:
+                    SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
+        msg = await system.respond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}')
+        if ctx.channel.id == SPEAKCHANNELID:
+            await asyncio.sleep(1)
+            await msg.delete()
     #endregion
 
     #region Delete Commands

@@ -208,7 +208,6 @@ def storemessageid(message: discord.Message):
         MESSAGEHISTORY.pop(0)
     
     MESSAGEHISTORY.append([message.channel.id, message.id])
-    print(MESSAGEHISTORY)
 
 
 def argcleanup(arg: str):
