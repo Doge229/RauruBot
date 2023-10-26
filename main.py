@@ -27,7 +27,7 @@ async def on_ready():
     try:
         channel = RauruBot.get_channel(system.ACTIVEBOTSYSTEMCHANNELID)
         
-        await channel.send(f'{RauruBot.user.name}' + messages.BOT_ONLINESIMPLE)
+        await system.send(RauruBot, system.ACTIVEBOTSYSTEMCHANNELID, f'{RauruBot.user.name}' + messages.BOT_ONLINESIMPLE)
     except:
         print(system.console_base('Error') + f'Unable to send Online Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
 
@@ -63,7 +63,7 @@ async def reloadcog(ctx, arg):
         ANSWER = 'Unable to reload Cog!'
         print(system.console_base('Error') + f'cogs.{arg} failed to be reloaded by: {ctx.author}')
     
-    await ctx.send(ANSWER)
+    await system.respond(ctx, ANSWER)
 
 @RauruBot.command(name='reloadallcogs', aliases=['rldallcogs'])
 @commands.is_owner()
@@ -82,8 +82,8 @@ async def reloadallcogs(ctx):
                 ANSWER2 += cog + '`, `'
                 print(system.console_base('System') + f'cogs.{cog} loaded by: {ctx.author}')
     
-    await ctx.send(ANSWER)
-    await ctx.send(ANSWER2)
+    await system.respond(ctx, ANSWER)
+    await system.respond(ctx, ANSWER2)
 
 
 system.setactivebot()

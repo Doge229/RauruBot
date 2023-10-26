@@ -48,7 +48,7 @@ class Dev(commands.Cog):
                 synced = await tree.sync(guild=ctx.guild)
                 globally = False
             
-            await ctx.send(f"Synced {len(synced)} commands {'globally' if globally else 'to the current guild.'}")
+            await system.respond(ctx, f"Synced {len(synced)} commands {'globally' if globally else 'to the current guild.'}")
             print(system.console_base('System') + f"{len(synced)} commands synced {'globally' if globally else f'to {ctx.guild}.'} by: {ctx.author}")
             return
 
@@ -86,7 +86,7 @@ class Dev(commands.Cog):
                 else:
                     ret += 1
             
-        await ctx.send(f"Synced the tree to {ret}/{len(guilds)} guilds.")
+        await system.respond(ctx, f"Synced the tree to {ret}/{len(guilds)} guilds.")
         print(system.console_base('System') + f"tree synced to {ret}/{len(guilds)} guilds by: {ctx.author}")
         print(guilds)
 
@@ -95,7 +95,7 @@ class Dev(commands.Cog):
     @commands.guild_only()
     @commands.is_owner()
     async def msgtest(self, ctx):
-        await ctx.send(messages.BOT_INFO)
+        await system.respond(ctx, messages.BOT_INFO)
 
     @commands.command(name='commandtest', aliases=['cmdtest'])
     @commands.guild_only()
@@ -116,7 +116,7 @@ class Dev(commands.Cog):
         channel = self.bot.get_channel(SPEAKCHANNELID)
 
         await ctx.send(f'Speaking in channel: {SPEAKCHANNELID}')
-        msg = await channel.send(arg)
+        msg = await system.send(self.bot, SPEAKCHANNELID, arg)
         LASTMESSAGEID = msg.id
 
     @commands.command(name='stspk', aliases=['setspeak'])
@@ -210,7 +210,7 @@ class Dev(commands.Cog):
             ANSWER = 'Unable to reload Module!'
             print(system.console_base('System') + f'Module: {arg} failed to be reloaded by: {ctx.author}')
 
-        await ctx.send(ANSWER)
+        await system.respond(ctx, ANSWER)
     
     @commands.command(name='toglog')
     @commands.is_owner()
@@ -221,7 +221,7 @@ class Dev(commands.Cog):
             system.ERRORLOGGING = False
 
         print(system.console_base('System') + f'Error Logging was set to: {system.ERRORLOGGING} by: {ctx.author}')
-        await ctx.send(f'Error Logging now set to {system.ERRORLOGGING}')
+        await system.respond(ctx, f'Error Logging now set to {system.ERRORLOGGING}')
 
     @commands.command(name='listservers')
     @commands.guild_only()

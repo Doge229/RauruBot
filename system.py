@@ -131,14 +131,14 @@ def check_banned(context):
 async def on_command_error(ctx, error):
     global ERRORLOGGING
     if isinstance(error, commands.NoPrivateMessage):
-        await ctx.send(messages.ERROR_NODM)
+        await respond(ctx, messages.ERROR_NODM)
     elif isinstance(error, commands.errors.CheckFailure):
-        await ctx.send(messages.ERROR_BADROLE)
+        await respond(ctx, messages.ERROR_BADROLE)
     elif isinstance(error, commands.MissingRequiredArgument):
         if str(ctx.command) == 'blacklist':
-            await ctx.send(messages.ERROR_BLACKLIST)
+            await respond(ctx, messages.ERROR_BLACKLIST)
         else:
-            await ctx.send(messages.ERROR_UNKNOWNCMD)
+            await respond(ctx, messages.ERROR_UNKNOWNCMD)
         
     elif ERRORLOGGING == True:
             print(error)
@@ -146,7 +146,7 @@ async def on_command_error(ctx, error):
 async def on_app_command_error(interaction, error):
     global ERRORLOGGING
     if isinstance(error, app_commands.CheckFailure):
-        await interaction.response.send_message(messages.ERROR_BADROLE)
+        await respond(interaction, messages.ERROR_BADROLE)
         
     elif ERRORLOGGING == True:
         print(error)
@@ -180,7 +180,6 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
                 await context.send(message, file=image)
             else:
                 await context.send(message)
-            return
     
     elif type(context) == discord.Interaction:
         if image:
@@ -188,6 +187,14 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
         else:
             await context.response.send_message(message, ephemeral=hidden)
         return
+
+async def send(bot, channelid: int, message: str, image = None):
+    channel = bot.get_channel(channelid)
+    if image:
+        await channel.send(message, file=image)
+    else:
+        await channel.send(message)
+
 
 def argcleanup(arg: str):
     arg2 = arg.lower().replace("s ", "")
