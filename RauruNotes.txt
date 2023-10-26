@@ -48,16 +48,9 @@ Small Scale
 - profile pic changing
 - findpristine Npc_MinusFieldGhost_000
 -shield Fuse mechanics
-<<<<<<< HEAD
--rework online and offline messages
 -details in bargainer
-=======
 - rework online and offline messages
-<<<<<<< HEAD
 -freelynelbows https://www.youtube.com/watch?v=EvkR-10p2t4
-=======
->>>>>>> 9f91a1876831421551276d8956d8c3d33e38a05d
->>>>>>> refactoring
 
 Stuff to Make
 - remaster Pristine https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing
