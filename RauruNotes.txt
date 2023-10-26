@@ -16,7 +16,7 @@ Refactor
 - rework reload commands
 - take a look at the config
 - rework speak commands
--listen for server join and setup authorization
+- listen for server join and setup authorization
 -expand logging and write to file
 - rework blacklist and make it server-specific
 - look through and reword messages.py

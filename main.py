@@ -34,8 +34,11 @@ async def on_ready():
 @RauruBot.event
 async def on_guild_join(guild):
     if not guild.id in config.AUTHSERVERS:
-        await system.send(RauruBot, guild.system_channel.id, f'Unauthorized server detected!\nLeaving unauthorized server: {guild.name}!')
         print(system.console_base('System') + f'Detected unauthorized guild: {guild.name}')
+        try:
+            await system.send(RauruBot, guild.system_channel.id, f'Unauthorized server detected!\nLeaving unauthorized server: {guild.name}!')
+        except:
+            print(system.console_base('Error') + f'Unable to send warning message to: {guild.name}')
         await guild.leave()
         print(system.console_base('System') + f'Unauthtorized guild left: {guild.name}')
 
