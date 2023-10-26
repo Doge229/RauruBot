@@ -50,6 +50,7 @@ Small Scale
 - findpristine Npc_MinusFieldGhost_000
 -shield Fuse mechanics
 -rework online and offline messages
+-details in bargainer
 
 Stuff to Make
 - remaster Pristine https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing
