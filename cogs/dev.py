@@ -227,6 +227,7 @@ class Dev(commands.Cog):
             ANSWER = 'Unable to reload Module!'
             print(system.console_base('System') + f'Module: {arg} failed to be reloaded by: {ctx.author}')
 
+        system.setactivebot()
         await system.respond(ctx, ANSWER)
     
     @commands.command(name='toglog')
