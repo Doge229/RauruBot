@@ -150,23 +150,28 @@ class Dev(commands.Cog):
     #region Delete Commands
     @commands.command(name='dellast')
     @commands.is_owner()
-    async def deletestoredmessage(self, ctx, arg = 1):
+    async def deletestoredmessage(self, ctx, arg: int = 1):
         if len(system.MESSAGEHISTORY) == 0:
             await system.respond(ctx, 'No stored messages to delete!')
         
         count = arg
+        errors = 0
 
         while (count > 0):
             count -= 1
-            msginfo = system.MESSAGEHISTORY.pop()
-            channel = self.bot.get_channel(msginfo[0])
-            message = await channel.fetch_message(msginfo[1])
+            try:
+                msginfo = system.MESSAGEHISTORY.pop()
+                channel = self.bot.get_channel(msginfo[0])
+                message = await channel.fetch_message(msginfo[1])
 
-            await message.delete()
-            print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+                await message.delete()
+                print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+            except:
+                print(system.console_base('Error') + f'Failed to delete message!')
+                errors += 1
 
         print(system.console_base('System') + f'{arg} message(s) deleted by {ctx.author.name}')
-        msg = await system.respond(ctx, f'Deleted the last {arg} message(s)')
+        msg = await system.respond(ctx, f'Deleted the last {arg} message(s). {errors} deletions failed.')
         await asyncio.sleep(3)
         await msg.delete()
 
@@ -179,14 +184,19 @@ class Dev(commands.Cog):
         else:
             channelid = int(channelid.replace(" ", ""))
         
-        channel = self.bot.get_channel(channelid)
-        message = await channel.fetch_message(messageid)
+        try:
+            channel = self.bot.get_channel(channelid)
+            message = await channel.fetch_message(messageid)
 
-        await message.delete()
-        print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
-        msg = await system.respond(ctx, f'Deleted message: {messageid}')
-        await asyncio.sleep(3)
-        await msg.delete()
+            await message.delete()
+            print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+            msg = await system.respond(ctx, f'Deleted message: {messageid}')
+            await asyncio.sleep(3)
+            await msg.delete()
+        except:
+            msg = await system.respond(ctx, f'Unable to delete message: {messageid}')
+            await asyncio.sleep(3)
+            await msg.delete()
     #endregion
 
     #region Managment Commands
