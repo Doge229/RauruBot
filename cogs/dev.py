@@ -8,8 +8,8 @@ import importlib
 import system
 import messages
 import config
+import asyncio
 
-LASTMESSAGEID = None
 SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
 
 
@@ -148,40 +148,45 @@ class Dev(commands.Cog):
     #endregion
 
     #region Delete Commands
-    @commands.command(name='deletemessage', aliases=['delmsg'])
+    @commands.command(name='dellast')
     @commands.is_owner()
-    async def deletemessage(self, ctx, arg, arg2):
-
-        channel = self.bot.get_channel(int(arg.replace(" ", "")))
+    async def deletestoredmessage(self, ctx, arg = 1):
+        if len(system.MESSAGEHISTORY) == 0:
+            await system.respond(ctx, 'No stored messages to delete!')
         
-        message = await channel.fetch_message(int(arg2.replace(" ", "")))
+        count = arg
 
-        await message.delete()
-        print(system.console_base('System') + f'Message was deleted by: {ctx.author}\n\tMessage: {message}')
-    
-    @commands.command(name='deletemessage2', aliases=['delmsg2'])
+        while (count > 0):
+            count -= 1
+            msginfo = system.MESSAGEHISTORY.pop()
+            channel = self.bot.get_channel(msginfo[0])
+            message = await channel.fetch_message(msginfo[1])
+
+            await message.delete()
+            print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+
+        print(system.console_base('System') + f'{arg} message(s) deleted by {ctx.author.name}')
+        msg = await system.respond(ctx, f'Deleted the last {arg} message(s)')
+        await asyncio.sleep(3)
+        await msg.delete()
+
+    @commands.command(name='delmsg')
     @commands.is_owner()
-    async def deletemessage2(self, ctx, arg):
+    async def deletespecificmessage(self, ctx, messageid, channelid = None):
+        messageid = int(messageid.replace(" ", ""))
+        if not channelid:
+            channelid = ctx.channel.id
+        else:
+            channelid = int(channelid.replace(" ", ""))
         
-        message = await ctx.channel.fetch_message(int(arg.replace(" ", "")))
+        channel = self.bot.get_channel(channelid)
+        message = await channel.fetch_message(messageid)
 
         await message.delete()
-        print(system.console_base('System') + f'Message was deleted by: {ctx.author}\n\tMessage: {message}')
-
-    @commands.command(name='deletelastmessage', aliases=['dellast'])
-    @commands.is_owner()
-    async def deletelastmessage(self, ctx):
-        global LASTMESSAGEID
-        if LASTMESSAGEID == None:
-            await ctx.send('Last message not found!')
-            return
-
-        channel = self.bot.get_channel(SPEAKCHANNELID)
-        message = await channel.fetch_message(LASTMESSAGEID)
-
-        await message.delete()
-        print(system.console_base('System') + f'Last message was deleted by: {ctx.author}\n\tMessage: {message}')
-
+        print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+        msg = await system.respond(ctx, f'Deleted message: {messageid}')
+        await asyncio.sleep(3)
+        await msg.delete()
     #endregion
 
     #region Managment Commands

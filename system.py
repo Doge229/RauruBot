@@ -23,6 +23,8 @@ ERRORLOGGING = True
 ACTIVEBOTTOKEN = None
 ACTIVEBOTSYSTEMCHANNELID = None
 
+MESSAGEHISTORY = []
+
 # Setup
 def setactivebot():
     global ACTIVEBOTTOKEN
@@ -161,39 +163,52 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
                 try:
                     await USER.send(message, file=image)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY)
             else:
                 try:
                     await USER.send(message)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    await context.reply(NOTIFY)
-            return
+                    msg = await context.reply(NOTIFY)
 
         else:
             if image:
-                await context.send(message, file=image)
+                msg = await context.send(message, file=image)
             else:
-                await context.send(message)
+                msg = await context.send(message)
     
     elif type(context) == discord.Interaction:
         if image:
-            await context.response.send_message(message, file=image, ephemeral=hidden)
+            msg = await context.response.send_message(message, file=image, ephemeral=hidden)
         else:
-            await context.response.send_message(message, ephemeral=hidden)
-        return
+            msg = await context.response.send_message(message, ephemeral=hidden)
+    
+    storemessageid(msg)
+    return msg
 
 async def send(bot, channelid: int, message: str, image = None):
     channel = bot.get_channel(channelid)
     if image:
-        await channel.send(message, file=image)
+        msg = await channel.send(message, file=image)
     else:
-        await channel.send(message)
+        msg = await channel.send(message)
+    
+    storemessageid(msg)
+    return msg
+
+def storemessageid(message: discord.Message):
+    global MESSAGEHISTORY
+
+    if len(MESSAGEHISTORY) >= 10:
+        MESSAGEHISTORY.pop(0)
+    
+    MESSAGEHISTORY.append([message.channel.id, message.id])
+    print(MESSAGEHISTORY)
 
 
 def argcleanup(arg: str):
