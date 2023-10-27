@@ -110,7 +110,7 @@ class Dev(commands.Cog):
     async def speak(self, ctx, *, arg):
         await system.send(self.bot, SPEAKCHANNELID, arg)
         if ctx.channel.id == SPEAKCHANNELID:
-            await system.temprespond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}', time=1)
+            await system.respond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}', time=1)
         else:
             await system.respond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}')
 
@@ -138,7 +138,7 @@ class Dev(commands.Cog):
                 case _:
                     SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
         if ctx.channel.id == SPEAKCHANNELID:
-            await system.temprespond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}', time=1)
+            await system.respond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}', time=1)
         else:
             await system.respond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}')
             
@@ -173,7 +173,7 @@ class Dev(commands.Cog):
                 errors += 1
 
         print(system.console_base('System') + f'{arg} message(s) deleted by {ctx.author.name}')
-        await system.temprespond(ctx, f'Deleted the last {arg} message(s). {errors} deletions failed.')
+        await system.respond(ctx, f'Deleted the last {arg} message(s). {errors} deletions failed.', time=3)
 
     @commands.command(name='delmsg')
     @commands.is_owner()
@@ -190,10 +190,10 @@ class Dev(commands.Cog):
 
             await message.delete()
             print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
-            await system.temprespond(ctx, f'Deleted message: {messageid}')
+            await system.respond(ctx, f'Deleted message: {messageid}', time=3)
 
         except:
-            await system.temprespond(ctx, f'Unable to delete message: {messageid}')
+            await system.respond(ctx, f'Unable to delete message: {messageid}', time=3)
     #endregion
 
     #region Managment Commands
