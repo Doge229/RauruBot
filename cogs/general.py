@@ -19,9 +19,6 @@ class General(commands.Cog):
         arg = system.argcleanup(arg)
         
         match arg:
-            case '':
-                EPHEMERAL = True
-                ANSWER = messages.HELP_GENERAL
             case '1':
                 EPHEMERAL = True
                 ANSWER = messages.HELP_GENERAL

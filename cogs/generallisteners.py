@@ -16,7 +16,7 @@ class GeneralListeners(commands.Cog):
     
     @app_commands.command(name='help', description='See what commands I have!')
     @app_commands.check(system.check_banned)
-    async def generalhelp(self, interaction: discord.Interaction, *, option: str):
+    async def generalhelp(self, interaction: discord.Interaction, *, option: str = '1'):
         await General.generalhelp(context=interaction, arg=option)
 
     
