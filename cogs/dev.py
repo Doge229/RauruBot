@@ -8,7 +8,6 @@ import importlib
 import system
 import messages
 import config
-import asyncio
 
 SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
 
@@ -110,10 +109,10 @@ class Dev(commands.Cog):
     @commands.is_owner()
     async def speak(self, ctx, *, arg):
         await system.send(self.bot, SPEAKCHANNELID, arg)
-        msg = await system.respond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}')
         if ctx.channel.id == SPEAKCHANNELID:
-            await asyncio.sleep(1)
-            await msg.delete()
+            await system.temprespond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}', time=1)
+        else:
+            await system.respond(ctx, f'Speaking in channel: {self.bot.get_channel(SPEAKCHANNELID).name}')
 
     @commands.command(name='stspk', aliases=['setspeak'])
     @commands.is_owner()
@@ -138,13 +137,19 @@ class Dev(commands.Cog):
 
                 case _:
                     SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
-        msg = await system.respond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}')
         if ctx.channel.id == SPEAKCHANNELID:
-            await asyncio.sleep(1)
-            await msg.delete()
+            await system.temprespond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}', time=1)
+        else:
+            await system.respond(ctx, f'Speak channel set: {self.bot.get_channel(SPEAKCHANNELID).name}')
+            
     #endregion
 
     #region Delete Commands
+    @commands.command(name='liststoredmsgs')
+    @commands.is_owner()
+    async def liststoredmessages(self, ctx):
+        print(system.MESSAGEHISTORY)
+
     @commands.command(name='dellast')
     @commands.is_owner()
     async def deletestoredmessage(self, ctx, arg: int = 1):
@@ -168,9 +173,7 @@ class Dev(commands.Cog):
                 errors += 1
 
         print(system.console_base('System') + f'{arg} message(s) deleted by {ctx.author.name}')
-        msg = await system.respond(ctx, f'Deleted the last {arg} message(s). {errors} deletions failed.')
-        await asyncio.sleep(3)
-        await msg.delete()
+        await system.temprespond(ctx, f'Deleted the last {arg} message(s). {errors} deletions failed.')
 
     @commands.command(name='delmsg')
     @commands.is_owner()
@@ -187,13 +190,10 @@ class Dev(commands.Cog):
 
             await message.delete()
             print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
-            msg = await system.respond(ctx, f'Deleted message: {messageid}')
-            await asyncio.sleep(3)
-            await msg.delete()
+            await system.temprespond(ctx, f'Deleted message: {messageid}')
+
         except:
-            msg = await system.respond(ctx, f'Unable to delete message: {messageid}')
-            await asyncio.sleep(3)
-            await msg.delete()
+            await system.temprespond(ctx, f'Unable to delete message: {messageid}')
     #endregion
 
     #region Managment Commands
@@ -211,11 +211,11 @@ class Dev(commands.Cog):
             await system.respond(ctx, f'Removed custom status')
             return
         elif arg == 'def':
-            await self.bot.change_presence(activity=discord.CustomActivity(name="Use /help to see my commands!"))
+            await self.bot.change_presence(activity=discord.Game(name="Use /help to see my commands!"))
             await system.respond(ctx, f'Reset custom status')
             return
 
-        await self.bot.change_presence(activity=discord.CustomActivity(name=arg))
+        await self.bot.change_presence(activity=discord.Game(name=arg))
         await system.respond(ctx, f'Custom status set to: `{arg}`')
 
     @commands.command(name='reloadmodule', aliases=['rldmodule'])

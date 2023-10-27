@@ -19,7 +19,7 @@ RauruBot = commands.Bot(command_prefix=[f'<@&{USERID_SELF}> ', f'<@{USERID_SELF}
 async def on_ready():
     system.load_blacklist()
     await loadextensions()
-    await RauruBot.change_presence(activity=discord.CustomActivity(name="Use /help to see my commands!"))
+    await RauruBot.change_presence(activity=discord.Game(name="Use /help to see my commands!"))
 
     print(system.console_base('System') + f'{RauruBot.user.name} is online')
     print(system.console_base('System') + f'Current File Directory: {system.DIR_ROOT}')

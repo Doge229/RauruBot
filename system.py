@@ -10,6 +10,7 @@ import messages
 import config
 import json
 import random
+import asyncio
 
 DIR_ROOT = os.path.dirname(os.path.abspath(__file__))
 DIR_RESOURCE = os.path.join(DIR_ROOT, 'resources')
@@ -233,6 +234,44 @@ async def setprofilepic(bot, option):
 
     return IMAGENAME
 
+async def temprespond(context: discord.Object, message:str, image = None, hidden: bool = False, time: int = 3):
+    
+    if type(context) == discord.ext.commands.Context:
+        if hidden:
+            USER = context.author
+            if image:
+                try:
+                    await USER.send(message, file=image)
+                    NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
+                    msg = await context.reply(NOTIFY)
+                except:
+                    NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
+                    msg = await context.reply(NOTIFY)
+            else:
+                try:
+                    await USER.send(message)
+                    NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
+                    msg = await context.reply(NOTIFY)
+                except:
+                    NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
+                    msg = await context.reply(NOTIFY)
+
+        else:
+            if image:
+                msg = await context.send(message, file=image)
+            else:
+                msg = await context.send(message)
+    
+    elif type(context) == discord.Interaction:
+        if image:
+           await context.response.send_message(message, file=image, ephemeral=hidden)
+           msg = await context.original_response()
+        else:
+           await context.response.send_message(message, ephemeral=hidden)
+           msg = await context.original_response()
+
+    await asyncio.sleep(time)
+    await msg.delete()
 
 async def respond(context: discord.Object, message: str, image = None, hidden: bool = False):
     
