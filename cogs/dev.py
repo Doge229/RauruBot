@@ -203,6 +203,21 @@ class Dev(commands.Cog):
         IMAGENAME = await system.setprofilepic(self.bot, arg)
         await system.respond(ctx, f'Profile picture set to: {IMAGENAME}')
 
+    @commands.command(name='status')
+    @commands.is_owner()
+    async def setstatus(self, ctx, *, arg):
+        if arg == 'rm':
+            await self.bot.change_presence(activity=None)
+            await system.respond(ctx, f'Removed custom status')
+            return
+        elif arg == 'def':
+            await self.bot.change_presence(activity=discord.CustomActivity(name="Use /help to see my commands!"))
+            await system.respond(ctx, f'Reset custom status')
+            return
+
+        await self.bot.change_presence(activity=discord.CustomActivity(name=arg))
+        await system.respond(ctx, f'Custom status set to: `{arg}`')
+
     @commands.command(name='reloadmodule', aliases=['rldmodule'])
     @commands.is_owner()
     async def reloadmodule(self, ctx, arg):

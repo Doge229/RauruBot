@@ -275,7 +275,6 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
 
 async def send(bot, channelid: int, message: str, image = None):
     channel = bot.get_channel(channelid)
-    print(channel)
     if image:
         msg = await channel.send(message, file=image)
     else:
