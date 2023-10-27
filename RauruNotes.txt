@@ -13,13 +13,14 @@ Large Scale
 Refactor
 -expand logging and write to file
 -from file import method for stuffs
--fix dellast
+- fix dellast
 
 Small Scale
 -direct img link
 -credit-ish info on load
 -details in bargainer
 -horse colors https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=drivesdk
+-lynelfragile -> durafragile
 
 Stuff to Make
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782

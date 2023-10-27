@@ -165,6 +165,7 @@ class General(commands.Cog):
 
     async def hello(context):
         ANSWER = ''
+        SILENT = False
     
         CHOICE = random.randint(1, 6)
     
@@ -176,22 +177,25 @@ class General(commands.Cog):
             case 3:
                 ANSWER = messages.COMMAND_HELLO3
             case 4:
+                SILENT = True
                 if type(context) == discord.ext.commands.Context:
                     ANSWER = f'{messages.COMMAND_HELLO1[:-1]} <@{context.author.id}>!'
                 elif type(context) == discord.Interaction:
                     ANSWER = f'{messages.COMMAND_HELLO1[:-1]} <@{context.user.id}>!'
             case 5:
+                SILENT = True
                 if type(context) == discord.ext.commands.Context:
                     ANSWER = f'{messages.COMMAND_HELLO2[:-1]} <@{context.author.id}>!'
                 elif type(context) == discord.Interaction:
                     ANSWER = f'{messages.COMMAND_HELLO2[:-1]} <@{context.user.id}>!'
             case 6:
+                SILENT = True
                 if type(context) == discord.ext.commands.Context:
                     ANSWER = f'{messages.COMMAND_HELLO3[:-1]} <@{context.author.id}>!'
                 elif type(context) == discord.Interaction:
                     ANSWER = f'{messages.COMMAND_HELLO3[:-1]} <@{context.user.id}>!'
         
-        await system.respond(context, ANSWER)
+        await system.respond(context, ANSWER, silent=SILENT)
 
 
 async def setup(bot):

@@ -273,7 +273,7 @@ async def temprespond(context: discord.Object, message:str, image = None, hidden
     await asyncio.sleep(time)
     await msg.delete()
 
-async def respond(context: discord.Object, message: str, image = None, hidden: bool = False):
+async def respond(context: discord.Object, message: str, image = None, hidden: bool = False, silent: bool = False):
     
     if type(context) == discord.ext.commands.Context:
         if hidden:
@@ -282,31 +282,31 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
                 try:
                     await USER.send(message, file=image)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    msg = await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY, silent=True)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    msg = await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY, silent=True)
             else:
                 try:
                     await USER.send(message)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    msg = await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY, silent=True)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    msg = await context.reply(NOTIFY)
+                    msg = await context.reply(NOTIFY, silent=True)
 
         else:
             if image:
-                msg = await context.send(message, file=image)
+                msg = await context.send(message, file=image, silent=silent)
             else:
-                msg = await context.send(message)
+                msg = await context.send(message, silent=silent)
     
     elif type(context) == discord.Interaction:
         if image:
-           await context.response.send_message(message, file=image, ephemeral=hidden)
+           await context.response.send_message(message, file=image, ephemeral=hidden, silent=silent)
            msg = await context.original_response()
         else:
-           await context.response.send_message(message, ephemeral=hidden)
+           await context.response.send_message(message, ephemeral=hidden, silent=silent)
            msg = await context.original_response()
 
     storemessageid(context.channel.id, msg.id)
