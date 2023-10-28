@@ -603,6 +603,9 @@ NOTE: This is for Zonai Devices ONLY.
 <https://youtu.be/LCc1525GlHo?t=693>
 MTD for other materials:
 <https://youtu.be/bV1KxESU9v8?t=283>
+Stal-Arm Smuggling:
+Dupes weapons, including their Fused item. Note that when any equipment is Fused to other equipment it will lose its modifier, if applicable.
+<https://youtu.be/OL64sy4Uucc>
 '''
 INFO_RAILPART = '''
 Here are some links to videos showing how to detach an Elevator Rail:
