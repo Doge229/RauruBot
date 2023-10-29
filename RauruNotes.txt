@@ -21,6 +21,9 @@ Small Scale
 -details in bargainer
 -horse colors https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=drivesdk
 -lynelfragile -> durafragile
+-new weapon dupe 1.2.0
+-unique horses
+-golden wing https://youtu.be/KTxbMQeIhno?si=YYcYfYvU5yS9Do9R
 
 Stuff to Make
 -mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
