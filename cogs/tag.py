@@ -266,6 +266,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_GREATFAIRYQUEST
             case 'greatfairie':
                 ANSWER = messages.INFO_GREATFAIRYQUEST
+            case 'uniquehorse':
+                ANSWER = messages.INFO_UNIQUEHORSES
             # endregion
 
             # region Effects and Builds
@@ -382,6 +384,14 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_ARROWFARM
             case 'freelynelbow':
                 ANSWER = messages.POINT_FREELYNELBOWS
+            case 'horsecolor':
+                ANSWER = messages.POINT_HORSECOLORS
+            case 'goldenwing':
+                ANSWER = messages.POINT_GOLDENWING
+            case 'infinitywing':
+                ANSWER = messages.POINT_GOLDENWING
+            case 'infinitewing':
+                ANSWER = messages.POINT_GOLDENWING
             # endregion
 
             # region Meta Info

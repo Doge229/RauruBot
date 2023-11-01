@@ -1,11 +1,8 @@
 Large Scale
 -compedium cmd - data sheet search
 -multi-server
-  -server specific blacklist
   -errors say what server
-  -server specific info commands
 -all logs, togglable
--replace sending messages so that message ID is saved
 -reminder
 -make cogs and module load/reload look nice
 -lock channels that bot can't access for slash commands
@@ -13,20 +10,20 @@ Large Scale
 Refactor
 -expand logging and write to file
 -from file import method for stuffs
-- fix dellast
 
 Small Scale
 -direct img link
 -credit-ish info on load
 -details in bargainer
--horse colors https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=drivesdk
+- horse colors https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=drivesdk
 -lynelfragile -> durafragile
--new weapon dupe 1.2.0
--unique horses
--golden wing https://youtu.be/KTxbMQeIhno?si=YYcYfYvU5yS9Do9R
+- new weapon dupe 1.2.0
+-more info for scanning epona
+- golden wing https://youtu.be/KTxbMQeIhno?si=YYcYfYvU5yS9Do9R
 -shrine totals remake
+- barrelbomb in objectterms
+-new dupes from Blize
 
 Stuff to Make
--mineru stats post https://discord.com/channels/1111764095826415678/1111764773357506761/1137093443810762782
-https://discord.com/channels/1111764095826415678/1111764453910917190/1158064435127140452
+-mineru stats post
 -all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686 https://youtu.be/Ayy-vpqJK_w

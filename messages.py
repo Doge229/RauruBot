@@ -67,7 +67,7 @@ HELP_TAG1 = '''
     **Mechanics and Hints**
     `cherry/cherrytrees, bargainer/bargainerstatues, botwdata, coordsystem, depthsmirror, deviceshop`
     `ritofabric, hornedstatue, mat253/sunpumpkin, elementdmg, missablelocations, midairwing, moatchasm`
-    `control5/jumpslash, gleeokstrat, dugby, miskobanner, trilbyvalley, greatfairy`
+    `control5/jumpslash, gleeokstrat, dugby, miskobanner, trilbyvalley, greatfairy, uniquehorses`
     **Effects and Builds**
     `defense, bestarmor, moisture, weatherattack, gloomattackresist, slipresist, attackstacking, boneprof`
     `backscratcher, lynelfragile, dmgcalc`
@@ -78,7 +78,7 @@ HELP_TAG2 = '''
     `tracker, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, worldexp, templescaling`
     `sagelevel, beedletrades, cooking, hoverbike, hoverbike4.0, mapcompletion, recipecalc, armorcalc`
     `amiibodrops, glitchsheet, cookcalc, constructfarm, shrinefinder, transferalbum, levelcards, objectsheet`
-    `dondon, arrowfarm, freelynelbows`
+    `dondon, arrowfarm, freelynelbows, horsecolors, goldenwing/infinitywing`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck`
     `betterpics, whereDLC`
@@ -347,6 +347,17 @@ INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies 
 INFO_GREATFAIRYQUEST = '''
 After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!", you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy".
 '''
+INFO_UNIQUEHORSES = '''
+There are 6 unique horses available to register in TotK:
+Note: If you imported a unique horse from botw, then it will not spawn the wild in TotK.
+
+-Giant White Stallion - Found ||east of the Horse God Bridge in Faron Highlands.||
+-Giant Horse ("Gerudo") - Found ||at eastern Hateno Beach.||
+-Zelda's Golden Horse - Found ||in northern North Tabantha Snowfield|| after starting the side adventure "Potential Princess Sightings!", and will be available for registering after completing the quest, "Zelda's Golden Horse".
+-Spot - Found ||southwest of Lookout Landing|| after starting the quest "Spotting Spot", completion of which will unlock him for registering.
+-Royal White Stallion - Found ||north of Skull Lake in Deep Akkala.||
+-Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link Amiibo.
+'''
 # endregion
 
 # region Effects and Builds
@@ -437,6 +448,8 @@ Here are some terms/actor names that might be useful when using the Object Map:
 -`TreeStumpHolySpot_B` - Triple Depths Ghosts, also doubles as the locations of the Calamity Monuments
 -||`dungeonboss underground`|| - ||Temple Boss Rematches||
 -`DgnObj_Zonau_SliderBox_A_02` - Elevator Rail
+-`barrelbomb NOT barrelbomb2 NOT barrelbomb3`, `barrelbomb2`, and `barrelbomb3` - Levels 1, 2, and 3 Bomb Barrels
+-`timerbarrelbomb` - Cube-shaped Time Bombs found in enemy camps
 -`MiasmaSwarm`, `Phantom Ganon` - Gloom Spawn/Phantom Ganon
   Some Gloom Spawn are controlled by certain flags:
   -`MiasmaSwarm_RandomSet`, `MiasmaSwarm_RandomSet3` - Randomized on load; these can be save-scummed to get them to spawn
@@ -544,6 +557,14 @@ POINT_FREELYNELBOWS = '''
 Here's a link to a guide on obtaining free Lynel Bows in TotK:
 https://youtu.be/EvkR-10p2t4
 '''
+POINT_HORSECOLORS = '''
+Here's a link to a document on Wild Horse Coloration in TotK by Artoirel:
+https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=sharing
+'''
+POINT_GOLDENWING = '''
+Here's a link to a guide to obtaining the Golden Wing/Infinity Wing in TotK:
+https://youtu.be/KTxbMQeIhno
+'''
 # endregion
 
 # region Meta Info
@@ -586,6 +607,9 @@ Weapon Stat Transfer(WST) w/ Like-Like Fuse Entanglement:
 <https://youtu.be/Jw2HWQTKS8w>
 Sluggling:
 <https://youtu.be/BZID7B_99QY?t=1553>
+Stal-Arm Smuggling:
+Dupes weapons, including their Fused item. Note that when any equipment is Fused to other equipment it will lose its modifier, if applicable.
+<https://youtu.be/OL64sy4Uucc>
 '''
 INFO_DUPE121 = '''
 Here are some links for duplication glitches on 1.2.1:
