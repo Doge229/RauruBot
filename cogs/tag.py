@@ -392,6 +392,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_GOLDENWING
             case 'infinitewing':
                 ANSWER = messages.POINT_GOLDENWING
+            case 'wiki':
+                ANSWER = messages.POINT_WIKI
             # endregion
 
             # region Meta Info

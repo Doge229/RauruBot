@@ -78,7 +78,7 @@ HELP_TAG2 = '''
     `tracker, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, worldexp, templescaling`
     `sagelevel, beedletrades, cooking, hoverbike, hoverbike4.0, mapcompletion, recipecalc, armorcalc`
     `amiibodrops, glitchsheet, cookcalc, constructfarm, shrinefinder, transferalbum, levelcards, objectsheet`
-    `dondon, arrowfarm, freelynelbows, horsecolors, goldenwing/infinitywing`
+    `dondon, arrowfarm, freelynelbows, horsecolors, goldenwing/infinitywing, wiki`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck`
     `betterpics, whereDLC`
@@ -247,7 +247,15 @@ Shield Fusions are primarily used for utility.
 # region Mechanics and Hints
 INFO_MASTERSWORD = '''The Master Sword has a base damage of 30, which increases to 45 when it is Awakened (nearby Gloom-Wreathed enemies). It has a Base Durability of 40 and a Bonus Durability of 25, but it does not currently recharge its Bonus Durability, meaning that after it runs out of energy for the first time it will only ever have a Total Durability of 40. When facing Phantom Ganon or ||Ganondorf||, it's base damage increases to 60, and it does not lose any durability on use.'''
 INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
-INFO_BARGAINERSTATUE = '''Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. The Bargainer Statues **in the Depths** will also sell most Amiibo weapons and armor to you after you have obtained them once.'''
+INFO_BARGAINERSTATUE = '''
+Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. 
+Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. 
+
+All Bargainer Statues will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb Flowers, and the armors unlocked by visiting each Bargainer Statue.
+
+Aside from the Dusk Bow and White Sword of the Sky, Amiibo weapons and armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
+They will also sell you the Magic Rod, Magic Scepter, and Magic Staff.
+'''
 INFO_ALTAMIIBOWEAPONSOURCE = '''
 The White Sword of the Sky and the Dusk Bow cannot be purchased from Baragainer Statues. Instead, the Dusk Bow can found at the top of Hyrule Castle every Blood Moon. The White Sword of the Sky can be reobtained from the Mother Goddess Statue by bringing her Dinraal's Claw, Farosh's Claw, and Naydra's Claw.
 '''
@@ -564,6 +572,10 @@ https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/
 POINT_GOLDENWING = '''
 Here's a link to a guide to obtaining the Golden Wing/Infinity Wing in TotK:
 https://youtu.be/KTxbMQeIhno
+'''
+POINT_WIKI = '''
+Here's a link to the wiki for TotK:
+<https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom>
 '''
 # endregion
 
