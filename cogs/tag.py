@@ -421,6 +421,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_BETTERPHOTOS
             case 'wheredlc':
                 ANSWER = messages.POINT_WHEREDLC
+            case 'dlc':
+                ANSWER = messages.POINT_WHEREDLC
             # endregion
 
             # region Armor Totals
