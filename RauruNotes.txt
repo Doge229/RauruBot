@@ -6,6 +6,7 @@ Large Scale
 -reminder
 -make cogs and module load/reload look nice
 -lock channels that bot can't access for slash commands
+-credit-ish info on load
 
 Refactor
 -expand logging and write to file
@@ -13,16 +14,15 @@ Refactor
 
 Small Scale
 -direct img link
--credit-ish info on load
--details in bargainer
+- details in bargainer
 - horse colors https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=drivesdk
--lynelfragile -> durafragile
+-fragile materials
 - new weapon dupe 1.2.0
 -more info for scanning epona
 - golden wing https://youtu.be/KTxbMQeIhno?si=YYcYfYvU5yS9Do9R
 - shrine totals remake
 - barrelbomb in objectterms
--new dupes from Blize https://youtu.be/iRkNT3NEVuQ
+- new dupes from Blize https://youtu.be/iRkNT3NEVuQ
 - wiki link
 
 Stuff to Make

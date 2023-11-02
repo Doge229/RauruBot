@@ -622,6 +622,9 @@ Sluggling:
 Stal-Arm Smuggling:
 Dupes weapons, including their Fused item. Note that when any equipment is Fused to other equipment it will lose its modifier, if applicable.
 <https://youtu.be/OL64sy4Uucc>
+Stick Smuggling:
+Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
+<https://youtu.be/iRkNT3NEVuQ>
 '''
 INFO_DUPE121 = '''
 Here are some links for duplication glitches on 1.2.1:
@@ -642,6 +645,9 @@ MTD for other materials:
 Stal-Arm Smuggling:
 Dupes weapons, including their Fused item. Note that when any equipment is Fused to other equipment it will lose its modifier, if applicable.
 <https://youtu.be/OL64sy4Uucc>
+Stick Smuggling:
+Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
+<https://youtu.be/iRkNT3NEVuQ>
 '''
 INFO_RAILPART = '''
 Here are some links to videos showing how to detach an Elevator Rail:
