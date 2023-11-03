@@ -16,7 +16,7 @@ Small Scale
 -direct img link
 -fragile materials
 -more info for scanning epona
--datamining server roles
+- extra hello aliases
 
 Stuff to Make
 -mineru stats post

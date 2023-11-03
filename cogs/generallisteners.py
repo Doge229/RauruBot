@@ -81,7 +81,7 @@ class GeneralListeners(commands.Cog):
     async def finddispenserslash(self, interaction: discord.Interaction, *, device: str):
         await General.finddispenser(context=interaction, arg=device)
 
-    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings'])
+    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo'])
     @commands.guild_only()
     @commands.check(system.check_banned)
     async def hello(self, ctx):
