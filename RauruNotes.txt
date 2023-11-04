@@ -17,6 +17,9 @@ Small Scale
 -fragile materials
 -more info for scanning epona
 - extra hello aliases
+-devlab icon
+-autochange profile
+-reorganize help messages, tag order, and messages.py order
 
 Stuff to Make
 -mineru stats post
