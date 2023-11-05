@@ -20,6 +20,8 @@ Small Scale
 -devlab icon
 -autochange profile
 -reorganize help messages, tag order, and messages.py order
+-paracopter https://youtu.be/HjS60KRpiq4
+-prevent updates
 
 Stuff to Make
 -mineru stats post
