@@ -7,6 +7,7 @@ Large Scale
 -make cogs and module load/reload look nice
 -lock channels that bot can't access for slash commands
 -credit-ish info on load
+-https://github.com/KingFooZQ/Totk-Cooking-Simulator
 
 Refactor
 -expand logging and write to file
@@ -22,6 +23,8 @@ Small Scale
 -reorganize help messages, tag order, and messages.py order
 -paracopter https://youtu.be/HjS60KRpiq4
 -prevent updates
+-truemult for truedmg and dmgformula
+-credits msg and command
 
 Stuff to Make
 -mineru stats post

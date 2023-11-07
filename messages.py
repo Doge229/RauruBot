@@ -318,11 +318,11 @@ Here are the steps to deploy a Wing midair in TotK:
 4. Close the paraglider to land on the Wing.
 '''
 INFO_TRUEDAMAGE = '''
-In TotK, the shown damage numbers for spears and two-handed weapons do not reflect their actual damage dealt. 
--The shown damage for spears is divided by roughly 1.3268, which means that spears deal roughly 25 percent less damage per hit than shown. 
--The shown damage for two-handed weapons is divided by 0.95, which means that two-handed weapons deal roughly 5 percent more damage than shown.
+In TotK, the displayed attack numbers for spears and two-handed weapons do not reflect their actual attack power.
+- The true attack power of spears is roughly 75% of what is displayed, rounded up
+- The true attack power of two-handed weapons is roughly 5% higher than what is displayed, rounded down
 
-These multipliers also affect modifiers to the weapon, such as the Fused item, Attack Up from a modifier, and Zonaite-Powered/Strong Fusion. They do not apply to temporary weapon buffs, such as those from the Attack Up effect, or conditional weapon Traits like Water Warrior.
+These multipliers also affect modifiers to the weapon, such as the Fused item, Attack Up from a modifier, and Zonaite-Powered/Strong Fusion. They do not apply to temporary weapon buffs, such as those from the Attack Up effect or conditional weapon Traits like Water Warrior.
 '''
 INFO_MISSINGARMOR = '''
 The following armors from BotW are not available in TotK:
