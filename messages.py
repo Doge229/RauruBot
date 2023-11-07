@@ -524,7 +524,7 @@ Here's a link to a guide on building the Hoverbike 4.0:
 https://youtu.be/AXWAEBlvIXs
 '''
 POINT_COOKCALC = '''
-Here's a link to a cooking calculator for TotK:
+Here's a link to Ghastly64's cooking calculator for TotK:
 https://www.totkcookbook.com/
 '''
 POINT_CONSTRUCTHORNFARM = '''
