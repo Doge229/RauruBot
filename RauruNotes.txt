@@ -23,10 +23,11 @@ Small Scale
 -reorganize help messages, tag order, and messages.py order
 -paracopter https://youtu.be/HjS60KRpiq4
 -prevent updates
--truemult for truedmg and dmgformula
+-truemult for truedmg and dmgformula https://docs.google.com/document/d/1ElrdCpx_fSme8Bf-cIZsW8xFNPch8JAmgih2Kd15xCg/edit#heading=h.ly4aswd7500n
 -credits msg and command
 -repo link
--reowkr coordsystem message
+-rework coordsystem message
+-move shutdown
 
 Stuff to Make
 -mineru stats post
