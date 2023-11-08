@@ -25,6 +25,8 @@ Small Scale
 -prevent updates
 -truemult for truedmg and dmgformula
 -credits msg and command
+-repo link
+-reowkr coordsystem message
 
 Stuff to Make
 -mineru stats post
