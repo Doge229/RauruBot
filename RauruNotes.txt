@@ -28,6 +28,7 @@ Small Scale
 -repo link
 -rework coordsystem message
 -move shutdown
+-lock slash commands from DMs
 
 Stuff to Make
 -mineru stats post
