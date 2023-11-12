@@ -29,6 +29,7 @@ Small Scale
 -rework coordsystem message
 -move shutdown
 -lock slash commands from DMs
+-remake Amiibo Drops sheet
 
 Stuff to Make
 -mineru stats post
