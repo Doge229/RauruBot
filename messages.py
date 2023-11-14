@@ -12,8 +12,14 @@ ERROR_GUILDONLY = '''My apologies, but my commands are only available inside ser
 ERROR_BADROLE = '''My apologies, but you lack the appropriate role for this command.'''
 
 ERROR_BADCOORDS = '''My apologies, but I cannot convert those coordinates.'''
+
+INFO_RAURUBOT = '''
+Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links. 
+Please feel free to use `/help` and use as many of my commands as you like in a bot channel.
+'''
 # endregion
 
+# region Help
 HELP_GENERAL = '''
 Here are some of my commands:
 
@@ -45,45 +51,51 @@ Here are some of my commands:
 HELP_TAGBASE = '''
 Here are the options for my `tag` command:
 
-`/tag [argument]`
-    **Command Help**
+`/tag [option]`
+    `botinfo`
+
+    **Tag Command Help**
     `help [page number], help show [page number]`
+    -*Note: Page number defaults to the 1st page if not specified*
+    **General Command Help** (For when `/help` isn't available)
+    `helpgeneral [page number], helpgeneral show [page number]`
     -*Note: Page number defaults to the 1st page if not specified*
 '''
 
 HELP_GENSERVERTAGS = '''
     **Server Stuff**
-    `imgperms, spoiler, totkexpert, piracy/tos, rolerewards`
+    `spoiler, piracy/tos, imgperms, rolerewards, totkexpert`
 '''
 
 HELP_TAG1 = '''
     **Story Stuff**
-    `postgame, permaquests, elitepics, ringruins, josha, trueend`
+    `postgame, elitepics, permaquests, trueend, ringruins, josha`
     **Farming Stuff**
-    `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, earlyrupees`
+    `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm`
+    `freelynelbows, constructfarm, earlyrupees`
     **Equipment Info**
-    `octorok, repairlegendary, legendarylist, fusedurability, pristineweapons, mastersword, truedmg`
-    `amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor, breakitdown/pelison, shieldfuse`
+    `octorok, repairlegendary, legendarylist, fusedurability, shieldfuse, lynelfragile, breakitdown/pelison`
+    `pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`
     **Mechanics and Hints**
-    `cherry/cherrytrees, bargainer/bargainerstatues, botwdata, coordsystem, depthsmirror, deviceshop`
-    `ritofabric, hornedstatue, mat253/sunpumpkin, elementdmg, missablelocations, midairwing, moatchasm`
-    `control5/jumpslash, gleeokstrat, dugby, miskobanner, trilbyvalley, greatfairy, uniquehorses`
+    `bargainer/bargainerstatues, deviceshop, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror`
+    `coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, control5/jumpslash`
+    `missablelocations, hornedstatue, dugby, elementdmg, midairwing, gleeokstrat, miskobanner`
     **Effects and Builds**
-    `defense, bestarmor, moisture, weatherattack, gloomattackresist, slipresist, attackstacking, boneprof`
-    `backscratcher, lynelfragile, dmgcalc`
+    `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist`
+    `attackupstacking, boneprof`
+    ``
 Page 1 of 2
 '''
 HELP_TAG2 = '''
     **Useful Links and Stuff**
-    `tracker, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, worldexp, templescaling`
-    `sagelevel, beedletrades, cooking, hoverbike, hoverbike4.0, mapcompletion, recipecalc, armorcalc`
-    `amiibodrops, glitchsheet, cookcalc, constructfarm, shrinefinder, transferalbum, levelcards, objectsheet`
-    `dondon, arrowfarm, freelynelbows, horsecolors, goldenwing/infinitywing, wiki`
+    `wiki, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms`
+    `datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking`
+    `cookcalc, levelcards, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, hoverbike`
+    `hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics`
     **Meta Info**
-    `dupe1.1.2, dupe1.2.0, dupe1.2.1, railpart/elevatorrail, unreleasedamiibo, downpatch, versioncheck`
-    `betterpics, whereDLC`
+    `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, versioncheck, transferalbum, whereDLC, unreleasedamiibo`
     **Reference Images**
-    `horseupgrades, ascendmap, cherryymap, dmgformula, invupgrades, shrinecounts`
+    `horseupgrades, ascendmap, cherrymap, invupgrades, shrinecounts, dmgformula`
     `armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals`
     `zonaitotals, dragontotals`
 Page 2 of 2
@@ -109,29 +121,25 @@ Here's how to use my blacklist command:
 `@Rauru#6248 blacklist update [userid] [reason(optional)]`
     -Update a user's blacklist reason/info
 '''
+# endregion
 
-# region Server Stuff
-#BOT_INFO = '''Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links.'''
-INFO_RAURUBOT = '''
-Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links. 
-Please feel free to use `/help` and use as many of my commands as you like in a bot channel.
-'''
-HELP_SPOILERTAG = '''
+# region TOTKGeneral Server Stuff
+INFO_SPOILERTAG = '''
 Please spoiler tag any main story spoilers outside of spoiler-friendly channels. You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
 You can spoiler tag images **when attaching** them by clicking the small eye icon above them if you're on desktop, or by tapping and holding on the image if you are on mobile.
 '''
+INFO_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
 
-HELP_IMGPERM = '''
+INFO_IMGPERM = '''
 In order to be able to post images or embed other stuff on this server, you will need to reach **Traveler** rank (Level 3) or above. 
 Use `/level` in <#811092574672388106> to view your current level information.
 '''
-HELP_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help assist and guide members with their gameplay. Although it does not come with any moderation tools, TOTK Expert are given Manage Messages permission so they can pin any important information in any channel.'''
-HELP_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
 INFO_ROLEREWARDS = '''You can earn Arcane experience once per minute by chatting. After earning enough experience, you will level up. At certain level thresholds, Arcane will award you a role. You can use `/level` in <#811092574672388106> to see your current level information. If you are missing a role that you qualify for, feel free to ask for assistance in <#798676709117132810>.'''
+
+INFO_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help assist and guide members with their gameplay. Although it does not come with any moderation tools, TOTK Expert are given Manage Messages permission so they can pin any important information in any channel.'''
 # endregion
 
 # region Story Stuff
-INFO_RINGRUINQUEST = '''The main quest ||"Secret of the Ring Ruins"|| can be begun by speaking to Tauro and Paya in Kakariko Village after you have completed ||"Crisis at Hyrule Castle"||.'''
 INFO_POSTGAME = '''
 Legend of Zelda games do not generally have a post-game. Instead, TotK reverts you to your last save before the finale and adds a little star to it. This will:
  -Add a counter to your Purah Pad that tracks your *map completion* percentage
@@ -140,14 +148,16 @@ Legend of Zelda games do not generally have a post-game. Instead, TotK reverts y
  -Carry over any pictures and Compendium entries you obtained during the finale
  -Add ||Zelda's Sage symbol to the loading screen||
 '''
+INFO_ELITEPIC = '''After beating the game, you unlock the option to purchase Elite Enemy Pictures for your Compendium from Robbie.'''
 INFO_PERMQUESTS = '''You cannot permanently complete the quests ||"Destroy Ganondorf"|| or ||"Find Princess Zelda"||, as they are completed during the finale of the game.'''
 INFO_TRUEEND = '''If you have collected every memory, then ||a new cutscene featuring all of the Sages will play after the credits.||'''
-INFO_ELITEPIC = '''After beating the game, you unlock the option to purchase Elite Enemy Pictures for your Compendium from Robbie.'''
+INFO_RINGRUINQUEST = '''The main quest ||"Secret of the Ring Ruins"|| can be begun by speaking to Tauro and Paya in Kakariko Village after you have completed ||"Crisis at Hyrule Castle"||.'''
 INFO_JOSHA = '''Josha is Purah's head of Depths Research and can be found in her workshop in Lookout Landing. She provides a number of quests designed to lead you to important locations within the Depths, so anytime you have a question about the Depths it might be a good idea to see if she has any information for you.'''
 # endregion
 
 # region Farming Stuff
 INFO_BLOODMOON = '''Every 168 minutes of unpaused gameplay, the game will attempt to trigger a Blood Moon on the next night. If you are in a shrine or the Depths, then the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier, Captain, and Flux Constructs do not respawn on Blood Moons however; Their respawn mechanics are still being investigated.'''
+# INFO_CONSTRUCTRESPAWN = ''''''
 POINT_FORCEMOON = '''
 Here's are some links to examples of how to force a Blood Moon to occur in TotK:
 Rock Wall Opal Method:
@@ -157,6 +167,7 @@ Water Shock Method:
 '''
 INFO_MATERIALTIMER = '''TotK's map is divided into a 10x8 grid of "cells". Every minute that you are not in a map cell, there is an additive chance that every material and animal in that cell will respawn.'''
 INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by waiting at a campfire or bed, then reloading the shop by fast traveling, or saving and reloading. Menu-based shops only require passing time, as opening the shop causes them to reload.'''
+
 INFO_CHARGEFARM = '''
 You can farm Crystallized Charges by:
 -Defeating ||Master Kohga at each Abandoned Mine he appears at|| and ||each Temple Boss Rematch||, all of which each give a chest containing a Huge Crystallized Charge(worth 100 normal Crystallized Charges) the first time you defeat them.
@@ -171,13 +182,26 @@ POINT_DRAGON = '''
 Here's a link to a guide on Dragons and Dragon Part Farming in TotK: 
 https://youtu.be/Pk27gun8xOw
 '''
+POINT_ARROWFARM = '''
+Here's a link to a guide on farming arrows in TotK:
+https://youtu.be/wR-6ThhtO5U
+'''
+POINT_FREELYNELBOWS = '''
+Here's a link to a guide on obtaining free Lynel Bows in TotK:
+https://youtu.be/EvkR-10p2t4
+'''
+POINT_CONSTRUCTHORNFARM = '''
+Here's a link to a guide on where to farm Construct Horns inside Proving Grounds Shrines:
+https://www.reddit.com/r/TOTK/comments/15d3ksj/proving_grounds_shrines_construct_farming/
+'''
+
 POINT_EARLYCASH = '''
 Here's a link to a guide for getting rupees in early game: 
 https://youtu.be/BJ5vAEiMwq8
 '''
 # endregion
 
-# region Durability
+# region Equipment Info
 INFO_OCTOROK = '''
 You can repair and modify any non-Legendary equipment by dropping it on the ground in front of a Rock Octorok in Eldin Canyon. 
 The Octorok will restore the Base and Bonus Durability of the equipment, as well as any equipment (not materials) fused to it. 
@@ -220,6 +244,7 @@ Champion's Arms:
 -Magic Scepter 
 -Magic Staff
 '''
+
 INFO_FUSEDURABILITY = '''
 Each weapon has a Base Durability and a Bonus Durability, which is unlocked while something is fused to the weapon. 
 Bonus Durability Values: 
@@ -232,21 +257,48 @@ Bonus Durability is a property of the base weapon, and any Bonus Durability used
 
 When fusing equipment to a weapon or shield, the fused equipment will lose its modifier, but if it is a weapon, its Bonus Durability will be restored to maximum.
 '''
-POINT_WEAPONSINTACT = '''
-Here's a link to an explanation of Pristine weapon mechanics in TotK:
-<https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing>
-'''
 INFO_SHIELDFUSE = '''
 Shield Fusions are primarily used for utility. 
 -When Fused to a shield, most objects without special properties will only increase the damage of Link's parry attack. 
 -The only object that increases a shield's guard stat is the Long Lava Slab, which increases it by 1.
 -Shields do not have Bonus Durability, meaning that they do not get any increase in durability when Fused.
 '''
+INFO_FRAGILEONLYNEL = '''Materials that break after one hit, such as Gibdo Bones or Ancient Blades, will still break after one hit during mounted attacks on a Lynel, as the mounted attacks only prevent *durability* loss, and materials do not have durability.'''
+INFO_BREAKITDOWN = '''
+You can break down most Fused weapons and shields into their base equipment and Fuse material by paying 20 rupees to Pelison at the Break-a-Part Shop in Tarrey Town. 
+'''
+
+POINT_WEAPONSINTACT = '''
+Here's a link to an explanation of Pristine weapon mechanics in TotK:
+<https://docs.google.com/document/d/1hEXB9TDTKJ-Mdv7PbY_tYe6A9gWIMOXJsASVoFAxl2I/edit?usp=sharing>
+'''
+
+INFO_MASTERSWORD = '''The Master Sword has a base damage of 30, which increases to 45 when it is Awakened (nearby Gloom-Wreathed enemies). It has a Base Durability of 40 and a Bonus Durability of 25, but it does not currently recharge its Bonus Durability, meaning that after it runs out of energy for the first time it will only ever have a Total Durability of 40. When facing Phantom Ganon or ||Ganondorf||, it's base damage increases to 60, and it does not lose any durability on use.'''
+INFO_TRUEDAMAGE = '''
+In TotK, the displayed attack numbers for spears and two-handed weapons do not reflect their actual attack power.
+- The true attack power of spears is roughly 75% of what is displayed, rounded up
+- The true attack power of two-handed weapons is roughly 5% higher than what is displayed, rounded down
+
+These multipliers also affect modifiers to the weapon, such as the Fused item, Attack Up from a modifier, and Zonaite-Powered/Strong Fusion. They do not apply to temporary weapon buffs, such as those from the Attack Up effect or conditional weapon Traits like Water Warrior.
+'''
+INFO_ALTAMIIBOWEAPONSOURCE = '''
+The White Sword of the Sky and the Dusk Bow cannot be purchased from Baragainer Statues. Instead, the Dusk Bow can found at the top of Hyrule Castle every Blood Moon. The White Sword of the Sky can be reobtained from the Mother Goddess Statue by bringing her Dinraal's Claw, Farosh's Claw, and Naydra's Claw.
+'''
+INFO_MISSINGARMOR = '''
+The following armors from BotW are not available in TotK:
+-Old Shirt and Well-Worn Trousers
+-Warm Doublet
+-Nintendo Switch Shirt
+-Salvager's Set
+-Ancient Set
+-Gerudo Vai Set
+-Phantom Ganon Set (renamed to Evil Spirit Set)
+-Thunder Helm (replaced by Lightning Helm)
+-Champion's Tunic (nerfed into Tunic of Memories)
+'''
 # endregion
 
-# region Mechanics and Hints
-INFO_MASTERSWORD = '''The Master Sword has a base damage of 30, which increases to 45 when it is Awakened (nearby Gloom-Wreathed enemies). It has a Base Durability of 40 and a Bonus Durability of 25, but it does not currently recharge its Bonus Durability, meaning that after it runs out of energy for the first time it will only ever have a Total Durability of 40. When facing Phantom Ganon or ||Ganondorf||, it's base damage increases to 60, and it does not lose any durability on use.'''
-INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
+# region Mechanics/Hints
 INFO_BARGAINERSTATUE = '''
 Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. 
 Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. 
@@ -256,27 +308,40 @@ All Bargainer Statues will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb 
 Aside from the Dusk Bow and White Sword of the Sky, Amiibo weapons and armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
 They will also sell you the Magic Rod, Magic Scepter, and Magic Staff.
 '''
-INFO_ALTAMIIBOWEAPONSOURCE = '''
-The White Sword of the Sky and the Dusk Bow cannot be purchased from Baragainer Statues. Instead, the Dusk Bow can found at the top of Hyrule Castle every Blood Moon. The White Sword of the Sky can be reobtained from the Mother Goddess Statue by bringing her Dinraal's Claw, Farosh's Claw, and Naydra's Claw.
-'''
+INFO_DEVICESHOP = '''After you have fully upgraded your Energy Cell to 48 total Energy Wells, you can use your Crystallized Charges at Crystal Refineries to purchase any Zonai Device. Each device costs 3 Charges per capsule, except for Big Batteries, which are 30 Charges each.'''
+
 INFO_BOTWDATA = '''
 TotK automatically imports some of your BotW *Normal Mode* data into TotK:
 -When you talk to a stablehand for the first time, any registered horses you had in BotW will be in your stables, including any unique horses, which will not spawn in TotK's world if you import them.
 -If you hang your Champion's Ballad photo from Kass on the wall in Link's House in BotW, then the photo will be in Zelda's House in TotK. This can be done at any point in your TotK playthrough.
 '''
-INFO_COORDSYSTEM = '''TotK uses two different coordinate systems, one that is shown to the player, and one that is used internally. You can think of the shown coordinates as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height. The internal coordinate system can then be visualized as X, Y + 105, -Z.'''
+INFO_UNIQUEHORSES = '''
+There are 6 unique horses available to register in TotK:
+Note: If you imported a unique horse from botw, then it will not spawn the wild in TotK.
+
+-Giant White Stallion - Found ||east of the Horse God Bridge in Faron Highlands.||
+-Giant Horse ("Gerudo") - Found ||at eastern Hateno Beach.||
+-Zelda's Golden Horse - Found ||in northern North Tabantha Snowfield|| after starting the side adventure "Potential Princess Sightings!", and will be available for registering after completing the quest, "Zelda's Golden Horse".
+-Spot - Found ||southwest of Lookout Landing|| after starting the quest "Spotting Spot", completion of which will unlock him for registering.
+-Royal White Stallion - Found ||north of Skull Lake in Deep Akkala.||
+-Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link Amiibo.
+'''
+
+INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
 INFO_DEPTHSMIRROR = '''
 Hyrule's Depths mirror its Surface; Terrain elevation is usually inverted, and bodies of water on the Surface are almost always impassable walls in the Depths. 
 If you are in an area of the Depths and you do not have the map for it yet, try opening your Surface map and then closing it. This will display the Surface on your minimap, aiding in navigation.
 '''
-INFO_DEVICESHOP = '''After you have fully upgraded your Energy Cell to 48 total Energy Wells, you can use your Crystallized Charges at Crystal Refineries to purchase any Zonai Device. Each device costs 3 Charges per capsule, except for Big Batteries, which are 30 Charges each.'''
+INFO_COORDSYSTEM = '''TotK uses two different coordinate systems, one that is shown to the player, and one that is used internally. You can think of the shown coordinates as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height. The internal coordinate system can then be visualized as X, Y + 105, -Z.'''
+
 INFO_RITOFABRIC = '''The Original and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
-INFO_HORNEDSTATUE = '''After completing one part of "Regional Phenomena", a new opening can be found in the Emergency Shelter in Lookout Landing, through which you will find a statue with an ominous aura. This Horned Statue will allow you to trade Heart Containers for Stamina Vessels, and vice versa, at the cost of 20 rupees each.'''
+INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
+INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the west side of the island for a small opening with a Chasm inside.'''
 INFO_SUNPUMPKIN = '''Compendium Entry #253 is the ||Sun Pumpkin||, a material that is not found within Hyrule until the completion of the quest "Homegrown in Hateno", which you can begin by speaking to Reede in the fields near the entrance to Hateno Village, after completing "The Mayoral Election".'''
-INFO_BASEELEMENTALDMG = '''
-Every enemy takes a specific amount of base damage from each element, although some element sources can have a bonus damage that is added to the base damage. You can find the exact numbers for each enemy's base elemental damage taken on the Monsters tab of Phil's Data Sheet:
-<https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit#gid=143376740&range=A1>
+INFO_GREATFAIRYQUEST = '''
+After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!", you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy".
 '''
+INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
 INFO_MISSABLELOCATIONS = '''
 Here are some of the most commonly missed locations for TotK:
 Surface:||
@@ -310,6 +375,22 @@ Applean Grove
 ||
 Original message by Dixon#8583
 '''
+INFO_HORNEDSTATUE = '''After completing one part of "Regional Phenomena", a new opening can be found in the Emergency Shelter in Lookout Landing, through which you will find a statue with an ominous aura. This Horned Statue will allow you to trade Heart Containers for Stamina Vessels, and vice versa, for the cost of 20 rupees each.'''
+INFO_DUGBY = '''
+Dugby's first quest is "The Ancient City Gorondia!", and has no pre-requisites in order to unlock. Dugby can be found at `1744, 2585, 427` for this quest.
+
+Dugby's second quest is "The Ancient City Gorondia?", and requires the completion of "Yunobo of Goron City" and at least 30 minutes of unpaused gameplay to have passed since the completion of his first quest. Dugby can be found at `1614, 2399, 397` for this quest.
+'''
+INFO_BASEELEMENTALDMG = '''
+Every enemy takes a specific amount of base damage from each element, although some element sources can have a bonus damage that is added to the base damage. You can find the exact numbers for each enemy's base elemental damage taken on the Monsters tab of Phil's Data Sheet:
+<https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit#gid=143376740&range=A1>
+'''
+
+INFO_GLEEOKSTRAT = '''
+The trick to taking down a Gleeok is to use Eyeball arrows while avoiding its attacks or staying behind cover. Multi-shot bows are strongly recommended for this.
+Flame Gleeok heads take 2x damage from ice attacks and 1.5x damage from water attacks.
+Frost Gleeok heads take 2x damage from fire attacks.
+'''
 INFO_MIDAIRWING = '''
 Here are the steps to deploy a Wing midair in TotK:
 1. Let the Left Stick go neutral while paragliding, so that Link is falling straight down.
@@ -317,58 +398,9 @@ Here are the steps to deploy a Wing midair in TotK:
 3. Close the menu, then immediately tilt the Left Stick up to move forward.
 4. Close the paraglider to land on the Wing.
 '''
-INFO_TRUEDAMAGE = '''
-In TotK, the displayed attack numbers for spears and two-handed weapons do not reflect their actual attack power.
-- The true attack power of spears is roughly 75% of what is displayed, rounded up
-- The true attack power of two-handed weapons is roughly 5% higher than what is displayed, rounded down
-
-These multipliers also affect modifiers to the weapon, such as the Fused item, Attack Up from a modifier, and Zonaite-Powered/Strong Fusion. They do not apply to temporary weapon buffs, such as those from the Attack Up effect or conditional weapon Traits like Water Warrior.
-'''
-INFO_MISSINGARMOR = '''
-The following armors from BotW are not available in TotK:
--Old Shirt and Well-Worn Trousers
--Warm Doublet
--Nintendo Switch Shirt
--Salvager's Set
--Ancient Set
--Gerudo Vai Set
--Phantom Ganon Set (renamed to Evil Spirit Set)
--Thunder Helm (replaced by Lightning Helm)
--Champion's Tunic (nerfed into Tunic of Memories)
-'''
-INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
-INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the west side of the island for a small opening with a Chasm inside.'''
-INFO_BREAKITDOWN = '''
-You can break down most Fused weapons and shields into their base equipment and Fuse material by paying 20 rupees to Pelison at the Break-a-Part Shop in Tarrey Town. 
-'''
-INFO_GLEEOKSTRAT = '''
-The trick to taking down a Gleeok is to use Eyeball arrows while avoiding its attacks or staying behind cover. Multi-shot bows are strongly recommended for this.
-Flame Gleeok heads take 2x damage from ice attacks and 1.5x damage from water attacks.
-Frost Gleeok heads take 2x damage from fire attacks.
-'''
-INFO_DUGBY = '''
-Dugby's first quest is "The Ancient City Gorondia!", and has no pre-requisites in order to unlock. Dugby can be found at `1744, 2585, 427` for this quest.
-
-Dugby's second quest is "The Ancient City Gorondia?", and requires the completion of "Yunobo of Goron City" and at least 30 minutes of unpaused gameplay to have passed since the completion of his first quest. Dugby can be found at `1614, 2399, 397` for this quest.
-'''
-INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
-INFO_GREATFAIRYQUEST = '''
-After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!", you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy".
-'''
-INFO_UNIQUEHORSES = '''
-There are 6 unique horses available to register in TotK:
-Note: If you imported a unique horse from botw, then it will not spawn the wild in TotK.
-
--Giant White Stallion - Found ||east of the Horse God Bridge in Faron Highlands.||
--Giant Horse ("Gerudo") - Found ||at eastern Hateno Beach.||
--Zelda's Golden Horse - Found ||in northern North Tabantha Snowfield|| after starting the side adventure "Potential Princess Sightings!", and will be available for registering after completing the quest, "Zelda's Golden Horse".
--Spot - Found ||southwest of Lookout Landing|| after starting the quest "Spotting Spot", completion of which will unlock him for registering.
--Royal White Stallion - Found ||north of Skull Lake in Deep Akkala.||
--Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link Amiibo.
-'''
 # endregion
 
-# region Effects and Builds
+# region Effects/Builds
 INFO_DEFENSESTAT = '''
 Every enemy attack has two components: the enemy's base damage for that specific attack, plus the damage of the weapon they are holding(if applicable to that attack). The damage you take from the attack is then calculated by subtracting your total defense from the enemy attack.
 '''
@@ -386,6 +418,19 @@ For maximum defense, you might want:
  For Maximum Damage: 
  -Both the Radiant Set and the Evil Spirit Set grant Bone Proficiency, which when paired with a Molduga Jaw weapon and lvl 3 Attack Up from a meal grants the highest damage increase.
  '''
+
+INFO_BACKSCRATCH = '''
+The current maximum damage that you can consistently output can be referred to as a Lynel Backscratcher build. Take a Pristine Royal Guard's Claymore with a +10 Attack Up modifier, fuse a Molduga Jaw to it, then wear it down until it has 1 durability left. 
+Then wear a Bone Proficiency armor set and eat a level 3 Attack Up meal, and take the weapon and only use it for mounted attacks on a Lynel. The mounted attacks take no durability, so you can continually deal last hit critical damage with the almost broken claymore. 
+
+Here is the full math behind this:
+rounddown(42 Base Weapon Damage + rounddown((10 Modifier Buff + 32 Molduga Jaw Fuse Damage)/0.95 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
+'''
+POINT_DMGCALC = '''
+Here's a link to KreaTV1's Damage Calculator for TotK:
+https://tinyurl.com/TotK-Damage-Calc
+'''
+
 INFO_MOISTURE = '''The Froggy armor set pieces each have a hidden effect called Moisturizing, which increases the length of time that Link will be wet for, up to a max of 4 minutes.'''
 INFO_WEATHERATK = '''The Weather Attack effects do not increase physical weapon damage. They add an elemental AoE to combo finishers and charge attacks, which increases in size with higher effect levels and has a bonus elemental damage of 5, regardless of level. The Weather Charge set bonus just gives you Quick Charge when active.'''
 INFO_GLOOMATKRES = '''The Gloom Attack Resist set bonus does not have any impact on gloom attacks. It only adds a fourth gloom resistance heart.'''
@@ -399,26 +444,33 @@ The Evil Spirit set pieces each have Stealth Up cannot be upgraded, and together
 
 The Radiant set has no innate effects, but can be upgraded and grants the set bonus at 2 stars. It can be purchased from the Armor Shop in Kakariko Village.
 '''
-INFO_BACKSCRATCH = '''
-The current maximum damage that you can consistently output can be referred to as a Lynel Backscratcher build. Take a Pristine Royal Guard's Claymore with a +10 Attack Up modifier, fuse a Molduga Jaw to it, then wear it down until it has 1 durability left. 
-Then wear a Bone Proficiency armor set and eat a level 3 Attack Up meal, and take the weapon and only use it for mounted attacks on a Lynel. The mounted attacks take no durability, so you can continually deal last hit critical damage with the almost broken claymore. 
-
-Here is the full math behind this:
-rounddown(42 Base Weapon Damage + rounddown((10 Modifier Buff + 32 Molduga Jaw Fuse Damage)/0.95 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
-'''
-INFO_FRAGILEONLYNEL = '''Materials that break after one hit, such as Gibdo Bones or Ancient Blades, will still break after one hit during mounted attacks on a Lynel, as the mounted attacks only prevent *durability* loss, and materials do not have durability.'''
-POINT_DMGCALC = '''
-Here's a link to KreaTV1's Damage Calculator for TotK:
-https://tinyurl.com/TotK-Damage-Calc
-'''
 # endregion
 
 # region Reference Info
+POINT_WIKI = '''
+Here's a link to the wiki for TotK:
+<https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom>
+'''
+
 POINT_TRACKER = '''
 Here's a link to the 100% Tracker Spreadsheet for TotK: 
 https://docs.google.com/spreadsheets/d/1mRHxETl2bYvpRBGV7VzeW0bCdpmEbJJdt7aWAw9T0rY/edit?usp=sharing
 Please feel free to make a copy for yourself so you can check off your progress by selecting `File -> Make a Copy`.
 '''
+POINT_PHILARMORCALC = '''
+Here's a link to make a copy of Phil's Armor Material Calculator:
+<https://docs.google.com/spreadsheets/d/1gzS-kViCZ6c4GCDdUFiwfx_Fih2sbcwJm5czzKLJvGo/copy>
+'''
+POINT_MAPCOMPLETION = '''
+Here's a link to an explanation of what counts towards Map Completion in TotK:
+https://youtu.be/wvL0YnIjyCU
+'''
+POINT_SHRINEFINDER = '''
+Here's a link to a website that can help you find what Shrines and Lightroots you are missing:
+<https://www.haokepeng.com/zelda>
+If you are having trouble using this site, please feel free to head to <#753016129328250964> and post screenshots of your maps so someone can help you find what you're missing.
+'''
+
 POINT_INTERACTMAPS = '''
 Here are some links to interactive maps: 
 Zelda Universe: <https://zeldamaps.com/?game=TotK> 
@@ -466,14 +518,20 @@ Here are some terms/actor names that might be useful when using the Object Map:
   -`EquipWeaponType 2` - Gloom Club
   -`EquipWeaponType 3` - Gloom Spear
 '''
-POINT_DATAECHO = '''
-Here's a link to Echocolat's Data Sheet for TotK: 
-https://docs.google.com/spreadsheets/d/18pNtDx3z-8CwGJRmlW574xbQ6VphQOkvpZhClpOEVDA/edit#gid=114269320
-'''
+
 POINT_DATAPHIL = '''
 Here's a link to Phil's Data Sheet for TotK: 
 https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit#gid=1307828066
 '''
+POINT_DATAECHO = '''
+Here's a link to Echocolat's Data Sheet for TotK: 
+https://docs.google.com/spreadsheets/d/18pNtDx3z-8CwGJRmlW574xbQ6VphQOkvpZhClpOEVDA/edit#gid=114269320
+'''
+POINT_INTEROBJECTSHEET = '''
+Here's a link to Phil's Interactable Objects Sheet for TotK:
+https://docs.google.com/spreadsheets/d/1eHHFwGDsI3sHTOLaawlxKgxbiLG8ceHUHpbpC2Bj57k/edit?usp=sharing
+'''
+
 POINT_WORLDEXP = '''
 Here's a link to an explanantion on Level Scaling in TotK: 
 https://www.reddit.com/r/tearsofthekingdom/comments/1496az3/explaining_level_scaling_in_totk/
@@ -486,30 +544,24 @@ POINT_SAGELVL = '''
 Here's a link to an explanation on Sage Attack Power: 
 https://www.reddit.com/r/tearsofthekingdom/comments/14ct8kt/sage_attack_power_a_full_breakdown/
 '''
-POINT_BEEDLETRADES = '''
-Here's a link to a list of all Beedle Trades: 
-https://docs.google.com/spreadsheets/d/1QMCSV19HFazu-dQuz0vN5lBDlMwXDYciUEYgG3h57ZQ/edit#gid=0
-'''
+
 POINT_COOKING = '''
 Here's a link to a guide about cooking: 
 https://youtu.be/ho3fZyokkg8
 '''
-POINT_HOVERBIKE = '''
-Here's a link to a guide on building a Hoverbike: 
-https://youtu.be/oq4LmYEFlHM
+POINT_COOKCALC = '''
+Here's a link to Ghastly64's cooking calculator for TotK:
+https://www.totkcookbook.com/
 '''
-POINT_MAPCOMPLETION = '''
-Here's a link to an explanation of what counts towards Map Completion in TotK:
-https://youtu.be/wvL0YnIjyCU
+
+POINT_LEVELCARDS = '''
+Here's a link to a gallery of level cards for you to use with Arcane's `/card image set` command:
+NOTE: It is recommended to use 70 percent opacity `/card opacity <number>`.
+<https://imgur.com/gallery/jP6Adci>
 '''
-POINT_RECIPECALC = '''
-Here are some links to Recipe Calculators for TotK:
-https://www.zelda.recipes/
-https://zeldacookbook.vercel.app/
-'''
-POINT_PHILARMORCALC = '''
-Here's a link to make a copy of Phil's Armor Material Calculator:
-<https://docs.google.com/spreadsheets/d/1gzS-kViCZ6c4GCDdUFiwfx_Fih2sbcwJm5czzKLJvGo/copy>
+POINT_BEEDLETRADES = '''
+Here's a link to a list of all Beedle Trades: 
+https://docs.google.com/spreadsheets/d/1QMCSV19HFazu-dQuz0vN5lBDlMwXDYciUEYgG3h57ZQ/edit#gid=0
 '''
 POINT_AMIIBODROPTABLES = '''
 Here's a link to the Amiibo Drop Tables Spreadsheet:
@@ -519,63 +571,38 @@ POINT_GLITCHSHEET = '''
 Here's a link to the Glitch Spreadsheet:
 https://docs.google.com/spreadsheets/d/1xNB1gOLZRSF9yp1mHUsS9ymogRJa1Wz8rTliTXezeRM/edit?usp=sharing
 '''
-POINT_HOVERBIKEv4 = '''
-Here's a link to a guide on building the Hoverbike 4.0:
-https://youtu.be/AXWAEBlvIXs
-'''
-POINT_COOKCALC = '''
-Here's a link to Ghastly64's cooking calculator for TotK:
-https://www.totkcookbook.com/
-'''
-POINT_CONSTRUCTHORNFARM = '''
-Here's a link to a guide on where to farm Construct Horns inside Proving Grounds Shrines:
-https://www.reddit.com/r/TOTK/comments/15d3ksj/proving_grounds_shrines_construct_farming/
-'''
-POINT_SHRINEFINDER = '''
-Here's a link to a website that can help you find what Shrines and Lightroots you are missing:
-<https://www.haokepeng.com/zelda>
-If you are having trouble using this site, please feel free to head to <#753016129328250964> and post screenshots of your maps so someone can help you find what you're missing.
-'''
-POINT_TRANSFERALBUM = '''
-Here are some links to guides on how to transfer screenshots and clips from your Switch:
-Transfer to your smartphone with a QR code:
-<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>
-Transfer to your computer via USB:
-<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>
-'''
-POINT_LEVELCARDS = '''
-Here's a link to a gallery of level cards for you to use with Arcane's `/card image set` command:
-NOTE: It is recommended to use 70 percent opacity `/card opacity <number>`.
-<https://imgur.com/gallery/jP6Adci>
-'''
-POINT_INTEROBJECTSHEET = '''
-Here's a link to Phil's Interactable Objects Sheet for TotK:
-https://docs.google.com/spreadsheets/d/1eHHFwGDsI3sHTOLaawlxKgxbiLG8ceHUHpbpC2Bj57k/edit?usp=sharing
-'''
 POINT_DONDON = '''
 Here are some links to information on what gems Dondons can give:
 Video Guide: <https://youtu.be/BGxltmsZaAI>
 Drop Table Sheet: <https://docs.google.com/spreadsheets/d/1bj_1KHBFgr-1tyc1HJIHTXmLgws3mWnTTgVyg8LSZVY/edit#gid=0>
 '''
-POINT_ARROWFARM = '''
-Here's a link to a guide on farming arrows in TotK:
-https://youtu.be/wR-6ThhtO5U
-'''
-POINT_FREELYNELBOWS = '''
-Here's a link to a guide on obtaining free Lynel Bows in TotK:
-https://youtu.be/EvkR-10p2t4
-'''
 POINT_HORSECOLORS = '''
 Here's a link to a document on Wild Horse Coloration in TotK by Artoirel:
 https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=sharing
+'''
+
+POINT_HOVERBIKE = '''
+Here's a link to a guide on building a Hoverbike: 
+https://youtu.be/oq4LmYEFlHM
+'''
+POINT_HOVERBIKEv4 = '''
+Here's a link to a guide on building the Hoverbike 4.0:
+https://youtu.be/AXWAEBlvIXs
 '''
 POINT_GOLDENWING = '''
 Here's a link to a guide to obtaining the Golden Wing/Infinity Wing in TotK:
 https://youtu.be/KTxbMQeIhno
 '''
-POINT_WIKI = '''
-Here's a link to the wiki for TotK:
-<https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom>
+POINT_RAILPART = '''
+Here are some links to videos showing how to detach an Elevator Rail:
+Stabilizer Method (Construct Factory, Right Leg Depot)
+<https://www.reddit.com/r/HyruleEngineering/comments/14qj7qw/simple_and_low_part_cost_way_to_detach_the/>
+Rocket Method (Bottom of Great Plateau West Chasm/Ancient Underground Fortress)
+<https://youtu.be/d5LeqKkJdYQ>
+'''
+POINT_BETTERPHOTOS = '''
+Here's a link to a guide on taking higher quality photos in TotK:
+https://youtu.be/Bi7BC4wSjI8
 '''
 # endregion
 
@@ -649,17 +676,7 @@ Stick Smuggling:
 Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
 <https://youtu.be/iRkNT3NEVuQ>
 '''
-INFO_RAILPART = '''
-Here are some links to videos showing how to detach an Elevator Rail:
-Stabilizer Method (Construct Factory, Right Leg Depot)
-<https://www.reddit.com/r/HyruleEngineering/comments/14qj7qw/simple_and_low_part_cost_way_to_detach_the/>
-Rocket Method (Bottom of Great Plateau West Chasm/Ancient Underground Fortress)
-<https://youtu.be/d5LeqKkJdYQ>
-'''
-POINT_UNRELEASEDAMIIBO = '''
-Here's a link to a guide on obtaining the Unreleased TotK Zelda and Ganondorf Amiibo Paraglider Fabrics:
-https://youtu.be/ZuohEzyhKxM
-'''
+
 INFO_DOWNPATCH = '''
 You cannot downpatch your game without losing your save data. You can only downpatch to 1.0, unless you have access to another Switch with a version in between 1.0 and current patch. 
 
@@ -668,19 +685,26 @@ To downpatch to 1.0, you will need to have a physical copy of the game, and to f
 If you have access to a Switch with a version between 1.0 and current patch, you can match your update with it after factory resetting your Switch.
 '''
 INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
-POINT_BETTERPHOTOS = '''
-Here's a link to a guide on taking higher quality photos in TotK:
-https://youtu.be/Bi7BC4wSjI8
+POINT_TRANSFERALBUM = '''
+Here are some links to guides on how to transfer screenshots and clips from your Switch:
+Transfer to your smartphone with a QR code:
+<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>
+Transfer to your computer via USB:
+<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>
 '''
+
 POINT_WHEREDLC = '''
 Here's a link to a video explaining the situation regarding DLC for TotK:
 https://youtu.be/DY-qfykgeuQ
+'''
+POINT_UNRELEASEDAMIIBO = '''
+Here's a link to a guide on obtaining the Unreleased TotK Zelda and Ganondorf Amiibo Paraglider Fabrics:
+https://youtu.be/ZuohEzyhKxM
 '''
 # endregion
 
 # region Image Messages
 IMAGE_ARMORTOTAL = '''Here are all of the totals for materials required to fully upgrade every armor in TotK:'''
-IMAGE_HORSEUPGRADE = '''Here are the meals needed to upgrade a horse to maximum in TotK:'''
 IMAGE_ORETOTAL = '''Here are the totals for Ores/Misc materials required to upgrade every armor in TotK:'''
 IMAGE_DRAGONTOTAL = '''Here are the totals for Dragon Parts required to upgrade every armor in TotK:'''
 IMAGE_HORNTOTAL = '''Here are the totals for Monster Horns required to upgrade every armor in TotK:'''
@@ -692,18 +716,22 @@ IMAGE_CRITTERTOTAL = '''Here are the totals for Critters required to upgrade eve
 
 IMAGE_ASCENDMAP = '''Here is a map of all the Ascend Points within the Depths:'''
 IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Trees in TotK:'''
+IMAGE_INVENTORYUPGRADES = '''Here are all of the Inventory upgrade costs for TotK:'''
+IMAGE_SHRINECOUNTS = '''Here are the totals of each type of Shrine of Light in TotK:'''
+IMAGE_HORSEUPGRADE = '''Here are the meals needed to upgrade a horse to maximum in TotK:'''
+
 IMAGE_MISKOBANNER = '''The Great Bandit Misko left distinct banners along the path to their treasure. The banners don't point directly to the treasure, but you can follow from one banner to the next to find the hidden spoils.'''
+
 IMAGE_DMGFORMULA = '''
 Here is the damage formula for Link's attacks in TotK; for more information, please check out the Damage Calculations Doc:
 <https://docs.google.com/document/d/1K5hLcxfnvSnY-nsIP-n8Ew7rm9EkqHtnn6iJqOnxlng/edit?usp=sharing>
 '''
-IMAGE_INVENTORYUPGRADES = '''Here are all of the Inventory upgrade costs for TotK:'''
-IMAGE_SHRINECOUNTS = '''Here are the totals of each type of Shrine of Light in TotK:'''
 # endregion
 
 # region Dispenser Messages
 DISP_BASE = '''Here are all of the Device Dispensers that can dispense '''
 DISP_BASE2 = ''' capsules:'''
+
 DISP_FAN = '''
 Great Sky Island (South) - 40%
 Thunderhead Isles - 35%
@@ -897,9 +925,12 @@ Left-Leg Depot - 15%
 COMMAND_OBJMAPTERMS = '''Here is your Object Map link for the search term, '''
 COMMAND_OBJMAPNOTE = '''Note: You can change what layer of the Object Map is shown with the Layer button in the top right corner.'''
 COMMAND_OBJMAPBASELINK = '''https://objmap-totk.zeldamods.org/#/map/z2,0,0,'''
+
 CONVERT_COORD1 = '''The Object Map coordinates: '''
 CONVERT_COORD2 = ''' are equivalent to the shown in-game coordinates: '''
+
 COMMAND_FINDPRISTINE1 = '''Here are the Ghosts in the Depths that can spawn a Pristine '''
+
 COMMAND_HELLO1 = '''Hi!'''
 COMMAND_HELLO2 = '''Hello!'''
 COMMAND_HELLO3 = '''Greetings!'''

@@ -86,40 +86,35 @@ class Tag(commands.Cog):
                 
             # endregion
 
-            # region General Server Stuff
-            case 'imageperm':
-                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_IMGPERM
-                else:
-                    ANSWER = messages.ERROR_UNKNOWNCMD
-            case 'imgperm':
-                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_IMGPERM
-                else:
-                    ANSWER = messages.ERROR_UNKNOWNCMD
+            # region TOTKGeneral Server Stuff
             case 'spoiler':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_SPOILERTAG
-                else:
-                    ANSWER = messages.ERROR_UNKNOWNCMD
-            case 'totkexpert':
-                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_EXPERTROLE
+                    ANSWER = messages.INFO_SPOILERTAG
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
             case 'rule913':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_RULE913
+                    ANSWER = messages.INFO_RULE913
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
             case 'piracy':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_RULE913
+                    ANSWER = messages.INFO_RULE913
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
             case 'to':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_RULE913
+                    ANSWER = messages.INFO_RULE913
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'imageperm':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_IMGPERM
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'imgperm':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_IMGPERM
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
             case 'rolereward':
@@ -128,23 +123,28 @@ class Tag(commands.Cog):
                     IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'rolerewards.jpg'))
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'totkexpert':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_EXPERTROLE
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             # endregion
 
             # region Story Stuff
             case 'postgame':
                 ANSWER = messages.INFO_POSTGAME
+            case 'elitepic':
+                ANSWER = messages.INFO_ELITEPIC
             case 'permaquest':
                 ANSWER = messages.INFO_PERMQUESTS
             case 'permquest':
                 ANSWER = messages.INFO_PERMQUESTS
-            case 'elitepic':
-                ANSWER = messages.INFO_ELITEPIC
+            case 'trueend':
+                ANSWER = messages.INFO_TRUEEND
             case 'ringruin':
                 ANSWER = messages.INFO_RINGRUINQUEST
             case 'josha':
                 ANSWER = messages.INFO_JOSHA
-            case 'trueend':
-                ANSWER = messages.INFO_TRUEEND
             # endregion
 
             # region Farming Stuff
@@ -158,17 +158,27 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_MATERIALTIMER
             case 'shoprestock':
                 ANSWER = messages.INFO_SHOPRESTOCK
+            
             case 'chargefarm':
                 ANSWER = messages.INFO_CHARGEFARM
             case 'starfragment':
                 ANSWER = messages.POINT_STARFARM
             case 'dragon':
                 ANSWER = messages.POINT_DRAGON
+            case 'arrowfarm':
+                ANSWER = messages.POINT_ARROWFARM
+            case 'freelynelbow':
+                ANSWER = messages.POINT_FREELYNELBOWS
+            case 'constructhorn':
+                ANSWER = messages.POINT_CONSTRUCTHORNFARM
+            case 'constructfarm':
+                ANSWER = messages.POINT_CONSTRUCTHORNFARM
+
             case 'earlyrupee':
                 ANSWER = messages.POINT_EARLYCASH
             # endregion
 
-            # region Durability
+            # region Equipment Info
             case 'octorok':
                 ANSWER = messages.INFO_OCTOROK
             case 'repairlegendary':
@@ -179,95 +189,104 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_LEGENDLIST
             case 'legendlist':
                 ANSWER = messages.INFO_LEGENDLIST
+            
             case 'fusedurability':
                 ANSWER = messages.INFO_FUSEDURABILITY
             case 'fusedura':
                 ANSWER = messages.INFO_FUSEDURABILITY
-            case 'pristine':
-                ANSWER = messages.POINT_WEAPONSINTACT
-            case 'pristineweapon':
-                ANSWER = messages.POINT_WEAPONSINTACT
             case 'shieldfuse':
                 ANSWER = messages.INFO_SHIELDFUSE
-            # endregion
-
-            # region Mechanics and Hints
-            case 'mastersword':
-                ANSWER = messages.INFO_MASTERSWORD
-            case 'cherry':
-                ANSWER = messages.INFO_CHERRYTREE
-            case 'cherrytree':
-                ANSWER = messages.INFO_CHERRYTREE
-            case 'bargainer':
-                ANSWER = messages.INFO_BARGAINERSTATUE
-            case 'bargainerstatue':
-                ANSWER = messages.INFO_BARGAINERSTATUE
-            case 'amiiborespawnalt':
-                ANSWER = messages.INFO_ALTAMIIBOWEAPONSOURCE
-            case 'duskbow':
-                ANSWER = messages.INFO_ALTAMIIBOWEAPONSOURCE
-            case 'whitesword':
-                ANSWER = messages.INFO_ALTAMIIBOWEAPONSOURCE
-            case 'botwdata':
-                ANSWER = messages.INFO_BOTWDATA
-            case 'coordsystem':
-                ANSWER = messages.INFO_COORDSYSTEM
-            case 'depthmirror':
-                ANSWER = messages.INFO_DEPTHSMIRROR
-            case 'depthsmirror':
-                ANSWER = messages.INFO_DEPTHSMIRROR
-            case 'deviceshop':
-                ANSWER = messages.INFO_DEVICESHOP
-            case 'ritofabric':
-                ANSWER = messages.INFO_RITOFABRIC
-            case 'hornedstatue':
-                ANSWER = messages.INFO_HORNEDSTATUE
-            case 'hornedone':
-                ANSWER = messages.INFO_HORNEDSTATUE
-            case 'mat253':
-                ANSWER = messages.INFO_SUNPUMPKIN
-            case 'sunpumpkin':
-                ANSWER = messages.INFO_SUNPUMPKIN
-            case 'elementaldamage':
-                ANSWER = messages.INFO_BASEELEMENTALDMG
-            case 'elementdmg':
-                ANSWER = messages.INFO_BASEELEMENTALDMG
-            case 'missablelocation':
-                ANSWER = messages.INFO_MISSABLELOCATIONS
-            case 'midairwing':
-                ANSWER = messages.INFO_MIDAIRWING
-            case 'truedmg':
-                ANSWER = messages.INFO_TRUEDAMAGE
-            case 'truedamage':
-                ANSWER = messages.INFO_TRUEDAMAGE
-            case 'botwarmor':
-                ANSWER = messages.INFO_MISSINGARMOR
-            case 'missingarmor':
-                ANSWER = messages.INFO_MISSINGARMOR
-            case 'control5':
-                ANSWER = messages.INFO_JSCONTROL
-            case 'jumpslash':
-                ANSWER = messages.INFO_JSCONTROL
-            case 'moatchasm':
-                ANSWER = messages.INFO_MOATCHASM
+            case 'lynelfragile':
+                ANSWER = messages.INFO_FRAGILEONLYNEL
             case 'breakitdown':
                 ANSWER = messages.INFO_BREAKITDOWN
             case 'breakapart':
                 ANSWER = messages.INFO_BREAKITDOWN
             case 'pelison':
                 ANSWER = messages.INFO_BREAKITDOWN
-            case 'gleeokstrat':
-                ANSWER = messages.INFO_GLEEOKSTRAT
-            case 'dugby':
-                ANSWER = messages.INFO_DUGBY
+            
+            case 'pristine':
+                ANSWER = messages.POINT_WEAPONSINTACT
+            case 'pristineweapon':
+                ANSWER = messages.POINT_WEAPONSINTACT
+            
+            case 'mastersword':
+                ANSWER = messages.INFO_MASTERSWORD
+            case 'truedmg':
+                ANSWER = messages.INFO_TRUEDAMAGE
+            case 'truedamage':
+                ANSWER = messages.INFO_TRUEDAMAGE
+            case 'amiiborespawnalt':
+                ANSWER = messages.INFO_ALTAMIIBOWEAPONSOURCE
+            case 'duskbow':
+                ANSWER = messages.INFO_ALTAMIIBOWEAPONSOURCE
+            case 'whitesword':
+                ANSWER = messages.INFO_ALTAMIIBOWEAPONSOURCE
+            case 'botwarmor':
+                ANSWER = messages.INFO_MISSINGARMOR
+            case 'missingarmor':
+                ANSWER = messages.INFO_MISSINGARMOR
+            # endregion
+
+            # region Mechanics and Hints
+            case 'bargainer':
+                ANSWER = messages.INFO_BARGAINERSTATUE
+            case 'bargainerstatue':
+                ANSWER = messages.INFO_BARGAINERSTATUE
+            case 'deviceshop':
+                ANSWER = messages.INFO_DEVICESHOP
+            
+            case 'botwdata':
+                ANSWER = messages.INFO_BOTWDATA
+            case 'uniquehorse':
+                ANSWER = messages.INFO_UNIQUEHORSES
+
+            case 'cherry':
+                ANSWER = messages.INFO_CHERRYTREE
+            case 'cherrytree':
+                ANSWER = messages.INFO_CHERRYTREE
+            case 'depthmirror':
+                ANSWER = messages.INFO_DEPTHSMIRROR
+            case 'depthsmirror':
+                ANSWER = messages.INFO_DEPTHSMIRROR
+            case 'coordsystem':
+                ANSWER = messages.INFO_COORDSYSTEM
+            
+            case 'ritofabric':
+                ANSWER = messages.INFO_RITOFABRIC
             case 'trilbyvalley':
                 ANSWER = messages.INFO_TRILBYVALLEY
+            case 'moatchasm':
+                ANSWER = messages.INFO_MOATCHASM
+            case 'mat253':
+                ANSWER = messages.INFO_SUNPUMPKIN
+            case 'sunpumpkin':
+                ANSWER = messages.INFO_SUNPUMPKIN
             case 'greatfairy':
                 ANSWER = messages.INFO_GREATFAIRYQUEST
             case 'greatfairie':
                 ANSWER = messages.INFO_GREATFAIRYQUEST
-            case 'uniquehorse':
-                ANSWER = messages.INFO_UNIQUEHORSES
+            case 'control5':
+                ANSWER = messages.INFO_JSCONTROL
+            case 'jumpslash':
+                ANSWER = messages.INFO_JSCONTROL
+            case 'missablelocation':
+                ANSWER = messages.INFO_MISSABLELOCATIONS
+            case 'hornedstatue':
+                ANSWER = messages.INFO_HORNEDSTATUE
+            case 'hornedone':
+                ANSWER = messages.INFO_HORNEDSTATUE
+            case 'dugby':
+                ANSWER = messages.INFO_DUGBY
+            case 'elementaldamage':
+                ANSWER = messages.INFO_BASEELEMENTALDMG
+            case 'elementdmg':
+                ANSWER = messages.INFO_BASEELEMENTALDMG
+            
+            case 'gleeokstrat':
+                ANSWER = messages.INFO_GLEEOKSTRAT
+            case 'midairwing':
+                ANSWER = messages.INFO_MIDAIRWING
             # endregion
 
             # region Effects and Builds
@@ -277,6 +296,14 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_BESTARMOR
             case 'bestarmour':
                 ANSWER = messages.INFO_BESTARMOR
+            
+            case 'backscratcher':
+                ANSWER = messages.INFO_BACKSCRATCH
+            case 'lynelbackscratcher':
+                ANSWER = messages.INFO_BACKSCRATCH
+            case 'dmgcalc':
+                ANSWER = messages.POINT_DMGCALC
+            
             case 'moisture':
                 ANSWER = messages.INFO_MOISTURE
             case 'weatherattack':
@@ -293,19 +320,23 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_ATKSTACK
             case 'boneprof':
                 ANSWER = messages.INFO_BONEPROF
-            case 'backscratcher':
-                ANSWER = messages.INFO_BACKSCRATCH
-            case 'lynelbackscratcher':
-                ANSWER = messages.INFO_BACKSCRATCH
-            case 'lynelfragile':
-                ANSWER = messages.INFO_FRAGILEONLYNEL
-            case 'dmgcalc':
-                ANSWER = messages.POINT_DMGCALC
             # endregion
 
             # region Reference Info
+            case 'wiki':
+                ANSWER = messages.POINT_WIKI
+            
             case 'tracker':
                 ANSWER = messages.POINT_TRACKER
+            case 'armorcalc':
+                ANSWER = messages.POINT_PHILARMORCALC
+            case 'armourcalc':
+                ANSWER = messages.POINT_PHILARMORCALC
+            case 'mapcompletion':
+                ANSWER = messages.POINT_MAPCOMPLETION
+            case 'shrinefinder':
+                ANSWER = messages.POINT_SHRINEFINDER
+            
             case 'map':
                 ANSWER = messages.POINT_INTERACTMAPS
             case 'interactivemap':
@@ -322,12 +353,16 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_USEFULOBJECTTERMS
             case 'objmapterm':
                 ANSWER = messages.INFO_USEFULOBJECTTERMS
-            case 'echodatasheet':
-                ANSWER = messages.POINT_DATAECHO
+            
             case 'phildatasheet':
                 ANSWER = messages.POINT_DATAPHIL
             case 'datasheet':
                 ANSWER = messages.POINT_DATAPHIL
+            case 'echodatasheet':
+                ANSWER = messages.POINT_DATAECHO
+            case 'objectsheet':
+                ANSWER = messages.POINT_INTEROBJECTSHEET
+            
             case 'worldexp':
                 ANSWER = messages.POINT_WORLDEXP
             case 'templescaling':
@@ -336,64 +371,49 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_SAGELVL
             case 'sagelvl':
                 ANSWER = messages.POINT_SAGELVL
-            case 'beedletrade':
-                ANSWER = messages.POINT_BEEDLETRADES
+            
             case 'cooking':
                 ANSWER = messages.POINT_COOKING
-            case 'hoverbike':
-                ANSWER = messages.POINT_HOVERBIKE
-            case 'mapcompletion':
-                ANSWER = messages.POINT_MAPCOMPLETION
-            case 'recipecalc':
-                ANSWER = messages.POINT_RECIPECALC    
-            case 'armorcalc':
-                ANSWER = messages.POINT_PHILARMORCALC
-            case 'armourcalc':
-                ANSWER = messages.POINT_PHILARMORCALC
-            case 'amiibodrop':
-                ANSWER = messages.POINT_AMIIBODROPTABLES
-            case 'glitchsheet':
-                ANSWER = messages.POINT_GLITCHSHEET
-            case 'hoverbike4.0':
-                ANSWER = messages.POINT_HOVERBIKEv4
             case 'cookcalc':
                 ANSWER = messages.POINT_COOKCALC
-            case 'constructhorn':
-                ANSWER = messages.POINT_CONSTRUCTHORNFARM
-            case 'constructfarm':
-                ANSWER = messages.POINT_CONSTRUCTHORNFARM
-            case 'shrinefinder':
-                ANSWER = messages.POINT_SHRINEFINDER
-            case 'transferalbum':
-                ANSWER = messages.POINT_TRANSFERALBUM
-            case 'transferpic':
-                ANSWER = messages.POINT_TRANSFERALBUM
-            case 'transferclip':
-                ANSWER = messages.POINT_TRANSFERALBUM
-            case 'transfervid':
-                ANSWER = messages.POINT_TRANSFERALBUM
+
             case 'levelcard':
                 ANSWER = messages.POINT_LEVELCARDS
             case 'lvlcard':
                 ANSWER = messages.POINT_LEVELCARDS
-            case 'objectsheet':
-                ANSWER = messages.POINT_INTEROBJECTSHEET
+            case 'beedletrade':
+                ANSWER = messages.POINT_BEEDLETRADES
+            case 'amiibodrop':
+                ANSWER = messages.POINT_AMIIBODROPTABLES
+            case 'glitchsheet':
+                ANSWER = messages.POINT_GLITCHSHEET
             case 'dondon':
                 ANSWER = messages.POINT_DONDON
-            case 'arrowfarm':
-                ANSWER = messages.POINT_ARROWFARM
-            case 'freelynelbow':
-                ANSWER = messages.POINT_FREELYNELBOWS
             case 'horsecolor':
                 ANSWER = messages.POINT_HORSECOLORS
+            
+            case 'hoverbike':
+                ANSWER = messages.POINT_HOVERBIKE
+            case 'hoverbike4.0':
+                ANSWER = messages.POINT_HOVERBIKEv4
             case 'goldenwing':
                 ANSWER = messages.POINT_GOLDENWING
             case 'infinitywing':
                 ANSWER = messages.POINT_GOLDENWING
             case 'infinitewing':
                 ANSWER = messages.POINT_GOLDENWING
-            case 'wiki':
-                ANSWER = messages.POINT_WIKI
+            case 'railingpart':
+                ANSWER = messages.INFO_RAILPART
+            case 'railpart':
+                ANSWER = messages.INFO_RAILPART
+            case 'elevatorpart':
+                ANSWER = messages.INFO_RAILPART
+            case 'elevatorrail':
+                ANSWER = messages.INFO_RAILPART
+            case 'betterphoto':
+                ANSWER = messages.POINT_BETTERPHOTOS   
+            case 'betterpic':
+                ANSWER = messages.POINT_BETTERPHOTOS
             # endregion
 
             # region Meta Info
@@ -403,26 +423,26 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_DUPE120
             case 'dupe1.2.1':
                 ANSWER = messages.INFO_DUPE121
-            case 'railingpart':
-                ANSWER = messages.INFO_RAILPART
-            case 'railpart':
-                ANSWER = messages.INFO_RAILPART
-            case 'elevatorpart':
-                ANSWER = messages.INFO_RAILPART
-            case 'unreleasedamiibo':
-                ANSWER = messages.POINT_UNRELEASEDAMIIBO
+
             case 'downpatch':
                 ANSWER = messages.INFO_DOWNPATCH
             case 'versioncheck':
                 ANSWER = messages.INFO_CHECKGAMEVERSION
-            case 'betterphoto':
-                ANSWER = messages.POINT_BETTERPHOTOS   
-            case 'betterpic':
-                ANSWER = messages.POINT_BETTERPHOTOS
+            case 'transferalbum':
+                ANSWER = messages.POINT_TRANSFERALBUM
+            case 'transferpic':
+                ANSWER = messages.POINT_TRANSFERALBUM
+            case 'transferclip':
+                ANSWER = messages.POINT_TRANSFERALBUM
+            case 'transfervid':
+                ANSWER = messages.POINT_TRANSFERALBUM
+            
             case 'wheredlc':
                 ANSWER = messages.POINT_WHEREDLC
             case 'dlc':
                 ANSWER = messages.POINT_WHEREDLC
+            case 'unreleasedamiibo':
+                ANSWER = messages.POINT_UNRELEASEDAMIIBO
             # endregion
 
             # region Armor Totals
@@ -486,9 +506,6 @@ class Tag(commands.Cog):
             case 'cherrymap':
                 ANSWER = messages.IMAGE_CHERRYMAP
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'cherrymap.jpg'))
-            case 'dmgformula':
-                ANSWER = messages.IMAGE_DMGFORMULA
-                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'dmgformula.png'))
             case 'invupgrade':
                 ANSWER = messages.IMAGE_INVENTORYUPGRADES
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'inventoryupgrades.jpg'))
@@ -498,9 +515,14 @@ class Tag(commands.Cog):
             case 'shrinetotal':
                 ANSWER = messages.IMAGE_SHRINECOUNTS
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'shrinecounts.jpg'))
+            
             case 'miskobanner':
                 ANSWER = messages.IMAGE_MISKOBANNER
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'miskobanner.jpg'))
+            
+            case 'dmgformula':
+                ANSWER = messages.IMAGE_DMGFORMULA
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'dmgformula.png'))
             # endregion
 
             case _:

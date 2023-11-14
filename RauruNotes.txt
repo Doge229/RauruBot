@@ -20,7 +20,7 @@ Small Scale
 - extra hello aliases
 -devlab icon
 -autochange profile
--reorganize help messages, tag order, and messages.py order
+- reorganize help messages, tag order, and messages.py order
 -paracopter https://youtu.be/HjS60KRpiq4
 -prevent updates
 -truemult for truedmg and dmgformula https://docs.google.com/document/d/1ElrdCpx_fSme8Bf-cIZsW8xFNPch8JAmgih2Kd15xCg/edit#heading=h.ly4aswd7500n
@@ -30,6 +30,7 @@ Small Scale
 -move shutdown
 -lock slash commands from DMs
 -remake Amiibo Drops sheet
+-beginner tips
 
 Stuff to Make
 -mineru stats post
