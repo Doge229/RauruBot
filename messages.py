@@ -17,6 +17,26 @@ INFO_RAURUBOT = '''
 Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links. 
 Please feel free to use `/help` and use as many of my commands as you like in a bot channel.
 '''
+INFO_CREDITS = '''
+This bot and its files were developed by Doge229.
+
+Massive thanks to:
+-Zanaras, for helping with development and server setup
+-Everyone else who helped with development, cause discord.py has really bad documentation
+-Everyone on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game
+-savage13 and the Object Map team
+-Austin John Plays on Youtube
+-Suishi on Youtube
+-riso for their UI icons
+-Shozutko for their map images, and work on various resource documents
+-Everyone else in the botw and totk communities who have created resources for these games
+-glitchtest and phoenixguy123 for their help with the testing process
+'''
+INFO_REPOSITORY = '''
+Here's a link to my repository on Github:
+<https://github.com/Doge229/RauruBot>
+Please remember to check out the ReadMe and license if you need to use any of my code/info for your own projects!
+'''
 # endregion
 
 # region Help
@@ -52,7 +72,7 @@ HELP_TAGBASE = '''
 Here are the options for my `tag` command:
 
 `/tag [option]`
-    `botinfo`
+    `botinfo/userauru, credits, repository`
 
     **Tag Command Help**
     `help [page number], help show [page number]`
@@ -74,12 +94,14 @@ HELP_TAG1 = '''
     `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm`
     `freelynelbows, constructfarm, earlyrupees`
     **Equipment Info**
-    `octorok, repairlegendary, legendarylist, fusedurability, shieldfuse, lynelfragile, breakitdown/pelison`
-    `pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`
+    `octorok, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats`
+    `breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword`
+    `botwarmor/missingarmor`
     **Mechanics and Hints**
     `bargainer/bargainerstatues, deviceshop, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror`
     `coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, control5/jumpslash`
     `missablelocations, hornedstatue, dugby, elementdmg, midairwing, gleeokstrat, miskobanner`
+    `beginnertips/totktips`
     **Effects and Builds**
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist`
     `attackupstacking, boneprof`
@@ -90,10 +112,11 @@ HELP_TAG2 = '''
     **Useful Links and Stuff**
     `wiki, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms`
     `datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking`
-    `cookcalc, levelcards, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, hoverbike`
-    `hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics`
+    `cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors`
+    `hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter`
     **Meta Info**
-    `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, versioncheck, transferalbum, whereDLC, unreleasedamiibo`
+    `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
+    `unreleasedamiibo`
     **Reference Images**
     `horseupgrades, ascendmap, cherrymap, invupgrades, shrinecounts, dmgformula`
     `armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals`
@@ -128,7 +151,7 @@ INFO_SPOILERTAG = '''
 Please spoiler tag any main story spoilers outside of spoiler-friendly channels. You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
 You can spoiler tag images **when attaching** them by clicking the small eye icon above them if you're on desktop, or by tapping and holding on the image if you are on mobile.
 '''
-INFO_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
+INFO_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, modding, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
 
 INFO_IMGPERM = '''
 In order to be able to post images or embed other stuff on this server, you will need to reach **Traveler** rank (Level 3) or above. 
@@ -263,7 +286,11 @@ Shield Fusions are primarily used for utility.
 -The only object that increases a shield's guard stat is the Long Lava Slab, which increases it by 1.
 -Shields do not have Bonus Durability, meaning that they do not get any increase in durability when Fused.
 '''
-INFO_FRAGILEONLYNEL = '''Materials that break after one hit, such as Gibdo Bones or Ancient Blades, will still break after one hit during mounted attacks on a Lynel, as the mounted attacks only prevent *durability* loss, and materials do not have durability.'''
+INFO_FRAGILEMATERIALS = '''
+Certain materials, such as Gibdo Bones or Ancient Blades, are fragile and will break after one hit when Fused to a weapon. This is not connected to durability, as materials **do not** have durability.
+When in scenarios where weapon durability is not drained, such as mounted attacks on a Lynel, fragile materials will still break after one hit.
+If a fragile material Fused to a full durability weapon breaks from a jump attack, the weapon will not lose durability from the jump attack.
+'''
 INFO_BREAKITDOWN = '''
 You can break down most Fused weapons and shields into their base equipment and Fuse material by paying 20 rupees to Pelison at the Break-a-Part Shop in Tarrey Town. 
 '''
@@ -333,6 +360,7 @@ Hyrule's Depths mirror its Surface; Terrain elevation is usually inverted, and b
 If you are in an area of the Depths and you do not have the map for it yet, try opening your Surface map and then closing it. This will display the Surface on your minimap, aiding in navigation.
 '''
 INFO_COORDSYSTEM = '''TotK uses two different coordinate systems, one that is shown to the player, and one that is used internally. You can think of the shown coordinates as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height. The internal coordinate system can then be visualized as X, Y + 105, -Z.'''
+INFO_COORDSYSTEM = ''''''
 
 INFO_RITOFABRIC = '''The Original and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
 INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
@@ -397,6 +425,13 @@ Here are the steps to deploy a Wing midair in TotK:
 2. Open the Quick Menu or Pause Menu and drop a Wing.
 3. Close the menu, then immediately tilt the Left Stick up to move forward.
 4. Close the paraglider to land on the Wing.
+'''
+INFO_BEGINNERTIPS = '''
+Here are some beginner tips for players new to TotK:
+-TotK is a game filled with small tutorials that are designed to guide and teach players about its mechanics. Make sure to pay close attention to the environment around you, and to any resources that the game provides you, as they tend to give you one or more solutions to a problem.
+-There are ***very*** few problems/challenges in TotK that can only be solved one way. Solve everything in whatever way you can think to do so, there's no "wrong" way to overcome obstacles before you.
+-Never skip dialogue, **ESPECIALLY** from key characters, as it is very often that they will provide hints and other important information. It is also a good idea to check your Adventure Log anytime you are stuck on a quest, as important clues are usually recorded there.
+-Keep all of your powers in mind, you never know when one of them will be the solution to a problem you're facing.
 '''
 # endregion
 
@@ -555,9 +590,22 @@ https://www.totkcookbook.com/
 '''
 
 POINT_LEVELCARDS = '''
-Here's a link to a gallery of level cards for you to use with Arcane's `/card image set` command:
+Here are some links to galleries of level cards for you to use with Arcane's `/card image set` command:
 NOTE: It is recommended to use 70 percent opacity `/card opacity <number>`.
+TotK Level Cards:
 <https://imgur.com/gallery/jP6Adci>
+HW:AoC Level Cards:
+<https://imgur.com/gallery/ITbZOy1>
+Lucie's HW:AoC Level Cards:
+<https://imgur.com/gallery/TUoPFHa>
+'''
+INFO_DIRECTIMGLINK = '''
+In order to use Arcane's `/card image set` command, you will need to provide a direct link to the image you want to use. You can use Imgur to host your own images.
+
+Direct links for images will usually end in `.jpg` or `.png`.
+
+In order to get the direct link for an image on pc, right click on the specific image you want to use and select, "Copy image address".
+If you're on mobile, try viewing the image in fulscreen, look for a "Share" option, and then a "Copy link" option.
 '''
 POINT_BEEDLETRADES = '''
 Here's a link to a list of all Beedle Trades: 
@@ -603,6 +651,10 @@ Rocket Method (Bottom of Great Plateau West Chasm/Ancient Underground Fortress)
 POINT_BETTERPHOTOS = '''
 Here's a link to a guide on taking higher quality photos in TotK:
 https://youtu.be/Bi7BC4wSjI8
+'''
+POINT_PARACOPTER = '''
+Here's a link to a guide on building and using a Paracopter:
+https://youtu.be/HjS60KRpiq4
 '''
 # endregion
 
@@ -674,7 +726,10 @@ Dupes weapons, including their Fused item. Note that when any equipment is Fused
 <https://youtu.be/OL64sy4Uucc>
 Stick Smuggling:
 Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
+BlizeYT's guide:
 <https://youtu.be/iRkNT3NEVuQ>
+Suishi's guide:
+<https://youtu.be/5SJvlf0iTcE>
 '''
 
 INFO_DOWNPATCH = '''
@@ -683,6 +738,16 @@ You cannot downpatch your game without losing your save data. You can only downp
 To downpatch to 1.0, you will need to have a physical copy of the game, and to factory reset your Switch. After doing so, make sure you keep your Switch from updating the software, either by disconnecting it from the internet or by turning off auto-updates and rejecting the prompts to update. 
 
 If you have access to a Switch with a version between 1.0 and current patch, you can match your update with it after factory resetting your Switch.
+'''
+INFO_PREVENTUPDATES = '''
+When your Auto-Update Software setting is set to "On", and your Switch is connected to the internet, it will attempt to automatically download any available update data for any installed software. When your Switch has downloaded update data for a software, it will install that update data when that software is not running.
+
+In order to prevent your Switch from downloading update data for a software, you can either disconnect your Switch from the internet, or you can go your Settings -> System -> Auto-Update Software and set it to "Off".
+Keep in mind that if there is update data available for a software and your Switch is connected to the internet, then you will be prompted with a pop-up every time you start that software. In order to prevent the software from being updated, make sure to select "Start Software" and not "Download", or your Switch will download the update data and install it.
+
+If you attempt to resume a suspended software from the home screen and receive a pop-up telling you that you need to close the software to **install** an update, then that means your Switch has downloaded the update data for the software, and it will install it once the software is closed. You can safely resume the software without it updating, but once you fully close it, or restart your Switch, the software will be updated.
+
+If you launch a software and you get a pop-up saying that you need to restart your Switch to install a **system** update, then you can do so without fear of your software being updated, if the update data is not downloaded and waiting to be installed.
 '''
 INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
 POINT_TRANSFERALBUM = '''
@@ -724,7 +789,7 @@ IMAGE_MISKOBANNER = '''The Great Bandit Misko left distinct banners along the pa
 
 IMAGE_DMGFORMULA = '''
 Here is the damage formula for Link's attacks in TotK; for more information, please check out the Damage Calculations Doc:
-<https://docs.google.com/document/d/1K5hLcxfnvSnY-nsIP-n8Ew7rm9EkqHtnn6iJqOnxlng/edit?usp=sharing>
+<https://docs.google.com/document/d/1ElrdCpx_fSme8Bf-cIZsW8xFNPch8JAmgih2Kd15xCg/edit?usp=sharing>
 '''
 # endregion
 

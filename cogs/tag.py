@@ -25,6 +25,12 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_RAURUBOT
             case 'userauru':
                 ANSWER = messages.INFO_RAURUBOT
+            case 'credit':
+                ANSWER = messages.INFO_CREDITS
+            case 'repo':
+                ANSWER = messages.INFO_REPOSITORY
+            case 'repository':
+                ANSWER = messages.INFO_REPOSITORY
 
             # region General Help Stuff
             case 'helpgeneral':
@@ -197,7 +203,11 @@ class Tag(commands.Cog):
             case 'shieldfuse':
                 ANSWER = messages.INFO_SHIELDFUSE
             case 'lynelfragile':
-                ANSWER = messages.INFO_FRAGILEONLYNEL
+                ANSWER = messages.INFO_FRAGILEMATERIALS
+            case 'fragilematerial':
+                ANSWER = messages.INFO_FRAGILEMATERIALS
+            case 'fragilemat':
+                ANSWER = messages.INFO_FRAGILEMATERIALS
             case 'breakitdown':
                 ANSWER = messages.INFO_BREAKITDOWN
             case 'breakapart':
@@ -287,6 +297,12 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_GLEEOKSTRAT
             case 'midairwing':
                 ANSWER = messages.INFO_MIDAIRWING
+            case 'beginnertip':
+                ANSWER = messages.INFO_BEGINNERTIPS
+            case 'startertip':
+                ANSWER = messages.INFO_BEGINNERTIPS
+            case 'totktip':
+                ANSWER = messages.INFO_BEGINNERTIPS
             # endregion
 
             # region Effects and Builds
@@ -381,6 +397,10 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_LEVELCARDS
             case 'lvlcard':
                 ANSWER = messages.POINT_LEVELCARDS
+            case 'directlink':
+                ANSWER = messages.INFO_DIRECTIMGLINK
+            case 'directimglink':
+                ANSWER = messages.INFO_DIRECTIMGLINK
             case 'beedletrade':
                 ANSWER = messages.POINT_BEEDLETRADES
             case 'amiibodrop':
@@ -411,9 +431,11 @@ class Tag(commands.Cog):
             case 'elevatorrail':
                 ANSWER = messages.INFO_RAILPART
             case 'betterphoto':
-                ANSWER = messages.POINT_BETTERPHOTOS   
+                ANSWER = messages.POINT_BETTERPHOTOS
             case 'betterpic':
                 ANSWER = messages.POINT_BETTERPHOTOS
+            case 'paracopter':
+                ANSWER = messages.POINT_PARACOPTER
             # endregion
 
             # region Meta Info
@@ -426,6 +448,8 @@ class Tag(commands.Cog):
 
             case 'downpatch':
                 ANSWER = messages.INFO_DOWNPATCH
+            case 'preventupdate':
+                ANSWER = messages.INFO_PREVENTUPDATES
             case 'versioncheck':
                 ANSWER = messages.INFO_CHECKGAMEVERSION
             case 'transferalbum':

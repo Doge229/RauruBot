@@ -14,23 +14,25 @@ Refactor
 -from file import method for stuffs
 
 Small Scale
--direct img link
--fragile materials
--more info for scanning epona
+- direct img link
+- fragile materials
 - extra hello aliases
 -devlab icon
 -autochange profile
 - reorganize help messages, tag order, and messages.py order
--paracopter https://youtu.be/HjS60KRpiq4
--prevent updates
--truemult for truedmg and dmgformula https://docs.google.com/document/d/1ElrdCpx_fSme8Bf-cIZsW8xFNPch8JAmgih2Kd15xCg/edit#heading=h.ly4aswd7500n
--credits msg and command
--repo link
+- paracopter https://youtu.be/HjS60KRpiq4
+- prevent updates
+- truemult for truedmg and dmgformula https://docs.google.com/document/d/1ElrdCpx_fSme8Bf-cIZsW8xFNPch8JAmgih2Kd15xCg/edit#heading=h.ly4aswd7500n
+- credits msg and command
+- repo link
 -rework coordsystem message
 -move shutdown
 -lock slash commands from DMs
 -remake Amiibo Drops sheet
--beginner tips
+- beginner tips
+-material respawn, construct respawn, dragon shard respawn
+- compare https://www.youtube.com/watch?v=5SJvlf0iTcE
+- aoc lvl cards and icebox's level cards
 
 Stuff to Make
 -mineru stats post
