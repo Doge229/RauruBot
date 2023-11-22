@@ -105,7 +105,6 @@ HELP_TAG1 = '''
     **Effects and Builds**
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist`
     `attackupstacking, boneprof`
-    ``
 Page 1 of 2
 '''
 HELP_TAG2 = '''
@@ -164,7 +163,7 @@ Use `/level` in <#811092574672388106> to view your current level information.
 '''
 INFO_ROLEREWARDS = '''You can earn Arcane experience once per minute by chatting. After earning enough experience, you will level up. At certain level thresholds, Arcane will award you a role. You can use `/level` in <#811092574672388106> to see your current level information. If you are missing a role that you qualify for, feel free to ask for assistance in <#798676709117132810>.'''
 
-INFO_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help assist and guide members with their gameplay. Although it does not come with any moderation tools, TOTK Expert are given Manage Messages permission so they can pin any important information in any channel.'''
+INFO_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help, assist, and guide members with their gameplay. Although it does not come with any moderation tools, TOTK Expert are given Manage Messages permission so they can pin any important information in any channel.'''
 # endregion
 
 # region Story Stuff
