@@ -84,7 +84,7 @@ Here are the options for my `tag` command:
 
 HELP_GENSERVERTAGS = '''
     **Server Stuff**
-    `spoiler, piracy/tos, imgperms, rolerewards, totkexpert`
+    `spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, totkexpert`
 '''
 
 HELP_TAG1 = '''
@@ -99,9 +99,9 @@ HELP_TAG1 = '''
     `botwarmor/missingarmor`
     **Mechanics and Hints**
     `bargainer/bargainerstatues, deviceshop, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror`
-    `coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, control5/jumpslash`
-    `missablelocations, hornedstatue, dugby, elementdmg, midairwing, gleeokstrat, miskobanner`
-    `beginnertips/totktips`
+    `coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation`
+    `control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, midairwing, gleeokstrat`
+    `miskobanner, beginnertips/totktips`
     **Effects and Builds**
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist`
     `attackupstacking, boneprof`
@@ -148,10 +148,15 @@ Here's how to use my blacklist command:
 
 # region TOTKGeneral Server Stuff
 INFO_SPOILERTAG = '''
-Please spoiler tag any main story spoilers outside of spoiler-friendly channels. You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
+Please be mindful of any newer players present and spoiler tag any information they might not want to have spoiled for them. 
+You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
 You can spoiler tag images **when attaching** them by clicking the small eye icon above them if you're on desktop, or by tapping and holding on the image if you are on mobile.
 '''
 INFO_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, modding, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
+INFO_SELFPROMOTION = '''
+Please keep all self promotion to <#753016129043169402>. In order to post in <#753016129043169402> you will need to have at least the **Member** role (lvl 1 or above).
+Please remember that you are not allowed to use this server solely for self promotion, and that the posting of server invites, NSFW stuff, or any of the other prohibited acts listed in the channel description will be dealt with accordingly.
+'''
 
 INFO_IMGPERM = '''
 In order to be able to post images or embed other stuff on this server, you will need to reach **Traveler** rank (Level 3) or above. 
@@ -188,7 +193,7 @@ Rock Wall Opal Method:
 Water Shock Method:
 <https://youtu.be/WU01EY3dGc8>
 '''
-INFO_MATERIALTIMER = '''TotK's map is divided into a 10x8 grid of "cells". Every minute that you are not in a map cell, there is an additive chance that every material and animal in that cell will respawn.'''
+INFO_MATERIALTIMER = '''TotK's map is divided into a 10x8 grid of "cells." Every minute that you are not in a map cell, there is an additive chance that every material and animal in that cell will respawn.'''
 INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by waiting at a campfire or bed, then reloading the shop by fast traveling, or saving and reloading. Menu-based shops only require passing time, as opening the shop causes them to reload.'''
 
 INFO_CHARGEFARM = '''
@@ -348,8 +353,8 @@ Note: If you imported a unique horse from botw, then it will not spawn the wild 
 
 -Giant White Stallion - Found ||east of the Horse God Bridge in Faron Highlands.||
 -Giant Horse ("Gerudo") - Found ||at eastern Hateno Beach.||
--Zelda's Golden Horse - Found ||in northern North Tabantha Snowfield|| after starting the side adventure "Potential Princess Sightings!", and will be available for registering after completing the quest, "Zelda's Golden Horse".
--Spot - Found ||southwest of Lookout Landing|| after starting the quest "Spotting Spot", completion of which will unlock him for registering.
+-Zelda's Golden Horse - Found ||in northern North Tabantha Snowfield|| after starting the side adventure "Potential Princess Sightings!" and will be available for registering after completing the quest, "Zelda's Golden Horse."
+-Spot - Found ||southwest of Lookout Landing|| after starting the quest "Spotting Spot," the completion of which will unlock him for registering.
 -Royal White Stallion - Found ||north of Skull Lake in Deep Akkala.||
 -Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link Amiibo.
 '''
@@ -365,9 +370,13 @@ INFO_COORDSYSTEM = ''''''
 INFO_RITOFABRIC = '''The Original and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
 INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
 INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the west side of the island for a small opening with a Chasm inside.'''
-INFO_SUNPUMPKIN = '''Compendium Entry #253 is the ||Sun Pumpkin||, a material that is not found within Hyrule until the completion of the quest "Homegrown in Hateno", which you can begin by speaking to Reede in the fields near the entrance to Hateno Village, after completing "The Mayoral Election".'''
+INFO_SUNPUMPKIN = '''Compendium Entry #253 is the ||Sun Pumpkin||, a material that is not found within Hyrule until the completion of the quest "Homegrown in Hateno," which you can begin by speaking to Reede in the fields near the entrance to Hateno Village, after completing "The Mayoral Election."'''
 INFO_GREATFAIRYQUEST = '''
-After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!", you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy".
+After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!" you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy."
+'''
+INFO_HESTULOCATION = '''
+The Korok known as Hestu can use the Korok Seeds that you've collected to upgrade your weapon, bow, and shield inventories.
+Before you complete his quest, "Hestu's Concerns," Hestu can be found in between the road northeast of New Serenne Stable and Lindor's Brow Skyview Tower at `-1718, 1093, 209`. After completing his quest, Hestu will move to Lookout Landing, where he can be found until you have defeated ||the Phantom Ganon within the Deku Tree Chasm|| and restoring Korok Forest. After doing so, Hestu will move to Korok Forest permanently.
 '''
 INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
 INFO_MISSABLELOCATIONS = '''
@@ -403,11 +412,11 @@ Applean Grove
 ||
 Original message by Dixon#8583
 '''
-INFO_HORNEDSTATUE = '''After completing one part of "Regional Phenomena", a new opening can be found in the Emergency Shelter in Lookout Landing, through which you will find a statue with an ominous aura. This Horned Statue will allow you to trade Heart Containers for Stamina Vessels, and vice versa, for the cost of 20 rupees each.'''
+INFO_HORNEDSTATUE = '''After completing one part of "Regional Phenomena," a new opening can be found in the Emergency Shelter in Lookout Landing, through which you will find a statue with an ominous aura. This Horned Statue will allow you to trade Heart Containers for Stamina Vessels, and vice versa, for the cost of 20 rupees each.'''
 INFO_DUGBY = '''
-Dugby's first quest is "The Ancient City Gorondia!", and has no pre-requisites in order to unlock. Dugby can be found at `1744, 2585, 427` for this quest.
+Dugby's first quest is "The Ancient City Gorondia!" and has no pre-requisites in order to unlock. Dugby can be found at `1744, 2585, 427` for this quest.
 
-Dugby's second quest is "The Ancient City Gorondia?", and requires the completion of "Yunobo of Goron City" and at least 30 minutes of unpaused gameplay to have passed since the completion of his first quest. Dugby can be found at `1614, 2399, 397` for this quest.
+Dugby's second quest is "The Ancient City Gorondia?" and requires the completion of "Yunobo of Goron City" and at least 30 minutes of unpaused gameplay to have passed since the completion of his first quest. Dugby can be found at `1614, 2399, 397` for this quest.
 '''
 INFO_BASEELEMENTALDMG = '''
 Every enemy takes a specific amount of base damage from each element, although some element sources can have a bonus damage that is added to the base damage. You can find the exact numbers for each enemy's base elemental damage taken on the Monsters tab of Phil's Data Sheet:
@@ -598,13 +607,15 @@ HW:AoC Level Cards:
 <https://imgur.com/gallery/ITbZOy1>
 Lucie's HW:AoC Level Cards:
 <https://imgur.com/gallery/TUoPFHa>
+Dash's Skyward Sword Level Cards:
+<https://imgur.com/a/gLiEcRY>
 '''
 INFO_DIRECTIMGLINK = '''
 In order to use Arcane's `/card image set` command, you will need to provide a direct link to the image you want to use. You can use Imgur to host your own images.
 
 Direct links for images will usually end in `.jpg` or `.png`.
 
-In order to get the direct link for an image on pc, right click on the specific image you want to use and select, "Copy image address".
+In order to get the direct link for an image on pc, right click on the specific image you want to use and select, "Copy image address."
 If you're on mobile, try viewing the image in fulscreen, look for a "Share" option, and then a "Copy link" option.
 '''
 POINT_BEEDLETRADES = '''
@@ -740,10 +751,10 @@ To downpatch to 1.0, you will need to have a physical copy of the game, and to f
 If you have access to a Switch with a version between 1.0 and current patch, you can match your update with it after factory resetting your Switch.
 '''
 INFO_PREVENTUPDATES = '''
-When your Auto-Update Software setting is set to "On", and your Switch is connected to the internet, it will attempt to automatically download any available update data for any installed software. When your Switch has downloaded update data for a software, it will install that update data when that software is not running.
+When your Auto-Update Software setting is set to "On" and your Switch is connected to the internet, it will attempt to automatically download any available update data for any installed software. When your Switch has downloaded update data for a software, it will install that update data when that software is not running.
 
-In order to prevent your Switch from downloading update data for a software, you can either disconnect your Switch from the internet, or you can go your Settings -> System -> Auto-Update Software and set it to "Off".
-Keep in mind that if there is update data available for a software and your Switch is connected to the internet, then you will be prompted with a pop-up every time you start that software. In order to prevent the software from being updated, make sure to select "Start Software" and not "Download", or your Switch will download the update data and install it.
+In order to prevent your Switch from downloading update data for a software, you can either disconnect your Switch from the internet, or you can go your Settings -> System -> Auto-Update Software and set it to "Off."
+Keep in mind that if there is update data available for a software and your Switch is connected to the internet, then you will be prompted with a pop-up every time you start that software. In order to prevent the software from being updated, make sure to select "Start Software" and not "Download" or your Switch will download the update data and install it.
 
 If you attempt to resume a suspended software from the home screen and receive a pop-up telling you that you need to close the software to **install** an update, then that means your Switch has downloaded the update data for the software, and it will install it once the software is closed. You can safely resume the software without it updating, but once you fully close it, or restart your Switch, the software will be updated.
 

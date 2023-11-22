@@ -26,13 +26,16 @@ Small Scale
 - credits msg and command
 - repo link
 -rework coordsystem message
--move shutdown
+- move shutdown
 -lock slash commands from DMs
 -remake Amiibo Drops sheet
 - beginner tips
 -material respawn, construct respawn, dragon shard respawn
 - compare https://www.youtube.com/watch?v=5SJvlf0iTcE
 - aoc lvl cards and icebox's level cards
+- hestu
+- new spoiler rule
+- selfpromotion
 
 Stuff to Make
 -mineru stats post

@@ -197,6 +197,19 @@ class Dev(commands.Cog):
     #endregion
 
     #region Managment Commands
+    @commands.command(name='shutdown')
+    @commands.is_owner()
+    async def shutdown(self, ctx):
+        try:
+            if not ctx.channel.id == system.ACTIVEBOTSYSTEMCHANNELID:
+                await system.send(self.bot, system.ACTIVEBOTSYSTEMCHANNELID, f'{self.bot.user.name}' + messages.BOT_OFFLINESIMPLE)
+        except:
+            print(system.console_base('System') + f'Unable to send Offline Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
+
+        await system.respond(ctx, messages.BOT_OFFLINEPERSON)
+        await self.bot.close()
+        print(system.console_base('System') + f'{self.bot.user.name} was shutdown by command from: {ctx.author}')
+    
     @commands.command(name='profpic')
     @commands.is_owner()
     async def profilepic(self, ctx, arg):

@@ -113,6 +113,16 @@ class Tag(commands.Cog):
                     ANSWER = messages.INFO_RULE913
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'selfpromotion':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_SELFPROMOTION
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'selfpromo':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_SELFPROMOTION
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             case 'imageperm':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
                     ANSWER = messages.INFO_IMGPERM
@@ -276,6 +286,10 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_GREATFAIRYQUEST
             case 'greatfairie':
                 ANSWER = messages.INFO_GREATFAIRYQUEST
+            case 'hestu':
+                ANSWER = messages.INFO_HESTULOCATION
+            case 'hestulocation':
+                ANSWER = messages.INFO_HESTULOCATION
             case 'control5':
                 ANSWER = messages.INFO_JSCONTROL
             case 'jumpslash':
