@@ -1,8 +1,8 @@
 # RauruBot
 
 Developed by Doge229 for use in select Discord servers:
--RauruBot Devlab\n
--Zelda: Tears of the Kingdom\n
+-RauruBot Devlab<br>
+-Zelda: Tears of the Kingdom<br>
 -TotK Data Collection and Research
 
 DISCLAIMER: RauruBot is not designed for use in unauthorized servers. Any unintended behavior as a result of using him or his code on unauthorized servers is not my responsibility. 
@@ -13,13 +13,13 @@ RauruBot is a discord bot designed to provide information and resources about th
 
 
 Massive thanks to:\n
--Zanaras, for helping with development and server setup\n
--Everyone else who helped with development, cause discord.py has really bad documentation\n
--Everyone on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game\n
--savage13 and the Object Map team\n
--Austin John Plays on Youtube\n
--Suishi on Youtube\n
--riso for their UI icons\n
--Shozutko for their map images, and work on various resource documents\n
--Everyone else in the botw and totk communities who have created resources for these games\n
--glitchtest and phoenixguy123 for their help with the testing process\n
+-Zanaras, for helping with development and server setup<br>
+-Everyone else who helped with development, cause discord.py has really bad documentation<br>
+-Everyone on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game<br>
+-savage13 and the Object Map team<br>
+-Austin John Plays on Youtube<br>
+-Suishi on Youtube<br>
+-riso for their UI icons<br>
+-Shozutko for their map images, and work on various resource documents<br>
+-Everyone else in the botw and totk communities who have created resources for these games<br>
+-glitchtest and phoenixguy123 for their help with the testing process<br>
