@@ -36,6 +36,9 @@ Small Scale
 - hestu
 - new spoiler rule
 - selfpromotion
+-example links in directimglink
+-example in rolerewards
+-fuseideas https://www.youtube.com/watch?v=3f7PiBOgAuk&pp=ygUGa2xlcmlj
 
 Stuff to Make
 -mineru stats post
