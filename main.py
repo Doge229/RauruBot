@@ -13,7 +13,7 @@ INTENTS.messages = True
 INTENTS.message_content = True
 
 USERID_SELF = config.USERID_RAURUBOT
-RauruBot = commands.Bot(command_prefix=[f'<@&{USERID_SELF}> ', f'<@{USERID_SELF}> ', f'<@&{USERID_SELF}>', f'<@{USERID_SELF}>', '?'], intents=INTENTS, case_insensitive=True, help_command=None)
+RauruBot = commands.Bot(command_prefix=[f'<@&{USERID_SELF}> ', f'<@{USERID_SELF}> ', f'<@&{USERID_SELF}>', f'<@{USERID_SELF}>', '?', '&'], intents=INTENTS, case_insensitive=True, help_command=None)
 
 @RauruBot.event
 async def on_ready():

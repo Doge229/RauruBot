@@ -14,31 +14,23 @@ Refactor
 -from file import method for stuffs
 
 Small Scale
-- direct img link
-- fragile materials
-- extra hello aliases
 -devlab icon
 -autochange profile
-- reorganize help messages, tag order, and messages.py order
-- paracopter https://youtu.be/HjS60KRpiq4
-- prevent updates
-- truemult for truedmg and dmgformula https://docs.google.com/document/d/1ElrdCpx_fSme8Bf-cIZsW8xFNPch8JAmgih2Kd15xCg/edit#heading=h.ly4aswd7500n
-- credits msg and command
-- repo link
--rework coordsystem message
-- move shutdown
+- rework coordsystem message
 -lock slash commands from DMs
--remake Amiibo Drops sheet
-- beginner tips
+- remake Amiibo Drops sheet https://docs.google.com/spreadsheets/d/1BF5WDN09z0evruAQH-3qIMjnPe6dfKyomfLT_0aIZrg/edit?usp=sharing
 -material respawn, construct respawn, dragon shard respawn
-- compare https://www.youtube.com/watch?v=5SJvlf0iTcE
-- aoc lvl cards and icebox's level cards
-- hestu
-- new spoiler rule
-- selfpromotion
 -example links in directimglink
 -example in rolerewards
 -fuseideas https://www.youtube.com/watch?v=3f7PiBOgAuk&pp=ygUGa2xlcmlj
+- new prefixes &
+- totkexpert typo and ping info
+- original -> ordinary
+- Hestu in LL?
+-count yiga bases and canyon mine charges
+-cookbook
+-example in coordsystem
+-quotes for objmap terms
 
 Stuff to Make
 -mineru stats post

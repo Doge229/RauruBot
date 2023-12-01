@@ -163,7 +163,7 @@ Use `/level` in <#811092574672388106> to view your current level information.
 '''
 INFO_ROLEREWARDS = '''You can earn Arcane experience once per minute by chatting. After earning enough experience, you will level up. At certain level thresholds, Arcane will award you a role. You can use `/level` in <#811092574672388106> to see your current level information. If you are missing a role that you qualify for, feel free to ask for assistance in <#798676709117132810>.'''
 
-INFO_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help, assist, and guide members with their gameplay. Although it does not come with any moderation tools, TOTK Expert are given Manage Messages permission so they can pin any important information in any channel.'''
+INFO_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help, assist, and guide members with their gameplay, so please feel free to ping the role if you need help! Although it does not come with any moderation tools, TOTK Experts are given Manage Messages permission so they can pin any important information in any channel.'''
 # endregion
 
 # region Story Stuff
@@ -363,10 +363,14 @@ INFO_DEPTHSMIRROR = '''
 Hyrule's Depths mirror its Surface; Terrain elevation is usually inverted, and bodies of water on the Surface are almost always impassable walls in the Depths. 
 If you are in an area of the Depths and you do not have the map for it yet, try opening your Surface map and then closing it. This will display the Surface on your minimap, aiding in navigation.
 '''
-INFO_COORDSYSTEM = '''TotK uses two different coordinate systems, one that is shown to the player, and one that is used internally. You can think of the shown coordinates as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height. The internal coordinate system can then be visualized as X, Y + 105, -Z.'''
-INFO_COORDSYSTEM = ''''''
+INFO_COORDSYSTEM = '''
+You can think of the coordinates shown in-game as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height.
+The coordinate system internally used by the game can be visualized as X, Y + 105, -Z.
+The Object Map coordinate system is based on the internal coordinate system, but it flips the Z axis to better line up with the in-game shown coordinates: X, Y + 105, Z.
+Please feel free to use my `/coordconvert` command to turn a set of Object Map coordinates into their shown in-game values.
+'''
 
-INFO_RITOFABRIC = '''The Original and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
+INFO_RITOFABRIC = '''The Ordinary and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
 INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
 INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the west side of the island for a small opening with a Chasm inside.'''
 INFO_SUNPUMPKIN = '''Compendium Entry #253 is the ||Sun Pumpkin||, a material that is not found within Hyrule until the completion of the quest "Homegrown in Hateno," which you can begin by speaking to Reede in the fields near the entrance to Hateno Village, after completing "The Mayoral Election."'''
@@ -375,7 +379,7 @@ After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adve
 '''
 INFO_HESTULOCATION = '''
 The Korok known as Hestu can use the Korok Seeds that you've collected to upgrade your weapon, bow, and shield inventories.
-Before you complete his quest, "Hestu's Concerns," Hestu can be found in between the road northeast of New Serenne Stable and Lindor's Brow Skyview Tower at `-1718, 1093, 209`. After completing his quest, Hestu will move to Lookout Landing, where he can be found until you have defeated ||the Phantom Ganon within the Deku Tree Chasm|| and restoring Korok Forest. After doing so, Hestu will move to Korok Forest permanently.
+Hestu can initially be found in between the road northeast of New Serenne Stable and Lindor's Brow Skyview Tower at `-1718, 1093, 209`. After completing his quest, "Hestu's Concerns" at this location or completing one part of the quest "Regional Phenomena," he will move to Lookout Landing. If you have defeated ||the Phantom Ganon within the Deku Tree Chasm|| and restored Korok Forest, then he will move to Korok Forest permanently, regardless of his quest progress or whether you've spoken to him before in Lindor's Brow or Lookout Landing.
 '''
 INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
 INFO_MISSABLELOCATIONS = '''
@@ -623,7 +627,7 @@ https://docs.google.com/spreadsheets/d/1QMCSV19HFazu-dQuz0vN5lBDlMwXDYciUEYgG3h5
 '''
 POINT_AMIIBODROPTABLES = '''
 Here's a link to the Amiibo Drop Tables Spreadsheet:
-https://docs.google.com/spreadsheets/d/1dcw7GRsrwMHO8-iZsjuUsZ0WanA6Krb4WyxG124Kt7I/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1BF5WDN09z0evruAQH-3qIMjnPe6dfKyomfLT_0aIZrg/edit?usp=sharing
 '''
 POINT_GLITCHSHEET = '''
 Here's a link to the Glitch Spreadsheet:
