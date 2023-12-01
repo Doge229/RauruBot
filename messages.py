@@ -84,7 +84,7 @@ Here are the options for my `tag` command:
 
 HELP_GENSERVERTAGS = '''
     **Server Stuff**
-    `spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, totkexpert`
+    `spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, totkexpert`
 '''
 
 HELP_TAG1 = '''
@@ -113,6 +113,7 @@ HELP_TAG2 = '''
     `datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking`
     `cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors`
     `hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter`
+    `bestfuses/fuseideas`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
     `unreleasedamiibo`
@@ -161,7 +162,15 @@ INFO_IMGPERM = '''
 In order to be able to post images or embed other stuff on this server, you will need to reach **Traveler** rank (Level 3) or above. 
 Use `/level` in <#811092574672388106> to view your current level information.
 '''
-INFO_ROLEREWARDS = '''You can earn Arcane experience once per minute by chatting. After earning enough experience, you will level up. At certain level thresholds, Arcane will award you a role. You can use `/level` in <#811092574672388106> to see your current level information. If you are missing a role that you qualify for, feel free to ask for assistance in <#798676709117132810>.'''
+INFO_ROLEREWARDS = '''
+At certain level thresholds, Arcane will award you a role. You can use `/level` in <#811092574672388106> to see your current level information. If you are missing a role that you qualify for, feel free to ask for assistance in <#798676709117132810>.
+Use `/tag arcaneexp` for more info about Arcane's experience system.
+'''
+INFO_ARCANEEXP = '''
+You can earn Arcane experience once per minute by sending messages. Any extra messages sent during the minute will not increase the exp gained, so consistency of activity is more important than rate of messages sent, if you want to maximize experience gain.
+The possible amount of exp gained per minute is controlled by the server admins, and is random within the set range.
+For example, if Arcane is set to award you between 40-100 exp per minute that you chat, then it does not matter whether you send 1 message or 20 messages within that minute, you will still earn between 40 and 100 exp, depending on RNG.
+'''
 
 INFO_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help, assist, and guide members with their gameplay, so please feel free to ping the role if you need help! Although it does not come with any moderation tools, TOTK Experts are given Manage Messages permission so they can pin any important information in any channel.'''
 # endregion
@@ -198,8 +207,15 @@ INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by wa
 INFO_CHARGEFARM = '''
 You can farm Crystallized Charges by:
 -Defeating ||Master Kohga at each Abandoned Mine he appears at|| and ||each Temple Boss Rematch||, all of which each give a chest containing a Huge Crystallized Charge(worth 100 normal Crystallized Charges) the first time you defeat them.
--Visiting Yiga Bases and most Canyon Mines, which each have a chest with a Large Crystallized Charge(worth 20 normal Crystallized Charges)
--Defeating Mini-Bosses in the Depths, which drop a Large Crystallized Charge every Blood Moon.
+-Defeating Mini-Bosses in the Depths, which drop a Large Crystallized Charge(worth 20 normal Crystallized Charges) every Blood Moon.
+-Visiting various locations in the Depths, as some of them have treasure chests containing a Large Crystallized Charge.
+ Here are the totals for each type of location:
+    -34/34 Yiga Clan Bases
+    -21/29 Canyon Mines
+    -9/10 Abandoned Mine Bonus Chests
+    -11/15 Groves
+    -3/4 Lavafalls
+    -5 Misc. Locations: Blupee Burrow, Gerudo Underground Cemetery, Dracozu Altar, Secret Spring of Revival, and the Ancient Observation Deck
 '''
 POINT_STARFARM = '''
 Here's a link to an explanation on Star Fragment farming in TotK: 
@@ -367,6 +383,9 @@ INFO_COORDSYSTEM = '''
 You can think of the coordinates shown in-game as being X, Z, Y, where positive X is East on the map, positive Z is North on the map, and Y is your height.
 The coordinate system internally used by the game can be visualized as X, Y + 105, -Z.
 The Object Map coordinate system is based on the internal coordinate system, but it flips the Z axis to better line up with the in-game shown coordinates: X, Y + 105, Z.
+
+For example, there is an Apple found at `0402, -1344, 1541` in-game, but the game internally spawns it at `402.47, 1646.41, 1343.78`, and the Object Map displays its location as `402.47, 1646.41, -1343.78`.
+
 Please feel free to use my `/coordconvert` command to turn a set of Object Map coordinates into their shown in-game values.
 '''
 
@@ -540,6 +559,7 @@ https://objmap-totk.zeldamods.org/#/map/z2,0,0
 `sky`
 -You can filter your search by scaling or non-scaling objects using `scale:1` or `scale:0`, respectively.
 -Use `/tag objectterms` to see some useful terms and actor names.
+-Sometimes, you will probably need to put your search term in quotes to prevent other objects from being included: `"Captain Construct II" Sky`
 '''
 INFO_USEFULOBJECTTERMS = '''
 Here are some terms/actor names that might be useful when using the Object Map:
@@ -616,10 +636,10 @@ Dash's Skyward Sword Level Cards:
 INFO_DIRECTIMGLINK = '''
 In order to use Arcane's `/card image set` command, you will need to provide a direct link to the image you want to use. You can use Imgur to host your own images.
 
-Direct links for images will usually end in `.jpg` or `.png`.
+Direct links for images will usually end in `.jpg` or `.png`. Ex: <https://i.imgur.com/jM8Qume.jpg>
 
 In order to get the direct link for an image on pc, right click on the specific image you want to use and select, "Copy image address."
-If you're on mobile, try viewing the image in fulscreen, look for a "Share" option, and then a "Copy link" option.
+If you're on mobile, try viewing the image in fullscreen, look for a "Share" option, and then a "Copy link" option.
 '''
 POINT_BEEDLETRADES = '''
 Here's a link to a list of all Beedle Trades: 
@@ -669,6 +689,10 @@ https://youtu.be/Bi7BC4wSjI8
 POINT_PARACOPTER = '''
 Here's a link to a guide on building and using a Paracopter:
 https://youtu.be/HjS60KRpiq4
+'''
+POINT_BESTFUSES = '''
+Here's a link to video demonstrating some of the useful Fuse options in TotK:
+https://youtu.be/3f7PiBOgAuk
 '''
 # endregion
 

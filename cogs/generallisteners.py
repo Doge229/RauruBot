@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import system
+import messages
 from .general import General
 from .tag import Tag
 
@@ -17,7 +18,10 @@ class GeneralListeners(commands.Cog):
     @app_commands.command(name='help', description='See what commands I have!')
     @app_commands.check(system.check_banned)
     async def generalhelp(self, interaction: discord.Interaction, *, option: str = '1'):
-        await General.generalhelp(context=interaction, arg=option)
+        if interaction.guild:
+            await General.generalhelp(context=interaction, arg=option)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
     
     @commands.command(name='tag')
@@ -29,7 +33,10 @@ class GeneralListeners(commands.Cog):
     @app_commands.command(name='tag', description='This is my main command for information! Try using /tag help!')
     @app_commands.check(system.check_banned)
     async def tagslash(self, interaction: discord.Interaction, *, option: str):
-        await Tag.tag(context=interaction, arg=option)
+        if interaction.guild:
+            await Tag.tag(context=interaction, arg=option)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
     
     @commands.command(name='createobjlink', aliases=['createobjectlink', 'find'])
@@ -42,7 +49,10 @@ class GeneralListeners(commands.Cog):
     @commands.guild_only()
     @app_commands.check(system.check_banned)
     async def objmaplinkcreatorslash(self, interaction: discord.Interaction, *, searchterms: str):
-        await General.objmaplinkcreator(context=interaction, arg=searchterms)
+        if interaction.guild:
+            await General.objmaplinkcreator(context=interaction, arg=searchterms)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
     
     @commands.command(name='coordconvert')
@@ -55,7 +65,10 @@ class GeneralListeners(commands.Cog):
     @commands.guild_only()
     @app_commands.check(system.check_banned)
     async def coordconverterslash(self, interaction: discord.Interaction, *, coordinates: str):
-        await General.coordconverter(context=interaction, arg=coordinates)
+        if interaction.guild:
+            await General.coordconverter(context=interaction, arg=coordinates)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
     
     @commands.command(name='findpristine')
@@ -67,7 +80,10 @@ class GeneralListeners(commands.Cog):
     @app_commands.command(name='findpristine', description='Create an Object Map link that shows all the Depths Ghosts that can spawn a specific weapon')
     @app_commands.check(system.check_banned)
     async def findpristineslash(self, interaction: discord.Interaction, *, weaponname: str):
-        await General.findpristine(context=interaction, arg=weaponname)
+        if interaction.guild:
+            await General.findpristine(context=interaction, arg=weaponname)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
     
     @commands.command(name='finddispenser', aliases=['dispenser'])
@@ -79,7 +95,10 @@ class GeneralListeners(commands.Cog):
     @app_commands.command(name='finddispenser', description='See which Device Dispensers can dispense a specific Zonai Device capsule')
     @app_commands.check(system.check_banned)
     async def finddispenserslash(self, interaction: discord.Interaction, *, device: str):
-        await General.finddispenser(context=interaction, arg=device)
+        if interaction.guild:
+            await General.finddispenser(context=interaction, arg=device)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
     @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo'])
     @commands.guild_only()
@@ -90,7 +109,10 @@ class GeneralListeners(commands.Cog):
     @app_commands.command(name='hi')
     @app_commands.check(system.check_banned)
     async def helloslash(self, interaction: discord.Interaction):
-        await General.hello(interaction)
+        if interaction.guild:
+            await General.hello(interaction)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
 async def setup(bot):
     await bot.add_cog(GeneralListeners(bot))

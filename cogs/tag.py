@@ -139,6 +139,16 @@ class Tag(commands.Cog):
                     IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'rolerewards.jpg'))
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'arcaneexp':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_ARCANEEXP
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'expsystem':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_ARCANEEXP
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             case 'totkexpert':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
                     ANSWER = messages.INFO_EXPERTROLE
@@ -406,6 +416,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_COOKING
             case 'cookcalc':
                 ANSWER = messages.POINT_COOKCALC
+            case 'cookbook':
+                ANSWER = messages.POINT_COOKCALC
 
             case 'levelcard':
                 ANSWER = messages.POINT_LEVELCARDS
@@ -450,6 +462,10 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_BETTERPHOTOS
             case 'paracopter':
                 ANSWER = messages.POINT_PARACOPTER
+            case 'bestfuse':
+                ANSWER = messages.POINT_BESTFUSES
+            case 'fuseidea':
+                ANSWER = messages.POINT_BESTFUSES
             # endregion
 
             # region Meta Info
