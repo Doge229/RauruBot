@@ -202,6 +202,8 @@ class Tag(commands.Cog):
 
             case 'earlyrupee':
                 ANSWER = messages.POINT_EARLYCASH
+            case 'earlycash':
+                ANSWER = messages.POINT_EARLYCASH
             # endregion
 
             # region Equipment Info
