@@ -31,6 +31,7 @@ Small Scale
 - cookbook
 - example in coordsystem
 - quotes for objmap terms
+-arcanexp too
 
 Stuff to Make
 -mineru stats post
