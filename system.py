@@ -136,7 +136,7 @@ def check_banned(context):
 async def on_command_error(ctx, error):
     global ERRORLOGGING
     if isinstance(error, commands.NoPrivateMessage):
-        await respond(ctx, messages.ERROR_NODM)
+        await respond(ctx, messages.ERROR_GUILDONLY)
     elif isinstance(error, commands.errors.CheckFailure):
         await respond(ctx, messages.ERROR_BADROLE)
     elif isinstance(error, commands.MissingRequiredArgument):
