@@ -14,7 +14,7 @@ Refactor
 -from file import method for stuffs
 
 Small Scale
--devlab icon
+- devlab icon
 -autochange profile
 - rework coordsystem message
 - lock slash commands from DMs
