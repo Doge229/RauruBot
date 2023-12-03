@@ -144,6 +144,11 @@ class Tag(commands.Cog):
                     ANSWER = messages.INFO_ARCANEEXP
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'arcanexp':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_ARCANEEXP
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             case 'expsystem':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
                     ANSWER = messages.INFO_ARCANEEXP

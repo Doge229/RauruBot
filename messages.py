@@ -577,6 +577,7 @@ Here are some terms/actor names that might be useful when using the Object Map:
 -`DgnObj_Zonau_SliderBox_A_02` - Elevator Rail
 -`barrelbomb NOT barrelbomb2 NOT barrelbomb3`, `barrelbomb2`, and `barrelbomb3` - Levels 1, 2, and 3 Bomb Barrels
 -`timerbarrelbomb` - Cube-shaped Time Bombs found in enemy camps
+-`Merchants` - Traveling NPC merchants
 -`MiasmaSwarm`, `Phantom Ganon` - Gloom Spawn/Phantom Ganon
   Some Gloom Spawn are controlled by certain flags:
   -`MiasmaSwarm_RandomSet`, `MiasmaSwarm_RandomSet3` - Randomized on load; these can be save-scummed to get them to spawn
