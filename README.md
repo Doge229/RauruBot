@@ -1,6 +1,6 @@
 # RauruBot
 
-Developed by Doge229 for use in select Discord servers:
+Developed by Doge229 for use in select Discord servers:<br>
 -RauruBot Devlab<br>
 -Zelda: Tears of the Kingdom<br>
 -TotK Data Collection and Research
