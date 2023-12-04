@@ -211,9 +211,9 @@ async def setprofilepic(bot, option):
         case 'pridegeneral':
             PRIDE = True
             IMAGENAME = 'raurupride.jpg'
-        case 'pridetrans':
+        case 'pridetran':
             PRIDE = True
-            IMAGENAME = 'raurutranspride.jpg'
+            IMAGENAME = 'raurutransgenderpride.jpg'
 
 
         case _:
