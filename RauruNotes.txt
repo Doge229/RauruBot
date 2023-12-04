@@ -17,6 +17,7 @@ Small Scale
 -autochange profile
 -material respawn, construct respawn, dragon shard respawn
 -merchants objectterms
+-up the max stored messages
 
 Stuff to Make
 -mineru stats post
