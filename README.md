@@ -12,10 +12,10 @@ You are of course welcome to provide feedback or suggestions through the issues 
 RauruBot is a discord bot designed to provide information and resources about the game, "The Legend of Zelda: Tears of the Kingdom."
 
 
-Massive thanks to:\n
+Massive thanks to:<br>
 -Zanaras, for helping with development and server setup<br>
 -Everyone else who helped with development, cause discord.py has really bad documentation<br>
--Everyone on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game<br>
+-Echocolat, Phil, dt13269, and everyone else on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game<br>
 -savage13 and the Object Map team<br>
 -Austin John Plays on Youtube<br>
 -Suishi on Youtube<br>
