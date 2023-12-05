@@ -1041,3 +1041,23 @@ COMMAND_HELLO3 = '''Greetings!'''
 # endregion
 
 # Unimplemented Messages --- UPDATE HELP ---
+INFO_DEVDISCLAIMER = '''
+I happen to be a human being as well, which means that I am fallible, and make mistakes often. If I happen to make a mistake with anything I say or resources I make for TotK, please understand that I am trying my best to disseminate as up-to-date and accurate information about the game as possible.
+If you believe that I have made a mistake with regards to information I have shared about TotK, please let me know and I will do my best to hear you out and improve my resources/info if necessary. Please note that I won't be able to take anecdotal evidence as fact however, as sometimes that kind of information can be misleading.
+'''
+POINT_ENERGYCELLSTATS = '''
+Here are some link's to Paradox Gaming's videos on Zonai Device power usage in TotK:
+Energy Cell usage:
+<https://youtu.be/TpFoMHQ1nyw>
+Battery usage:
+<https://youtu.be/ZVk7u7L2dEA>
+'''
+INFO_MALANYALOCATION = '''
+The Horse God Malanya can revive and upgrade your registered horses in TotK. You can find his spring at Bloodleaf Lake in Deep Akkala, north of East Akkala Stable.
+You can bring him out of his bud by giving him an Endura Carrot, and he will ask for a Roasted Endura Carrot in order to revive any of your deceased horses.
+
+In order to improve a horses stats, Malanya will ask for certain meals to give him the energy he needs for the upgrade. To upgrade any stat to 2 stars, you will need to bring him a single Fried Wild Greens meal.
+Use `/tag horseupgrades` to see the meals needed for the rest of the upgrades.
+
+Malanya cannot upgrade the stats for Epona, the Giant White Stallion, and the Giant Horse("Gerudo"), as they like themselves the way they are.
+'''

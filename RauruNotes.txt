@@ -16,7 +16,7 @@ Refactor
 Small Scale
 -autochange profile
 -material respawn, construct respawn, dragon shard respawn
--merchants objectterms
+- merchants objectterms
 -more punctuation in ?find
 -auto create objmap link
 -private message with disclaimer
@@ -26,4 +26,4 @@ Small Scale
 
 Stuff to Make
 -mineru stats post
--all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686 https://youtu.be/Ayy-vpqJK_w
+-all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686 https://youtu.be/Ayy-vpqJK_w https://discord.com/channels/1111764095826415678/1111764453910917190/1181684341491904553
