@@ -18,6 +18,7 @@ Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -merchants objectterms
 -up the max stored messages
+-paradox gaming device battery
 
 Stuff to Make
 -mineru stats post
