@@ -23,6 +23,7 @@ Small Scale
 -malanya location tag
 -up the max stored messages
 -paradox gaming device battery
+-re-grab sharing links for sheets https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit?usp=sharing
 
 Stuff to Make
 -mineru stats post
