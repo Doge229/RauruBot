@@ -94,37 +94,22 @@ HELP_TAG1 = '''
     **Story Stuff**
     `postgame, elitepics, permaquests, trueend, ringruins, josha`
     **Farming Stuff**
-    `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm`
-    `freelynelbows, constructfarm, earlyrupees`
+    `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`
     **Equipment Info**
-    `octorok, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats`
-    `breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword`
-    `botwarmor/missingarmor`
+    `octorok, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats, breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`
     **Mechanics and Hints**
-    `bargainer/bargainerstatues, deviceshop, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror`
-    `coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation`
-    `control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation`
-    `midairwing, gleeokstrat, miskobanner, beginnertips/totktips`
+    `bargainer/bargainerstatues, deviceshop, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror, coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation, control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation, midairwing, gleeokstrat, miskobanner, beginnertips/totktips`
     **Effects and Builds**
-    `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist`
-    `attackupstacking, boneprof`
+    `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`
 Page 1 of 2
 '''
 HELP_TAG2 = '''
     **Useful Links and Stuff**
-    `wiki, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms`
-    `datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking`
-    `cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors`
-    `devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing`
-    `railpart/elevatorrail, betterpics, paracopter`
-    `bestfuses/fuseideas`
+    `wiki, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
     **Meta Info**
-    `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
-    `unreleasedamiibo`
+    `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, unreleasedamiibo`
     **Reference Images**
-    `horseupgrades, ascendmap, cherrymap, invupgrades, shrinecounts, dmgformula`
-    `armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals`
-    `zonaitotals, dragontotals`
+    `horseupgrades, ascendmap, cherrymap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`
 Page 2 of 2
 '''
 

@@ -32,11 +32,18 @@ class Tag(commands.Cog):
             case 'repository':
                 ANSWER = messages.INFO_REPOSITORY
             case 'disclaimer':
-                if commands.is_owner():
-                    ANSWER = messages.INFO_DEVDISCLAIMER
-                    EPHEMERAL = True
-                else:
-                    ANSWER = messages.ERROR_UNKNOWNCMD
+                try:
+                    if context.author.id == config.USERID_DOGE229:
+                        ANSWER = messages.INFO_DEVDISCLAIMER
+                        EPHEMERAL = True
+                    else:
+                        ANSWER = messages.ERROR_UNKNOWNCMD
+                except:
+                    if context.user.id == config.USERID_DOGE229:
+                        ANSWER = messages.INFO_DEVDISCLAIMER
+                        EPHEMERAL = True
+                    else:
+                        ANSWER = messages.ERROR_UNKNOWNCMD
             # region General Help Stuff
             case 'helpgeneral':
                 EPHEMERAL = True
