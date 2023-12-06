@@ -291,7 +291,7 @@ async def send(bot, channelid: int, message: str, image = None):
 def storemessageid(channelid: int, messageid: int):
     global MESSAGEHISTORY
 
-    if len(MESSAGEHISTORY) >= 10:
+    if len(MESSAGEHISTORY) >= 25:
         MESSAGEHISTORY.pop(0)
     
     MESSAGEHISTORY.append([channelid, messageid])
@@ -304,3 +304,8 @@ def argcleanup(arg: str):
         arg2 = arg2[:-1]
 
     return arg2
+
+def translate_to_url(arg: str):
+    replacements = {" ": "%20", '"': "%22", ":": "%3A", "'": "%27", "?": "%3F", "/": "%2F"}
+    translation_table = str.maketrans(replacements)
+    return arg.translate(translation_table)

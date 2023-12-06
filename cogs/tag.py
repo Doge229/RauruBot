@@ -31,7 +31,12 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_REPOSITORY
             case 'repository':
                 ANSWER = messages.INFO_REPOSITORY
-
+            case 'disclaimer':
+                if commands.is_owner():
+                    ANSWER = messages.INFO_DEVDISCLAIMER
+                    EPHEMERAL = True
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             # region General Help Stuff
             case 'helpgeneral':
                 EPHEMERAL = True
@@ -323,6 +328,14 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_BASEELEMENTALDMG
             case 'elementdmg':
                 ANSWER = messages.INFO_BASEELEMENTALDMG
+            case 'malanya':
+                ANSWER = messages.INFO_MALANYALOCATION
+            case 'malanyalocation':
+                ANSWER = messages.INFO_MALANYALOCATION
+            case 'horsegod':
+                ANSWER = messages.INFO_MALANYALOCATION
+            case 'horsegodlocation':
+                ANSWER = messages.INFO_MALANYALOCATION
             
             case 'gleeokstrat':
                 ANSWER = messages.INFO_GLEEOKSTRAT
@@ -444,6 +457,10 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_DONDON
             case 'horsecolor':
                 ANSWER = messages.POINT_HORSECOLORS
+            case 'devicedrain':
+                ANSWER = messages.POINT_ENERGYCELLSTATS
+            case 'energycelldrain':
+                ANSWER = messages.POINT_ENERGYCELLSTATS
             
             case 'hoverbike':
                 ANSWER = messages.POINT_HOVERBIKE

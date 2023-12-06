@@ -39,12 +39,7 @@ class General(commands.Cog):
         ANSWER = ''
         LAYER = 'Surface'
 
-        TERMS = arg
-        TERMS = TERMS.replace(" ", "%20")
-        TERMS = TERMS.replace('"', "%22")
-        TERMS = TERMS.replace(":", "%3A")
-        TERMS = TERMS.replace("'", "%20")
-        TERMS = TERMS.replace("-", "%20")
+        TERMS = system.translate_to_url(arg)
 
         if 'sky' in TERMS.lower() and not 'not sky' in arg.lower():
             LAYER = 'Sky'

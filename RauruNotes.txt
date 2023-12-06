@@ -12,18 +12,20 @@ Large Scale
 Refactor
 -expand logging and write to file
 -from file import method for stuffs
+-settings.json
 
 Small Scale
 -autochange profile
 -material respawn, construct respawn, dragon shard respawn
 - merchants objectterms
--more punctuation in ?find
+- more punctuation in ?find
 -auto create objmap link
--private message with disclaimer
--malanya location tag
--up the max stored messages
--paradox gaming device battery
--re-grab sharing links for sheets https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit?usp=sharing
+- private message with disclaimer
+- malanya location tag
+- up the max stored messages
+- paradox gaming device battery
+- re-grab sharing links for sheets https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit?usp=sharing
+-change tag help embed
 
 Stuff to Make
 -mineru stats post

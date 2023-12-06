@@ -37,6 +37,9 @@ Here's a link to my repository on Github:
 <https://github.com/Doge229/RauruBot>
 Please remember to check out the ReadMe and license if you need to use any of my code/info for your own projects!
 '''
+INFO_DEVDISCLAIMER = '''
+I make a lot of different resources for TotK, and I try my best to keep the information I disseminate as accurate and up-to-date as possible. That being said, if you think any information I have is wrong, please feel free to let me know. I want to make sure everyone has the correct information, so I am always open to being proven wrong. However, please keep in mind that anecdotal evidence is extremely hard to accept by itself, and I will need more substantial information before I am able to make changes to my resources.
+'''
 # endregion
 
 # region Help
@@ -100,8 +103,8 @@ HELP_TAG1 = '''
     **Mechanics and Hints**
     `bargainer/bargainerstatues, deviceshop, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror`
     `coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation`
-    `control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, midairwing, gleeokstrat`
-    `miskobanner, beginnertips/totktips`
+    `control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation`
+    `midairwing, gleeokstrat, miskobanner, beginnertips/totktips`
     **Effects and Builds**
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist`
     `attackupstacking, boneprof`
@@ -112,7 +115,8 @@ HELP_TAG2 = '''
     `wiki, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms`
     `datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking`
     `cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors`
-    `hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter`
+    `devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing`
+    `railpart/elevatorrail, betterpics, paracopter`
     `bestfuses/fuseideas`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
@@ -124,9 +128,9 @@ HELP_TAG2 = '''
 Page 2 of 2
 '''
 
-HELP_NOTIFY = '''Sending you a list of my commands'''
+HELP_NOTIFY = '''Sending you my response to that command'''
 HELP_NOTIFYERROR1 = '''My apologies'''
-HELP_NOTIFYERROR2 = ''', but I can't send you a list of my commands. Please try using `/tag help show` in a bot channel.'''
+HELP_NOTIFYERROR2 = ''', but I can't send you my response!. Please try using the slash command or visible version of that command.'''
 
 HELP_BLACKLIST = '''
 Here's how to use my blacklist command: 
@@ -444,6 +448,15 @@ INFO_BASEELEMENTALDMG = '''
 Every enemy takes a specific amount of base damage from each element, although some element sources can have a bonus damage that is added to the base damage. You can find the exact numbers for each enemy's base elemental damage taken on the Monsters tab of Phil's Data Sheet:
 <https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit#gid=143376740&range=A1>
 '''
+INFO_MALANYALOCATION = '''
+The Horse God Malanya can revive and upgrade your registered horses in TotK. You can find his spring at Bloodleaf Lake in Deep Akkala, north of East Akkala Stable.
+You can bring him out of his bud by giving him an Endura Carrot, and he will ask for a Roasted Endura Carrot in order to revive any of your deceased horses.
+
+In order to improve a horses stats, Malanya will ask for certain meals to give him the energy he needs for the upgrade. To upgrade any stat to 2 stars, you will need to bring him a single Fried Wild Greens meal.
+Use `/tag horseupgrades` to see the meals needed for the rest of the upgrades.
+
+Malanya cannot upgrade the stats for Epona, the Giant White Stallion, and the Giant Horse("Gerudo"), as they like themselves the way they are.
+'''
 
 INFO_GLEEOKSTRAT = '''
 The trick to taking down a Gleeok is to use Eyeball arrows while avoiding its attacks or staying behind cover. Multi-shot bows are strongly recommended for this.
@@ -589,11 +602,11 @@ Here are some terms/actor names that might be useful when using the Object Map:
 
 POINT_DATAPHIL = '''
 Here's a link to Phil's Data Sheet for TotK: 
-https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit#gid=1307828066
+https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit?usp=sharing
 '''
 POINT_DATAECHO = '''
 Here's a link to Echocolat's Data Sheet for TotK: 
-https://docs.google.com/spreadsheets/d/18pNtDx3z-8CwGJRmlW574xbQ6VphQOkvpZhClpOEVDA/edit#gid=114269320
+https://docs.google.com/spreadsheets/d/18pNtDx3z-8CwGJRmlW574xbQ6VphQOkvpZhClpOEVDA/edit?usp=sharing
 '''
 POINT_INTEROBJECTSHEET = '''
 Here's a link to Phil's Interactable Objects Sheet for TotK:
@@ -644,7 +657,7 @@ If you're on mobile, try viewing the image in fullscreen, look for a "Share" opt
 '''
 POINT_BEEDLETRADES = '''
 Here's a link to a list of all Beedle Trades: 
-https://docs.google.com/spreadsheets/d/1QMCSV19HFazu-dQuz0vN5lBDlMwXDYciUEYgG3h57ZQ/edit#gid=0
+https://docs.google.com/spreadsheets/d/1QMCSV19HFazu-dQuz0vN5lBDlMwXDYciUEYgG3h57ZQ/edit?usp=sharing
 '''
 POINT_AMIIBODROPTABLES = '''
 Here's a link to the Amiibo Drop Tables Spreadsheet:
@@ -657,11 +670,18 @@ https://docs.google.com/spreadsheets/d/1xNB1gOLZRSF9yp1mHUsS9ymogRJa1Wz8rTliTXez
 POINT_DONDON = '''
 Here are some links to information on what gems Dondons can give:
 Video Guide: <https://youtu.be/BGxltmsZaAI>
-Drop Table Sheet: <https://docs.google.com/spreadsheets/d/1bj_1KHBFgr-1tyc1HJIHTXmLgws3mWnTTgVyg8LSZVY/edit#gid=0>
+Drop Table Sheet: <https://docs.google.com/spreadsheets/d/1bj_1KHBFgr-1tyc1HJIHTXmLgws3mWnTTgVyg8LSZVY/edit?usp=sharing>
 '''
 POINT_HORSECOLORS = '''
 Here's a link to a document on Wild Horse Coloration in TotK by Artoirel:
 https://docs.google.com/document/d/1c2ZyGfECQw3OLTt2qHuzM6mrWfSNkbhk6xJK1fSP4aU/edit?usp=sharing
+'''
+POINT_ENERGYCELLSTATS = '''
+Here are some link's to Paradox Gaming's videos on Zonai Device power usage in TotK:
+Energy Cell usage:
+<https://youtu.be/TpFoMHQ1nyw>
+Battery usage:
+<https://youtu.be/ZVk7u7L2dEA>
 '''
 
 POINT_HOVERBIKE = '''
@@ -1041,23 +1061,3 @@ COMMAND_HELLO3 = '''Greetings!'''
 # endregion
 
 # Unimplemented Messages --- UPDATE HELP ---
-INFO_DEVDISCLAIMER = '''
-I happen to be a human being as well, which means that I am fallible, and make mistakes often. If I happen to make a mistake with anything I say or resources I make for TotK, please understand that I am trying my best to disseminate as up-to-date and accurate information about the game as possible.
-If you believe that I have made a mistake with regards to information I have shared about TotK, please let me know and I will do my best to hear you out and improve my resources/info if necessary. Please note that I won't be able to take anecdotal evidence as fact however, as sometimes that kind of information can be misleading.
-'''
-POINT_ENERGYCELLSTATS = '''
-Here are some link's to Paradox Gaming's videos on Zonai Device power usage in TotK:
-Energy Cell usage:
-<https://youtu.be/TpFoMHQ1nyw>
-Battery usage:
-<https://youtu.be/ZVk7u7L2dEA>
-'''
-INFO_MALANYALOCATION = '''
-The Horse God Malanya can revive and upgrade your registered horses in TotK. You can find his spring at Bloodleaf Lake in Deep Akkala, north of East Akkala Stable.
-You can bring him out of his bud by giving him an Endura Carrot, and he will ask for a Roasted Endura Carrot in order to revive any of your deceased horses.
-
-In order to improve a horses stats, Malanya will ask for certain meals to give him the energy he needs for the upgrade. To upgrade any stat to 2 stars, you will need to bring him a single Fried Wild Greens meal.
-Use `/tag horseupgrades` to see the meals needed for the rest of the upgrades.
-
-Malanya cannot upgrade the stats for Epona, the Giant White Stallion, and the Giant Horse("Gerudo"), as they like themselves the way they are.
-'''
