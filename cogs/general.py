@@ -47,7 +47,7 @@ class General(commands.Cog):
             LAYER = 'Depths'
 
         LINK = messages.COMMAND_OBJMAPBASELINK + LAYER + '?q=' + TERMS
-        ANSWER = messages.COMMAND_OBJMAPTERMS + '`' + arg + '`:\n' + LINK + '\n' + messages.COMMAND_OBJMAPNOTE
+        ANSWER = messages.COMMAND_OBJMAPTERMS + '`' + arg + '`:\n' + LINK
 
         await system.respond(context, ANSWER)
 

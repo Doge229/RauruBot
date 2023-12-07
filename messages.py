@@ -548,7 +548,8 @@ INFO_OBJECTMAP = '''
 The Object Map is a very powerful tool for locating things within TotK: 
 https://objmap-totk.zeldamods.org/#/map/z2,0,0 
 
--Click on the "Help" button below the search bar to see some information on what terms to use. 
+-Click on the "Help" button below the search bar to see some information on what terms to use.
+-You can change what layer of the Object Map is shown with the Layer button in the top right corner.
 -The Filters menu below the Search menu will allow you to reveal different icons and sections on the map. 
 -You can use these terms to filter search results by map level: 
 `surface` 
@@ -1032,7 +1033,6 @@ Left-Leg Depot - 15%
 
 # region Command Messages
 COMMAND_OBJMAPTERMS = '''Here is your Object Map link for the search term, '''
-COMMAND_OBJMAPNOTE = '''Note: You can change what layer of the Object Map is shown with the Layer button in the top right corner.'''
 COMMAND_OBJMAPBASELINK = '''https://objmap-totk.zeldamods.org/#/map/z2,0,0,'''
 
 CONVERT_COORD1 = '''The Object Map coordinates: '''

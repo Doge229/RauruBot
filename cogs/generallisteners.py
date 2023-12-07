@@ -3,6 +3,7 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
+import re
 import system
 import messages
 from .general import General
@@ -54,6 +55,23 @@ class GeneralListeners(commands.Cog):
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
+    @commands.Cog.listener('on_message')
+    async def autoobjmaplinkcreator(self, message):
+        ctx = await self.bot.get_context(message)
+        if not message.guild or system.check_banned(ctx) or message.author.bot:
+            return
+        
+        pattern = re.compile(r'\{\{([^}]*)\}\}')
+
+        matches = pattern.finditer(message.content)
+        unique_matches = set()
+        for match in matches:
+            if len(unique_matches) < 3  :
+                unique_matches.add(match.group(1))
+        
+        for TERMS in unique_matches:
+            await General.objmaplinkcreator(context=ctx, arg=TERMS)
+
     
     @commands.command(name='coordconvert')
     @commands.guild_only()
@@ -84,6 +102,23 @@ class GeneralListeners(commands.Cog):
             await General.findpristine(context=interaction, arg=weaponname)
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
+
+    @commands.Cog.listener('on_message')
+    async def autofindpristine(self, message):
+        ctx = await self.bot.get_context(message)
+        if not message.guild or system.check_banned(ctx) or message.author.bot:
+            return
+        
+        pattern = re.compile(r'\-\{([^}]*)\}\-')
+
+        matches = pattern.finditer(message.content)
+        unique_matches = set()
+        for match in matches:
+            if len(unique_matches) < 3:
+                unique_matches.add(match.group(1))
+        
+        for TERMS in unique_matches:
+            await General.findpristine(context=ctx, arg=TERMS)
 
     
     @commands.command(name='finddispenser', aliases=['dispenser'])
