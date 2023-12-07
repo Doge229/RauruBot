@@ -73,12 +73,7 @@ class General(commands.Cog):
     async def findpristine(context, arg):
         ANSWER = ''
 
-        TERMS = arg
-        TERMS = TERMS.replace(" ", "%20")
-        TERMS = TERMS.replace('"', "%22")
-        TERMS = TERMS.replace(":", "%3A")
-        TERMS = TERMS.replace("'", "%20")
-        TERMS = TERMS.replace("-", "%20")
+        TERMS = system.translate_to_url(arg)
 
         LINK = messages.COMMAND_OBJMAPBASELINK +'Depths?q=%22Npc_MinusFieldGhost_000%22%20' + TERMS
         ANSWER = messages.COMMAND_FINDPRISTINE1 + '`' + arg + '`:\n' + LINK
