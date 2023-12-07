@@ -57,7 +57,7 @@ class GeneralListeners(commands.Cog):
 
     @commands.Cog.listener('on_message')
     async def autoobjmaplinkcreator(self, message):
-        pattern = re.compile(r'\{\{([^}]*)\}\}')
+        pattern = re.compile(r'f\{(.*?)\}')
 
         ctx = await self.bot.get_context(message)
         if pattern.search(message.content):
@@ -108,7 +108,7 @@ class GeneralListeners(commands.Cog):
 
     @commands.Cog.listener('on_message')
     async def autofindpristine(self, message):
-        pattern = re.compile(r'\-\{([^}]*)\}\-')
+        pattern = re.compile(r'p\{(.*?)\}')
 
         ctx = await self.bot.get_context(message)
         if pattern.search(message.content):
