@@ -114,7 +114,7 @@ def check_admin(context, frombanned = False):
 def check_banned(context):
     if type(context) == discord.ext.commands.Context:
         if not check_admin(context, True):
-            if not str(context.author.id) in DICT_BLACKLIST:
+            if not str(context.author.id) + str(context.guild.id) in DICT_BLACKLIST:
                 return True
             else:
                 print(console_base('System') + f'{context.author} was blocked from using command: {context.message.content}; by: {inspect.currentframe().f_code.co_name}')
@@ -124,7 +124,7 @@ def check_banned(context):
     
     elif type(context) == discord.Interaction:
         if not check_admin(context, True):
-            if not str(context.user.id) in DICT_BLACKLIST:
+            if not str(context.author.id) + str(context.guild.id) in DICT_BLACKLIST:
                 return True
             else:
                 print(console_base('System') + f'{context.user} was blocked from using command: {context.command.name}; by: {inspect.currentframe().f_code.co_name}')

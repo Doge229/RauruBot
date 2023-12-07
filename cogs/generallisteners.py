@@ -57,12 +57,15 @@ class GeneralListeners(commands.Cog):
 
     @commands.Cog.listener('on_message')
     async def autoobjmaplinkcreator(self, message):
-        ctx = await self.bot.get_context(message)
-        if not message.guild or system.check_banned(ctx) or message.author.bot:
-            return
-        
         pattern = re.compile(r'\{\{([^}]*)\}\}')
 
+        ctx = await self.bot.get_context(message)
+        if pattern.search(message.content):
+            if not message.guild or not system.check_banned(ctx) or message.author.bot:
+                return
+        else:
+            return
+        
         matches = pattern.finditer(message.content)
         unique_matches = set()
         for match in matches:
@@ -105,12 +108,15 @@ class GeneralListeners(commands.Cog):
 
     @commands.Cog.listener('on_message')
     async def autofindpristine(self, message):
-        ctx = await self.bot.get_context(message)
-        if not message.guild or system.check_banned(ctx) or message.author.bot:
-            return
-        
         pattern = re.compile(r'\-\{([^}]*)\}\-')
 
+        ctx = await self.bot.get_context(message)
+        if pattern.search(message.content):
+            if not message.guild or not system.check_banned(ctx) or message.author.bot:
+                return
+        else:
+            return
+        
         matches = pattern.finditer(message.content)
         unique_matches = set()
         for match in matches:
