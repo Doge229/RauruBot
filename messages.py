@@ -240,7 +240,7 @@ The Octorok will restore the Base and Bonus Durability of the equipment, as well
 
 In addition, Rock Octoroks will modify the base equipment that they repair, from Tier 0 (no modifier) to Tier 1 (blue/white icon), Tier 1 to Tier 2 (orange icon), or Tier 2 to Tier 2. The modifier applied by the Octorok is random, based on the available modifiers for that equipment and the tier it is upgrading to. 
 Please take a look at this spreadsheet to see the available modifiers and values for each modifier: 
-<https://docs.google.com/spreadsheets/d/18pNtDx3z-8CwGJRmlW574xbQ6VphQOkvpZhClpOEVDA/edit#gid=328867100> 
+<https://docs.google.com/spreadsheets/d/12b8vsytM41T3nZrkXqiTrD3zejF1827-_10Os1yZIoo/edit?usp=sharing> 
 
 You can save next to an Octorok before giving it equipment, and reload that save to reroll the modifier you get. 
 
