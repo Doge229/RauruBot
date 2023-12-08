@@ -17,6 +17,8 @@ Refactor
 Small Scale
 -autochange profile
 -material respawn, construct respawn, dragon shard respawn
+-https://www.youtube.com/watch?v=a0slhXe6jzU repair legendary
+-replace modifier sheet
 
 Stuff to Make
 -mineru stats post
