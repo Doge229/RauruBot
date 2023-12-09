@@ -15,10 +15,11 @@ Refactor
 -settings.json
 
 Small Scale
--autochange profile
+- autochange profile
 -material respawn, construct respawn, dragon shard respawn
 -https://www.youtube.com/watch?v=a0slhXe6jzU repair legendary
--replace modifier sheet
+- replace modifier sheet
+-remove unreleasedamiibo
 
 Stuff to Make
 -mineru stats post
