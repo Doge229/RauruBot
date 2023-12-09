@@ -306,6 +306,6 @@ def argcleanup(arg: str):
     return arg2
 
 def translate_to_url(arg: str):
-    replacements = {" ": "%20", '"': "%22", ":": "%3A", "'": "%27", "?": "%3F", "/": "%2F"}
+    replacements = {" ": "%20", '"': "%22", ":": "%3A", "'": "%20", "?": "%3F", "/": "%2F"}
     translation_table = str.maketrans(replacements)
     return arg.translate(translation_table)
