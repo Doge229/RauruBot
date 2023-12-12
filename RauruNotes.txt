@@ -20,6 +20,11 @@ Small Scale
 -https://www.youtube.com/watch?v=a0slhXe6jzU repair legendary
 - replace modifier sheet
 -remove unreleasedamiibo
+- shrinefinder server specific
+-nfctag guide
+- tweak time between autoprofile
+-fandombad
+-more comments
 
 Stuff to Make
 -mineru stats post

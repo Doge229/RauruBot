@@ -532,6 +532,10 @@ https://youtu.be/wvL0YnIjyCU
 POINT_SHRINEFINDER = '''
 Here's a link to a website that can help you find what Shrines and Lightroots you are missing:
 <https://www.haokepeng.com/zelda>
+'''
+POINT_SHRINEFINDER2 = '''
+Here's a link to a website that can help you find what Shrines and Lightroots you are missing:
+<https://www.haokepeng.com/zelda>
 If you are having trouble using this site, please feel free to head to <#753016129328250964> and post screenshots of your maps so someone can help you find what you're missing.
 '''
 
@@ -1046,3 +1050,11 @@ COMMAND_HELLO3 = '''Greetings!'''
 # endregion
 
 # Unimplemented Messages --- UPDATE HELP ---
+POINT_FANDOMBAD = '''
+Here's a link to a video explaining the situation surrounding Fandom and wiki migration:
+https://youtu.be/qcfuA_UAz3I
+'''
+POINT_NFCTAGS = '''
+Here's a link to a guide on making NFC tags to use as Amiibo:
+https://youtu.be/tBFSa4Tuzug
+'''

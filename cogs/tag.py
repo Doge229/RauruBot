@@ -402,7 +402,7 @@ class Tag(commands.Cog):
             case 'mapcompletion':
                 ANSWER = messages.POINT_MAPCOMPLETION
             case 'shrinefinder':
-                ANSWER = messages.POINT_SHRINEFINDER
+                ANSWER = messages.POINT_SHRINEFINDER2 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID else messages.POINT_SHRINEFINDER
             
             case 'map':
                 ANSWER = messages.POINT_INTERACTMAPS

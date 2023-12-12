@@ -15,7 +15,11 @@ import random
 import asyncio
 
 timezone = datetime.timezone(datetime.timedelta(hours=-6))
-time = datetime.time(hour=8, minute=00, tzinfo=timezone)
+times = [
+    datetime.time(hour=8, minute=00, tzinfo=timezone),
+    datetime.time(hour=16, minute=00, tzinfo=timezone),
+    datetime.time(hour=00, minute=00, tzinfo=timezone)
+]
 
 class DailyProfile(commands.Cog):
     def __init__(self, bot) -> None:
@@ -26,7 +30,7 @@ class DailyProfile(commands.Cog):
     def cog_unload(self):
         self.testtimer.cancel()
     
-    @tasks.loop(time=time)
+    @tasks.loop(time=times)
     async def testtimer(self):
         int = random.randint(1, 100)
         CHOICE = 'default'
