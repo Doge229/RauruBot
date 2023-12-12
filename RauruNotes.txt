@@ -14,16 +14,7 @@ Refactor
 
 Small Scale
 -material respawn, construct respawn, dragon shard respawn
-- https://www.youtube.com/watch?v=a0slhXe6jzU repair legendary
-- remove unreleasedamiibo
-- shrinefinder server specific
-- nfctag guide
-- tweak time between autoprofile
-- fandombad
 -more comments
-- robbie tag
-- fix railpart
-- traveler alias
 
 Stuff to Make
 -mineru stats post

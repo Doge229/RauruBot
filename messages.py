@@ -107,7 +107,7 @@ HELP_TAG2 = '''
     **Useful Links and Stuff**
     `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
     **Meta Info**
-    `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, unreleasedamiibo`
+    `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
     **Reference Images**
     `horseupgrades, ascendmap, cherrymap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`
 Page 2 of 2
