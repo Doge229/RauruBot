@@ -145,6 +145,16 @@ class Tag(commands.Cog):
                     ANSWER = messages.INFO_IMGPERM
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'traveler':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_IMGPERM
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'travelerrole':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_IMGPERM
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
             case 'rolereward':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
                     ANSWER = messages.INFO_ROLEREWARDS
@@ -188,6 +198,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_RINGRUINQUEST
             case 'josha':
                 ANSWER = messages.INFO_JOSHA
+            case 'robbie':
+                ANSWER = messages.INFO_ROBBIE
             # endregion
 
             # region Farming Stuff
@@ -392,7 +404,13 @@ class Tag(commands.Cog):
             # region Reference Info
             case 'wiki':
                 ANSWER = messages.POINT_WIKI
-            
+            case 'fandom':
+                ANSWER = messages.POINT_FANDOMBAD
+            case 'fandombad':
+                ANSWER = messages.POINT_FANDOMBAD
+            case 'wikimigration':
+                ANSWER = messages.POINT_FANDOMBAD
+
             case 'tracker':
                 ANSWER = messages.POINT_TRACKER
             case 'armorcalc':
@@ -480,13 +498,13 @@ class Tag(commands.Cog):
             case 'infinitewing':
                 ANSWER = messages.POINT_GOLDENWING
             case 'railingpart':
-                ANSWER = messages.INFO_RAILPART
+                ANSWER = messages.POINT_RAILPART
             case 'railpart':
-                ANSWER = messages.INFO_RAILPART
+                ANSWER = messages.POINT_RAILPART
             case 'elevatorpart':
-                ANSWER = messages.INFO_RAILPART
+                ANSWER = messages.POINT_RAILPART
             case 'elevatorrail':
-                ANSWER = messages.INFO_RAILPART
+                ANSWER = messages.POINT_RAILPART
             case 'betterphoto':
                 ANSWER = messages.POINT_BETTERPHOTOS
             case 'betterpic':
@@ -526,8 +544,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_WHEREDLC
             case 'dlc':
                 ANSWER = messages.POINT_WHEREDLC
-            case 'unreleasedamiibo':
-                ANSWER = messages.POINT_UNRELEASEDAMIIBO
+            case 'nfctag':
+                ANSWER = messages.POINT_NFCTAGS if not context.guild.id == config.GENSERVERID else messages.ERROR_UNKNOWNCMD
             # endregion
 
             # region Armor Totals

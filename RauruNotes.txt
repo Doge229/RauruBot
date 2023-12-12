@@ -3,11 +3,9 @@ Large Scale
 -multi-server
   -errors say what server
 -all logs, togglable
--reminder
 -make cogs and module load/reload look nice
 -lock channels that bot can't access for slash commands
 -credit-ish info on load
--https://github.com/KingFooZQ/Totk-Cooking-Simulator
 
 Refactor
 -expand logging and write to file
@@ -15,18 +13,17 @@ Refactor
 -settings.json
 
 Small Scale
-- autochange profile
 -material respawn, construct respawn, dragon shard respawn
--https://www.youtube.com/watch?v=a0slhXe6jzU repair legendary
-- replace modifier sheet
--remove unreleasedamiibo
+- https://www.youtube.com/watch?v=a0slhXe6jzU repair legendary
+- remove unreleasedamiibo
 - shrinefinder server specific
--nfctag guide
+- nfctag guide
 - tweak time between autoprofile
--fandombad
+- fandombad
 -more comments
--robbie tag
-fix railpart
+- robbie tag
+- fix railpart
+- traveler alias
 
 Stuff to Make
 -mineru stats post

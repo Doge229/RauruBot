@@ -92,7 +92,7 @@ HELP_GENSERVERTAGS = '''
 
 HELP_TAG1 = '''
     **Story Stuff**
-    `postgame, elitepics, permaquests, trueend, ringruins, josha`
+    `postgame, elitepics, permaquests, trueend, ringruins, josha, robbie`
     **Farming Stuff**
     `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`
     **Equipment Info**
@@ -105,7 +105,7 @@ Page 1 of 2
 '''
 HELP_TAG2 = '''
     **Useful Links and Stuff**
-    `wiki, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
+    `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, unreleasedamiibo`
     **Reference Images**
@@ -178,6 +178,12 @@ INFO_PERMQUESTS = '''You cannot permanently complete the quests ||"Destroy Ganon
 INFO_TRUEEND = '''If you have collected every memory, then ||a new cutscene featuring all of the Sages will play after the credits.||'''
 INFO_RINGRUINQUEST = '''The main quest ||"Secret of the Ring Ruins"|| can be begun by speaking to Tauro and Paya in Kakariko Village after you have completed ||"Crisis at Hyrule Castle"||.'''
 INFO_JOSHA = '''Josha is Purah's head of Depths Research and can be found in her workshop in Lookout Landing. She provides a number of quests designed to lead you to important locations within the Depths, so anytime you have a question about the Depths it might be a good idea to see if she has any information for you.'''
+INFO_ROBBIE = '''
+Robbie is the Head of Purah Pad Development, and offers a few different upgrades to your Purah Pad throughout the game. During "Camera Work in the Depths" he can be found near Iayusus Lightroot, where he will unlock the Camera functionality of your Purah Pad.
+
+In order to get the rest of your Purah Pad upgrades, you will need to complete Josha's quest, "A Mystery in the Depths" (which also requires completion of at least one part of "Regional Phenomena"), at which point Robbie will set off for his lab in Hateno Village.
+There, Robbie can provide you with the Sensor, Sensor+, Travel Medallions, and Hero's Path Mode for your Purah Pad, although he will request data in exchange for some of these.
+'''
 # endregion
 
 # region Farming Stuff
@@ -248,6 +254,8 @@ Each Octorok can only be used once per Blood Moon, and will need to be killed af
 '''
 INFO_REPAIRLEGEND = '''
 You can repair any Legendary equipment by fusing it to a non-Legendary weapon or shield, then repairing that with a Rock Octorok. Then take it to the Break-A-Part Shop at Tarrey Town, which is located in the Akkala Highlands. Have Pelison break it down, and your Legendary equipment will be fully repaired.
+
+If you wish to repair a piece of Legendary equipment without losing its modifier, please take a look at this guide: <https://youtu.be/a0slhXe6jzU>
 '''
 INFO_LEGENDLIST = '''
 The following equipment cannot be modified by Rock Octoroks and is usually referred to as Legendary equipment: 
@@ -514,6 +522,10 @@ The Radiant set has no innate effects, but can be upgraded and grants the set bo
 POINT_WIKI = '''
 Here's a link to the wiki for TotK:
 <https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom>
+'''
+POINT_FANDOMBAD = '''
+Here's a link to a video explaining the situation surrounding Fandom and wiki migration:
+https://youtu.be/qcfuA_UAz3I
 '''
 
 POINT_TRACKER = '''
@@ -811,9 +823,9 @@ POINT_WHEREDLC = '''
 Here's a link to a video explaining the situation regarding DLC for TotK:
 https://youtu.be/DY-qfykgeuQ
 '''
-POINT_UNRELEASEDAMIIBO = '''
-Here's a link to a guide on obtaining the Unreleased TotK Zelda and Ganondorf Amiibo Paraglider Fabrics:
-https://youtu.be/ZuohEzyhKxM
+POINT_NFCTAGS = '''
+Here's a link to a guide on making NFC tags to use as Amiibo:
+https://youtu.be/tBFSa4Tuzug
 '''
 # endregion
 
@@ -1050,11 +1062,3 @@ COMMAND_HELLO3 = '''Greetings!'''
 # endregion
 
 # Unimplemented Messages --- UPDATE HELP ---
-POINT_FANDOMBAD = '''
-Here's a link to a video explaining the situation surrounding Fandom and wiki migration:
-https://youtu.be/qcfuA_UAz3I
-'''
-POINT_NFCTAGS = '''
-Here's a link to a guide on making NFC tags to use as Amiibo:
-https://youtu.be/tBFSa4Tuzug
-'''
