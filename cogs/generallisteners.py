@@ -141,6 +141,11 @@ class GeneralListeners(commands.Cog):
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
+    @finddispenserslash.autocomplete('device')
+    async def device_autocomplete(self, interaction: discord.Interaction, current: str):
+        devices = ['Fan', 'Wing', 'Cart', 'Balloon', 'Rocket', 'Time Bomb', 'Portable Pot', 'Flame Emitter', 'Frost Emitter', 'Shock Emitter', 'Beam Emitter', 'Hydrant', 'Steering Stick', 'Big Wheel', 'Small Wheel', 'Sled', 'Battery', 'Big Battery', 'Spring', 'Cannon', 'Stabilizer', 'Hover Stone', 'Light', 'Stake', 'Mirror', 'Homing Cart', 'Construct Head']
+        return[app_commands.Choice(name=device, value=device) for device in devices if current.lower().replace(" ", "") in devices.lower().replace(" ", "")]
+
     @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo'])
     @commands.guild_only()
     @commands.check(system.check_banned)

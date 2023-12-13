@@ -15,6 +15,7 @@ Refactor
 Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
+-autofill finddispenser
 
 Stuff to Make
 -mineru stats post
