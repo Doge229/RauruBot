@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import re
+import typing
 import system
 import messages
 from .general import General
@@ -142,9 +143,14 @@ class GeneralListeners(commands.Cog):
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
     @finddispenserslash.autocomplete('device')
-    async def device_autocomplete(self, interaction: discord.Interaction, current: str):
+    async def device_autocomplete(self, interaction: discord.Interaction, current: str)-> typing.List[app_commands.Choice[str]]:
         devices = ['Fan', 'Wing', 'Cart', 'Balloon', 'Rocket', 'Time Bomb', 'Portable Pot', 'Flame Emitter', 'Frost Emitter', 'Shock Emitter', 'Beam Emitter', 'Hydrant', 'Steering Stick', 'Big Wheel', 'Small Wheel', 'Sled', 'Battery', 'Big Battery', 'Spring', 'Cannon', 'Stabilizer', 'Hover Stone', 'Light', 'Stake', 'Mirror', 'Homing Cart', 'Construct Head']
-        return[app_commands.Choice(name=device, value=device) for device in devices if current.lower().replace(" ", "") in devices.lower().replace(" ", "")]
+        data = []
+        if not current == "":
+            for choice in devices:
+                    if current.lower().replace(" ", "") in choice.lower().replace(" ", ""):
+                        data.append(app_commands.Choice(name=choice, value=choice))
+        return data
 
     @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo'])
     @commands.guild_only()
