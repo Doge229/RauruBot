@@ -20,6 +20,7 @@ Small Scale
 -reformat tall msgs, esp with links
 -?thanks?
 -christmas pics
+-construct husk actor name SkyObj_ZonauRobot_Background_A_03 MinusObj_ZonauRobot_Background_B_03
 
 Stuff to Make
 -mineru stats post
