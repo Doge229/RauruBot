@@ -15,12 +15,14 @@ Refactor
 Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
--autofill finddispenser
+- autofill finddispenser
 -poly flag
 -reformat tall msgs, esp with links
 -?thanks?
 -christmas pics
 -construct husk actor name SkyObj_ZonauRobot_Background_A_03 MinusObj_ZonauRobot_Background_B_03
+-nick cmd and listener
+-new dmgcalc, dmg formula image
 
 Stuff to Make
 -mineru stats post

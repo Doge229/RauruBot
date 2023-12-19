@@ -234,14 +234,14 @@ async def setprofilepic(bot, option):
 
     return IMAGENAME
 
-async def respond(context: discord.Object, message: str, image = None, hidden: bool = False, silent: bool = False, time: int = 0):
+async def respond(context: discord.Object, message: str, image: discord.File = None, embed: discord.Embed = None, hidden: bool = False, silent: bool = False, time: int = 0):
     
     if type(context) == discord.ext.commands.Context:
         if hidden:
             USER = context.author
             if image:
                 try:
-                    await USER.send(message, file=image)
+                    await USER.send(message, file=image, embed=embed)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
                     msg = await context.reply(NOTIFY, silent=True)
                 except:
@@ -249,7 +249,7 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
                     msg = await context.reply(NOTIFY, silent=True)
             else:
                 try:
-                    await USER.send(message)
+                    await USER.send(message, embed=embed)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
                     msg = await context.reply(NOTIFY, silent=True)
                 except:
@@ -258,16 +258,16 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
 
         else:
             if image:
-                msg = await context.send(message, file=image, silent=silent)
+                msg = await context.send(message, file=image, silent=silent, embed=embed)
             else:
-                msg = await context.send(message, silent=silent)
+                msg = await context.send(message, silent=silent, embed=embed)
     
     elif type(context) == discord.Interaction:
         if image:
-           await context.response.send_message(message, file=image, ephemeral=hidden, silent=silent)
+           await context.response.send_message(message, file=image, ephemeral=hidden, silent=silent, embed=embed)
            msg = await context.original_response()
         else:
-           await context.response.send_message(message, ephemeral=hidden, silent=silent)
+           await context.response.send_message(message, ephemeral=hidden, silent=silent, embed=embed)
            msg = await context.original_response()
 
     if time == 0:
@@ -278,12 +278,12 @@ async def respond(context: discord.Object, message: str, image = None, hidden: b
         await msg.delete()
 
 
-async def send(bot, channelid: int, message: str, image = None):
+async def send(bot, channelid: int, message: str, image: discord.File = None, embed: discord.Embed = None):
     channel = bot.get_channel(channelid)
     if image:
-        msg = await channel.send(message, file=image)
+        msg = await channel.send(message, file=image, embed=embed)
     else:
-        msg = await channel.send(message)
+        msg = await channel.send(message, embed=embed)
     
     storemessageid(channelid, msg.id)
     return msg

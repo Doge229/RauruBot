@@ -720,77 +720,49 @@ https://youtu.be/3f7PiBOgAuk
 # endregion
 
 # region Meta Info
+INFO_DUPE112TITLE = '''Here are some duplication glitches for 1.1.2:'''
 INFO_DUPE112 = '''
-Here are some links for duplication glitches for 1.1.2:
-Tobio's Hollow Chasm Duplication:
-<https://youtu.be/E8nab6JNBts>
-Shock Duping (For equipment):
-<https://youtu.be/dFsNK8bf1io>
-Autobuild Duplication (For rupee farming):
-<https://youtu.be/RKsvliFBCV4>
-Rock Octorok Recall (For most equipment):
-<https://youtu.be/0cR_fbx-P_Y>
-Midair Inventory Shift Dupe w/ Dispenser Storage:
-<https://youtu.be/OVWuFLYSGiE>
-Midair Inventory Shift Dupe (For creatures):
-<https://youtu.be/33pm1D6ugh0>
-Save Load Dupe (For throwable equipment):
-<https://youtube.com/shorts/N26xvLp2F1I>
-Weapon Stat Transfer:
-<https://youtu.be/9jJbAJdP3d8>
+- [Tobio's Hollow Chasm Duplication](<https://youtu.be/E8nab6JNBts>) (For fusable materials)
+- [Shock Duping](<https://youtu.be/dFsNK8bf1io>) (For equipment)
+- [Autobuild Duplication](<https://youtu.be/RKsvliFBCV4>) (For rupee farming)
+- [Rock Octorok Recall](<https://youtu.be/0cR_fbx-P_Y>) (For most equipment)
+- [Midair Inventory Shift Dupe w/ Dispenser Storage](<https://youtu.be/OVWuFLYSGiE>)
+- [Midair Inventory Shift Dupe](<https://youtu.be/33pm1D6ugh0>) (For creatures)
+- [Save Load Dupe](<https://youtube.com/shorts/N26xvLp2F1I>) (For throwable equipment)
+- [Weapon Stat Transfer](<https://youtu.be/9jJbAJdP3d8>)
 '''
+INFO_DUPE120TITLE = '''Here are some duplication glitches for 1.2.0:'''
 INFO_DUPE120 = '''
-Here are some links for duplication glitches on 1.2.0:
-Bomb/Elemental Fruit Dupe:
-<https://youtu.be/BZID7B_99QY?t=21>
-Minus Duping:
-<https://youtu.be/BZID7B_99QY?t=223>
-Vendor Scamming:
-<https://youtu.be/BZID7B_99QY?t=456>
-Zonai Inventory Shift Duplication(ZISD):
-<https://youtu.be/BZID7B_99QY?t=685>
-Midair Throw Duplication(MTD):
-<https://youtu.be/BZID7B_99QY?t=827>
-MTD w/ Dispenser Storage:
-<https://youtu.be/BZID7B_99QY?t=977>
-Like-Like Fuse Entanglement:
-<https://youtu.be/BZID7B_99QY?t=1207>
-Weapon Stat Transfer(WST) w/ Like-Like Fuse Entanglement:
-<https://youtu.be/Jw2HWQTKS8w>
-Sluggling:
-<https://youtu.be/BZID7B_99QY?t=1553>
-Stal-Arm Smuggling:
-Dupes weapons, including their Fused item. Note that when any equipment is Fused to other equipment it will lose its modifier, if applicable.
-<https://youtu.be/OL64sy4Uucc>
-Stick Smuggling:
-Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
-<https://youtu.be/iRkNT3NEVuQ>
+- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
+- [Minus Duping](<https://youtu.be/BZID7B_99QY?t=223>) (For throwable materials)
+- [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>) (For Rupees)
+- [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
+- [Midair Throw Duplication(MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
+- [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
+- [Like-Like Fuse Entanglement](<https://youtu.be/BZID7B_99QY?t=1207>) (For equipment)
+    - [Weapon Stat Transfer(WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
+    - [Sluggling](<https://youtu.be/BZID7B_99QY?t=1553>)
+- [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
+    - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
+- [Stick Smuggling](<https://youtu.be/iRkNT3NEVuQ>)
+    - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
 '''
+INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
 INFO_DUPE121 = '''
-Here are some links for duplication glitches on 1.2.1:
-Vendor Scamming:
-NOTE: This glitch is limited, and will need to be re-performed every 5 items.
-<https://youtu.be/LCc1525GlHo?t=138>
-Minus Duping:
-<https://youtu.be/bV1KxESU9v8?t=17>
-Dispenser Storage (Used with Minus Duping):
-<https://youtu.be/LCc1525GlHo?t=434>
-Zonai Inventory Shift Duplication (ZISD):
-<https://youtu.be/LCc1525GlHo?t=561>
-Midair Throw Duplication (MTD):
-NOTE: This is for Zonai Devices ONLY.
-<https://youtu.be/LCc1525GlHo?t=693>
-MTD for other materials:
-<https://youtu.be/bV1KxESU9v8?t=283>
-Stal-Arm Smuggling:
-Dupes weapons, including their Fused item. Note that when any equipment is Fused to other equipment it will lose its modifier, if applicable.
-<https://youtu.be/OL64sy4Uucc>
-Stick Smuggling:
-Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
-BlizeYT's guide:
-<https://youtu.be/iRkNT3NEVuQ>
-Suishi's guide:
-<https://youtu.be/5SJvlf0iTcE>
+- [Vendor Scamming](<https://youtu.be/LCc1525GlHo?t=138>)
+    - NOTE: This glitch is limited, and will need to be re-performed every 5 items.
+- [Minus Duping](<https://youtu.be/bV1KxESU9v8?t=17>) (For throwable materials)
+- [Dispenser Storage](<https://youtu.be/LCc1525GlHo?t=434>) (Used with Minus Duping)
+- [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
+- [Midair Throw Duplication (MTD)](<https://youtu.be/LCc1525GlHo?t=693>)
+    - NOTE: This is for Zonai Devices ONLY.
+- [MTD for other materials](<https://youtu.be/bV1KxESU9v8?t=283>)
+- [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
+    - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
+- Stick Smuggling:
+    - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
+    - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
+    - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
 '''
 
 INFO_DOWNPATCH = '''
@@ -811,12 +783,10 @@ If you attempt to resume a suspended software from the home screen and receive a
 If you launch a software and you get a pop-up saying that you need to restart your Switch to install a **system** update, then you can do so without fear of your software being updated, if the update data is not downloaded and waiting to be installed.
 '''
 INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
+POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch:'''
 POINT_TRANSFERALBUM = '''
-Here are some links to guides on how to transfer screenshots and clips from your Switch:
-Transfer to your smartphone with a QR code:
-<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>
-Transfer to your computer via USB:
-<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>
+- [Transfer to your smartphone with a QR code](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>)
+- [Transfer to your computer via USB](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>)
 '''
 
 POINT_WHEREDLC = '''

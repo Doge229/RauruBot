@@ -14,8 +14,9 @@ class Tag(commands.Cog):
         super().__init__()
 
     async def tag(context, arg):
-        ANSWER = ''
+        ANSWER = None
         IMAGE = None
+        EMBED = None
         EPHEMERAL = False
 
         arg = system.argcleanup(arg)
@@ -519,11 +520,14 @@ class Tag(commands.Cog):
 
             # region Meta Info
             case 'dupe1.1.2':
-                ANSWER = messages.INFO_DUPE112
+                ANSWER = messages.INFO_DUPE112TITLE
+                EMBED = discord.Embed(description=messages.INFO_DUPE112)
             case 'dupe1.2.0':
-                ANSWER = messages.INFO_DUPE120
+                ANSWER = messages.INFO_DUPE120TITLE
+                EMBED = discord.Embed(description=messages.INFO_DUPE120)
             case 'dupe1.2.1':
-                ANSWER = messages.INFO_DUPE121
+                ANSWER = messages.INFO_DUPE121TITLE
+                EMBED = discord.Embed(description=messages.INFO_DUPE121)
 
             case 'downpatch':
                 ANSWER = messages.INFO_DOWNPATCH
@@ -532,13 +536,17 @@ class Tag(commands.Cog):
             case 'versioncheck':
                 ANSWER = messages.INFO_CHECKGAMEVERSION
             case 'transferalbum':
-                ANSWER = messages.POINT_TRANSFERALBUM
+                ANSWER = messages.POINT_TRANSFERALBUMTITLE
+                EMBED = discord.Embed(description=messages.POINT_TRANSFERALBUM)
             case 'transferpic':
-                ANSWER = messages.POINT_TRANSFERALBUM
+                ANSWER = messages.POINT_TRANSFERALBUMTITLE
+                EMBED = discord.Embed(description=messages.POINT_TRANSFERALBUM)
             case 'transferclip':
-                ANSWER = messages.POINT_TRANSFERALBUM
+                ANSWER = messages.POINT_TRANSFERALBUMTITLE
+                EMBED = discord.Embed(description=messages.POINT_TRANSFERALBUM)
             case 'transfervid':
-                ANSWER = messages.POINT_TRANSFERALBUM
+                ANSWER = messages.POINT_TRANSFERALBUMTITLE
+                EMBED = discord.Embed(description=messages.POINT_TRANSFERALBUM)
             
             case 'wheredlc':
                 ANSWER = messages.POINT_WHEREDLC
@@ -631,7 +639,7 @@ class Tag(commands.Cog):
             case _:
                 ANSWER = messages.ERROR_UNKNOWNCMD
 
-        await system.respond(context, ANSWER, image=IMAGE, hidden=EPHEMERAL)
+        await system.respond(context, ANSWER, image=IMAGE, hidden=EPHEMERAL, embed=EMBED)
 
 async def setup(bot):
     await bot.add_cog(Tag(bot))

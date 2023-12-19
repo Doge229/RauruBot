@@ -81,8 +81,9 @@ class General(commands.Cog):
         await system.respond(context, ANSWER)
 
     async def finddispenser(context, arg):
-        ANSWER = ''
-        DISPENSERS = ''
+        ANSWER = None
+        DISPENSERS = None
+        EMBED = None
         VALID = True
         TERM = arg
 
@@ -149,9 +150,10 @@ class General(commands.Cog):
                 ANSWER = messages.ERROR_UNKNOWNCMD
 
         if VALID:
-            ANSWER = messages.DISP_BASE + f'`{TERM}`' + messages.DISP_BASE2 + f'\n' + DISPENSERS
+            ANSWER = messages.DISP_BASE + f'`{TERM}`' + messages.DISP_BASE2# + f'\n' + DISPENSERS
+            EMBED = discord.Embed(description=DISPENSERS)
 
-        await system.respond(context, ANSWER)
+        await system.respond(context, message=ANSWER, embed=EMBED)
 
     async def hello(context):
         ANSWER = ''

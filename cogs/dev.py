@@ -93,7 +93,8 @@ class Dev(commands.Cog):
     @commands.command(name='msgtest', hidden=True)
     @commands.is_owner()
     async def msgtest(self, ctx):
-        await system.respond(ctx, messages.BOT_INFO)
+        embed = discord.Embed(title=None, description=messages.INFO_DUPE121)
+        await system.respond(ctx, messages.INFO_RAURUBOT, embed=embed)
 
     @commands.command(name='commandtest', aliases=['cmdtest'])
     @commands.is_owner()
