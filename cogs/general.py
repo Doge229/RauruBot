@@ -156,7 +156,7 @@ class General(commands.Cog):
         await system.respond(context, message=ANSWER, embed=EMBED)
 
     async def hello(context):
-        ANSWER = ''
+        ANSWER = None
         SILENT = False
     
         CHOICE = random.randint(1, 6)
@@ -188,7 +188,40 @@ class General(commands.Cog):
                     ANSWER = f'{messages.COMMAND_HELLO3[:-1]} <@{context.user.id}>!'
         
         await system.respond(context, ANSWER, silent=SILENT)
+    
+    async def thanks(context):
+        ANSWER = None
+        SILENT = False
 
+        CHOICE = random.randint(1, 6)
+    
+        match CHOICE:
+            case 1:
+                ANSWER = messages.COMMAND_THANKS1
+            case 2:
+                ANSWER = messages.COMMAND_THANKS2
+            case 3:
+                ANSWER = messages.COMMAND_THANKS3
+            case 4:
+                SILENT = True
+                if type(context) == discord.ext.commands.Context:
+                    ANSWER = f'{messages.COMMAND_THANKS1[:-1]} <@{context.author.id}>!'
+                elif type(context) == discord.Interaction:
+                    ANSWER = f'{messages.COMMAND_THANKS1[:-1]} <@{context.user.id}>!'
+            case 5:
+                SILENT = True
+                if type(context) == discord.ext.commands.Context:
+                    ANSWER = f'{messages.COMMAND_THANKS2[:-1]} <@{context.author.id}>!'
+                elif type(context) == discord.Interaction:
+                    ANSWER = f'{messages.COMMAND_THANKS2[:-1]} <@{context.user.id}>!'
+            case 6:
+                SILENT = True
+                if type(context) == discord.ext.commands.Context:
+                    ANSWER = f'{messages.COMMAND_THANKS3[:-1]} <@{context.author.id}>!'
+                elif type(context) == discord.Interaction:
+                    ANSWER = f'{messages.COMMAND_THANKS3[:-1]} <@{context.user.id}>!'
+
+        await system.respond(context, ANSWER, silent=SILENT)
 
 async def setup(bot):
     await bot.add_cog(General(bot))

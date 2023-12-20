@@ -216,7 +216,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_SHOPRESTOCK
             
             case 'chargefarm':
-                ANSWER = messages.INFO_CHARGEFARM
+                ANSWER = messages.INFO_CHARGEFARMTITLE
+                EMBED = discord.Embed(description=messages.INFO_CHARGEFARM)
             case 'starfragment':
                 ANSWER = messages.POINT_STARFARM
             case 'dragon':
@@ -244,9 +245,11 @@ class Tag(commands.Cog):
             case 'repairlegend':
                 ANSWER = messages.INFO_REPAIRLEGEND
             case 'legendarylist':
-                ANSWER = messages.INFO_LEGENDLIST
+                ANSWER = messages.INFO_LEGENDLISTTITLE
+                EMBED = discord.Embed(description=messages.INFO_LEGENDLIST)
             case 'legendlist':
-                ANSWER = messages.INFO_LEGENDLIST
+                ANSWER = messages.INFO_LEGENDLISTTITLE
+                EMBED = discord.Embed(description=messages.INFO_LEGENDLIST)
             
             case 'fusedurability':
                 ANSWER = messages.INFO_FUSEDURABILITY
@@ -432,13 +435,17 @@ class Tag(commands.Cog):
             case 'objectmap':
                 ANSWER = messages.INFO_OBJECTMAP
             case 'objectterm':
-                ANSWER = messages.INFO_USEFULOBJECTTERMS
+                ANSWER = messages.INFO_USEFULOBJECTTERMSTITLE
+                EMBED = discord.Embed(description=messages.INFO_USEFULOBJECTTERMS)
             case 'objterm':
-                ANSWER = messages.INFO_USEFULOBJECTTERMS
+                ANSWER = messages.INFO_USEFULOBJECTTERMSTITLE
+                EMBED = discord.Embed(description=messages.INFO_USEFULOBJECTTERMS)
             case 'objectmapterm':
-                ANSWER = messages.INFO_USEFULOBJECTTERMS
+                ANSWER = messages.INFO_USEFULOBJECTTERMSTITLE
+                EMBED = discord.Embed(description=messages.INFO_USEFULOBJECTTERMS)
             case 'objmapterm':
-                ANSWER = messages.INFO_USEFULOBJECTTERMS
+                ANSWER = messages.INFO_USEFULOBJECTTERMSTITLE
+                EMBED = discord.Embed(description=messages.INFO_USEFULOBJECTTERMS)
             
             case 'phildatasheet':
                 ANSWER = messages.POINT_DATAPHIL

@@ -165,6 +165,20 @@ class GeneralListeners(commands.Cog):
             await General.hello(interaction)
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
+    
+    @commands.command(name='thanks', aliases=['thankyou', 'gracias', 'merci'])
+    @commands.guild_only()
+    @commands.check(system.check_banned)
+    async def thanks(self, ctx):
+        await General.thanks(ctx)
+    
+    @app_commands.command(name='thanks')
+    @app_commands.check(system.check_banned)
+    async def thanksslash(self, interaction: discord.Interaction):
+        if interaction.guild:
+            await General.thanks(interaction)
+        else:
+            await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
 async def setup(bot):
     await bot.add_cog(GeneralListeners(bot))
