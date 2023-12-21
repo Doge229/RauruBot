@@ -18,7 +18,7 @@ Massive thanks to:<br>
 -Echocolat, Phil, dt13269, and everyone else on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game<br>
 -savage13 and the Object Map team<br>
 -Austin John Plays on Youtube<br>
--u/Silver_Foxx on Reddit/Lexeon on Youtube
+-u/Silver_Foxx on Reddit/Lexeon on Youtube<br>
 -Suishi on Youtube<br>
 -riso for their UI icons<br>
 -Shozutko for their map images, and work on various resource documents<br>
