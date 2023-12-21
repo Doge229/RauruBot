@@ -508,7 +508,8 @@ class Tag(commands.Cog):
             case 'railingpart':
                 ANSWER = messages.POINT_RAILPART
             case 'railpart':
-                ANSWER = messages.POINT_RAILPART
+                ANSWER = messages.POINT_RAILPARTTITLE
+                EMBED = discord.Embed(description=messages.POINT_RAILPART)
             case 'elevatorpart':
                 ANSWER = messages.POINT_RAILPART
             case 'elevatorrail':

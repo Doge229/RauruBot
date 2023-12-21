@@ -696,12 +696,13 @@ POINT_GOLDENWING = '''
 Here's a link to a guide to obtaining the Golden Wing/Infinity Wing in TotK:
 https://youtu.be/KTxbMQeIhno
 '''
+POINT_RAILPARTTITLE = '''Here are some links to videos showing how to detach an Elevator Rail:'''
 POINT_RAILPART = '''
-Here are some links to videos showing how to detach an Elevator Rail:
-Stabilizer Method (Construct Factory, Right Leg Depot)
-<https://www.reddit.com/r/HyruleEngineering/comments/14qj7qw/simple_and_low_part_cost_way_to_detach_the/>
-Rocket Method (Bottom of Great Plateau West Chasm/Ancient Underground Fortress)
-<https://youtu.be/d5LeqKkJdYQ>
+- [Stabilizer Method](<https://www.reddit.com/r/HyruleEngineering/comments/14qj7qw/simple_and_low_part_cost_way_to_detach_the/>)
+    - Used in the Construct Factory's Right Leg Depot, on the elevators that move straight up and down.
+- [Rocket Method](<https://youtu.be/d5LeqKkJdYQ>)
+    - Used on the elevators found at the bottom of Great Plateau West Chasm and Ancient Underground Fortress
+
 '''
 POINT_BETTERPHOTOS = '''
 Here's a link to a guide on taking higher quality photos in TotK:
