@@ -589,8 +589,8 @@ INFO_USEFULOBJECTTERMS = '''
 - `MinusObj_ZonauRobot_Background_B_03` - Ruined Construct (Depths)
 - ||`DungeonBoss Underground`|| - ||Temple Boss Rematches||
 - `DgnObj_Zonau_SliderBox_A_02` - Elevator Rail
-- `barrelbomb NOT barrelbomb2 NOT barrelbomb3`, `barrelbomb2`, and `barrelbomb3` - Levels 1, 2, and 3 Bomb Barrels
-- `timerbarrelbomb` - Cube-shaped Time Bombs found in enemy camps
+- `BarrelBomb NOT BarrelBomb2 NOT BarrelBomb3`, `BarrelBomb2`, and `BarrelBomb3` - Levels 1, 2, and 3 Bomb Barrels
+- `TimerBarrelBomb` - Cube-shaped Time Bombs found in enemy camps
 - `Merchants` - Traveling NPC merchants
 - `MiasmaSwarm`, `Phantom Ganon` - Gloom Spawn/Phantom Ganon
   Some Gloom Spawn are controlled by certain flags:
