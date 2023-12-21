@@ -16,15 +16,6 @@ Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
 -new dmgcalc, dmg formula image
-- autofill finddispenser
-- construct husk actor name SkyObj_ZonauRobot_Background_A_03 MinusObj_ZonauRobot_Background_B_03
-- nick cmd and listener
-- beam emitter typo
--poly flag
--reformat tall msgs, esp with links
-- ?thanks?
--christmas pics
--GACM in railpart
 
 Stuff to Make
 -mineru stats post
