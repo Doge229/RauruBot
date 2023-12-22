@@ -16,7 +16,6 @@ Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
 -new dmgcalc, dmg formula image
--add mahalo
 
 Stuff to Make
 -mineru stats post
