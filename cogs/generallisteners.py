@@ -166,7 +166,7 @@ class GeneralListeners(commands.Cog):
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
     
-    @commands.command(name='thanks', aliases=['thankyou', 'gracias', 'merci', 'tysm', 'mahalo', 'ty', 'danke', 'grazie', 'arigato'])
+    @commands.command(name='thanks', aliases=['thankyou', 'gracias', 'merci', 'tysm', 'mahalo', 'ty', 'danke', 'grazie', 'arigato', 'thx'])
     @commands.guild_only()
     @commands.check(system.check_banned)
     async def thanks(self, ctx):
