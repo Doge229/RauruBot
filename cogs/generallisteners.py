@@ -152,7 +152,7 @@ class GeneralListeners(commands.Cog):
                         data.append(app_commands.Choice(name=choice, value=choice))
         return data
 
-    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo'])
+    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo', 'konichiwa'])
     @commands.guild_only()
     @commands.check(system.check_banned)
     async def hello(self, ctx):
@@ -166,7 +166,7 @@ class GeneralListeners(commands.Cog):
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
     
-    @commands.command(name='thanks', aliases=['thankyou', 'gracias', 'merci'])
+    @commands.command(name='thanks', aliases=['thankyou', 'gracias', 'merci', 'tysm', 'mahalo', 'ty', 'danke', 'grazie', 'arigato'])
     @commands.guild_only()
     @commands.check(system.check_banned)
     async def thanks(self, ctx):
