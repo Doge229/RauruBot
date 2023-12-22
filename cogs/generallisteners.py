@@ -152,7 +152,7 @@ class GeneralListeners(commands.Cog):
                         data.append(app_commands.Choice(name=choice, value=choice))
         return data
 
-    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo', 'konichiwa'])
+    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo', 'konichiwa', 'hallo'])
     @commands.guild_only()
     @commands.check(system.check_banned)
     async def hello(self, ctx):
