@@ -820,7 +820,7 @@ IMAGE_MISKOBANNER = '''The Great Bandit Misko left distinct banners along the pa
 
 IMAGE_DMGFORMULA = '''
 Here is the damage formula for Link's attacks in TotK; for more information, please check out the Damage Calculations Doc:
-<https://docs.google.com/document/d/1ElrdCpx_fSme8Bf-cIZsW8xFNPch8JAmgih2Kd15xCg/edit?usp=sharing>
+<https://docs.google.com/document/d/1K5hLcxfnvSnY-nsIP-n8Ew7rm9EkqHtnn6iJqOnxlng/edit?usp=sharing>
 '''
 # endregion
 

@@ -16,6 +16,8 @@ Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
 -new dmgcalc, dmg formula image
+-crystal refineries
+-update credits msg
 
 Stuff to Make
 -mineru stats post
