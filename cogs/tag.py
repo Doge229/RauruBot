@@ -240,6 +240,10 @@ class Tag(commands.Cog):
             # region Equipment Info
             case 'octorok':
                 ANSWER = messages.INFO_OCTOROK
+            case 'modifier':
+                ANSWER = messages.POINT_NATURALMODIFIERS
+            case 'naturalmodifier':
+                ANSWER = messages.POINT_NATURALMODIFIERS
             case 'repairlegendary':
                 ANSWER = messages.INFO_REPAIRLEGEND
             case 'repairlegend':
@@ -299,7 +303,15 @@ class Tag(commands.Cog):
             case 'bargainerstatue':
                 ANSWER = messages.INFO_BARGAINERSTATUE
             case 'deviceshop':
-                ANSWER = messages.INFO_DEVICESHOP
+                ANSWER = messages.INFO_CRYSTALREFINERY
+            case 'crystalrefinery':
+                ANSWER = messages.INFO_CRYSTALREFINERY
+            case 'crystalrefinerie':
+                ANSWER = messages.INFO_CRYSTALREFINERY
+            case 'refinery':
+                ANSWER = messages.INFO_CRYSTALREFINERY
+            case 'refinerie':
+                ANSWER = messages.INFO_CRYSTALREFINERY
             
             case 'botwdata':
                 ANSWER = messages.INFO_BOTWDATA

@@ -26,6 +26,7 @@ Massive thanks to:
 -Everyone on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game
 -savage13 and the Object Map team
 -Austin John Plays on Youtube
+-u/Silver_Foxx on Reddit/Lexeon on Youtube
 -Suishi on Youtube
 -riso for their UI icons
 -Shozutko for their map images, and work on various resource documents
@@ -96,9 +97,9 @@ HELP_TAG1 = '''
     **Farming Stuff**
     `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`
     **Equipment Info**
-    `octorok, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats, breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`
+    `octorok, naturalmodifiers, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats, breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`
     **Mechanics and Hints**
-    `bargainer/bargainerstatues, deviceshop, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror, coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation, control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation, midairwing, gleeokstrat, miskobanner, beginnertips/totktips`
+    `bargainer/bargainerstatues, crystalrefinery/refinery, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror, coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation, control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation, midairwing, gleeokstrat, miskobanner, beginnertips/totktips`
     **Effects and Builds**
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`
 Page 1 of 2
@@ -250,6 +251,10 @@ You can save next to an Octorok before giving it equipment, and reload that save
 
 Each Octorok can only be used once per Blood Moon, and will need to be killed after use in order to recharge on the next Blood Moon.
 '''
+POINT_NATURALMODIFIERS = '''
+Here's a link to the Natural Modifier sheet for TotK:
+https://docs.google.com/spreadsheets/d/12b8vsytM41T3nZrkXqiTrD3zejF1827-_10Os1yZIoo/edit?usp=sharing
+'''
 INFO_REPAIRLEGEND = '''
 You can repair any Legendary equipment by fusing it to a non-Legendary weapon or shield, then repairing that with a Rock Octorok. Then take it to the Break-A-Part Shop at Tarrey Town, which is located in the Akkala Highlands. Have Pelison break it down, and your Legendary equipment will be fully repaired.
 
@@ -349,7 +354,14 @@ All Bargainer Statues will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb 
 Aside from the Dusk Bow and White Sword of the Sky, Amiibo weapons and armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
 They will also sell you the Magic Rod, Magic Scepter, and Magic Staff.
 '''
-INFO_DEVICESHOP = '''After you have fully upgraded your Energy Cell to 48 total Energy Wells, you can use your Crystallized Charges at Crystal Refineries to purchase any Zonai Device. Each device costs 3 Charges per capsule, except for Big Batteries, which are 30 Charges each.'''
+INFO_CRYSTALREFINERY = '''
+Crystal Refineries are "shops" where you can trade 100 Crystallized Charges for an Energy Well, permanently increasing your Energy Cell capacity, up to a max of 48 total Wells(or 16 total Cells/"Batteries"), including the 3 Wells you start with.
+There are only 2 Crystal Refineries that can be found within TotK:
+ -One found directly in front of Nachoyah Shrine(the Recall tutorial Shrine on the Great Sky Island)
+ -One found just north of Lookout Landing
+
+After you have fully upgraded your Energy Cell to 48 total Energy Wells, you can use your Crystallized Charges at Crystal Refineries to purchase any Zonai Device. Each device costs 3 Charges per capsule, except for Big Batteries, which are 30 Charges each.
+'''
 
 INFO_BOTWDATA = '''
 TotK automatically imports some of your BotW *Normal Mode* data into TotK:
@@ -463,6 +475,7 @@ Here are the steps to deploy a Wing midair in TotK:
 INFO_BEGINNERTIPS = '''
 Here are some beginner tips for players new to TotK:
 -TotK is a game filled with small tutorials that are designed to guide and teach players about its mechanics. Make sure to pay close attention to the environment around you, and to any resources that the game provides you, as they tend to give you one or more solutions to a problem.
+-TotK is built around player freedom, meaning that there is no "wrong" or "right" order to do anything, for the most part. Just do whatever you want to do, when you want to do it.
 -There are ***very*** few problems/challenges in TotK that can only be solved one way. Solve everything in whatever way you can think to do so, there's no "wrong" way to overcome obstacles before you.
 -Never skip dialogue, **ESPECIALLY** from key characters, as it is very often that they will provide hints and other important information. It is also a good idea to check your Adventure Log anytime you are stuck on a quest, as important clues are usually recorded there.
 -Keep all of your powers in mind, you never know when one of them will be the solution to a problem you're facing.
@@ -509,7 +522,7 @@ INFO_BONEPROF = '''
 "[Stal] Disguise; Bone Weap. Prof." is the set bonus for the Evil Spirit set and Radiant set.
 The Bone Proficiency effect multiplies bone weapon damage by 1.8x, and stacks with lvl 3 Attack Up from a meal.
 
-The Evil Spirit set pieces each have Stealth Up cannot be upgraded, and together grant the set bonus at base level. The Evil Spirit set can be acquired by ||completing the quests that begin at each of the three labyrinths.||
+The Evil Spirit set pieces each have Stealth Up, and cannot be upgraded, but they grant the set bonus at base level. The Evil Spirit set can be acquired by ||completing the quests that begin at each of the three labyrinths.||
 
 The Radiant set has no innate effects, but can be upgraded and grants the set bonus at 2 stars. It can be purchased from the Armor Shop in Kakariko Village.
 '''
@@ -649,7 +662,7 @@ Dash's Skyward Sword Level Cards:
 <https://imgur.com/a/gLiEcRY>
 '''
 INFO_DIRECTIMGLINK = '''
-In order to use Arcane's `/card image set` command, you will need to provide a direct link to the image you want to use. You can use Imgur to host your own images.
+In order to use Arcane's `/card image set` command, you will need to provide a direct link to the image you want to use. You can use Imgur to host your own images, but keep in mind that Arcane will stretch the image to fit 800x200 pixels.
 
 Direct links for images will usually end in `.jpg` or `.png`. Ex: <https://i.imgur.com/jM8Qume.jpg>
 
@@ -722,6 +735,7 @@ https://youtu.be/3f7PiBOgAuk
 # region Meta Info
 INFO_DUPE112TITLE = '''Here are some duplication glitches for 1.1.2:'''
 INFO_DUPE112 = '''
+- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
 - [Tobio's Hollow Chasm Duplication](<https://youtu.be/E8nab6JNBts>) (For fusable materials)
 - [Shock Duping](<https://youtu.be/dFsNK8bf1io>) (For equipment)
 - [Autobuild Duplication](<https://youtu.be/RKsvliFBCV4>) (For rupee farming)
@@ -749,6 +763,7 @@ INFO_DUPE120 = '''
 '''
 INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
 INFO_DUPE121 = '''
+- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
 - [Vendor Scamming](<https://youtu.be/LCc1525GlHo?t=138>)
     - NOTE: This glitch is limited, and will need to be re-performed every 5 items.
 - [Minus Duping](<https://youtu.be/bV1KxESU9v8?t=17>) (For throwable materials)

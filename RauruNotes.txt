@@ -16,14 +16,16 @@ Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
 -new dmgcalc, dmg formula image
--crystal refineries
--update credits msg
--add new beginner tip
+- crystal refineries
+- modifiers table
+- update credits msg
+- add new beginner tip
 -log owner only
--boneprof typo
+- boneprof typo
 -chance to have cursed Rauru
--directimg 800x200
--boomerang long throw
+- directimg 800x200
+- boomerang long throw
+-schematic tier list
 
 Stuff to Make
 -mineru stats post
