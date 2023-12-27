@@ -18,6 +18,11 @@ Small Scale
 -new dmgcalc, dmg formula image
 -crystal refineries
 -update credits msg
+-add new beginner tip
+-log owner only
+-boneprof typo
+-chance to have cursed Rauru
+-directimg 800x200
 
 Stuff to Make
 -mineru stats post
