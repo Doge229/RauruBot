@@ -23,6 +23,7 @@ Small Scale
 -boneprof typo
 -chance to have cursed Rauru
 -directimg 800x200
+-boomerang long throw
 
 Stuff to Make
 -mineru stats post
