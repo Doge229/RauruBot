@@ -479,6 +479,7 @@ Here are some beginner tips for players new to TotK:
 -There are ***very*** few problems/challenges in TotK that can only be solved one way. Solve everything in whatever way you can think to do so, there's no "wrong" way to overcome obstacles before you.
 -Never skip dialogue, **ESPECIALLY** from key characters, as it is very often that they will provide hints and other important information. It is also a good idea to check your Adventure Log anytime you are stuck on a quest, as important clues are usually recorded there.
 -Keep all of your powers in mind, you never know when one of them will be the solution to a problem you're facing.
+-When it comes to early-game, the best weapons you can make are whatever-you-have Fused to whatever-you-have. As you continue playing you will find better weapons and better materials to Fuse to them, so don't worry too much about finding the best stuff immediately.
 '''
 # endregion
 
