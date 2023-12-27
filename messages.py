@@ -480,7 +480,7 @@ INFO_BEGINNERTIPSHEADERS = [
     '''2. Pay close attention to what you have to work with, both in your inventory and the environment around you''',
     '''3. Never skip dialogue''',
     '''4. Remember your powers''',
-    '''5. Early-game Strength'''
+    '''5. Early-game strength'''
 ]
 INFO_BEGINNERTIPS = [
     '''- TotK is built around player freedom, meaning that there is no "right" or "wrong" order to do anything, for the most part. Just do whatever you want to do, when you want to do it.''',
