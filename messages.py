@@ -472,15 +472,23 @@ Here are the steps to deploy a Wing midair in TotK:
 3. Close the menu, then immediately tilt the Left Stick up to move forward.
 4. Close the paraglider to land on the Wing.
 '''
-INFO_BEGINNERTIPS = '''
+INFO_BEGINNERTIPSTITLE = '''
 Here are some beginner tips for players new to TotK:
--TotK is a game filled with small tutorials that are designed to guide and teach players about its mechanics. Make sure to pay close attention to the environment around you, and to any resources that the game provides you, as they tend to give you one or more solutions to a problem.
--TotK is built around player freedom, meaning that there is no "wrong" or "right" order to do anything, for the most part. Just do whatever you want to do, when you want to do it.
--There are ***very*** few problems/challenges in TotK that can only be solved one way. Solve everything in whatever way you can think to do so, there's no "wrong" way to overcome obstacles before you.
--Never skip dialogue, **ESPECIALLY** from key characters, as it is very often that they will provide hints and other important information. It is also a good idea to check your Adventure Log anytime you are stuck on a quest, as important clues are usually recorded there.
--Keep all of your powers in mind, you never know when one of them will be the solution to a problem you're facing.
--When it comes to early-game, the best weapons you can make are whatever-you-have Fused to whatever-you-have. As you continue playing you will find better weapons and better materials to Fuse to them, so don't worry too much about finding the best stuff immediately.
 '''
+INFO_BEGINNERTIPSHEADERS = [
+    '''1. Don't be told where to go''',
+    '''2. Pay close attention to what you have to work with, both in your inventory and the environment around you''',
+    '''3. Never skip dialogue''',
+    '''4. Remember your powers''',
+    '''5. Early-game Strength'''
+]
+INFO_BEGINNERTIPS = [
+    '''- TotK is built around player freedom, meaning that there is no "right" or "wrong" order to do anything, for the most part. Just do whatever you want to do, when you want to do it.''',
+    '''- This is a game filled with small tutorials that are designed to teach players about its mechanics. Make sure to consider everything that the game provides you, and to what you've collected so far, as it may just give you one or more solutions to a problem.''',
+    '''- Make sure to read all dialogue, **ESPECIALLY** from key characters, as it is very often that they will provide hints and other important information. It is also a good idea to check your Adventure Log anytime you are stuck on a quest, as important clues are usually recorded there.''',
+    '''- Keep all of your powers in mind, you never know when one of them will be the solution to a problem you're facing.''',
+    '''- When it comes to early-game, the best weapons you can make are whatever-you-have Fused to whatever-you-have. As you continue playing you will find better weapons and better materials to Fuse to them, so don't worry too much about finding the best stuff immediately.'''
+]
 # endregion
 
 # region Effects/Builds

@@ -377,11 +377,29 @@ class Tag(commands.Cog):
             case 'midairwing':
                 ANSWER = messages.INFO_MIDAIRWING
             case 'beginnertip':
-                ANSWER = messages.INFO_BEGINNERTIPS
+                ANSWER = messages.INFO_BEGINNERTIPSTITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[0], value=messages.INFO_BEGINNERTIPS[0], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[1], value=messages.INFO_BEGINNERTIPS[1], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[2], value=messages.INFO_BEGINNERTIPS[2], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[3], value=messages.INFO_BEGINNERTIPS[3], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[4], value=messages.INFO_BEGINNERTIPS[4], inline=False)
             case 'startertip':
-                ANSWER = messages.INFO_BEGINNERTIPS
+                ANSWER = messages.INFO_BEGINNERTIPSTITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[0], value=messages.INFO_BEGINNERTIPS[0], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[1], value=messages.INFO_BEGINNERTIPS[1], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[2], value=messages.INFO_BEGINNERTIPS[2], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[3], value=messages.INFO_BEGINNERTIPS[3], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[4], value=messages.INFO_BEGINNERTIPS[4], inline=False)
             case 'totktip':
-                ANSWER = messages.INFO_BEGINNERTIPS
+                ANSWER = messages.INFO_BEGINNERTIPSTITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[0], value=messages.INFO_BEGINNERTIPS[0], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[1], value=messages.INFO_BEGINNERTIPS[1], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[2], value=messages.INFO_BEGINNERTIPS[2], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[3], value=messages.INFO_BEGINNERTIPS[3], inline=False)
+                EMBED.add_field(name=messages.INFO_BEGINNERTIPSHEADERS[4], value=messages.INFO_BEGINNERTIPS[4], inline=False)
             # endregion
 
             # region Effects and Builds
