@@ -99,7 +99,7 @@ class Dev(commands.Cog):
     @commands.command(name='commandtest', aliases=['cmdtest'])
     @commands.is_owner()
     async def commandtest(self, ctx):
-        async for guild in self.bot.fetch_guilds(limit=150):
+        async for guild in self.bot.guilds:
             GUILD = f'{guild.name}: {guild.id}'
             print(GUILD)
     #endregion
@@ -279,7 +279,7 @@ class Dev(commands.Cog):
     @commands.command(name='listservers')
     @commands.is_owner()
     async def listservers(self, ctx):
-        async for guild in self.bot.fetch_guilds(limit=150):
+        async for guild in self.bot.guilds:
             GUILD = f'{guild.name}: {guild.id}'
             print(GUILD)
 
@@ -287,7 +287,7 @@ class Dev(commands.Cog):
     @commands.is_owner()
     async def leaveunauthservers(self, ctx):
         print('Leaving unauthorized servers....')
-        async for guild in self.bot.fetch_guilds(limit=150):
+        async for guild in self.bot.guilds:
             if not guild.id in config.AUTHSERVERS:
                 print(f'Unauthorized server:{guild.name} detected!')
                 await guild.leave()
