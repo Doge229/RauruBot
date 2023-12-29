@@ -179,6 +179,9 @@ async def setprofilepic(bot, option):
         
         case 'funny':
             IMAGENAME = 'rauruiconfunny.jpg'
+        
+        case 'cursed':
+            IMAGENAME = 'rauruiconcursed.jpg'
 
         case 'pride':
             PRIDE = True
@@ -232,10 +235,31 @@ async def setprofilepic(bot, option):
     
     with open(IMAGEPATH, 'rb') as image:
         await bot.user.edit(avatar=image.read())
-    await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} profile picture set to: {IMAGENAME}')
-    print(console_base('System') + f'{bot.user.name} profile picture set to: {IMAGENAME}')
+    await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} profile picture set to: `{IMAGENAME}`')
+    print(console_base('System') + f'{bot.user.name} profile picture set to: `{IMAGENAME}`')
 
     return IMAGENAME
+
+async def setnicknameself(bot, option):
+    OPTION = argcleanup(option)
+
+    if OPTION == 'default' or OPTION == 'def':
+        if bot.user.id == config.USERID_RAURUBOT:
+            USERNAME = config.USERNAME_RAURUBOT
+        elif bot.user.id == config.USERID_TESTRAURUBOT:
+            USERNAME = config.USERNAME_TESTRAURUBOT
+    elif OPTION == 'cursed':
+        USERNAME = config.USERNAME_CURSEDRAURU
+    else:
+        USERNAME = OPTION
+    
+    for guild in bot.guilds:
+        await guild.me.edit(nick=USERNAME)
+    
+    await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} nickname set to: `{USERNAME}`')
+    print(console_base('System') + f'{bot.user.name} nickname set to: `{USERNAME}`')
+    
+    return USERNAME
 
 async def respond(context: discord.Object, message: str, image: discord.File = None, embed: discord.Embed = None, hidden: bool = False, silent: bool = False, time: int = 0):
     

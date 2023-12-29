@@ -26,6 +26,7 @@ Small Scale
 - directimg 800x200
 - boomerang long throw
 -schematic tier list
+-epona spawn testing
 
 Stuff to Make
 -mineru stats post

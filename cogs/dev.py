@@ -220,18 +220,8 @@ class Dev(commands.Cog):
     @commands.command(name='nick')
     @commands.is_owner()
     async def nicknameself(self, ctx, arg):
-        if arg == 'def':
-            if self.bot.user.id == config.USERID_RAURUBOT:
-                await ctx.guild.get_member(self.bot.user.id).edit(nick='Rauru')
-                await system.respond(ctx, f'Reset nickname')
-                return
-            elif self.bot.user.id == config.USERID_TESTRAURUBOT:
-                await ctx.guild.get_member(self.bot.user.id).edit(nick='TestRauru')
-                await system.respond(ctx, f'Reset nickname')
-                return
-
-        await ctx.guild.get_member(self.bot.user.id).edit(nick=arg)
-        await system.respond(ctx, f'Nickname set to: `{arg}`')
+        USERNAME = await system.setnicknameself(self.bot, arg)
+        await system.respond(ctx, f'Nickname set to: {USERNAME}')
 
     @commands.command(name='status')
     @commands.is_owner()

@@ -33,14 +33,19 @@ class DailyProfile(commands.Cog):
     @tasks.loop(time=times)
     async def testtimer(self):
         int = random.randint(1, 100)
-        CHOICE = 'default'
+        NICKCHOICE = 'default'
+        PICCHOICE = 'default'
 
         if int == 1:
-            CHOICE = 'funny'
+            PICCHOICE = 'funny'
+        elif int == 2:
+            NICKCHOICE == 'cursed'
+            PICCHOICE == 'cursed'
         elif int > 51:
-            CHOICE = 'pride'
+            PICCHOICE = 'pride'
 
-        await system.setprofilepic(self.bot, CHOICE)
+        await system.setnicknameself(self.bot, NICKCHOICE)
+        await system.setprofilepic(self.bot, PICCHOICE)
          
 
 async def setup(bot):
