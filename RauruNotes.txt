@@ -15,18 +15,15 @@ Refactor
 Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
--new dmgcalc, dmg formula image
-- crystal refineries
-- modifiers table
-- update credits msg
-- add new beginner tip
+-new dmgcalc, dmg formula imag
 -log owner only
-- boneprof typo
--chance to have cursed Rauru
-- directimg 800x200
-- boomerang long throw
 -schematic tier list
 -epona spawn testing
+- "for totk" amiibodrops
+-embeds for help msgs
+- spawn with pristine _ weapons
+- bold adventure log
+- update lvlcards
 
 Stuff to Make
 -mineru stats post

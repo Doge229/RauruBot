@@ -76,7 +76,7 @@ class General(commands.Cog):
         TERMS = system.translate_to_url(arg)
 
         LINK = messages.COMMAND_OBJMAPBASELINK +'Depths?q=%22Npc_MinusFieldGhost_000%22%20' + TERMS
-        ANSWER = messages.COMMAND_FINDPRISTINE1 + '`' + arg + '`:\n' + LINK
+        ANSWER = messages.COMMAND_FINDPRISTINE1 + '`' + arg + messages.COMMAND_FINDPRISTINE2 + '`' + '\n' + LINK
 
         await system.respond(context, ANSWER)
 

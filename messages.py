@@ -485,7 +485,7 @@ INFO_BEGINNERTIPSHEADERS = [
 INFO_BEGINNERTIPS = [
     '''- TotK is built around player freedom, meaning that there is no "right" or "wrong" order to do anything, for the most part. Just do whatever you want to do, when you want to do it.''',
     '''- This is a game filled with small tutorials that are designed to teach players about its mechanics. Make sure to consider everything that the game provides you, and to what you've collected so far, as it may just give you one or more solutions to a problem.''',
-    '''- Make sure to read all dialogue, **ESPECIALLY** from key characters, as it is very often that they will provide hints and other important information. It is also a good idea to check your Adventure Log anytime you are stuck on a quest, as important clues are usually recorded there.''',
+    '''- Make sure to read all dialogue, **ESPECIALLY** from key characters, as it is very often that they will provide hints and other important information. It is also a good idea to ***check your Adventure Log*** anytime you are stuck on a quest, as important clues are usually recorded there.''',
     '''- Keep all of your powers in mind, you never know when one of them will be the solution to a problem you're facing.''',
     '''- When it comes to early-game, the best weapons you can make are whatever-you-have Fused to whatever-you-have. As you continue playing you will find better weapons and better materials to Fuse to them, so don't worry too much about finding the best stuff immediately.'''
 ]
@@ -667,7 +667,7 @@ HW:AoC Level Cards:
 <https://imgur.com/gallery/ITbZOy1>
 Lucie's HW:AoC Level Cards:
 <https://imgur.com/gallery/TUoPFHa>
-Dash's Skyward Sword Level Cards:
+Dash's Classic Zelda Level Cards:
 <https://imgur.com/a/gLiEcRY>
 '''
 INFO_DIRECTIMGLINK = '''
@@ -683,7 +683,7 @@ Here's a link to a list of all Beedle Trades:
 https://docs.google.com/spreadsheets/d/1QMCSV19HFazu-dQuz0vN5lBDlMwXDYciUEYgG3h57ZQ/edit?usp=sharing
 '''
 POINT_AMIIBODROPTABLES = '''
-Here's a link to the Amiibo Drop Tables Spreadsheet:
+Here's a link to the Amiibo Drop Tables Spreadsheet for TotK:
 https://docs.google.com/spreadsheets/d/1BF5WDN09z0evruAQH-3qIMjnPe6dfKyomfLT_0aIZrg/edit?usp=sharing
 '''
 POINT_GLITCHSHEET = '''
@@ -1048,7 +1048,8 @@ COMMAND_OBJMAPBASELINK = '''https://objmap-totk.zeldamods.org/#/map/z2,0,0,'''
 CONVERT_COORD1 = '''The Object Map coordinates: '''
 CONVERT_COORD2 = ''' are equivalent to the shown in-game coordinates: '''
 
-COMMAND_FINDPRISTINE1 = '''Here are the Ghosts in the Depths that can spawn a Pristine '''
+COMMAND_FINDPRISTINE1 = '''Here are the Ghosts in the Depths that can spawn Pristine '''
+COMMAND_FINDPRISTINE2 = ''' weapons:'''
 
 COMMAND_HELLO1 = '''Hi!'''
 COMMAND_HELLO2 = '''Hello!'''
