@@ -529,6 +529,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_HOVERBIKE
             case 'hoverbike4.0':
                 ANSWER = messages.POINT_HOVERBIKEv4
+            case 'railbike':
+                ANSWER = messages.POINT_HOVERBIKEv4
             case 'goldenwing':
                 ANSWER = messages.POINT_GOLDENWING
             case 'infinitywing':
