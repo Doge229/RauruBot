@@ -59,6 +59,9 @@ class Tag(commands.Cog):
             # endregion
 
             # region Tag Help Stuff
+            case 'test':
+                ANSWER = ''
+                EMBED = discord.Embed(description=messages.HELP_TAGBASE)
             case 'help':
                 EPHEMERAL = True
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
@@ -201,6 +204,10 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_JOSHA
             case 'robbie':
                 ANSWER = messages.INFO_ROBBIE
+            case 'finalelocation':
+                ANSWER = messages.INFO_FINALEAPPROACHING
+            case 'finalbosslocation':
+                ANSWER = messages.INFO_FINALEAPPROACHING
             # endregion
 
             # region Farming Stuff
@@ -589,6 +596,8 @@ class Tag(commands.Cog):
                 EMBED = discord.Embed(description=messages.POINT_TRANSFERALBUM)
             
             case 'wheredlc':
+                ANSWER = messages.POINT_WHEREDLC
+            case 'gimmedlc':
                 ANSWER = messages.POINT_WHEREDLC
             case 'dlc':
                 ANSWER = messages.POINT_WHEREDLC

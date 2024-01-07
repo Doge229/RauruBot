@@ -15,15 +15,21 @@ Refactor
 Small Scale
 -material respawn, construct respawn, dragon shard respawn
 -more comments
--new dmgcalc, dmg formula imag
+-dmg formula image
 -log owner only
 -schematic tier list
 -epona spawn testing
-- "for totk" amiibodrops
 -embeds for help msgs
-- spawn with pristine _ weapons
-- bold adventure log
-- update lvlcards
+- tweak shieldfuse
+- hestulocation quest completion and unlimited expansions
+- update nat mod table
+- tweak champion's arms 
+- magic weapon header
+- gimmeDLC
+- go over dupe links with suishi playlists
+- final boss HC
+- hestu spoiler tweak
+- tweak arcaneexp
 
 Stuff to Make
 -mineru stats post

@@ -93,7 +93,7 @@ HELP_GENSERVERTAGS = '''
 
 HELP_TAG1 = '''
     **Story Stuff**
-    `postgame, elitepics, permaquests, trueend, ringruins, josha, robbie`
+    `postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation`
     **Farming Stuff**
     `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`
     **Equipment Info**
@@ -157,8 +157,9 @@ At certain level thresholds, Arcane will award you a role. You can use `/level` 
 Use `/tag arcaneexp` for more info about Arcane's experience system.
 '''
 INFO_ARCANEEXP = '''
-You can earn Arcane experience once per minute by sending messages. Any extra messages sent during the minute will not increase the exp gained, so consistency of activity is more important than rate of messages sent, if you want to maximize experience gain.
-The possible amount of exp gained per minute is controlled by the server admins, and is random within the set range.
+You can earn Arcane experience once per minute by sending messages.
+- Any extra messages sent during the minute will not increase the exp gained, so consistency of activity is more important than rate of messages sent, if you want to maximize experience gain.
+- The possible amount of exp gained per minute is controlled by the server admins, and is random within the set range.
 For example, if Arcane is set to award you between 40-100 exp per minute that you chat, then it does not matter whether you send 1 message or 20 messages within that minute, you will still earn between 40 and 100 exp, depending on RNG.
 '''
 
@@ -184,6 +185,9 @@ Robbie is the Head of Purah Pad Development, and offers a few different upgrades
 
 In order to get the rest of your Purah Pad upgrades, you will need to complete Josha's quest, "A Mystery in the Depths" (which also requires completion of at least one part of "Regional Phenomena"), at which point Robbie will set off for his lab in Hateno Village.
 There, Robbie can provide you with the Sensor, Sensor+, Travel Medallions, and Hero's Path Mode for your Purah Pad, although he will request data in exchange for some of these.
+'''
+INFO_FINALEAPPROACHING = '''
+If you happen to be worried that TotK's final boss is in Hyrule Castle, don't be! The final boss is not located in Hyrule Castle, and you will ***definitely*** know when you're approaching it. Once you do get to the point where you're approaching the final boss, don't be afraid to place down a Travel Medallion so you can go prepare more before taking the finale on.
 '''
 # endregion
 
@@ -275,13 +279,14 @@ INFO_LEGENDLIST = '''
 - Dusk Bow 
 - Sea-Breeze Shield 
 
-**Champion's Arms:** 
+**Champions' Arms:** 
 - Scimitar of the Seven 
 - Boulder Breaker 
 - Lightscale Trident 
 - Great Eagle Bow 
 - Daybreaker 
 
+**Magic Weapons:**
 - Magic Rod 
 - Magic Scepter 
 - Magic Staff
@@ -301,7 +306,7 @@ When fusing equipment to a weapon or shield, the fused equipment will lose its m
 '''
 INFO_SHIELDFUSE = '''
 Shield Fusions are primarily used for utility. 
--When Fused to a shield, most objects without special properties will only increase the damage of Link's parry attack. 
+-When Fused to a shield, objects with the "Shield Bash Attack" Fuse property will make Link's parry deal damage, or add to its existing damage, for Lynel shields.
 -The only object that increases a shield's guard stat is the Long Lava Slab, which increases it by 1.
 -Shields do not have Bonus Durability, meaning that they do not get any increase in durability when Fused.
 '''
@@ -404,7 +409,10 @@ After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adve
 '''
 INFO_HESTULOCATION = '''
 The Korok known as Hestu can use the Korok Seeds that you've collected to upgrade your weapon, bow, and shield inventories.
-Hestu can initially be found in between the road northeast of New Serenne Stable and Lindor's Brow Skyview Tower at `-1718, 1093, 209`. After completing his quest, "Hestu's Concerns" at this location or completing one part of the quest "Regional Phenomena," he will move to Lookout Landing. If you have defeated ||the Phantom Ganon within the Deku Tree Chasm|| and restored Korok Forest, then he will move to Korok Forest permanently, regardless of his quest progress or whether you've spoken to him before in Lindor's Brow or Lookout Landing.
+- Hestu can initially be found in between the road northeast of New Serenne Stable and Lindor's Brow Skyview Tower at `-1718, 1093, 209`. After completing his quest, "Hestu's Concerns" at this location or completing one part of the quest "Regional Phenomena," he will move to Lookout Landing. 
+- If you have defeated ||the Phantom Ganon within the Deku Tree Chasm and restored Korok Forest||, then he will move to Korok Forest permanently, regardless of his quest progress or whether you've spoken to him before in Lindor's Brow or Lookout Landing. 
+- You will be able to start/complete his quest in both Lookout Landing and Korok Forest if you missed doing either previously. 
+- There is also no limit to the amount of inventory expansions you can receive at Lookout Landing.
 '''
 INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
 INFO_MISSABLELOCATIONS = '''
@@ -518,8 +526,9 @@ Here is the full math behind this:
 rounddown(42 Base Weapon Damage + rounddown((10 Modifier Buff + 32 Molduga Jaw Fuse Damage)/0.95 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
 '''
 POINT_DMGCALC = '''
-Here's a link to KreaTV1's Damage Calculator for TotK:
-https://tinyurl.com/TotK-Damage-Calc
+Here's a link to Phil's Damage Calculator for TotK:
+<https://philidea.com/totk-calculator>
+Please feel free to [submit feedback](<https://docs.google.com/forms/d/e/1FAIpQLSdWgQW8VGALbCsqE25iIV-nFlz37l-pYmLtYqz4dm_N9TTzAQ/viewform>) if you find any potential errors or bugs!
 '''
 
 INFO_MOISTURE = '''The Froggy armor set pieces each have a hidden effect called Moisturizing, which increases the length of time that Link will be wet for, up to a max of 4 minutes.'''
@@ -744,49 +753,63 @@ https://youtu.be/3f7PiBOgAuk
 # region Meta Info
 INFO_DUPE112TITLE = '''Here are some duplication glitches for 1.1.2:'''
 INFO_DUPE112 = '''
-- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
-- [Tobio's Hollow Chasm Duplication](<https://youtu.be/E8nab6JNBts>) (For fusable materials)
-- [Shock Duping](<https://youtu.be/dFsNK8bf1io>) (For equipment)
-- [Autobuild Duplication](<https://youtu.be/RKsvliFBCV4>) (For rupee farming)
-- [Rock Octorok Recall](<https://youtu.be/0cR_fbx-P_Y>) (For most equipment)
-- [Midair Inventory Shift Dupe w/ Dispenser Storage](<https://youtu.be/OVWuFLYSGiE>)
-- [Midair Inventory Shift Dupe](<https://youtu.be/33pm1D6ugh0>) (For creatures)
-- [Save Load Dupe](<https://youtube.com/shorts/N26xvLp2F1I>) (For throwable equipment)
+**Equipment Dupes**
+- [Shock Duping](<https://youtu.be/TbzG9aXo8JA>)
+- [Save Load Dupe](<https://youtu.be/lGgVL4QdRFA>) (For throwable equipment)
+- [Rock Octorok Recall](<https://youtu.be/0cR_fbx-P_Y>) (For non-Legendary equipment)
 - [Weapon Stat Transfer](<https://youtu.be/9jJbAJdP3d8>)
+**Rupee Farming**
+- [Autobuild Duplication](<https://youtu.be/YLxu53iXB_w>)
+- [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>)
+**Materials and Other Dupes**
+- [Tobio's Hollow Chasm Duplication](<https://youtu.be/E8nab6JNBts>) (For fusable materials)
+- [Midair Inventory Shift Dupe(MISD)](https://youtu.be/th585pt33sA)
+- [MISD w/ Dispenser Storage](https://youtu.be/2YJkvpmeNzo)
+- [Midair Throw Duplication(MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
+- [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
+- [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
+- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 INFO_DUPE120TITLE = '''Here are some duplication glitches for 1.2.0:'''
 INFO_DUPE120 = '''
-- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
-- [Minus Duping](<https://youtu.be/BZID7B_99QY?t=223>) (For throwable materials)
-- [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>) (For Rupees)
-- [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
-- [Midair Throw Duplication(MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
-- [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
-- [Like-Like Fuse Entanglement](<https://youtu.be/BZID7B_99QY?t=1207>) (For equipment)
-    - [Weapon Stat Transfer(WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
-  - [Sluggling](<https://youtu.be/BZID7B_99QY?t=1553>)
-- [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
-    - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
-- [Stick Smuggling](<https://youtu.be/iRkNT3NEVuQ>)
-    - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
-'''
-INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
-INFO_DUPE121 = '''
-- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
-- [Vendor Scamming](<https://youtu.be/LCc1525GlHo?t=138>)
-    - NOTE: This glitch is limited, and will need to be re-performed every 5 items.
-- [Minus Duping](<https://youtu.be/bV1KxESU9v8?t=17>) (For throwable materials)
-- [Dispenser Storage](<https://youtu.be/LCc1525GlHo?t=434>) (Used with Minus Duping)
-- [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
-- [Midair Throw Duplication (MTD)](<https://youtu.be/LCc1525GlHo?t=693>)
-    - NOTE: This is for Zonai Devices ONLY.
-- [MTD for other materials](<https://youtu.be/bV1KxESU9v8?t=283>)
+**Equipment Dupes**
+- [Like-Like Fuse Entanglement](<https://youtu.be/BZID7B_99QY?t=1207>)
+    - [Slugging](<https://youtu.be/BZID7B_99QY?t=1553>)
+  - [Weapon Stat Transfer(WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
 - [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
     - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
 - Stick Smuggling:
     - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
   - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
   - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
+**Rupee Farming**
+- [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>)
+**Materials and Other Dupes**
+- [Minus Duping](<https://youtu.be/BZID7B_99QY?t=223>) (For throwable materials)
+- [Midair Throw Duplication(MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
+    - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
+- [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
+- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
+'''
+INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
+INFO_DUPE121 = '''
+**Equipment Dupes**
+- [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
+    - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
+- Stick Smuggling:
+    - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
+  - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
+  - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
+**Rupee Farming**
+- [Vendor Scamming](<https://youtu.be/LCc1525GlHo?t=138>)
+    - NOTE: This glitch is limited, and will need to be re-performed every 5 items.
+**Materials and Other Dupes**
+- [Minus Duping](<https://youtu.be/bV1KxESU9v8?t=17>) (For throwable materials)
+    - [Minus Duping w/ Dispenser Storage](<https://youtu.be/LCc1525GlHo?t=434>)
+- [Midair Throw Duplication (MTD)](<https://youtu.be/bV1KxESU9v8?t=283>)
+    - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>) - Guide from 1.2.0, but can still be used with the 1.2.1 MTD method
+- [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
+- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 
 INFO_DOWNPATCH = '''
