@@ -30,6 +30,7 @@ Small Scale
 - final boss HC
 - hestu spoiler tweak
 - tweak arcaneexp
+-missablelocations embed
 
 Stuff to Make
 -mineru stats post

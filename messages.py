@@ -415,38 +415,38 @@ The Korok known as Hestu can use the Korok Seeds that you've collected to upgrad
 - There is also no limit to the amount of inventory expansions you can receive at Lookout Landing.
 '''
 INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
+INFO_MISSABLELOCATIONSTITLE = '''Here are some of the most commonly missed locations for TotK:'''
 INFO_MISSABLELOCATIONS = '''
-Here are some of the most commonly missed locations for TotK:
-Surface:||
-East and West Passages at Hyrule Castle
-Sherfin's Secret Hot Spring
-Dragonbone Mire
-Kolomo Garrison Ruins
-Gatepost Town Ruins
-Water Reservoir
-Castle Town Watchtower
-Faron Woods
-Sarjon Bridge
-Ash Swamp
-Oren Bridge
-Luto's Crossing
-All 3 Sokkala Bridges
-Gero Pond
-Royal Ancient Lab Ruins
-Lanayru Road - West Gate
-||
-Depths:||
-Visit every Canyon Mine and Lavafalls you can see on the map
-Papetto Grove
-Dracozu Altar
-Hickaly Grove
-Midla Grove
-Ginner Grove
-Retsam Grove
-Blupee Burrow 
-Applean Grove
-||
-Original message by Dixon#8583
+**Surface:**
+-East and West Passages at Hyrule Castle
+-Sherfin's Secret Hot Spring
+-Dragonbone Mire
+-Kolomo Garrison Ruins
+-Gatepost Town Ruins
+-Water Reservoir
+-Castle Town Watchtower
+-Faron Woods
+-Sarjon Bridge
+-Ash Swamp
+-Oren Bridge
+-Luto's Crossing
+-All 3 Sokkala Bridges
+-Gero Pond
+-Royal Ancient Lab Ruins
+-Lanayru Road - West Gate
+
+**Depths:**
+Make sure to visit every Canyon Mine and Lavafalls you can see on the map
+-Papetto Grove
+-Dracozu Altar
+-Hickaly Grove
+-Midla Grove
+-Ginner Grove
+-Retsam Grove
+-Blupee Burrow 
+-Applean Grove
+
+Original list by Dixon#8583
 '''
 INFO_HORNEDSTATUE = '''After completing one part of "Regional Phenomena," a new opening can be found in the Emergency Shelter in Lookout Landing, through which you will find a statue with an ominous aura. This Horned Statue will allow you to trade Heart Containers for Stamina Vessels, and vice versa, for the cost of 20 rupees each.'''
 INFO_DUGBY = '''

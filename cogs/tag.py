@@ -359,7 +359,8 @@ class Tag(commands.Cog):
             case 'jumpslash':
                 ANSWER = messages.INFO_JSCONTROL
             case 'missablelocation':
-                ANSWER = messages.INFO_MISSABLELOCATIONS
+                ANSWER = messages.INFO_MISSABLELOCATIONSTITLE
+                EMBED = discord.Embed(description=messages.INFO_MISSABLELOCATIONS)
             case 'hornedstatue':
                 ANSWER = messages.INFO_HORNEDSTATUE
             case 'hornedone':
