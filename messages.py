@@ -820,14 +820,13 @@ To downpatch to 1.0, you will need to have a physical copy of the game, and to f
 If you have access to a Switch with a version between 1.0 and current patch, you can match your update with it after factory resetting your Switch.
 '''
 INFO_PREVENTUPDATES = '''
-When your Auto-Update Software setting is set to "On" and your Switch is connected to the internet, it will attempt to automatically download any available update data for any installed software. When your Switch has downloaded update data for a software, it will install that update data when that software is not running.
+**When your Auto-Update Software setting is set to "On" and your Switch is connected to the internet,** it will attempt to automatically download any available update data for any installed software. When your Switch has downloaded update data for a software, it will install that update data when that software is not running.
 
-In order to prevent your Switch from downloading update data for a software, you can either disconnect your Switch from the internet, or you can go your Settings -> System -> Auto-Update Software and set it to "Off."
-Keep in mind that if there is update data available for a software and your Switch is connected to the internet, then you will be prompted with a pop-up every time you start that software. In order to prevent the software from being updated, make sure to select "Start Software" and not "Download" or your Switch will download the update data and install it.
+**In order to prevent your Switch from downloading update data for a software,** you can either disconnect your Switch from the internet, or you can go your Settings -> System -> Auto-Update Software and set it to "Off." Keep in mind that if there is update data available for a software and your Switch is connected to the internet, then you will be prompted with a pop-up every time you start that software. In order to prevent the software from being updated, make sure to select "Start Software" and not "Download" or your Switch will *download the update data and install it.*
 
-If you attempt to resume a suspended software from the home screen and receive a pop-up telling you that you need to close the software to **install** an update, then that means your Switch has downloaded the update data for the software, and it will install it once the software is closed. You can safely resume the software without it updating, but once you fully close it, or restart your Switch, the software will be updated.
+**If you attempt to resume a suspended software from the home screen and receive a pop-up telling you that you need to close the software to *install* an update,** then that means your Switch has downloaded the update data for the software, and it will install it once the software is closed. You can safely resume the software without it updating, but once you fully close it, or restart your Switch, the software will be updated.
 
-If you launch a software and you get a pop-up saying that you need to restart your Switch to install a **system** update, then you can do so without fear of your software being updated, if the update data is not downloaded and waiting to be installed.
+**If you launch a software and you get a pop-up saying that you need to restart your Switch to install a *system* update,** then you can do so without fear of your software being updated, if the update data is not downloaded and waiting to be installed.
 '''
 INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
 POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch:'''
