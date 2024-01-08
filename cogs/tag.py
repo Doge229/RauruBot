@@ -213,6 +213,10 @@ class Tag(commands.Cog):
             # region Farming Stuff
             case 'bloodmoon':
                 ANSWER = messages.INFO_BLOODMOON
+            case 'constructrespawn':
+                ANSWER = messages.INFO_CONSTRUCTRESPAWN
+            case 'constructtimer':
+                ANSWER = messages.INFO_CONSTRUCTRESPAWN
             case 'forcebloodmoon':
                 ANSWER = messages.POINT_FORCEMOON
             case 'materialrespawn':
@@ -502,7 +506,11 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_SAGELVL
             case 'sagelvl':
                 ANSWER = messages.POINT_SAGELVL
-            
+            case 'bloodmoondoc':
+                ANSWER = messages.POINT_BLOODMOONDOC
+            case 'respawndoc':
+                ANSWER = messages.POINT_BLOODMOONDOC
+
             case 'cooking':
                 ANSWER = messages.POINT_COOKING
             case 'cookcalc':

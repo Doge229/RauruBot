@@ -23,10 +23,10 @@ This bot and its files were developed by Doge229.
 Massive thanks to:
 -Zanaras, for helping with development and server setup
 -Everyone else who helped with development, cause discord.py has really bad documentation
--Everyone on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game
+-Echocolat, Phil, dt13269, bjm, and everyone else on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game
 -savage13 and the Object Map team
 -Austin John Plays on Youtube
--u/Silver_Foxx on Reddit/Lexeon on Youtube
+-u/Silver_Foxx on Reddit/@Lexeon on Youtube
 -Suishi on Youtube
 -riso for their UI icons
 -Shozutko for their map images, and work on various resource documents
@@ -95,7 +95,7 @@ HELP_TAG1 = '''
     **Story Stuff**
     `postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation`
     **Farming Stuff**
-    `bloodmoon, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`
+    `bloodmoon, constructrespawn, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`
     **Equipment Info**
     `octorok, naturalmodifiers, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats, breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`
     **Mechanics and Hints**
@@ -106,7 +106,7 @@ Page 1 of 2
 '''
 HELP_TAG2 = '''
     **Useful Links and Stuff**
-    `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
+    `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
     **Reference Images**
@@ -192,8 +192,11 @@ If you happen to be worried that TotK's final boss is in Hyrule Castle, don't be
 # endregion
 
 # region Farming Stuff
-INFO_BLOODMOON = '''Every 168 minutes of unpaused gameplay, the game will attempt to trigger a Blood Moon on the next night. If you are in a shrine or the Depths, then the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier, Captain, and Flux Constructs do not respawn on Blood Moons however; Their respawn mechanics are still being investigated.'''
-# INFO_CONSTRUCTRESPAWN = ''''''
+INFO_BLOODMOON = '''
+Every 144 minutes of unpaused gameplay, the game will attempt to trigger a Blood Moon on the next midnight. If you are in a shrine or the Depths, then the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier, Captain, and Flux Constructs do not respawn on Blood Moons however, they use a separate timer.'''
+INFO_CONSTRUCTRESPAWN = '''
+Soldier Constructs, Captain Constructs, and Flux Constructs have a separate respawn timer to most enemies. Starting after your first attempt to open the front door of the Temple of Time, every 144 minutes of unpaused gameplay these Constructs will be set to respawn on the next midnight. Constructs will not be immediately respawned if Link is in the same general area as them, but they will be once Link travels far enough away. Aside from that, there is no known way to accelerate or delay this respawn effect.
+'''
 POINT_FORCEMOON = '''
 Here's are some links to examples of how to force a Blood Moon to occur in TotK:
 - [Rock Wall Opal Method](<https://youtu.be/cBolBE0792k>)
@@ -656,6 +659,10 @@ https://www.reddit.com/r/tearsofthekingdom/comments/14rr5sd/how_temple_bosses_sc
 POINT_SAGELVL = '''
 Here's a link to an explanation on Sage Attack Power: 
 https://www.reddit.com/r/tearsofthekingdom/comments/14ct8kt/sage_attack_power_a_full_breakdown/
+'''
+POINT_BLOODMOONDOC = '''
+Here's a link to bjm's document on Blood Moons and other respawn mechanics:
+https://docs.google.com/document/d/1w59IZh1z7Empep1kCjqXLHuTPqu5DHnwKdYEzU3TC60/edit?usp=sharing
 '''
 
 POINT_COOKING = '''
