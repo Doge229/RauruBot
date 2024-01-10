@@ -792,7 +792,7 @@ INFO_DUPE120 = '''
 **Rupee Farming**
 - [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>)
 **Materials and Other Dupes**
-- [Minus Duping](<https://youtu.be/BZID7B_99QY?t=223>) (For throwable materials)
+- [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication(MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
     - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
@@ -811,8 +811,7 @@ INFO_DUPE121 = '''
 - [Vendor Scamming](<https://youtu.be/LCc1525GlHo?t=138>)
     - NOTE: This glitch is limited, and will need to be re-performed every 5 items.
 **Materials and Other Dupes**
-- [Minus Duping](<https://youtu.be/bV1KxESU9v8?t=17>) (For throwable materials)
-    - [Minus Duping w/ Dispenser Storage](<https://youtu.be/LCc1525GlHo?t=434>)
+- [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/bV1KxESU9v8?t=283>)
     - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>) - Guide from 1.2.0, but can still be used with the 1.2.1 MTD method
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
