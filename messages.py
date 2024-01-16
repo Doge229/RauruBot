@@ -378,7 +378,7 @@ TotK automatically imports some of your BotW *Normal Mode* data into TotK:
 '''
 INFO_UNIQUEHORSES = '''
 There are 6 unique horses available to register in TotK:
-Note: If you imported a unique horse from botw, then it will not spawn the wild in TotK.
+Note: If you imported a unique horse from botw, then it will not spawn in the wild in TotK.
 
 -Giant White Stallion - Found ||east of the Horse God Bridge in Faron Highlands.||
 -Giant Horse ("Gerudo") - Found ||at eastern Hateno Beach.||

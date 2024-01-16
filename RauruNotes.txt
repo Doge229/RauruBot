@@ -20,19 +20,6 @@ Small Scale
 -schematic tier list
 -epona spawn testing
 -embeds for help msgs
-- tweak shieldfuse
-- hestulocation quest completion and unlimited expansions
-- update nat mod table
-- tweak champion's arms 
-- magic weapon header
-- gimmeDLC
-- go over dupe links with suishi playlists
-- final boss HC
-- hestu spoiler tweak
-- tweak arcaneexp
-- missablelocations embed
-- emphasis preventupdates
--uniquehorses typo
 
 Stuff to Make
 -mineru stats post
