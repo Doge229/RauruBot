@@ -1,22 +1,19 @@
 Large Scale
--compedium cmd - data sheet search
--multi-server
-  -errors say what server
--all logs, togglable
--make cogs and module load/reload look nice
--lock channels that bot can't access for slash commands
--credit-ish info on load
-
-Refactor
--expand logging and write to file
--from file import method for stuffs
+-actor name match command
+  -update local actor list command?
+-full logging
+  -write to file
+  -more specific errors
+-log owner only
+-load reload rework
+-block inaccessible channels for slash commands
+-credits on load
 -settings.json
 
 Small Scale
--material respawn, construct respawn, dragon shard respawn
+-material respawn, dragon shard respawn
 -more comments
 -dmg formula image
--log owner only
 -schematic tier list
 -epona spawn testing
 -embeds for help msgs
