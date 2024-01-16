@@ -14,10 +14,10 @@ Small Scale
 -material respawn, dragon shard respawn
 -more comments
 -dmg formula image
--schematic tier list
 -epona spawn testing
 -embeds for help msgs
 
-Stuff to Make
+Stuff to Make/Do
+-Wiki stuff
 -mineru stats post
 -all effects post https://discord.com/channels/1111764095826415678/1111764453910917190/1137111648247750686 https://youtu.be/Ayy-vpqJK_w https://discord.com/channels/1111764095826415678/1111764453910917190/1181684341491904553
