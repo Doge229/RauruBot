@@ -630,7 +630,7 @@ INFO_USEFULOBJECTTERMS = '''
   Some Gloom Spawn are controlled by certain flags:
   - `MiasmaSwarm_RandomSet`, `MiasmaSwarm_RandomSet3` - Randomized on load; these can be save-scummed to get them to spawn
   You can also search for Phantom Ganons with specific Gloom Weapons
-  - `NOT EquipWeaponType 2 NOT EquipWeaponType 3` - Gloom Sword
+  - `NOT EquipWeaponType` - Gloom Sword
   - `EquipWeaponType 2` - Gloom Club
   - `EquipWeaponType 3` - Gloom Spear
 '''
