@@ -1,4 +1,5 @@
 .lh/
+.vscode/
 __pycache__/
 cogs/__pycache__
 blacklist.json
