@@ -675,6 +675,9 @@ class Tag(commands.Cog):
             case 'cherrymap':
                 ANSWER = messages.IMAGE_CHERRYMAP
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'cherrymap.jpg'))
+            case 'cherryareamap':
+                ANSWER = messages.IMAGE_CHERRYAREAMAP
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'SPOILER_cherryareamap.jpg'))
             case 'invupgrade':
                 ANSWER = messages.IMAGE_INVENTORYUPGRADES
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'inventoryupgrades.jpg'))

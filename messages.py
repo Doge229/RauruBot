@@ -48,9 +48,8 @@ HELP_GENERAL = '''
 Here are some of my commands:
 
 `/help [option]`
-    `[page number]`, `show [page number]`
+    `show`
     -See what commands I have available
-    -*Note: Page number defaults to the 1st page if not specified*
 
 `/tag help`
     -See what options I have for `/tag`
@@ -82,8 +81,7 @@ Here are the options for my `tag` command:
     `help [page number], help show [page number]`
     -*Note: Page number defaults to the 1st page if not specified*
     **General Command Help** (For when `/help` isn't available)
-    `helpgeneral [page number], helpgeneral show [page number]`
-    -*Note: Page number defaults to the 1st page if not specified*
+    `helpgeneral, helpgeneral show
 '''
 
 HELP_GENSERVERTAGS = '''
@@ -110,7 +108,7 @@ HELP_TAG2 = '''
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
     **Reference Images**
-    `horseupgrades, ascendmap, cherrymap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`
+    `horseupgrades, ascendmap, cherrymap, cherryareamap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`
 Page 2 of 2
 '''
 
@@ -388,7 +386,7 @@ Note: If you imported a unique horse from botw, then it will not spawn in the wi
 -Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link Amiibo.
 '''
 
-INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry tree. Doing so will reveal ALL cave entrances nearby for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint.'''
+INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry blossom tree. Doing so will reveal ALL Surface cave entrances (aside from Ancient Zora Waterworks) in the surrounding area of the map for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint. These markers will not disappear early if you save and reload, but will disappear if you close the game and re-open it.'''
 INFO_DEPTHSMIRROR = '''
 Hyrule's Depths mirror its Surface; Terrain elevation is usually inverted, and bodies of water on the Surface are almost always impassable walls in the Depths. 
 If you are in an area of the Depths and you do not have the map for it yet, try opening your Surface map and then closing it. This will display the Surface on your minimap, aiding in navigation.
@@ -863,7 +861,8 @@ IMAGE_OTHERPARTTOTAL = '''Here are the totals for Other Monster Parts required t
 IMAGE_CRITTERTOTAL = '''Here are the totals for Critters required to upgrade every armor in TotK:'''
 
 IMAGE_ASCENDMAP = '''Here is a map of all the Ascend Points within the Depths:'''
-IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Trees in TotK:'''
+IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Blossom Trees in TotK:'''
+IMAGE_CHERRYAREAMAP = '''Here is a map of all the Cherry Blossom Tree Areas in TotK:'''
 IMAGE_INVENTORYUPGRADES = '''Here are all of the Inventory upgrade costs for TotK:'''
 IMAGE_SHRINECOUNTS = '''Here are the totals of each type of Shrine of Light in TotK:'''
 IMAGE_HORSEUPGRADE = '''Here are the meals needed to upgrade a horse to maximum in TotK:'''

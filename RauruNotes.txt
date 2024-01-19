@@ -16,7 +16,6 @@ Small Scale
 -dmg formula image
 -epona spawn testing
 -embeds for help msgs
--cherry treeareas
 
 Stuff to Make/Do
 -Wiki stuff
