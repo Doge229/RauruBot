@@ -386,7 +386,7 @@ Note: If you imported a unique horse from botw, then it will not spawn in the wi
 -Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link Amiibo.
 '''
 
-INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry blossom tree. Doing so will reveal ALL Surface cave entrances (aside from Ancient Zora Waterworks) in the surrounding area of the map for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint. These markers will not disappear early if you save and reload, but will disappear if you close the game and re-open it.'''
+INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry blossom tree. Doing so will reveal ALL Surface cave entrances (aside from Ancient Zora Waterworks) in the surrounding area of the map for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint. These markers will not disappear early if you save and reload, but will disappear if you close the game and re-open it, or activate a different tree.'''
 INFO_DEPTHSMIRROR = '''
 Hyrule's Depths mirror its Surface; Terrain elevation is usually inverted, and bodies of water on the Surface are almost always impassable walls in the Depths. 
 If you are in an area of the Depths and you do not have the map for it yet, try opening your Surface map and then closing it. This will display the Surface on your minimap, aiding in navigation.
