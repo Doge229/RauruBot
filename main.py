@@ -25,8 +25,6 @@ async def on_ready():
     print(system.console_base('System') + f'Current File Directory: {system.DIR_ROOT}')
     # Online Message
     try:
-        channel = RauruBot.get_channel(system.ACTIVEBOTSYSTEMCHANNELID)
-        
         await system.send(RauruBot, system.ACTIVEBOTSYSTEMCHANNELID, f'{RauruBot.user.name}' + messages.BOT_ONLINESIMPLE)
     except:
         print(system.console_base('Error') + f'Unable to send Online Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
