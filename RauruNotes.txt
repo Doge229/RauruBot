@@ -16,6 +16,7 @@ Small Scale
 -dmg formula image
 -epona spawn testing
 -embeds for help msgs
+-auto status
 
 Stuff to Make/Do
 -Wiki stuff
