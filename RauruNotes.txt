@@ -17,6 +17,7 @@ Small Scale
 -epona spawn testing
 -embeds for help msgs
 -auto status
+-capsule drop rates
 
 Stuff to Make/Do
 -Wiki stuff
