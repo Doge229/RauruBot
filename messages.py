@@ -81,7 +81,7 @@ Here are the options for my `tag` command:
     `help [page number], help show [page number]`
     -*Note: Page number defaults to the 1st page if not specified*
     **General Command Help** (For when `/help` isn't available)
-    `helpgeneral, helpgeneral show
+    `helpgeneral, helpgeneral show`
 '''
 
 HELP_GENSERVERTAGS = '''
