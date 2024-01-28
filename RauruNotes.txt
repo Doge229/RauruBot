@@ -18,6 +18,9 @@ Small Scale
 -embeds for help msgs
 -auto status
 -capsule drop rates
+-f{} help
+-spoiler tweak
+-pristine bold?
 
 Stuff to Make/Do
 -Wiki stuff
