@@ -12,27 +12,44 @@ class General(commands.Cog):
         self.bot = bot
         super().__init__()
 
+    #region Embed Setup
+    EMBED_HELPGENERAL = discord.Embed()
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL1[0], value=messages.HELP_GENERAL1[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL2[0], value=messages.HELP_GENERAL2[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL3[0], value=messages.HELP_GENERAL3[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL4[0], value=messages.HELP_GENERAL4[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL5[0], value=messages.HELP_GENERAL5[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL6[0], value=messages.HELP_GENERAL6[1], inline=False)
+
+
+    #endregion
+
     async def generalhelp(context, arg):
         ANSWER = ''
         EPHEMERAL = False
+        EMBED = None
 
         arg = system.argcleanup(arg)
         
         match arg:
             case '1':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = General.EMBED_HELPGENERAL
             case 'show':
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = General.EMBED_HELPGENERAL
             case 'show1':
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = General.EMBED_HELPGENERAL
             case 'showpage1':
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = General.EMBED_HELPGENERAL
             
             case _:
                 ANSWER = messages.ERROR_UNKNOWNCMD
         
-        await system.respond(context, ANSWER, hidden=EPHEMERAL)
+        await system.respond(context, message=ANSWER, embed=EMBED, hidden=EPHEMERAL)
 
 
     async def objmaplinkcreator(context, arg):

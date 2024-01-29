@@ -44,7 +44,7 @@ I make a lot of different resources for TotK, and I try my best to keep the info
 # endregion
 
 # region Help
-HELP_GENERAL = '''
+HELP_GENERALARCHIVE = '''
 Here are some of my commands:
 
 `/help [option]`
@@ -71,7 +71,26 @@ Here are some of my commands:
     -You can use this command to see which Device Dispensers are most likely to dispense a specific Zonai Device.
 '''
 
-HELP_TAGBASE = '''
+HELP_GENERALTITLE = '''Here are some of my commands:'''
+HELP_GENERAL1 = ['''/help [option]''', '''
+`show`
+- See what commands I have available''']
+HELP_GENERAL2 = ['''/tag help''', '''
+- See what options I have for `/tag`''']
+HELP_GENERAL3 = ['''/find [search terms]''', '''
+- You can use this command to create an Object Map link with search terms integrated into it. Just put the exact text (including spaces and punctuation) for your search terms after the command.''']
+HELP_GENERAL4 = ['''/coordconvert [Object Map coordinates]''', '''
+- You can use this command to convert the coordinate of an object from the Object Map into its shown in-game coordinates.
+- Just copy the coordinates of the object's position directly from the Object Map, then paste it in.
+For Example:
+- `/coordconvert -579.73, 129.61, -524.79` will give you the in-game coords: `-580, -525, 25`''']
+HELP_GENERAL5 = ['''/findpristine [weapon name]''', '''
+- You can use this command to create an Object Map link that will show which Depths Ghosts can spawn a weapon.''']
+HELP_GENERAL6 = ['''/finddispenser [device name]''', '''
+- You can use this command to see which Device Dispensers are most likely to dispense a specific Zonai Device.''']
+
+
+HELP_TAGARCHIVE = '''
 Here are the options for my `tag` command:
 
 `/tag [option]`
@@ -82,14 +101,8 @@ Here are the options for my `tag` command:
     -*Note: Page number defaults to the 1st page if not specified*
     **General Command Help** (For when `/help` isn't available)
     `helpgeneral, helpgeneral show`
-'''
-
-HELP_GENSERVERTAGS = '''
     **Server Stuff**
     `spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, totkexpert`
-'''
-
-HELP_TAG1 = '''
     **Story Stuff**
     `postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation`
     **Farming Stuff**
@@ -101,8 +114,6 @@ HELP_TAG1 = '''
     **Effects and Builds**
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`
 Page 1 of 2
-'''
-HELP_TAG2 = '''
     **Useful Links and Stuff**
     `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
     **Meta Info**
@@ -111,6 +122,36 @@ HELP_TAG2 = '''
     `horseupgrades, ascendmap, cherrymap, cherryareamap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`
 Page 2 of 2
 '''
+
+HELP_TAGTITLE = '''Here are the options for my `tag` command:'''
+HELP_TAG1 = ['''/tag [option]''', '''
+`botinfo/userauru, credits, repository`''']
+HELP_TAG2 = ['''**Tag Command Help**''', '''
+`help [page number], help show [page number]`
+- *Note: Page number defaults to the 1st page if not specified*''']
+HELP_TAG3 = ['''**General Command Help** (For when `/help` isn't available)''', '''
+`helpgeneral, helpgeneral show`''']
+HELP_TAG4 = ['''**Story Stuff**''', '''
+`postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation`''']
+HELP_TAG5 = ['''**Farming Stuff**''', '''
+`bloodmoon, constructrespawn, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`''']
+HELP_TAG6 = ['''**Equipment Info**''', '''
+`octorok, naturalmodifiers, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats, breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`''']
+HELP_TAG7 = ['''**Mechanics and Hints**''', '''
+`bargainer/bargainerstatues, crystalrefinery/refinery, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror, coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation, control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation, midairwing, gleeokstrat, miskobanner, beginnertips/totktips`''']
+HELP_TAG8 = ['''**Effects and Builds**''', '''
+`defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
+HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
+`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`''']
+HELP_TAG10 = ['''**Meta Info**''', '''
+`dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`''']
+HELP_TAG11 = ['''**Reference Images**''', '''
+`horseupgrades, ascendmap, cherrymap, cherryareamap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
+
+HELP_TAGGENSERVER = ['''**Server Stuff**''', '''
+`spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, totkexpert`''']
+
+
 
 HELP_NOTIFY = '''Sending you my response to that command'''
 HELP_NOTIFYERROR1 = '''My apologies'''

@@ -9,9 +9,59 @@ import config
 
 
 class Tag(commands.Cog):
+
     def __init__(self, bot) -> None:
         self.bot = bot
         super().__init__()
+
+    #region Embed Setup
+    
+    #General Help
+    EMBED_HELPGENERAL = discord.Embed()
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL1[0], value=messages.HELP_GENERAL1[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL2[0], value=messages.HELP_GENERAL2[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL3[0], value=messages.HELP_GENERAL3[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL4[0], value=messages.HELP_GENERAL4[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL5[0], value=messages.HELP_GENERAL5[1], inline=False)
+    EMBED_HELPGENERAL.add_field(name=messages.HELP_GENERAL6[0], value=messages.HELP_GENERAL6[1], inline=False)
+
+    #Tag Help pg 1
+    EMBED_HELPTAGPAGE1 = discord.Embed()
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG1[0], value=messages.HELP_TAG1[1], inline=False)
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG2[0], value=messages.HELP_TAG2[1], inline=False)
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG3[0], value=messages.HELP_TAG3[1], inline=False)
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG4[0], value=messages.HELP_TAG4[1], inline=False)
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG5[0], value=messages.HELP_TAG5[1], inline=False)
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG6[0], value=messages.HELP_TAG6[1], inline=False)
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG7[0], value=messages.HELP_TAG7[1], inline=False)
+    EMBED_HELPTAGPAGE1.add_field(name=messages.HELP_TAG8[0], value=messages.HELP_TAG8[1], inline=False)
+
+    EMBED_HELPTAGPAGE1.set_footer(text="Page 1 of 2")
+
+    #Tag Help pg 1 (Gen Server)
+    EMBED_HELPTAGPAGE1GEN = discord.Embed()
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG1[0], value=messages.HELP_TAG1[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG2[0], value=messages.HELP_TAG2[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG3[0], value=messages.HELP_TAG3[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAGGENSERVER[0], value=messages.HELP_TAGGENSERVER[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG4[0], value=messages.HELP_TAG4[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG5[0], value=messages.HELP_TAG5[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG6[0], value=messages.HELP_TAG6[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG7[0], value=messages.HELP_TAG7[1], inline=False)
+    EMBED_HELPTAGPAGE1GEN.add_field(name=messages.HELP_TAG8[0], value=messages.HELP_TAG8[1], inline=False)
+
+    EMBED_HELPTAGPAGE1GEN.set_footer(text="Page 1 of 2")
+
+    #Tag Help pg 2
+    EMBED_HELPTAGPAGE2 = discord.Embed()
+    EMBED_HELPTAGPAGE2.add_field(name=messages.HELP_TAG9[0], value=messages.HELP_TAG9[1], inline=False)
+    EMBED_HELPTAGPAGE2.add_field(name=messages.HELP_TAG10[0], value=messages.HELP_TAG10[1], inline=False)
+    EMBED_HELPTAGPAGE2.add_field(name=messages.HELP_TAG11[0], value=messages.HELP_TAG11[1], inline=False)
+
+    EMBED_HELPTAGPAGE2.set_footer(text="Page 2 of 2")
+
+    #endregion
+
 
     async def tag(context, arg):
         ANSWER = None
@@ -48,63 +98,74 @@ class Tag(commands.Cog):
             # region General Help Stuff
             case 'helpgeneral':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
             case 'helpgeneral1':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
             case 'helpgeneralshow':
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
             case 'helpgeneralshow1':
-                ANSWER = messages.HELP_GENERAL
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
             # endregion
 
             # region Tag Help Stuff
-            case 'test':
-                ANSWER = ''
-                EMBED = discord.Embed(description=messages.HELP_TAGBASE)
             case 'help':
                 EPHEMERAL = True
+                ANSWER = messages.HELP_TAGTITLE
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1GEN
                 else:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1
             case 'help1':
                 EPHEMERAL = True
+                ANSWER = messages.HELP_TAGTITLE
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1GEN
                 else:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1
             case 'helppage1':
                 EPHEMERAL = True
+                ANSWER = messages.HELP_TAGTITLE
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1GEN
                 else:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1
             case 'helpshow':
+                ANSWER = messages.HELP_TAGTITLE
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1GEN
                 else:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1
             case 'helpshow1':
+                ANSWER = messages.HELP_TAGTITLE
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1GEN
                 else:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1
             case 'helpshowpage1':
+                ANSWER = messages.HELP_TAGTITLE
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_GENSERVERTAGS + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1GEN
                 else:
-                    ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG1
+                    EMBED = Tag.EMBED_HELPTAGPAGE1
             case 'help2':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
+                ANSWER = messages.HELP_TAGTITLE
+                EMBED = Tag.EMBED_HELPTAGPAGE2
             case 'helppage2':
                 EPHEMERAL = True
-                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
+                ANSWER = messages.HELP_TAGTITLE
+                EMBED = Tag.EMBED_HELPTAGPAGE2
             case 'helpshow2':
-                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
+                ANSWER = messages.HELP_TAGTITLE
+                EMBED = Tag.EMBED_HELPTAGPAGE2
             case 'helpshowpage2':
-                ANSWER = messages.HELP_TAGBASE + messages.HELP_TAG2
+                ANSWER = messages.HELP_TAGTITLE
+                EMBED = Tag.EMBED_HELPTAGPAGE2
                 
             # endregion
 
