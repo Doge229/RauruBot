@@ -13,7 +13,6 @@ Large Scale
 Small Scale
 -material respawn, dragon shard respawn
 -more comments
--dmg formula image
 -epona spawn testing
 -embeds for help msgs
 -auto status
@@ -22,6 +21,7 @@ Small Scale
 -spoiler tweak
 -pristine bold?
 -blood moon trigger
+-tweak transfer album
 
 Stuff to Make/Do
 -Wiki stuff
