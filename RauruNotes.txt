@@ -21,6 +21,7 @@ Small Scale
 -f{} help
 -spoiler tweak
 -pristine bold?
+-blood moon trigger
 
 Stuff to Make/Do
 -Wiki stuff

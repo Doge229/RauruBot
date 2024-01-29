@@ -694,7 +694,7 @@ class Tag(commands.Cog):
             
             case 'dmgformula':
                 ANSWER = messages.IMAGE_DMGFORMULA
-                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'dmgformula.png'))
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'dmgformula.jpg'))
             # endregion
 
             case _:
