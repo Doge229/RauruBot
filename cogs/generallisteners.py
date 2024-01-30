@@ -70,7 +70,7 @@ class GeneralListeners(commands.Cog):
         matches = pattern.finditer(message.content)
         unique_matches = set()
         for match in matches:
-            if len(unique_matches) < 3  :
+            if len(unique_matches) < 3 and not match == '':
                 unique_matches.add(match.group(1))
         
         for TERMS in unique_matches:
@@ -121,7 +121,7 @@ class GeneralListeners(commands.Cog):
         matches = pattern.finditer(message.content)
         unique_matches = set()
         for match in matches:
-            if len(unique_matches) < 3:
+            if len(unique_matches) < 3 and not match == '':
                 unique_matches.add(match.group(1))
         
         for TERMS in unique_matches:
@@ -151,6 +151,19 @@ class GeneralListeners(commands.Cog):
                     if current.lower().replace(" ", "") in choice.lower().replace(" ", ""):
                         data.append(app_commands.Choice(name=choice, value=choice))
         return data
+
+    @commands.Cog.listener('on_message')
+    async def autofinddispenser(self, message):
+        pattern = re.compile(r'd\{(.*?)\}')
+
+        ctx = await self.bot.get_context(message)
+        MATCH = pattern.search(message.content)
+        if MATCH and not MATCH == '':
+            if not message.guild or not system.check_banned(ctx) or message.author.bot:
+                return
+            else:
+                await General.finddispenser(context=ctx, arg=MATCH.group(1))
+
 
     @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo', 'konichiwa', 'hallo'])
     @commands.guild_only()

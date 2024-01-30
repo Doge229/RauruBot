@@ -12,6 +12,7 @@ ERROR_GUILDONLY = '''My apologies, but my commands are only available inside ser
 ERROR_BADROLE = '''My apologies, but you lack the appropriate role for this command.'''
 
 ERROR_BADCOORDS = '''My apologies, but I cannot convert those coordinates.'''
+ERROR_BADDEVICE = '''My apologies, but I do not recognize that Zonai Device name.'''
 
 INFO_RAURUBOT = '''
 Greetings! My name is Rauru. I am here to help guide you on your journey through Hyrule by providing information and links. 
@@ -125,12 +126,12 @@ Page 2 of 2
 
 HELP_TAGTITLE = '''Here are the options for my `tag` command:'''
 HELP_TAG1 = ['''/tag [option]''', '''
-`botinfo/userauru, credits, repository`''']
+`botinfo/userauru, credits, repository, shortcuthelp`''']
 HELP_TAG2 = ['''**Tag Command Help**''', '''
 `help [page number], help show [page number]`
 - *Note: Page number defaults to the 1st page if not specified*''']
 HELP_TAG3 = ['''**General Command Help** (For when `/help` isn't available)''', '''
-`helpgeneral, helpgeneral show`''']
+`generalhelp, generalhelp show`''']
 HELP_TAG4 = ['''**Story Stuff**''', '''
 `postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation`''']
 HELP_TAG5 = ['''**Farming Stuff**''', '''
@@ -151,7 +152,15 @@ HELP_TAG11 = ['''**Reference Images**''', '''
 HELP_TAGGENSERVER = ['''**Server Stuff**''', '''
 `spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, totkexpert`''']
 
+HELP_COMMANDSHORTCUT = '''
+You can trigger some of my commands from within a message using certain markdowns:
+- `/find [search terms]` = `f{search terms}`
+- `/findpristine [weapon name]` = `p{weapon name}`
+- `/finddispenser [device name]` = `d{device name}`
 
+Just put the terms you would normally use with those commands inside the brackets, and I'll respond to your message just how I would if you used the command!
+This is limited to 3 uses per command per message(1 use for `/finddispenser` per message), and I will automatically remove duplicate terms.
+'''
 
 HELP_NOTIFY = '''Sending you my response to that command'''
 HELP_NOTIFYERROR1 = '''My apologies'''
@@ -178,8 +187,10 @@ Here's how to use my blacklist command:
 # region TOTKGeneral Server Stuff
 INFO_SPOILERTAG = '''
 Please be mindful of any newer players present and spoiler tag any information they might not want to have spoiled for them. 
-You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
-You can spoiler tag images **when attaching** them by clicking the small eye icon above them if you're on desktop, or by tapping and holding on the image if you are on mobile.
+- You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
+You can spoiler tag images **when attaching** them: 
+- If you are on the desktop app, by clicking the small eye icon above the image.
+- If you are on mobile, by tapping and holding on the image to view the options for it.
 '''
 INFO_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, modding, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
 INFO_SELFPROMOTION = '''
@@ -232,7 +243,7 @@ If you happen to be worried that TotK's final boss is in Hyrule Castle, don't be
 
 # region Farming Stuff
 INFO_BLOODMOON = '''
-Every 144 minutes of unpaused gameplay, the game will attempt to trigger a Blood Moon on the next midnight. If you are in a shrine or the Depths, then the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier, Captain, and Flux Constructs do not respawn on Blood Moons however, they use a separate timer.'''
+Every 144 minutes of unpaused gameplay, the game will attempt to trigger a Blood Moon on the next midnight. If you are in a shrine or the Depths when that midnight occurs, then the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier, Captain, and Flux Constructs do not respawn on Blood Moons however, they use a separate timer.'''
 INFO_CONSTRUCTRESPAWN = '''
 Soldier Constructs, Captain Constructs, and Flux Constructs have a separate respawn timer to most enemies. Starting after your first attempt to open the front door of the Temple of Time, every 144 minutes of unpaused gameplay these Constructs will be set to respawn on the next midnight. Constructs will not be immediately respawned if Link is in the same general area as them, but they will be once Link travels far enough away. Aside from that, there is no known way to accelerate or delay this respawn effect.
 '''
@@ -879,7 +890,7 @@ INFO_PREVENTUPDATES = '''
 INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
 POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch:'''
 POINT_TRANSFERALBUM = '''
-- [Transfer to your smartphone with a QR code](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>)
+- [Transfer to your smartphone via QR code](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>)
 - [Transfer to your computer via USB](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>)
 '''
 

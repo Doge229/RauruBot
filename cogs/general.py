@@ -164,10 +164,10 @@ class General(commands.Cog):
                 DISPENSERS = messages.DISP_CONSTRUCTHEAD
             case _:
                 VALID = False
-                ANSWER = messages.ERROR_UNKNOWNCMD
+                ANSWER = messages.ERROR_BADDEVICE
 
         if VALID:
-            ANSWER = messages.DISP_BASE + f'`{TERM}`' + messages.DISP_BASE2# + f'\n' + DISPENSERS
+            ANSWER = messages.DISP_BASE + f'`{TERM}`' + messages.DISP_BASE2
             EMBED = discord.Embed(description=DISPENSERS)
 
         await system.respond(context, message=ANSWER, embed=EMBED)

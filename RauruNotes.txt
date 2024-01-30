@@ -15,13 +15,14 @@ Small Scale
 -more comments
 -epona spawn testing
 - embeds for help msgs
--auto status
+- auto status
 -capsule drop rates
--f{} help
--spoiler tweak
--pristine bold?
--blood moon trigger
--tweak transfer album
+- f{} help
+- d{}
+- spoiler tweak
+- pristine bold
+- blood moon trigger
+- tweak transfer album
 
 Stuff to Make/Do
 -Wiki stuff

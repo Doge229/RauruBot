@@ -110,6 +110,25 @@ class Tag(commands.Cog):
             case 'helpgeneralshow1':
                 ANSWER = messages.HELP_GENERALTITLE
                 EMBED = Tag.EMBED_HELPGENERAL
+            case 'generalhelp':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
+            case 'generalhelp1':
+                EPHEMERAL = True
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
+            case 'generalhelpshow':
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
+            case 'generalhelpshow1':
+                ANSWER = messages.HELP_GENERALTITLE
+                EMBED = Tag.EMBED_HELPGENERAL
+            
+            case 'helpshortcut':
+                ANSWER = messages.HELP_COMMANDSHORTCUT
+            case 'shortcuthelp':
+                ANSWER = messages.HELP_COMMANDSHORTCUT
             # endregion
 
             # region Tag Help Stuff
