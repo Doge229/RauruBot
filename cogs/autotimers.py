@@ -25,13 +25,14 @@ class DailyProfile(commands.Cog):
     def __init__(self, bot) -> None:
         self.bot = bot
         super().__init__()
-        self.testtimer.start()
+        self.profiletimer.start()
+        self.statustimer.start()
 
     def cog_unload(self):
-        self.testtimer.cancel()
+        self.profiletimer.cancel()
     
     @tasks.loop(time=times)
-    async def testtimer(self):
+    async def profiletimer(self):
         int = random.randint(1, 100)
         NICKCHOICE = 'default'
         PICCHOICE = 'default'
@@ -46,6 +47,10 @@ class DailyProfile(commands.Cog):
 
         await system.setnicknameself(self.bot, NICKCHOICE)
         await system.setprofilepic(self.bot, PICCHOICE)
+    
+    @tasks.loop(time=datetime.time(hour=00, minute=00, tzinfo=timezone))
+    async def statustimer(self):
+        await system.setstatusself(self.bot, 'def')
          
 
 async def setup(bot):

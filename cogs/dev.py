@@ -226,17 +226,8 @@ class Dev(commands.Cog):
     @commands.command(name='status')
     @commands.is_owner()
     async def setstatus(self, ctx, *, arg):
-        if arg == 'rm':
-            await self.bot.change_presence(activity=None)
-            await system.respond(ctx, f'Removed custom status')
-            return
-        elif arg == 'def':
-            await self.bot.change_presence(activity=discord.Game(name="Use /help to see my commands!"))
-            await system.respond(ctx, f'Reset custom status')
-            return
-
-        await self.bot.change_presence(activity=discord.Game(name=arg))
-        await system.respond(ctx, f'Custom status set to: `{arg}`')
+        ANSWER = await system.setstatusself(self.bot, arg)
+        await system.respond(ctx, ANSWER)
 
     @commands.command(name='reloadmodule', aliases=['rldmodule'])
     @commands.is_owner()

@@ -14,7 +14,7 @@ Small Scale
 -material respawn, dragon shard respawn
 -more comments
 -epona spawn testing
--embeds for help msgs
+- embeds for help msgs
 -auto status
 -capsule drop rates
 -f{} help

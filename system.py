@@ -241,7 +241,7 @@ async def setprofilepic(bot, option):
     return IMAGENAME
 
 async def setnicknameself(bot, option):
-    OPTION = argcleanup(option)
+    OPTION = option.strip()
 
     if OPTION == 'default' or OPTION == 'def':
         if bot.user.id == config.USERID_RAURUBOT:
@@ -260,6 +260,27 @@ async def setnicknameself(bot, option):
     print(console_base('System') + f'{bot.user.name} nickname set to: `{USERNAME}`')
     
     return USERNAME
+
+async def setstatusself(bot, option):
+    OPTION = option.strip()
+    RESPONSE = ''
+
+    if OPTION == 'rm':
+        await bot.change_presence(activity=None)
+        RESPONSE = 'Removed custom status'
+
+    elif OPTION == 'def':
+        await bot.change_presence(activity=discord.Game(name="Use /help to see my commands!"))
+        RESPONSE = 'Reset custom status to default'
+
+    else:
+        await bot.change_presence(activity=discord.Game(name=OPTION))
+        RESPONSE = f'Custom status set to: `{OPTION}`'
+
+    await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} status set to: `{OPTION}`')
+    print(console_base('System') + f'{bot.user.name} status set to: `{OPTION}`')
+    return RESPONSE
+
 
 async def respond(context: discord.Object, message: str, image: discord.File = None, embed: discord.Embed = None, hidden: bool = False, silent: bool = False, time: int = 0):
     
@@ -304,7 +325,6 @@ async def respond(context: discord.Object, message: str, image: discord.File = N
         await asyncio.sleep(time)
         await msg.delete()
 
-
 async def send(bot, channelid: int, message: str, image: discord.File = None, embed: discord.Embed = None):
     channel = bot.get_channel(channelid)
     if image:
@@ -314,6 +334,7 @@ async def send(bot, channelid: int, message: str, image: discord.File = None, em
     
     storemessageid(channelid, msg.id)
     return msg
+
 
 def storemessageid(channelid: int, messageid: int):
     global MESSAGEHISTORY
