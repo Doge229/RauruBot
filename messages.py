@@ -188,7 +188,7 @@ Here's how to use my blacklist command:
 INFO_SPOILERTAG = '''
 Please be mindful of any newer players present and spoiler tag any information they might not want to have spoiled for them. 
 - You can spoiler tag text by putting "||" on both sides of the spoiler, \|\|like this\|\|.
-You can spoiler tag images **when attaching** them: 
+You can spoiler tag images and videos **when attaching** them: 
 - If you are on the desktop app, by clicking the small eye icon above the image.
 - If you are on mobile, by tapping and holding on the image to view the options for it.
 '''
