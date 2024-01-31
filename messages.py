@@ -143,7 +143,7 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`''']
+`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
@@ -771,6 +771,10 @@ Energy Cell usage:
 <https://youtu.be/TpFoMHQ1nyw>
 Battery usage:
 <https://youtu.be/ZVk7u7L2dEA>
+'''
+POINT_DISPENSERPRICES = '''
+Here is a link to a sheet with the Device Dispenser prices:
+https://docs.google.com/spreadsheets/d/1mYfBsunmPgVa3ANXgeAhCtk1csOKlKFoTipVypf_nYE/edit?usp=sharing
 '''
 
 POINT_HOVERBIKE = '''

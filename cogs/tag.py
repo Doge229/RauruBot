@@ -620,6 +620,12 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_ENERGYCELLSTATS
             case 'energycelldrain':
                 ANSWER = messages.POINT_ENERGYCELLSTATS
+            case 'dispenserprice':
+                ANSWER = messages.POINT_DISPENSERPRICES
+            case 'dispenserdrop':
+                ANSWER = messages.POINT_DISPENSERPRICES
+            case 'dispenserrate':
+                ANSWER = messages.POINT_DISPENSERPRICES
             
             case 'hoverbike':
                 ANSWER = messages.POINT_HOVERBIKE

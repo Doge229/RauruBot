@@ -16,7 +16,7 @@ Small Scale
 -epona spawn testing
 - embeds for help msgs
 - auto status
--capsule drop rates
+- capsule drop rates
 - f{} help
 - d{}
 - spoiler tweak
