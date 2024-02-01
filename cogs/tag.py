@@ -501,6 +501,16 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_BESTARMOR
             case 'bestarmour':
                 ANSWER = messages.INFO_BESTARMOR
+            case 'gloomdmg':
+                ANSWER = messages.INFO_GLOOMDAMAGEFORMULATITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name='', value=messages.INFO_GLOOMDAMAGEFORMULA[0])
+                EMBED.add_field(name='', value=messages.INFO_GLOOMDAMAGEFORMULA[1])
+            case 'gloomdamage':
+                ANSWER = messages.INFO_GLOOMDAMAGEFORMULATITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name='', value=messages.INFO_GLOOMDAMAGEFORMULA[0])
+                EMBED.add_field(name='', value=messages.INFO_GLOOMDAMAGEFORMULA[1])
             
             case 'backscratcher':
                 ANSWER = messages.INFO_BACKSCRATCH

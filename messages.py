@@ -570,6 +570,55 @@ For maximum defense, you might want:
  For Maximum Damage: 
  -Both the Radiant Set and the Evil Spirit Set grant Bone Proficiency, which when paired with a Molduga Jaw weapon and lvl 3 Attack Up from a meal grants the highest damage increase.
  '''
+INFO_GLOOMDAMAGEFORMULATITLE = '''
+The Gloom damage you take from enemy attacks is based on the physical damage you take after your current defense is subtracted from the attack's damage.
+`ROUNDUP(0.075 * Damage Taken) + 1 if Damage Taken is a multiple of 40`
+
+Here is a list of the damage ranges that correlate to each heart of Gloom damage taken.
+'''
+INFO_GLOOMDAMAGEFORMULA = ['''
+```  1 -  13: 1
+ 14 -  26: 2
+ 27 -  39: 3
+ 40 -  53: 4
+ 54 -  66: 5
+ 67 -  79: 6
+ 80 -  93: 7
+ 94 - 106: 8
+107 - 119: 9
+120 - 133: 10
+134 - 146: 11
+147 - 159: 12
+160 - 173: 13
+174 - 186: 14
+187 - 199: 15
+200 - 213: 16
+214 - 226: 17
+227 - 239: 18
+240 - 253: 19
+254 - 266: 20```
+''', '''
+```267 - 279: 21
+280 - 293: 22
+294 - 306: 23
+307 - 319: 24
+320 - 333: 25
+334 - 346: 26
+347 - 359: 27
+360 - 373: 28
+374 - 386: 29
+387 - 399: 30
+400 - 413: 31
+414 - 426: 32
+427 - 439: 33
+440 - 453: 34
+454 - 466: 35
+467 - 479: 36
+480 - 493: 37
+494 - 506: 38
+507 - 519: 39
+520+     : 40```
+''']
 
 INFO_BACKSCRATCH = '''
 The current maximum damage that you can consistently output can be referred to as a Lynel Backscratcher build. Take a Pristine Royal Guard's Claymore with a +10 Attack Up modifier, fuse a Molduga Jaw to it, then wear it down until it has 1 durability left. 
