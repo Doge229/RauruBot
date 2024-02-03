@@ -636,7 +636,7 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_DISPENSERPRICES
             case 'dispenserrate':
                 ANSWER = messages.POINT_DISPENSERPRICES
-            case 'comnbatguide':
+            case 'combatguide':
                 ANSWER = messages.POINT_COMBATGUIDE
             case 'combattip':
                 ANSWER = messages.POINT_COMBATGUIDE
