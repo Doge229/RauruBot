@@ -143,7 +143,7 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`''']
+`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
@@ -170,16 +170,16 @@ HELP_BLACKLIST = '''
 Here's how to use my blacklist command: 
 ***Please keep in mind that all of my responses to these commands will be sent to the channel in which you use the command!***
 
-`@Rauru#6248 blacklist show`
+`&blacklist show`
     -Shows the currently blacklisted users and the reasons they were blacklisted
 
-`@Rauru#6248 blacklist add [userid] [reason(optional)]`
+`&blacklist add [userid] [reason(optional)]`
     -Adds a user to the blacklist. Add information after the userid to save the reason they were blacklisted, or other info.
 
-`@Rauru#6248 blacklist remove [userid]`
+`&blacklist remove [userid]`
     -Remove a user from the blacklist
 
-`@Rauru#6248 blacklist update [userid] [reason(optional)]`
+`&blacklist update [userid] [reason(optional)]`
     -Update a user's blacklist reason/info
 '''
 # endregion
@@ -824,6 +824,10 @@ Battery usage:
 POINT_DISPENSERPRICES = '''
 Here is a link to a sheet with the Device Dispenser prices:
 https://docs.google.com/spreadsheets/d/1mYfBsunmPgVa3ANXgeAhCtk1csOKlKFoTipVypf_nYE/edit?usp=sharing
+'''
+POINT_COMBATGUIDE = '''
+Here is a link to RinHara5aki's Advanced Combat Glossary for TotK:
+https://docs.google.com/document/d/1z0qViEN9cl7dTpTb2LP2vlUVp9qiFMu2QJS8KDFx-cM/edit?usp=sharing
 '''
 
 POINT_HOVERBIKE = '''

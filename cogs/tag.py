@@ -636,7 +636,11 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_DISPENSERPRICES
             case 'dispenserrate':
                 ANSWER = messages.POINT_DISPENSERPRICES
-            
+            case 'comnbatguide':
+                ANSWER = messages.POINT_COMBATGUIDE
+            case 'combattip':
+                ANSWER = messages.POINT_COMBATGUIDE
+
             case 'hoverbike':
                 ANSWER = messages.POINT_HOVERBIKE
             case 'hoverbike4.0':
