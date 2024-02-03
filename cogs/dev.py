@@ -270,7 +270,7 @@ class Dev(commands.Cog):
     @commands.command(name='listservers')
     @commands.is_owner()
     async def listservers(self, ctx):
-        async for guild in self.bot.guilds:
+        for guild in self.bot.guilds:
             GUILD = f'{guild.name}: {guild.id}'
             print(GUILD)
 
@@ -278,7 +278,7 @@ class Dev(commands.Cog):
     @commands.is_owner()
     async def leaveunauthservers(self, ctx):
         print('Leaving unauthorized servers....')
-        async for guild in self.bot.guilds:
+        for guild in self.bot.guilds:
             if not guild.id in config.AUTHSERVERS:
                 print(f'Unauthorized server:{guild.name} detected!')
                 await guild.leave()
