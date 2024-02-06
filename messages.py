@@ -515,7 +515,7 @@ INFO_MALANYALOCATION = '''
 The Horse God Malanya can revive and upgrade your registered horses in TotK. You can find his spring at Bloodleaf Lake in Deep Akkala, north of East Akkala Stable.
 You can bring him out of his bud by giving him an Endura Carrot, and he will ask for a Roasted Endura Carrot in order to revive any of your deceased horses.
 
-In order to improve a horses stats, Malanya will ask for certain meals to give him the energy he needs for the upgrade. To upgrade any stat to 2 stars, you will need to bring him a single Fried Wild Greens meal.
+In order to improve a horse's stats, Malanya will ask for certain meals to give him the energy he needs for the upgrade. To upgrade any stat to 2 stars, you will need to bring him a single Fried Wild Greens meal.
 Use `/tag horseupgrades` to see the meals needed for the rest of the upgrades.
 
 Malanya cannot upgrade the stats for Epona, the Giant White Stallion, and the Giant Horse("Gerudo"), as they like themselves the way they are.
