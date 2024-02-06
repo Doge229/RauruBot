@@ -30,6 +30,7 @@ class DailyProfile(commands.Cog):
 
     def cog_unload(self):
         self.profiletimer.cancel()
+        self.statustimer.cancel()
     
     @tasks.loop(time=times)
     async def profiletimer(self):
@@ -48,7 +49,7 @@ class DailyProfile(commands.Cog):
         await system.setnicknameself(self.bot, NICKCHOICE)
         await system.setprofilepic(self.bot, PICCHOICE)
     
-    @tasks.loop(time=datetime.time(hour=00, minute=00, tzinfo=timezone))
+    @tasks.loop(time=times[0])
     async def statustimer(self):
         await system.setstatusself(self.bot, 'def')
          
