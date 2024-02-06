@@ -14,7 +14,6 @@ Small Scale
 -material respawn, dragon shard respawn
 -more comments
 -epona spawn testing
--malanya typo/tweak
 
 Stuff to Make/Do
 -Wiki stuff
