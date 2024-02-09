@@ -9,6 +9,7 @@ import system
 import messages
 import config
 from logger import Logger
+import os
 
 SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
 
@@ -215,6 +216,18 @@ class Dev(commands.Cog):
     async def profilepic(self, ctx, arg):
         IMAGENAME = await system.setprofilepic(self.bot, arg)
         await system.respond(ctx, f'Profile picture set to: {IMAGENAME}')
+
+    @commands.command(name='sendlog')
+    @commands.is_owner()
+    async def sendlogfile(self, ctx, arg: str = None):
+        DATE = Logger.getlogdate()
+        if arg and os.path.exists(os.path.join(system.DIR_LOGS, f'{arg.replace(" ", "")}.txt')):
+            DATE = arg.replace(" ", "")
+
+        IMAGE = discord.File(os.path.join(system.DIR_LOGS, f'{DATE}.txt'))
+        
+        await system.respond(ctx, message=f'Here is my log file for `{DATE}`:', image=IMAGE, hidden=True)
+        Logger.admin(f'Log file `{DATE}.txt` retrieved by: {ctx.author}')
 
     @commands.command(name='nick')
     @commands.is_owner()
