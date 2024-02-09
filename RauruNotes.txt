@@ -14,6 +14,8 @@ Small Scale
 -material respawn, dragon shard respawn
 -more comments
 -epona spawn testing
+-best fuse
+-tweak backscratcher
 
 Stuff to Make/Do
 -Wiki stuff
