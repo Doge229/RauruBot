@@ -1,6 +1,7 @@
 .lh/
 .vscode/
 __pycache__/
+logs/
 cogs/__pycache__
 blacklist.json
 tokens.py

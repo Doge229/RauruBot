@@ -18,6 +18,7 @@ DIR_DATA = os.path.join(DIR_ROOT, 'data.json')
 DIR_BLACKLIST = os.path.join(DIR_ROOT, 'blacklist.json')
 DIR_COGS = os.path.join(DIR_ROOT, 'cogs')
 DIR_ICONS = os.path.join(DIR_ROOT, 'boticons')
+DIR_LOGS = os.path.join(DIR_ROOT, 'logs')
 
 DICT_BLACKLIST = {}
 

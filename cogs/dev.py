@@ -8,6 +8,7 @@ import importlib
 import system
 import messages
 import config
+from logger import Logger
 
 SPEAKCHANNELID = system.ACTIVEBOTSYSTEMCHANNELID
 
@@ -99,9 +100,7 @@ class Dev(commands.Cog):
     @commands.command(name='commandtest', aliases=['cmdtest'])
     @commands.is_owner()
     async def commandtest(self, ctx):
-        async for guild in self.bot.guilds:
-            GUILD = f'{guild.name}: {guild.id}'
-            print(GUILD)
+        Logger.error("test")
     #endregion
 
     #region Speak Commands
