@@ -1,16 +1,12 @@
 Large Scale
 -actor name match command
   -update local actor list command?
--full logging
-  -write to file
-  -more specific errors
--log owner only
 -load reload rework
 -block inaccessible channels for slash commands
--credits on load
 -settings.json
 
 Small Scale
+-credits on load
 -material respawn, dragon shard respawn
 -more comments
 -epona spawn testing
