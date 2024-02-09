@@ -3,6 +3,7 @@
 from discord.ext import commands
 import system
 import messages
+from logger import Logger
 
 
 class Admin(commands.Cog):
@@ -28,7 +29,7 @@ class Admin(commands.Cog):
             if len(system.DICT_BLACKLIST) == 0:
                 ANSWER = 'There are no currently blacklisted users.'
                 await system.respond(ctx, ANSWER)
-                print(system.console_base('Blacklist') + f'Blacklist shown by Admin: {ctx.author.name}')
+                Logger.admin(f'Blacklist shown by Admin: {ctx.author.name}')
                 return
 
             BLACKLIST = ''
@@ -37,7 +38,7 @@ class Admin(commands.Cog):
 
             ANSWER = 'Here are the currently blacklisted users:' + BLACKLIST
             await system.respond(ctx, ANSWER)
-            print(system.console_base('Blacklist') + f'Blacklist shown by Admin: {ctx.author.name}')
+            Logger.admin(f'Blacklist shown by Admin: {ctx.author.name}')
             return
         
         # Setup entry
@@ -67,31 +68,31 @@ class Admin(commands.Cog):
             if not ENTRYNAME in system.DICT_BLACKLIST:
                 system.DICT_BLACKLIST[ENTRYNAME] = BLACKLISTENTRY
                 ANSWER = f'User: `{TARGETNAME}` added to blacklist for server: `{GUILDNAME}`. Reason: `{REASON}`'
-                print(system.console_base('Blacklist') + f'User: {TARGETNAME} added to blacklist for guild: {GUILDNAME} by Admin: {ADMIN}. Reason: {REASON}')
+                Logger.admin(f'User: {TARGETNAME} added to blacklist for guild: {GUILDNAME} by Admin: {ADMIN}. Reason: {REASON}')
                 system.save_blacklist()
             else:
                 ANSWER = f'User: `{TARGETNAME}` already blacklisted for this server. Reason: `{system.DICT_BLACKLIST[ENTRYNAME]["reason"]}`'
-                print(system.console_base('Blacklist') + f'Admin: {ADMIN} attempted to re-blacklist user: {TARGETNAME} for guild: {GUILDNAME}. Reason: {REASON}')
+                Logger.admin(f'Admin: {ADMIN} attempted to re-blacklist user: {TARGETNAME} for guild: {GUILDNAME}. Reason: {REASON}')
 
         elif mode == 'remove':
             if ENTRYNAME in system.DICT_BLACKLIST:
                 del system.DICT_BLACKLIST[ENTRYNAME]
                 ANSWER = f'User: `{TARGETNAME}` removed from blacklist for server: `{GUILDNAME}`.'
-                print(system.console_base('Blacklist') + f'User: {TARGETNAME} removed from blacklist by: {ADMIN}.')
+                Logger.admin(f'User: {TARGETNAME} removed from blacklist by: {ADMIN}.')
                 system.save_blacklist()
             else:
                 ANSWER = f'User: `{TARGETNAME}` not in blacklist for this server.'
-                print(system.console_base('Blacklist') + f'Admin: {ADMIN} attempted to remove non-blacklisted user: {TARGETNAME}.')
+                Logger.admin(f'Admin: {ADMIN} attempted to remove non-blacklisted user: {TARGETNAME}.')
 
         elif mode == 'update':
             if ENTRYNAME in system.DICT_BLACKLIST:
                 system.DICT_BLACKLIST[ENTRYNAME] = BLACKLISTENTRY
                 ANSWER = f'User: `{TARGETNAME}` blacklist reason for server: {GUILDNAME} updated. Reason: `{REASON}`'
-                print(system.console_base('Blacklist') + f'User: {TARGETNAME} blacklist reason for guild: {GUILDNAME} updated by: {ADMIN}. Reason: {REASON}')
+                Logger.admin(f'User: {TARGETNAME} blacklist reason for guild: {GUILDNAME} updated by: {ADMIN}. Reason: {REASON}')
                 system.save_blacklist()
             else:
                 ANSWER = f'User: `{TARGETNAME}` not in blacklist for server: {GUILDNAME}.'
-                print(system.console_base('Blacklist') + f'Admin: {ADMIN} attempted to update non-blacklisted user: {TARGETNAME}. Reason: {REASON}')
+                Logger.admin(f'Admin: {ADMIN} attempted to update non-blacklisted user: {TARGETNAME}. Reason: {REASON}')
 
         else:
             ANSWER = messages.ERROR_BLACKLIST

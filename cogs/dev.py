@@ -49,7 +49,7 @@ class Dev(commands.Cog):
                 globally = False
             
             await system.respond(ctx, f"Synced {len(synced)} commands {'globally' if globally else 'to the current guild.'}")
-            print(system.console_base('System') + f"{len(synced)} commands synced {'globally' if globally else f'to {ctx.guild}.'} by: {ctx.author}")
+            Logger.system(f"{len(synced)} commands synced {'globally' if globally else f'to {ctx.guild}.'} by: {ctx.author}")
             return
 
 
@@ -87,7 +87,7 @@ class Dev(commands.Cog):
                     ret += 1
             
         await system.respond(ctx, f"Synced the tree to {ret}/{len(guilds)} guilds.")
-        print(system.console_base('System') + f"tree synced to {ret}/{len(guilds)} guilds by: {ctx.author}")
+        Logger.system(f"Tree synced to {ret}/{len(guilds)} guilds by: {ctx.author}")
         print(guilds)
 
     #region Test Commands
@@ -167,12 +167,12 @@ class Dev(commands.Cog):
                 message = await channel.fetch_message(msginfo[1])
 
                 await message.delete()
-                print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+                Logger.admin(f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
             except:
-                print(system.console_base('Error') + f'Failed to delete message!')
+                Logger.admin('Failed to delete message!')
                 errors += 1
 
-        print(system.console_base('System') + f'{arg} message(s) deleted by {ctx.author.name}')
+        Logger.admin(f'{arg} message(s) deleted by {ctx.author.name}')
         await system.respond(ctx, f'Deleted the last {arg} message(s). {errors} deletions failed.', time=3)
 
     @commands.command(name='delmsg')
@@ -189,7 +189,7 @@ class Dev(commands.Cog):
             message = await channel.fetch_message(messageid)
 
             await message.delete()
-            print(system.console_base('System') + f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
+            Logger.admin(f'Message deleted by: {ctx.author.name}\n\tMessage content: {message.content}\n\tChannel: {channel.name} in {channel.guild.name}')
             await system.respond(ctx, f'Deleted message: {messageid}', time=3)
 
         except:
@@ -204,11 +204,11 @@ class Dev(commands.Cog):
             if not ctx.channel.id == system.ACTIVEBOTSYSTEMCHANNELID:
                 await system.send(self.bot, system.ACTIVEBOTSYSTEMCHANNELID, f'{self.bot.user.name}' + messages.BOT_OFFLINESIMPLE)
         except:
-            print(system.console_base('System') + f'Unable to send Offline Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
+            Logger.error(f'Unable to send Offline Message to channel: {system.ACTIVEBOTSYSTEMCHANNELID}')
 
         await system.respond(ctx, messages.BOT_OFFLINEPERSON)
         await self.bot.close()
-        print(system.console_base('System') + f'{self.bot.user.name} was shutdown by command from: {ctx.author}')
+        Logger.system(f'{self.bot.user.name} was shutdown by command from: {ctx.author}')
     
     @commands.command(name='profpic')
     @commands.is_owner()
@@ -247,10 +247,10 @@ class Dev(commands.Cog):
         try:
             importlib.reload(MODULE)
             ANSWER = f'Reloaded Module: `{arg}`'
-            print(system.console_base('System') + f'Module: {arg} reloaded by: {ctx.author}')
+            Logger.system(f'Module: {arg} reloaded by: {ctx.author}')
         except:
             ANSWER = 'Unable to reload Module!'
-            print(system.console_base('System') + f'Module: {arg} failed to be reloaded by: {ctx.author}')
+            Logger.system(f'Module: {arg} failed to be reloaded by: {ctx.author}')
 
         system.setactivebot()
         await system.respond(ctx, ANSWER)
@@ -263,7 +263,7 @@ class Dev(commands.Cog):
         elif system.ERRORLOGGING == True:
             system.ERRORLOGGING = False
 
-        print(system.console_base('System') + f'Error Logging was set to: {system.ERRORLOGGING} by: {ctx.author}')
+        Logger.system(f'Error Logging was set to: {system.ERRORLOGGING} by: {ctx.author}')
         await system.respond(ctx, f'Error Logging now set to {system.ERRORLOGGING}')
 
     @commands.command(name='listservers')
@@ -271,18 +271,18 @@ class Dev(commands.Cog):
     async def listservers(self, ctx):
         for guild in self.bot.guilds:
             GUILD = f'{guild.name}: {guild.id}'
-            print(GUILD)
+            Logger.system(GUILD)
 
     @commands.command(name='leaveunauthserver')
     @commands.is_owner()
     async def leaveunauthservers(self, ctx):
-        print('Leaving unauthorized servers....')
+        Logger.system('Leaving unauthorized servers....')
         for guild in self.bot.guilds:
             if not guild.id in config.AUTHSERVERS:
-                print(f'Unauthorized server:{guild.name} detected!')
+                Logger.system(f'Unauthorized server:{guild.name} detected!')
                 await guild.leave()
-                print(f'Unauthorized server:{guild.name} left!')
-        print('All unauthorized servers have been left!')
+                Logger.system(f'Unauthorized server:{guild.name} left!')
+        Logger.system('All unauthorized servers have been left!')
     #endregion
 
 async def setup(bot):

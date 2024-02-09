@@ -26,7 +26,6 @@ class Logger():
 
         return f'{dt:%m-%d %I:%M:%S}'
     
-# log function to be called by type calls, combine print with it
     @classmethod
     def log(self, type, msg):
 
@@ -35,7 +34,7 @@ class Logger():
 
         PADDING = 9
         LINE = f'|{type:<{PADDING}}|{self.getlogdatetime()}| {msg}'
-        DIR_CURRENTLOG = os.path.join(system.DIR_LOGS, f'{self.getlogdate()}')
+        DIR_CURRENTLOG = os.path.join(system.DIR_LOGS, f'{self.getlogdate()}.txt')
         log = open(DIR_CURRENTLOG, "a")
 
         log.write(LINE + '\n')

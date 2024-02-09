@@ -8,6 +8,7 @@ from discord.ext import commands
 from discord import app_commands
 import messages
 import config
+from logger import Logger
 import json
 import random
 import asyncio
@@ -44,35 +45,35 @@ def setactivebot():
 def load_blacklist():
     global DICT_BLACKLIST
     
-    print(console_base('System') + f'Loading blacklist...')
+    Logger.system('Loading blacklist...')
     
     try:
         with open(DIR_BLACKLIST, 'r') as inblacklist:
             DICT_BLACKLIST = json.load(inblacklist)
             
-        print(DICT_BLACKLIST)
-        print(console_base('System') + f'Blacklist loaded!')
+        Logger.system(DICT_BLACKLIST)
+        Logger.system('Blacklist loaded!')
         
     except FileNotFoundError:
-        print(console_base('Error') + f'Unable to find blacklist file!')
+        Logger.error('Unable to find blacklist file!')
         
     except:
-        print(console_base('Error') + f'Unable to load blacklist!')
+        Logger.error('Unable to load blacklist!')
 
 def save_blacklist():
     global DICT_BLACKLIST
     
-    print(console_base('System') + f'Saving blacklist...')
+    Logger.system('Saving blacklist...')
     
     try:
         with open(DIR_BLACKLIST, 'w') as outfile:
             json.dump(DICT_BLACKLIST, outfile)
             
-        print(DICT_BLACKLIST)
-        print(console_base('System') + f'Blacklist saved!')
+        Logger.system(DICT_BLACKLIST)
+        Logger.system('Blacklist saved!')
     
     except:
-        print(console_base('Error') + f'Unable to save blacklist!')
+        Logger.error('Unable to save blacklist!')
 
 # Logging
 def console_base(logtype):
@@ -90,7 +91,7 @@ def check_admin(context, frombanned = False):
                 return True
             else:
                 if not frombanned:
-                    print(console_base('System') + f'{context.author} was blocked from using command: {context.message.content}; by: {inspect.currentframe().f_code.co_name}')
+                    Logger.system(f'{context.author} was blocked from using command: {context.message.content}; by: {inspect.currentframe().f_code.co_name}')
                     return False
                 return False
         else:
@@ -106,7 +107,7 @@ def check_admin(context, frombanned = False):
                 return True
             else:
                 if not frombanned:
-                    print(console_base('System') + f'{context.user} was blocked from using command: {context.command.name}; by: {inspect.currentframe().f_code.co_name}')
+                    Logger.system(f'{context.user} was blocked from using command: {context.command.name}; by: {inspect.currentframe().f_code.co_name}')
                     return False
                 return False
         else:
@@ -118,7 +119,7 @@ def check_banned(context):
             if not str(context.author.id) + str(context.guild.id) in DICT_BLACKLIST:
                 return True
             else:
-                print(console_base('System') + f'{context.author} was blocked from using command: {context.message.content}; by: {inspect.currentframe().f_code.co_name}')
+                Logger.system(f'{context.author} was blocked from using command: {context.message.content}; by: {inspect.currentframe().f_code.co_name}')
                 return False
         else:
             return True
@@ -128,7 +129,7 @@ def check_banned(context):
             if not str(context.user.id) + str(context.guild.id) in DICT_BLACKLIST:
                 return True
             else:
-                print(console_base('System') + f'{context.user} was blocked from using command: {context.command.name}; by: {inspect.currentframe().f_code.co_name}')
+                Logger.system(f'{context.user} was blocked from using command: {context.command.name}; by: {inspect.currentframe().f_code.co_name}')
                 return False
         else:
             return True
@@ -147,7 +148,7 @@ async def on_command_error(ctx, error):
             await respond(ctx, messages.ERROR_UNKNOWNCMD)
         
     elif ERRORLOGGING == True:
-            print(error)
+            Logger.error(error)
 
 async def on_app_command_error(interaction, error):
     global ERRORLOGGING
@@ -155,7 +156,7 @@ async def on_app_command_error(interaction, error):
         await respond(interaction, messages.ERROR_BADROLE)
         
     elif ERRORLOGGING == True:
-        print(error)
+        Logger.error(error)
 
 # Other System functions
 async def setprofilepic(bot, option):
@@ -237,7 +238,7 @@ async def setprofilepic(bot, option):
     with open(IMAGEPATH, 'rb') as image:
         await bot.user.edit(avatar=image.read())
     await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} profile picture set to: `{IMAGENAME}`')
-    print(console_base('System') + f'{bot.user.name} profile picture set to: `{IMAGENAME}`')
+    Logger.config(f'{bot.user.name} profile picture set to: `{IMAGENAME}`')
 
     return IMAGENAME
 
@@ -258,7 +259,7 @@ async def setnicknameself(bot, option):
         await guild.me.edit(nick=USERNAME)
     
     await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} nickname set to: `{USERNAME}`')
-    print(console_base('System') + f'{bot.user.name} nickname set to: `{USERNAME}`')
+    Logger.config(f'{bot.user.name} nickname set to: `{USERNAME}`')
     
     return USERNAME
 
@@ -279,7 +280,7 @@ async def setstatusself(bot, option):
         RESPONSE = f'Custom status set to: `{OPTION}`'
 
     await send(bot, ACTIVEBOTSYSTEMCHANNELID, f'{bot.user.name} status set to: `{OPTION}`')
-    print(console_base('System') + f'{bot.user.name} status set to: `{OPTION}`')
+    Logger.config(f'{bot.user.name} status set to: `{OPTION}`')
     return RESPONSE
 
 
