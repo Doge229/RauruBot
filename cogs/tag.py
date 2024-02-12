@@ -501,6 +501,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_BESTARMOR
             case 'bestarmour':
                 ANSWER = messages.INFO_BESTARMOR
+            case 'bestfuse':
+                ANSWER = messages.INFO_BESTFUSE
             case 'gloomdmg':
                 ANSWER = messages.INFO_GLOOMDAMAGEFORMULATITLE
                 EMBED = discord.Embed()

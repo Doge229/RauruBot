@@ -141,7 +141,7 @@ HELP_TAG6 = ['''**Equipment Info**''', '''
 HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 `bargainer/bargainerstatues, crystalrefinery/refinery, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror, coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation, control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation, midairwing, gleeokstrat, miskobanner, beginnertips/totktips`''']
 HELP_TAG8 = ['''**Effects and Builds**''', '''
-`defense, bestarmor, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
+`defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
 `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
@@ -570,6 +570,12 @@ For maximum defense, you might want:
  For Maximum Damage: 
  -Both the Radiant Set and the Evil Spirit Set grant Bone Proficiency, which when paired with a Molduga Jaw weapon and lvl 3 Attack Up from a meal grants the highest damage increase.
  '''
+INFO_BESTFUSE = '''
+When it comes to the highest damage Fuse materials, these are usually considered the best:
+- Silver Lynel Saber Horn - For consistent high damage
+- Molduga Jaw - Highest possible damage, when combined with Bone Prof. and Attack Up
+- Gleeok Horns - Best damage for elemental materials, and has unlimited elemental energy
+'''
 INFO_GLOOMDAMAGEFORMULATITLE = '''
 The Gloom damage you take from enemy attacks is based on the physical damage you take after your current defense is subtracted from the attack's damage.
 `ROUNDUP(0.075 * Damage Taken) + 1 if Damage Taken is a multiple of 40`
@@ -625,7 +631,7 @@ The current maximum damage that you can consistently output can be referred to a
 Then wear a Bone Proficiency armor set and eat a level 3 Attack Up meal, and take the weapon and only use it for mounted attacks on a Lynel. The mounted attacks take no durability, so you can continually deal last hit critical damage with the almost broken claymore. 
 
 Here is the full math behind this:
-rounddown(42 Base Weapon Damage + rounddown((10 Modifier Buff + 32 Molduga Jaw Fuse Damage)/0.95 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
+rounddown(42 Base Weapon Damage + rounddown((10 Modifier Buff + 32 Molduga Jaw Fuse Damage) * 1.052632 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
 '''
 POINT_DMGCALC = '''
 Here's a link to Phil's Damage Calculator for TotK:
@@ -883,7 +889,7 @@ INFO_DUPE112 = '''
 - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Bundle Item Duplication (BID)](https://youtu.be/WNnnI13a954) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
-- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
+- [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 INFO_DUPE120TITLE = '''Here are some duplication glitches for 1.2.0:'''
 INFO_DUPE120 = '''
@@ -893,7 +899,7 @@ INFO_DUPE120 = '''
   - [Weapon Stat Transfer(WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
 - [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
     - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
-- Stick Smuggling:
+- Like-Like Stick Culling:
     - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
   - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
   - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
@@ -905,14 +911,14 @@ INFO_DUPE120 = '''
     - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Bundle Item Duplication (BID)](https://youtu.be/WNnnI13a954) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
-- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
+- [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
 INFO_DUPE121 = '''
 **Equipment Dupes**
 - [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
     - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
-- Stick Smuggling:
+- Like-Like Stick Culling:
     - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
   - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
   - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
@@ -925,7 +931,7 @@ INFO_DUPE121 = '''
     - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>) - Guide from 1.2.0, but can still be used with the 1.2.1 MTD method
 - [Bundle Item Duplication (BID)](https://youtu.be/WNnnI13a954) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
-- [Bomb/Elemental Fruit Dupe](<https://youtu.be/BZID7B_99QY?t=21>)
+- [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 
 INFO_DOWNPATCH = '''
