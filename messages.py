@@ -574,7 +574,7 @@ INFO_BESTFUSE = '''
 When it comes to the highest damage Fuse materials, these are usually considered the best:
 - Silver Lynel Saber Horn - For consistent high damage
 - Molduga Jaw - Highest possible damage, when combined with Bone Prof. and Attack Up
-- Gleeok Horns - Best damage for elemental materials, and has unlimited elemental energy
+- Gleeok Horns - Best damage for elemental materials, and have unlimited elemental energy
 '''
 INFO_GLOOMDAMAGEFORMULATITLE = '''
 The Gloom damage you take from enemy attacks is based on the physical damage you take after your current defense is subtracted from the attack's damage.
