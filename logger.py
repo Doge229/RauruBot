@@ -42,23 +42,27 @@ class Logger():
 
         log.close()
     
-
+    # Errors
     @classmethod
     def error(self, msg):
         self.log("Error", msg)
 
+    # Bot Status/Activity
     @classmethod
     def system(self, msg):
         self.log("System", msg)
 
+    # Bot Status/Configuration Changes
     @classmethod
     def config(self, msg):
         self.log("Config", msg)
 
+    # Admin Info/Activity
     @classmethod
     def admin(self, msg):
         self.log("Admin", msg)
 
+    # Bot Information, no action needed
     @classmethod
     def info(self, msg):
         self.log("Info", msg)
