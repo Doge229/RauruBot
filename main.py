@@ -7,6 +7,7 @@ import system
 import messages
 import config
 from logger import Logger
+import traceback
 
 # Bot Setup
 INTENTS = discord.Intents.default()
@@ -44,6 +45,10 @@ async def on_guild_join(guild):
     return
 
 # Error listeners
+@RauruBot.event
+async def on_error(event, *args, **kwargs):
+    Logger.error(traceback.format_exc())
+
 @RauruBot.event
 async def on_command_error(ctx, error):
     await system.on_command_error(ctx, error)
