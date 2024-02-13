@@ -32,7 +32,11 @@ Massive thanks to:
 -riso for their UI icons
 -Shozutko for their map images, and work on various resource documents
 -Everyone else in the botw and totk communities who have created resources for these games
--glitchtest and phoenixguy123 for their help with the testing process
+-The testers on the RauruBot Devlab server:
+    -glitchtest
+    -phoenixguy123
+    -luciebox
+    -potato
 '''
 INFO_REPOSITORY = '''
 Here's a link to my repository on Github:
