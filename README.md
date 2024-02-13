@@ -25,7 +25,7 @@ Massive thanks to:<br>
 - Shozutko for their map images, and work on various resource documents<br>
 - Everyone else in the botw and totk communities who have created resources for these games<br>
 - The testers on the RauruBot Devlab server:<br>
- - glitchtest<br>
- - phoenixguy123<br>
- - luciebox<br>
- - potato<br>
+    - glitchtest<br>
+    - phoenixguy123<br>
+    - luciebox<br>
+    - potato<br>
