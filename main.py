@@ -25,6 +25,7 @@ async def on_ready():
 
     Logger.system(f'{RauruBot.user.name} is online')
     Logger.system(f'Current File Directory: {system.DIR_ROOT}')
+    Logger.info(messages.INFO_CREDITS)
     # Online Message
     try:
         await system.send(RauruBot, system.ACTIVEBOTSYSTEMCHANNELID, f'{RauruBot.user.name}' + messages.BOT_ONLINESIMPLE)

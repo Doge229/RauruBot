@@ -75,10 +75,6 @@ def save_blacklist():
     except:
         Logger.error('Unable to save blacklist!')
 
-# Logging
-def console_base(logtype):
-    return f'[{datetime.datetime.now()}] [{logtype}] '
-
 # Checks
 def check_admin(context, frombanned = False):
     if type(context) == discord.ext.commands.Context:
@@ -293,18 +289,22 @@ async def respond(context: discord.Object, message: str, image: discord.File = N
                 try:
                     await USER.send(message, file=image, embed=embed)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    msg = await context.reply(NOTIFY, silent=True)
+                    if context.guild:
+                        msg = await context.reply(NOTIFY, silent=True)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    msg = await context.reply(NOTIFY, silent=True)
+                    if context.guild:
+                        msg = await context.reply(NOTIFY, silent=True)
             else:
                 try:
                     await USER.send(message, embed=embed)
                     NOTIFY = f'{messages.HELP_NOTIFY} {context.author.name}!'
-                    msg = await context.reply(NOTIFY, silent=True)
+                    if context.guild:
+                        msg = await context.reply(NOTIFY, silent=True)
                 except:
                     NOTIFY = f'{messages.HELP_NOTIFYERROR1} {context.author.name}{messages.HELP_NOTIFYERROR2}'
-                    msg = await context.reply(NOTIFY, silent=True)
+                    if context.guild:
+                        msg = await context.reply(NOTIFY, silent=True)
 
         else:
             if image:

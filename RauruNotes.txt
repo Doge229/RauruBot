@@ -8,12 +8,13 @@ Small Scale
 -Add more comments
 -Logger
   -go over what is currently logged and sort
-  -remove command response in DMs for sendlog
-  -credits on load
+  - remove command response in DMs for sendlog
+  - credits on load
 -Settings.json
   -toggle logging types
   -speak channel?
   -toggle auto profile and such
+-error for dellast after auto-delete
 
 -material respawn, dragon shard respawn
 
