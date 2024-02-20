@@ -15,6 +15,9 @@ Small Scale
   -speak channel?
   -toggle auto profile and such
 -error for dellast after auto-delete
+-hidden locations to missable
+-bargainerstatue Great GS and Amiibo vs. DLC
+-mapcompletiontips
 
 -material respawn, dragon shard respawn
 
