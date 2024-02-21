@@ -63,7 +63,7 @@ class General(commands.Cog):
         elif 'depths' in TERMS.lower() and not 'not depths' in arg.lower():
             LAYER = 'Depths'
 
-        LINK = messages.COMMAND_OBJMAPBASELINK + LAYER + '?q=' + TERMS
+        LINK = '<' + messages.COMMAND_OBJMAPBASELINK + LAYER + '?q=' + TERMS + '>'
         ANSWER = messages.COMMAND_OBJMAPTERMS + '`' + arg + '`:\n' + LINK
 
         await system.respond(context, ANSWER)
@@ -92,7 +92,7 @@ class General(commands.Cog):
 
         TERMS = system.translate_to_url(arg)
 
-        LINK = messages.COMMAND_OBJMAPBASELINK +'Depths?q=%22Npc_MinusFieldGhost_000%22%20' + TERMS
+        LINK = '<' + messages.COMMAND_OBJMAPBASELINK +'Depths?q=%22Npc_MinusFieldGhost_000%22%20' + TERMS + '>'
         ANSWER = messages.COMMAND_FINDPRISTINE1 + '`' + arg + '`' + messages.COMMAND_FINDPRISTINE2 + '\n' + LINK
 
         await system.respond(context, ANSWER)

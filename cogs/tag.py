@@ -444,7 +444,45 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_JSCONTROL
             case 'missablelocation':
                 ANSWER = messages.INFO_MISSABLELOCATIONSTITLE
-                EMBED = discord.Embed(description=messages.INFO_MISSABLELOCATIONS)
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_MISSABLELOCATIONSHEADERS[0], value=messages.INFO_MISSABLELOCATIONS[0], inline=True)
+                EMBED.add_field(name=messages.INFO_MISSABLELOCATIONSHEADERS[1], value=messages.INFO_MISSABLELOCATIONS[1], inline=True)
+                EMBED.add_field(name=messages.INFO_MISSABLELOCATIONSHEADERS[2], value=messages.INFO_MISSABLELOCATIONS[2], inline=False)
+                EMBED.set_footer(text=messages.INFO_MISSABLELOCATIONSFOOTNOTE)
+            case 'mapcompletiontip':
+                ANSWER = messages.INFO_MAPCOMPLETIONTIPS
+            case 'subbosscompletion':
+                ANSWER = messages.INFO_SUBBOSSCOMPLETIONTITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[0], value=messages.INFO_SUBBOSSCOMPLETION[0], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[1], value=messages.INFO_SUBBOSSCOMPLETION[1], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[2], value=messages.INFO_SUBBOSSCOMPLETION[2], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[3], value=messages.INFO_SUBBOSSCOMPLETION[3], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[4], value=messages.INFO_SUBBOSSCOMPLETION[4], inline=False)
+            case 'minibosscompletion':
+                ANSWER = messages.INFO_SUBBOSSCOMPLETIONTITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[0], value=messages.INFO_SUBBOSSCOMPLETION[0], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[1], value=messages.INFO_SUBBOSSCOMPLETION[1], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[2], value=messages.INFO_SUBBOSSCOMPLETION[2], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[3], value=messages.INFO_SUBBOSSCOMPLETION[3], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[4], value=messages.INFO_SUBBOSSCOMPLETION[4], inline=False)
+            case 'monstermedal':
+                ANSWER = messages.INFO_SUBBOSSCOMPLETIONTITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[0], value=messages.INFO_SUBBOSSCOMPLETION[0], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[1], value=messages.INFO_SUBBOSSCOMPLETION[1], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[2], value=messages.INFO_SUBBOSSCOMPLETION[2], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[3], value=messages.INFO_SUBBOSSCOMPLETION[3], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[4], value=messages.INFO_SUBBOSSCOMPLETION[4], inline=False)
+            case 'monstermedaltip':
+                ANSWER = messages.INFO_SUBBOSSCOMPLETIONTITLE
+                EMBED = discord.Embed()
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[0], value=messages.INFO_SUBBOSSCOMPLETION[0], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[1], value=messages.INFO_SUBBOSSCOMPLETION[1], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[2], value=messages.INFO_SUBBOSSCOMPLETION[2], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[3], value=messages.INFO_SUBBOSSCOMPLETION[3], inline=False)
+                EMBED.add_field(name=messages.INFO_SUBBOSSCOMPLETIONHEADERS[4], value=messages.INFO_SUBBOSSCOMPLETION[4], inline=False)
             case 'hornedstatue':
                 ANSWER = messages.INFO_HORNEDSTATUE
             case 'hornedone':

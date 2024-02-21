@@ -143,7 +143,7 @@ HELP_TAG5 = ['''**Farming Stuff**''', '''
 HELP_TAG6 = ['''**Equipment Info**''', '''
 `octorok, naturalmodifiers, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats, breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`''']
 HELP_TAG7 = ['''**Mechanics and Hints**''', '''
-`bargainer/bargainerstatues, crystalrefinery/refinery, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror, coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation, control5/jumpslash, missablelocations, hornedstatue, dugby, elementdmg, malanya/malanyalocation, midairwing, gleeokstrat, miskobanner, beginnertips/totktips`''']
+`bargainer/bargainerstatues, crystalrefinery/refinery, botwdata, uniquehorses, cherry/cherrytrees, depthsmirror, coordsystem, ritofabric, trilbyvalley, moatchasm, mat253/sunpumpkin, greatfairy, hestu/hestulocation, control5/jumpslash, missablelocations, mapcompletiontips, subbosscompletion/monstermedaltips, hornedstatue, dugby, elementdmg, malanya/malanyalocation, midairwing, gleeokstrat, miskobanner, beginnertips/totktips`''']
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
@@ -262,7 +262,7 @@ INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by wa
 INFO_CHARGEFARMTITLE = '''You can farm Crystallized Charges by:'''
 INFO_CHARGEFARM = '''
 - Defeating ||Master Kohga at each Abandoned Mine he appears at|| and ||each Temple Boss Rematch||, all of which each give a chest containing a Huge Crystallized Charge(worth 100 normal Crystallized Charges) the first time you defeat them.
-- Defeating Mini-Bosses in the Depths, which drop a Large Crystallized Charge(worth 20 normal Crystallized Charges) every Blood Moon.
+- Defeating Sub-Bosses in the Depths, which drop a Large Crystallized Charge(worth 20 normal Crystallized Charges) every Blood Moon.
 - Visiting various locations in the Depths, as some of them have treasure chests containing a Large Crystallized Charge.
   Here are the totals for each type of location:
     - 34/34 Yiga Clan Bases
@@ -409,11 +409,11 @@ The following armors from BotW are not available in TotK:
 # region Mechanics/Hints
 INFO_BARGAINERSTATUE = '''
 Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. 
-Each Bargainer Statue in the Depths is found ||directly below a Large Goddess Statue on the Surface or in the Sky||. 
+Each Bargainer Statue in the Depths is found ||directly below a Great Goddess Statue on the Surface or in the Sky||. 
 
 All Bargainer Statues will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb Flowers, and the armors unlocked by visiting each Bargainer Statue.
 
-Aside from the Dusk Bow and White Sword of the Sky, Amiibo weapons and armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
+Aside from the Dusk Bow and White Sword of the Sky, Amiibo weapons/armor and BotW DLC armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
 They will also sell you the Magic Rod, Magic Scepter, and Magic Staff.
 '''
 INFO_CRYSTALREFINERY = '''
@@ -473,38 +473,72 @@ The Korok known as Hestu can use the Korok Seeds that you've collected to upgrad
 '''
 INFO_JSCONTROL = '''The 5th Special Control is Jump Slash, and is obtained by reading the journal at the Monster Control Crew camp for Hoz's Squad. The camp can be found along the road west of Hyrule Field Chasm, or north of Dueling Peaks Stable, depending on your Side Adventure progress. If the camp is not at either location, wait until after a Blood Moon, and try those locations again.'''
 INFO_MISSABLELOCATIONSTITLE = '''Here are some of the most commonly missed locations for TotK:'''
-INFO_MISSABLELOCATIONS = '''
-**Surface:**
--East and West Passages at Hyrule Castle
--Sherfin's Secret Hot Spring
--Dragonbone Mire
--Kolomo Garrison Ruins
--Gatepost Town Ruins
--Water Reservoir
--Castle Town Watchtower
--Faron Woods
--Sarjon Bridge
--Ash Swamp
--Oren Bridge
--Luto's Crossing
--All 3 Sokkala Bridges
--Gero Pond
--Royal Ancient Lab Ruins
--Lanayru Road - West Gate
-
-**Depths:**
+INFO_MISSABLELOCATIONSHEADERS = [
+    '''Surface Locations:''',
+    '''Depths Locations:''',
+    '''Hidden Locations:'''
+]
+INFO_MISSABLELOCATIONS = [
+    '''
+- East and West Passages at Hyrule Castle
+- Sherfin's Secret Hot Spring
+- Dragonbone Mire
+- Kolomo Garrison Ruins
+- Gatepost Town Ruins
+- Water Reservoir
+- Castle Town Watchtower
+- Faron Woods
+- Sarjon Bridge
+- Ash Swamp
+- Oren Bridge
+- Luto's Crossing
+- All 3 Sokkala Bridges
+- Gero Pond
+- Royal Ancient Lab Ruins
+- Lanayru Road - West Gate''',
+    '''
 Make sure to visit every Canyon Mine and Lavafalls you can see on the map
--Papetto Grove
--Dracozu Altar
--Hickaly Grove
--Midla Grove
--Ginner Grove
--Retsam Grove
--Blupee Burrow 
--Applean Grove
-
-Original list by Dixon#8583
+- Papetto Grove
+- Dracozu Altar
+- Hickaly Grove
+- Midla Grove
+- Ginner Grove
+- Retsam Grove
+- Blupee Burrow 
+- Applean Grove''',
+    '''
+These still count for 100%, despite not appearing on the map. To confirm that you have them, visit them in-person and make sure you see their name appear in the bottom left.
+- All Dungeon Rooms/Floors
+- Statue of the Eighth Heroine Room
+- The locations on the path to the finale of the game.
 '''
+]
+INFO_MISSABLELOCATIONSFOOTNOTE = '''Original Surface and Depths lists by Dixon#8583'''
+INFO_MAPCOMPLETIONTIPS = '''
+If you are attempting to earn 100% map completion in TotK, here are some tips to make it easier:
+- Use my `/tag missablelocations` command to see some of the more commonly missed locations.
+- Use my `/tag tracker` command to get a link to the 100% Tracker for TotK, which has every location and icon needed for map completion, so feel free to use it to check off each icon and location as you go.
+- Double check that you have all icons first, such as Dispensers, Chasms, Forge Constructs, etc., as they do count towards map completion. Don't forget the Smithing Construct either!
+- Make sure you have all the hidden locations, as detailed in `/tag missablelocations`.
+- Once you have verified that you have all the icons and commonly missed locations, start checking off the named locations on the 100% Tracker, one-by-one.
+'''
+INFO_SUBBOSSCOMPLETIONTITLE = '''
+Here is a recommended strategy for checking all the Sub-Boss locations for a Monster Medal:
+'''
+INFO_SUBBOSSCOMPLETIONHEADERS = [
+    '''1. Use an interactive map''',
+    '''2. Stamp all the locations''',
+    '''3. Check every location''',
+    '''4. Save your checked locations''',
+    '''5. Double Check'''
+]
+INFO_SUBBOSSCOMPLETION= [
+    '''- Look up an interactive map to find all the locations of the Sub-Boss you're after. [Zelda Dungeon](<https://www.zeldadungeon.net/tears-of-the-kingdom-interactive-map/>) or [Zelda Universe](<https://zeldamaps.com/?game=TotK>) work well for this. Make sure that you do not have any of the Sub-Boss's locations checked off on the map already.''',
+    '''- Using **one type of stamp**, mark all the locations on your in-game map.''',
+    '''- Head to each location in-game, and once you've verified that you've defeated the Sub-Boss(either by killing it or checking that it has a "Defeated" star next to its healthbar), ***change the stamp for that location to a different stamp.*** This way you will have stamps for unchecked locations, and stamps for checked locations.''',
+    '''- Once you've changed every stamp that you placed, start checking off each location on the interactive map, removing the "checked" stamp on your in-game map for each location as you record it on the interactive map.''',
+    '''- Verify on the interactive map that you didn't miss any locations when you originally placed your stamps on your in-game map. If you did, then just go check them in-game and mark them as completed on the interactive map.'''
+]
 INFO_HORNEDSTATUE = '''After completing one part of "Regional Phenomena," a new opening can be found in the Emergency Shelter in Lookout Landing, through which you will find a statue with an ominous aura. This Horned Statue will allow you to trade Heart Containers for Stamina Vessels, and vice versa, for the cost of 20 rupees each.'''
 INFO_DUGBY = '''
 Dugby's first quest is "The Ancient City Gorondia!" and has no pre-requisites in order to unlock. Dugby can be found at `1744, 2585, 427` for this quest.
@@ -724,6 +758,7 @@ INFO_USEFULOBJECTTERMS = '''
 - `AutoGenerateDestructibleActorHardnessLv3` - Dark Gray Cracked Rock
 - `AutoGenerateDestructibleActorLuminous` - Luminous Ore Walls
 - `AutoGenerateDestructibleActorZonanium` - Zonaite Ore Walls
+- `TreeSkyLiana` - Root Walls
 - `EquipmentUser_Attachment_Arrow` - Actors that use equipment with attached items, such as elemental arrows. You can filter this by specific items as well.
 - `BokoblinBasket` - Bokoblins with baskets on their backs.
 - `MinusFieldGhost` - Depths Ghosts
