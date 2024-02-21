@@ -482,7 +482,7 @@ INFO_MISSABLELOCATIONS = [
     '''
 - East and West Passages at Hyrule Castle
 - Sherfin's Secret Hot Spring
-- Dragonbone Mire
+- Dragon Bone Mire
 - Kolomo Garrison Ruins
 - Gatepost Town Ruins
 - Water Reservoir
