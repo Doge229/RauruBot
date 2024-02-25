@@ -36,7 +36,7 @@ Massive thanks to:
     -glitchtest
     -phoenixguy123
     -luciebox
-    -potato
+    -gudpotato
 '''
 INFO_REPOSITORY = '''
 Here's a link to my repository on Github:

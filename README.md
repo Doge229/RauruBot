@@ -28,4 +28,4 @@ Massive thanks to:<br>
     - glitchtest<br>
     - phoenixguy123<br>
     - luciebox<br>
-    - potato<br>
+    - gudpotato<br>
