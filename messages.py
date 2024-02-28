@@ -217,7 +217,7 @@ You can earn Arcane experience once per minute by sending messages.
 For example, if Arcane is set to award you between 40-100 exp per minute that you chat, then it does not matter whether you send 1 message or 20 messages within that minute, you will still earn between 40 and 100 exp, depending on RNG.
 '''
 
-INFO_SAGEHYRULEROLE = '''The "Sage of Hyrule" role is a non-staff role that is awarded to server members who have made significant contributions to the server. It does not come with any special permissions, but if you need information about anything TotK or server-related, try pinging the role! Chances are, they'll be able to help you out.'''
+INFO_SAGEHYRULEROLE = '''The "Sage of Hyrule" role is the former "TotK Expert" role repurposed into the TotK Server's own MVP Role. It is no longer recognised as a Staff Role, and does not come with any special permissions. Instead, it is awarded to users who have active participation in the server among other criteria. The Sage of Hyrule role is awarded on a rolling basis at the end of each month and is added at the moderators' discretion.'''
 # endregion
 
 # region Story Stuff
