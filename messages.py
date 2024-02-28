@@ -154,7 +154,7 @@ HELP_TAG11 = ['''**Reference Images**''', '''
 `horseupgrades, ascendmap, cherrymap, cherryareamap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
 
 HELP_TAGGENSERVER = ['''**Server Stuff**''', '''
-`spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, totkexpert`''']
+`spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, sageofhyrule`''']
 
 HELP_COMMANDSHORTCUT = '''
 You can trigger some of my commands from within a message using certain markdowns:
@@ -217,7 +217,7 @@ You can earn Arcane experience once per minute by sending messages.
 For example, if Arcane is set to award you between 40-100 exp per minute that you chat, then it does not matter whether you send 1 message or 20 messages within that minute, you will still earn between 40 and 100 exp, depending on RNG.
 '''
 
-INFO_EXPERTROLE = '''The TOTK Expert role is considered a staff role. The responsibility of a TOTK Expert is to help, assist, and guide members with their gameplay, so please feel free to ping the role if you need help! Although it does not come with any moderation tools, TOTK Experts are given Manage Messages permission so they can pin any important information in any channel.'''
+INFO_SAGEHYRULEROLE = '''The "Sage of Hyrule" role is a non-staff role that is awarded to server members who have made significant contributions to the server. It does not come with any special permissions, but if you need information about anything TotK or server-related, try pinging the role! Chances are, they'll be able to help you out.'''
 # endregion
 
 # region Story Stuff

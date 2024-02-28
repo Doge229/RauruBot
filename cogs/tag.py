@@ -229,16 +229,6 @@ class Tag(commands.Cog):
                     ANSWER = messages.INFO_IMGPERM
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
-            case 'traveler':
-                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.INFO_IMGPERM
-                else:
-                    ANSWER = messages.ERROR_UNKNOWNCMD
-            case 'travelerrole':
-                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.INFO_IMGPERM
-                else:
-                    ANSWER = messages.ERROR_UNKNOWNCMD
             case 'rolereward':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
                     ANSWER = messages.INFO_ROLEREWARDS
@@ -260,9 +250,14 @@ class Tag(commands.Cog):
                     ANSWER = messages.INFO_ARCANEEXP
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
-            case 'totkexpert':
+            case 'sageofhyrule':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.INFO_EXPERTROLE
+                    ANSWER = messages.INFO_SAGEHYRULEROLE
+                else:
+                    ANSWER = messages.ERROR_UNKNOWNCMD
+            case 'sagerole':
+                if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
+                    ANSWER = messages.INFO_SAGEHYRULEROLE
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
             # endregion
