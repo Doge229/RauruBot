@@ -813,6 +813,12 @@ class Tag(commands.Cog):
             case 'cherryareamap':
                 ANSWER = messages.IMAGE_CHERRYAREAMAP
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'SPOILER_cherryareamap.jpg'))
+            case 'koltinstallmap':
+                ANSWER = messages.IMAGE_KOLTINSTALLMAP
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'koltinstallmap.jpg'))
+            case 'koltinmap':
+                ANSWER = messages.IMAGE_KOLTINSTALLMAP
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'koltinstallmap.jpg'))
             case 'invupgrade':
                 ANSWER = messages.IMAGE_INVENTORYUPGRADES
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'inventoryupgrades.jpg'))

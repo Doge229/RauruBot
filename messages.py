@@ -151,7 +151,7 @@ HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
-`horseupgrades, ascendmap, cherrymap, cherryareamap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
+`horseupgrades, ascendmap, cherrymap, cherryareamap, koltinstallmap/koltinmap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
 
 HELP_TAGGENSERVER = ['''**Server Stuff**''', '''
 `spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, sageofhyrule`''']
@@ -1020,6 +1020,7 @@ IMAGE_CRITTERTOTAL = '''Here are the totals for Critters required to upgrade eve
 IMAGE_ASCENDMAP = '''Here is a map of all the Ascend Points within the Depths:'''
 IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Blossom Trees in TotK:'''
 IMAGE_CHERRYAREAMAP = '''Here is a map of all the Cherry Blossom Tree Areas in TotK:'''
+IMAGE_KOLTINSTALLMAP = '''Here's a map of the locations where you can find Koltin's Stall in TotK:'''
 IMAGE_INVENTORYUPGRADES = '''Here are all of the Inventory upgrade costs for TotK:'''
 IMAGE_SHRINECOUNTS = '''Here are the totals of each type of Shrine of Light in TotK:'''
 IMAGE_HORSEUPGRADE = '''Here are the meals needed to upgrade a horse to maximum in TotK:'''
