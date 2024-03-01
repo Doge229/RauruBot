@@ -421,6 +421,7 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_TRILBYVALLEY
             case 'moatchasm':
                 ANSWER = messages.INFO_MOATCHASM
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'moatchasm.png'))
             case 'mat253':
                 ANSWER = messages.INFO_SUNPUMPKIN
             case 'sunpumpkin':

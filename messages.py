@@ -459,7 +459,7 @@ Please feel free to use my `/coordconvert` command to turn a set of Object Map c
 
 INFO_RITOFABRIC = '''The Ordinary and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
 INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
-INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the west side of the island for a small opening with a Chasm inside.'''
+INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the water level of the west side of the island for a small opening with a Chasm inside.'''
 INFO_SUNPUMPKIN = '''Compendium Entry #253 is the ||Sun Pumpkin||, a material that is not found within Hyrule until the completion of the quest "Homegrown in Hateno," which you can begin by speaking to Reede in the fields near the entrance to Hateno Village, after completing "The Mayoral Election."'''
 INFO_GREATFAIRYQUEST = '''
 After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!" you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy."
