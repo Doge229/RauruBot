@@ -1233,7 +1233,7 @@ COMMAND_OBJMAPBASELINK = '''https://objmap-totk.zeldamods.org/#/map/z2,0,0,'''
 CONVERT_COORD1 = '''The Object Map coordinates: '''
 CONVERT_COORD2 = ''' are equivalent to the shown in-game coordinates: '''
 
-COMMAND_FINDPRISTINE1 = '''Here are the Ghosts in the Depths that can spawn Pristine '''
+COMMAND_FINDPRISTINE1 = '''Here are the Spectral Figures in the Depths that can spawn Pristine '''
 COMMAND_FINDPRISTINE2 = ''' weapons:'''
 
 COMMAND_HELLO1 = '''Hi!'''
