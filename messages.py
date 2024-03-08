@@ -516,6 +516,7 @@ These still count for 100%, despite not appearing on the map. To confirm that yo
 INFO_MISSABLELOCATIONSFOOTNOTE = '''Original Surface and Depths lists by Dixon#8583'''
 INFO_MAPCOMPLETIONTIPS = '''
 If you are attempting to earn 100% map completion in TotK, here are some tips to make it easier:
+- Watch this [video](<https://youtu.be/wvL0YnIjyCU>) to get an idea of what exactly counts towards map completion.
 - Use my `/tag missablelocations` command to see some of the more commonly missed locations.
 - Use my `/tag tracker` command to get a link to the 100% Tracker for TotK, which has every location and icon needed for map completion, so feel free to use it to check off each icon and location as you go.
 - Double check that you have all icons first, such as Dispensers, Chasms, Forge Constructs, etc., as they do count towards map completion. Don't forget the Smithing Construct either!
