@@ -17,6 +17,8 @@ Small Scale
 -error for dellast after auto-delete
 -bestfuse/fuseideas
 -u aliases
+-worldreset
+-missableitems
 
 -material respawn, dragon shard respawn
 
