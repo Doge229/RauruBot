@@ -379,7 +379,11 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_ALTAMIIBOWEAPONSOURCE
             case 'botwarmor':
                 ANSWER = messages.INFO_MISSINGARMOR
+            case 'botwarmour':
+                ANSWER = messages.INFO_MISSINGARMOR
             case 'missingarmor':
+                ANSWER = messages.INFO_MISSINGARMOR
+            case 'missingarmour':
                 ANSWER = messages.INFO_MISSINGARMOR
             # endregion
 
@@ -529,6 +533,8 @@ class Tag(commands.Cog):
 
             # region Effects and Builds
             case 'defense':
+                ANSWER = messages.INFO_DEFENSESTAT
+            case 'defence':
                 ANSWER = messages.INFO_DEFENSESTAT
             case 'bestarmor':
                 ANSWER = messages.INFO_BESTARMOR
@@ -703,10 +709,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_BETTERPHOTOS
             case 'paracopter':
                 ANSWER = messages.POINT_PARACOPTER
-            case 'bestfuse':
-                ANSWER = messages.POINT_BESTFUSES
             case 'fuseidea':
-                ANSWER = messages.POINT_BESTFUSES
+                ANSWER = messages.POINT_FUSEIDEAS
             # endregion
 
             # region Meta Info

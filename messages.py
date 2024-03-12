@@ -147,7 +147,7 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`''']
+`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
@@ -326,7 +326,7 @@ INFO_LEGENDLIST = '''
 - Master Sword 
 - Demon King's Bow 
 
-**Amiibo Weapons:**
+**amiibo Weapons:**
 - Sea-Breeze Boomerang 
 - Sword of the Hero 
 - White Sword of the Sky 
@@ -408,12 +408,12 @@ The following armors from BotW are not available in TotK:
 
 # region Mechanics/Hints
 INFO_BARGAINERSTATUE = '''
-Bargainer Statues are merchants that offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. 
+Bargainer Statues merchants offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. 
 Each Bargainer Statue in the Depths is found ||directly below a Great Goddess Statue on the Surface or in the Sky||. 
 
-All Bargainer Statues will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb Flowers, and the armors unlocked by visiting each Bargainer Statue.
+All Bargainer Statues merchants will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb Flowers, and the armors unlocked by visiting each Bargainer Statue merchant.
 
-Aside from the Dusk Bow and White Sword of the Sky, Amiibo weapons/armor and BotW DLC armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
+Aside from the Dusk Bow and White Sword of the Sky, amiibo weapons/armor and BotW DLC armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
 They will also sell you the Magic Rod, Magic Scepter, and Magic Staff.
 '''
 INFO_CRYSTALREFINERY = '''
@@ -439,7 +439,7 @@ Note: If you imported a unique horse from botw, then it will not spawn in the wi
 -Zelda's Golden Horse - Found ||in northern North Tabantha Snowfield|| after starting the side adventure "Potential Princess Sightings!" and will be available for registering after completing the quest, "Zelda's Golden Horse."
 -Spot - Found ||southwest of Lookout Landing|| after starting the quest "Spotting Spot," the completion of which will unlock him for registering.
 -Royal White Stallion - Found ||north of Skull Lake in Deep Akkala.||
--Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link Amiibo.
+-Epona - Spawns from scanning the Super Smash Bros. Link and Twilight Princess Link amiibo.
 '''
 
 INFO_CHERRYTREE = '''If you are having trouble finding caves, try offering some fruit to a cherry blossom tree. Doing so will reveal ALL Surface cave entrances (aside from Ancient Zora Waterworks) in the surrounding area of the map for 24 minutes of unpaused gameplay, although towards the end of this time period the markers will become very faint. These markers will not disappear early if you save and reload, but will disappear if you close the game and re-open it, or activate a different tree.'''
@@ -767,6 +767,7 @@ INFO_USEFULOBJECTTERMS = '''
 - `SkyObj_ZonauRobot_Background_A_03` - Ruined Construct (Sky)
 - `MinusObj_ZonauRobot_Background_B_03` - Ruined Construct (Depths)
 - ||`DungeonBoss Underground`|| - ||Temple Boss Rematches||
+- `0xa28db083b72c4f7f OR 0xf29e2d98917a4072 OR 0x01462a767956fbee OR 0xcf49878e3a8c301f` - The areas where a Blood Moon is forced if you haven't seen one before and attempt to visit a Regional Phenomena town.
 - `DgnObj_Zonau_SliderBox_A_02` - Elevator Rail
 - `BarrelBomb NOT BarrelBomb2 NOT BarrelBomb3`, `BarrelBomb2`, and `BarrelBomb3` - Levels 1, 2, and 3 Bomb Barrels
 - `TimerBarrelBomb` - Cube-shaped Time Bombs found in enemy camps
@@ -904,7 +905,7 @@ POINT_PARACOPTER = '''
 Here's a link to a guide on building and using a Paracopter:
 https://youtu.be/HjS60KRpiq4
 '''
-POINT_BESTFUSES = '''
+POINT_FUSEIDEAS = '''
 Here's a link to video demonstrating some of the useful Fuse options in TotK:
 https://youtu.be/3f7PiBOgAuk
 '''
@@ -1002,7 +1003,7 @@ Here's a link to a video explaining the situation regarding DLC for TotK:
 https://youtu.be/DY-qfykgeuQ
 '''
 POINT_NFCTAGS = '''
-Here's a link to a guide on making NFC tags to use as Amiibo:
+Here's a link to a guide on making NFC tags to use as amiibo:
 https://youtu.be/tBFSa4Tuzug
 '''
 # endregion
