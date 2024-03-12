@@ -411,7 +411,7 @@ INFO_BARGAINERSTATUE = '''
 Bargainer Statues merchants offer rare equipment and materials in return for Poes to guide into the afterlife. There are 7 in the game, 1 found at Lookout Landing, and 6 found within the Depths. 
 Each Bargainer Statue in the Depths is found ||directly below a Great Goddess Statue on the Surface or in the Sky||. 
 
-All Bargainer Statues merchants will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb Flowers, and the armors unlocked by visiting each Bargainer Statue merchant.
+All Bargainer Statue merchants will sell you Dark Clumps, Muddle Buds, Puffshrooms, Bomb Flowers, and the armors unlocked by visiting each Bargainer Statue merchant.
 
 Aside from the Dusk Bow and White Sword of the Sky, amiibo weapons/armor and BotW DLC armor can be purchased from Bargainer Statues **in the Depths** after you have obtained the gear piece at least once.
 They will also sell you the Magic Rod, Magic Scepter, and Magic Staff.

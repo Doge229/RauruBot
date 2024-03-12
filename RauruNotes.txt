@@ -15,9 +15,6 @@ Small Scale
   -speak channel?
   -toggle auto profile and such
 -error for dellast after auto-delete
-- bestfuse/fuseideas
-- u aliases
-- worldreset
 -missableitems
 
 -material respawn, dragon shard respawn
