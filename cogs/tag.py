@@ -681,6 +681,10 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_COMBATGUIDE
             case 'combattip':
                 ANSWER = messages.POINT_COMBATGUIDE
+            case 'missableobject':
+                ANSWER = messages.POINT_MISSABLEOBJECTS
+            case 'missableitem':
+                ANSWER = messages.POINT_MISSABLEOBJECTS
 
             case 'hoverbike':
                 ANSWER = messages.POINT_HOVERBIKE

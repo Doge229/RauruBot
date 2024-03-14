@@ -15,7 +15,6 @@ Small Scale
   -speak channel?
   -toggle auto profile and such
 -error for dellast after auto-delete
--missableitems
 
 -material respawn, dragon shard respawn
 
