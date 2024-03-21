@@ -667,6 +667,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_DONDON
             case 'horsecolor':
                 ANSWER = messages.POINT_HORSECOLORS
+            case 'horsecolour':
+                ANSWER = messages.POINT_HORSECOLORS
             case 'devicedrain':
                 ANSWER = messages.POINT_ENERGYCELLSTATS
             case 'energycelldrain':

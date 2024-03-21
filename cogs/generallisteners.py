@@ -165,7 +165,7 @@ class GeneralListeners(commands.Cog):
                 await General.finddispenser(context=ctx, arg=MATCH.group(1))
 
 
-    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo', 'konichiwa', 'hallo'])
+    @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo', 'konichiwa', 'hallo', 'salutations'])
     @commands.guild_only()
     @commands.check(system.check_banned)
     async def hello(self, ctx):
