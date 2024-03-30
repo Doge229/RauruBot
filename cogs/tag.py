@@ -817,6 +817,18 @@ class Tag(commands.Cog):
             case 'ascendmap':
                 ANSWER = messages.IMAGE_ASCENDMAP
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'ascendmap.jpg'))
+            case 'ascendpointmap':
+                ANSWER = messages.IMAGE_ASCENDMAP
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'ascendmap.jpg'))
+            case 'ascendpointsmap':
+                ANSWER = messages.IMAGE_ASCENDMAP
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'ascendmap.jpg'))
+            case 'ascendruinmap':
+                ANSWER = messages.IMAGE_ASCENDMAP
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'ascendmap.jpg'))
+            case 'ascendruinsmap':
+                ANSWER = messages.IMAGE_ASCENDMAP
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'ascendmap.jpg'))
             case 'cherrymap':
                 ANSWER = messages.IMAGE_CHERRYMAP
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'cherrymap.jpg'))

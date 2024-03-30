@@ -151,7 +151,7 @@ HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
-`horseupgrades, ascendmap, cherrymap, cherryareamap, koltinstallmap/koltinmap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
+`horseupgrades, ascendmap/ascendruinsmap, cherrymap, cherryareamap, koltinstallmap/koltinmap, invupgrades, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
 
 HELP_TAGGENSERVER = ['''**Server Stuff**''', '''
 `spoiler, piracy/tos, selfpromo/selfpromotion, imgperms, rolerewards, arcaneexp/expsystem, sageofhyrule`''']
@@ -1023,7 +1023,7 @@ IMAGE_FRUITANDVEGGIETOTAL = '''Here are the totals for Fruits and Veggies requir
 IMAGE_OTHERPARTTOTAL = '''Here are the totals for Other Monster Parts required to upgrade every armor in TotK:'''
 IMAGE_CRITTERTOTAL = '''Here are the totals for Critters required to upgrade every armor in TotK:'''
 
-IMAGE_ASCENDMAP = '''Here is a map of all the Ascend Points within the Depths:'''
+IMAGE_ASCENDMAP = '''Here is a map of all the Ascend Ruins within the Depths:'''
 IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Blossom Trees in TotK:'''
 IMAGE_CHERRYAREAMAP = '''Here is a map of all the Cherry Blossom Tree Areas in TotK:'''
 IMAGE_KOLTINSTALLMAP = '''Here's a map of the locations where you can find Koltin's Stall in TotK:'''
