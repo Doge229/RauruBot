@@ -163,7 +163,7 @@ You can trigger some of my commands from within a message using certain markdown
 - `/finddispenser [device name]` = `d{device name}`
 
 Just put the terms you would normally use with those commands inside the brackets, and I'll respond to your message just how I would if you used the command!
-This is limited to 3 uses per command per message(1 use for `/finddispenser` per message), and I will automatically remove duplicate terms.
+This is limited to 3 uses per command per message (1 use for `/finddispenser` per message), and I will automatically remove duplicate terms.
 '''
 
 HELP_NOTIFY = '''Sending you my response to that command'''
@@ -177,13 +177,13 @@ Here's how to use my blacklist command:
 `&blacklist show`
     -Shows the currently blacklisted users and the reasons they were blacklisted
 
-`&blacklist add [userid] [reason(optional)]`
+`&blacklist add [userid] [reason (optional)]`
     -Adds a user to the blacklist. Add information after the userid to save the reason they were blacklisted, or other info.
 
 `&blacklist remove [userid]`
     -Remove a user from the blacklist
 
-`&blacklist update [userid] [reason(optional)]`
+`&blacklist update [userid] [reason (optional)]`
     -Update a user's blacklist reason/info
 '''
 # endregion
@@ -261,8 +261,8 @@ INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by wa
 
 INFO_CHARGEFARMTITLE = '''You can farm Crystallized Charges by:'''
 INFO_CHARGEFARM = '''
-- Defeating ||Master Kohga at each Abandoned Mine he appears at|| and ||each Temple Boss Rematch||, all of which each give a chest containing a Huge Crystallized Charge(worth 100 normal Crystallized Charges) the first time you defeat them.
-- Defeating Sub-Bosses in the Depths, which drop a Large Crystallized Charge(worth 20 normal Crystallized Charges) every Blood Moon.
+- Defeating ||Master Kohga at each Abandoned Mine he appears at|| and ||each Temple Boss Rematch||, all of which each give a chest containing a Huge Crystallized Charge (worth 100 normal Crystallized Charges) the first time you defeat them.
+- Defeating Sub-Bosses in the Depths, which drop a Large Crystallized Charge (worth 20 normal Crystallized Charges) every Blood Moon.
 - Visiting various locations in the Depths, as some of them have treasure chests containing a Large Crystallized Charge.
   Here are the totals for each type of location:
     - 34/34 Yiga Clan Bases
@@ -417,9 +417,9 @@ Aside from the Dusk Bow and White Sword of the Sky, amiibo weapons/armor and Bot
 They will also sell you the Magic Rod, Magic Scepter, and Magic Staff.
 '''
 INFO_CRYSTALREFINERY = '''
-Crystal Refineries are "shops" where you can trade 100 Crystallized Charges for an Energy Well, permanently increasing your Energy Cell capacity, up to a max of 48 total Wells(or 16 total Cells/"Batteries"), including the 3 Wells you start with.
+Crystal Refineries are "shops" where you can trade 100 Crystallized Charges for an Energy Well, permanently increasing your Energy Cell capacity, up to a max of 48 total Wells (or 16 total Cells/"Batteries"), including the 3 Wells you start with.
 There are only 2 Crystal Refineries that can be found within TotK:
- -One found directly in front of Nachoyah Shrine(the Recall tutorial Shrine on the Great Sky Island)
+ -One found directly in front of Nachoyah Shrine (the Recall tutorial Shrine on the Great Sky Island)
  -One found just north of Lookout Landing
 
 After you have fully upgraded your Energy Cell to 48 total Energy Wells, you can use your Crystallized Charges at Crystal Refineries to purchase any Zonai Device. Each device costs 3 Charges per capsule, except for Big Batteries, which are 30 Charges each.
@@ -459,7 +459,7 @@ Please feel free to use my `/coordconvert` command to turn a set of Object Map c
 
 INFO_RITOFABRIC = '''The Ordinary and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
 INFO_TRILBYVALLEY = '''The Trilby Valley Flame Gleeok can be found in the Skies high above Eldin Canyon, at `2238, 694, 795`.'''
-INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park(to the east of Hyrule Castle), try flying over the moat while searching the water level of the west side of the island for a small opening with a Chasm inside.'''
+INFO_MOATCHASM = '''In order to reach the Depths underneath Hyrule Forest Park (to the east of Hyrule Castle), try flying over the moat while searching the water level of the west side of the island for a small opening with a Chasm inside.'''
 INFO_SUNPUMPKIN = '''Compendium Entry #253 is the ||Sun Pumpkin||, a material that is not found within Hyrule until the completion of the quest "Homegrown in Hateno," which you can begin by speaking to Reede in the fields near the entrance to Hateno Village, after completing "The Mayoral Election."'''
 INFO_GREATFAIRYQUEST = '''
 After speaking to Traysi at the Lucky Clover Gazette and beginning the Side Adventure, "Potential Princess Sightings!" you can speak to Penn and the Stable Trotters at Woodland Stable to begin the Side Adventure, "Serenade to a Great Fairy."
@@ -536,7 +536,7 @@ INFO_SUBBOSSCOMPLETIONHEADERS = [
 INFO_SUBBOSSCOMPLETION= [
     '''- Look up an interactive map to find all the locations of the Sub-Boss you're after. [Zelda Dungeon](<https://www.zeldadungeon.net/tears-of-the-kingdom-interactive-map/>) or [Zelda Universe](<https://zeldamaps.com/?game=TotK>) work well for this. Make sure that you do not have any of the Sub-Boss's locations checked off on the map already.''',
     '''- Using **one type of stamp**, mark all the locations on your in-game map.''',
-    '''- Head to each location in-game, and once you've verified that you've defeated the Sub-Boss(either by killing it or checking that it has a "Defeated" star next to its healthbar), ***change the stamp for that location to a different stamp.*** This way you will have stamps for unchecked locations, and stamps for checked locations.''',
+    '''- Head to each location in-game, and once you've verified that you've defeated the Sub-Boss (either by killing it or checking that it has a "Defeated" star next to its healthbar), ***change the stamp for that location to a different stamp.*** This way you will have stamps for unchecked locations, and stamps for checked locations.''',
     '''- Once you've changed every stamp that you placed, start checking off each location on the interactive map, removing the "checked" stamp on your in-game map for each location as you record it on the interactive map.''',
     '''- Verify on the interactive map that you didn't miss any locations when you originally placed your stamps on your in-game map. If you did, then just go check them in-game and mark them as completed on the interactive map.'''
 ]
@@ -557,7 +557,7 @@ You can bring him out of his bud by giving him an Endura Carrot, and he will ask
 In order to improve a horse's stats, Malanya will ask for certain meals to give him the energy he needs for the upgrade. To upgrade any stat to 2 stars, you will need to bring him a single Fried Wild Greens meal.
 Use `/tag horseupgrades` to see the meals needed for the rest of the upgrades.
 
-Malanya cannot upgrade the stats for Epona, the Giant White Stallion, and the Giant Horse("Gerudo"), as they like themselves the way they are.
+Malanya cannot upgrade the stats for Epona, the Giant White Stallion, and the Giant Horse ("Gerudo"), as they like themselves the way they are.
 '''
 
 INFO_GLEEOKSTRAT = '''
@@ -593,7 +593,7 @@ INFO_BEGINNERTIPS = [
 
 # region Effects/Builds
 INFO_DEFENSESTAT = '''
-Every enemy attack has two components: the enemy's base damage for that specific attack, plus the damage of the weapon they are holding(if applicable to that attack). The damage you take from the attack is then calculated by subtracting your total defense from the enemy attack.
+Every enemy attack has two components: the enemy's base damage for that specific attack, plus the damage of the weapon they are holding (if applicable to that attack). The damage you take from the attack is then calculated by subtracting your total defense from the enemy attack.
 '''
 INFO_BESTARMOR = '''
 There isn't really a "best" armor in TotK, but some sets are useful for specific things. 
@@ -928,12 +928,12 @@ INFO_DUPE112 = '''
 - [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>)
 **Materials and Other Dupes**
 - [Tobio's Hollow Chasm Duplication](<https://youtu.be/E8nab6JNBts>) (For fusable materials)
-- [Midair Inventory Shift Dupe(MISD)](https://youtu.be/th585pt33sA)
+- [Midair Inventory Shift Dupe (MISD)](https://youtu.be/th585pt33sA)
 - [MISD w/ Dispenser Storage](https://youtu.be/2YJkvpmeNzo)
-- [Midair Throw Duplication(MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
+- [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
 - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Bundle Item Duplication (BID)](https://youtu.be/WNnnI13a954) (For critters or mass duping)
-- [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
+- [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 INFO_DUPE120TITLE = '''Here are some duplication glitches for 1.2.0:'''
@@ -941,7 +941,7 @@ INFO_DUPE120 = '''
 **Equipment Dupes**
 - [Like-Like Fuse Entanglement](<https://youtu.be/BZID7B_99QY?t=1207>)
     - [Slugging](<https://youtu.be/BZID7B_99QY?t=1553>)
-  - [Weapon Stat Transfer(WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
+  - [Weapon Stat Transfer (WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
 - [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
     - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
 - Like-Like Stick Culling:
@@ -952,10 +952,10 @@ INFO_DUPE120 = '''
 - [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>)
 **Materials and Other Dupes**
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
-- [Midair Throw Duplication(MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
+- [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
     - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Bundle Item Duplication (BID)](https://youtu.be/WNnnI13a954) (For critters or mass duping)
-- [Zonai Inventory Shift Duplication(ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
+- [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
@@ -1175,7 +1175,7 @@ Thunderhead Isles - 15%
 Wellspring Island - 15%
 '''
 DISP_BIGBATTERY = '''
-There are no Device Dispensers that provide Big Batteries. They can only be obtained from chests and Crystal Refineries(after you have fully upgraded your Energy Cell).
+There are no Device Dispensers that provide Big Batteries. They can only be obtained from chests and Crystal Refineries (after you have fully upgraded your Energy Cell).
 '''
 DISP_SPRING = '''
 North Necluda Sky Archipelago - 40%
