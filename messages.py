@@ -902,8 +902,9 @@ POINT_RAILPART = '''
 
 '''
 POINT_BETTERPHOTOS = '''
-Here's a link to a guide on taking higher quality photos in TotK:
-https://youtu.be/Bi7BC4wSjI8
+Here's are some links to guides on taking higher quality photos in TotK:
+- [Horse Method](<https://youtu.be/Bi7BC4wSjI8>) - Longer setup, early-mid game
+- [Mineru Method](<https://youtu.be/mHC8BJpDxGE?t=277>) - Uses part of the setup for Vendor Scamming (__**watch until 6:50**__). Quick to set up, but requires the ||Vow of Mineru||.
 '''
 POINT_PARACOPTER = '''
 Here's a link to a guide on building and using a Paracopter:
@@ -925,7 +926,9 @@ INFO_DUPE112 = '''
 - [Weapon Stat Transfer](<https://youtu.be/9jJbAJdP3d8>)
 **Rupee Farming**
 - [Autobuild Duplication](<https://youtu.be/YLxu53iXB_w>)
-- [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>)
+- Vendor Scamming
+    - [Horse Method](<https://youtu.be/mHC8BJpDxGE?t=76>) - Longer setup, early-mid game
+  - [Mineru Method](<https://youtu.be/mHC8BJpDxGE?t=277>) - Quick to set up, but requires the ||Vow of Mineru||.
 **Materials and Other Dupes**
 - [Tobio's Hollow Chasm Duplication](<https://youtu.be/E8nab6JNBts>) (For fusable materials)
 - [Midair Inventory Shift Dupe (MISD)](https://youtu.be/th585pt33sA)
@@ -949,7 +952,9 @@ INFO_DUPE120 = '''
   - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
   - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
 **Rupee Farming**
-- [Vendor Scamming](<https://youtu.be/BZID7B_99QY?t=456>)
+- Vendor Scamming
+    - [Horse Method](<https://youtu.be/mHC8BJpDxGE?t=76>) - Longer setup, early-mid game
+  - [Mineru Method](<https://youtu.be/mHC8BJpDxGE?t=277>) - Quick to set up, but requires the ||Vow of Mineru||.
 **Materials and Other Dupes**
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
@@ -968,8 +973,8 @@ INFO_DUPE121 = '''
   - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
   - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
 **Rupee Farming**
-- [Vendor Scamming](<https://youtu.be/LCc1525GlHo?t=138>)
-    - NOTE: This glitch is limited, and will need to be re-performed every 5 items.
+- [Vendor Scamming](<https://youtu.be/mHC8BJpDxGE?t=410>)
+    - NOTE: This glitch is limited, so the Hold Storage will need to be re-performed every 5 items on 1.2.1.
 **Materials and Other Dupes**
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/bV1KxESU9v8?t=283>)
