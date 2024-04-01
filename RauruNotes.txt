@@ -15,6 +15,7 @@ Small Scale
   -speak channel?
   -toggle auto profile and such
 -error for dellast after auto-delete
+-ORs in tag.py
 
 -material respawn, dragon shard respawn
 
