@@ -17,6 +17,7 @@ Small Scale
 -error for dellast after auto-delete
 -ORs in tag.py
 -true damage
+-botw Tracker https://docs.google.com/spreadsheets/d/14cZbMhJsQ5iSINOVSfYmnloZT6rzmxpMd3-DT4lyRUc/edit?usp=sharing
 
 -material respawn, dragon shard respawn
 
