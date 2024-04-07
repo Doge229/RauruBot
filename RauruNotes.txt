@@ -18,6 +18,7 @@ Small Scale
 -ORs in tag.py
 -true damage
 -botw Tracker https://docs.google.com/spreadsheets/d/14cZbMhJsQ5iSINOVSfYmnloZT6rzmxpMd3-DT4lyRUc/edit?usp=sharing
+-worldxp
 
 -material respawn, dragon shard respawn
 
