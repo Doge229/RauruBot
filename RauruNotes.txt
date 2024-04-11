@@ -16,9 +16,6 @@ Small Scale
   -toggle auto profile and such
 -error for dellast after auto-delete
 -materialtimer update
--ORs in tag.py
-- botw Tracker https://docs.google.com/spreadsheets/d/14cZbMhJsQ5iSINOVSfYmnloZT6rzmxpMd3-DT4lyRUc/edit?usp=sharing
-- worldxp
 
 -material respawn, dragon shard respawn
 
