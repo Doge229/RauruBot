@@ -147,7 +147,7 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
+`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
@@ -706,6 +706,11 @@ https://youtu.be/qcfuA_UAz3I
 POINT_TRACKER = '''
 Here's a link to the 100% Tracker Spreadsheet for TotK: 
 https://docs.google.com/spreadsheets/d/1mRHxETl2bYvpRBGV7VzeW0bCdpmEbJJdt7aWAw9T0rY/edit?usp=sharing
+Please feel free to make a copy for yourself so you can check off your progress by selecting `File -> Make a Copy`.
+'''
+POINT_BOTWTRACKER = '''
+Here's a link to the 100% Tracker Spreadsheet for BotW: 
+https://docs.google.com/spreadsheets/d/14cZbMhJsQ5iSINOVSfYmnloZT6rzmxpMd3-DT4lyRUc/edit?usp=sharing
 Please feel free to make a copy for yourself so you can check off your progress by selecting `File -> Make a Copy`.
 '''
 POINT_PHILARMORCALC = '''

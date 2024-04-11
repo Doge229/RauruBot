@@ -590,6 +590,10 @@ class Tag(commands.Cog):
 
             case 'tracker':
                 ANSWER = messages.POINT_TRACKER
+            case 'botwtracker':
+                ANSWER = messages.POINT_BOTWTRACKER
+            case 'trackerbotw':
+                ANSWER = messages.POINT_BOTWTRACKER
             case 'armorcalc':
                 ANSWER = messages.POINT_PHILARMORCALC
             case 'armourcalc':
@@ -631,7 +635,13 @@ class Tag(commands.Cog):
             
             case 'worldexp':
                 ANSWER = messages.POINT_WORLDEXP
+            case 'worldxp':
+                ANSWER = messages.POINT_WORLDEXP
             case 'templescaling':
+                ANSWER = messages.POINT_TEMPLESCALING
+            case 'bossscaling':
+                ANSWER = messages.POINT_TEMPLESCALING
+            case 'dungeonscaling':
                 ANSWER = messages.POINT_TEMPLESCALING
             case 'sagelevel':
                 ANSWER = messages.POINT_SAGELVL
