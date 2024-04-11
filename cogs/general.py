@@ -36,13 +36,7 @@ class General(commands.Cog):
                 EPHEMERAL = True
                 ANSWER = messages.HELP_GENERALTITLE
                 EMBED = General.EMBED_HELPGENERAL
-            case 'show':
-                ANSWER = messages.HELP_GENERALTITLE
-                EMBED = General.EMBED_HELPGENERAL
-            case 'show1':
-                ANSWER = messages.HELP_GENERALTITLE
-                EMBED = General.EMBED_HELPGENERAL
-            case 'showpage1':
+            case 'show' | 'show1' | 'showpage1':
                 ANSWER = messages.HELP_GENERALTITLE
                 EMBED = General.EMBED_HELPGENERAL
             
