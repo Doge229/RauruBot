@@ -524,7 +524,7 @@ class Tag(commands.Cog):
             case 'invupgrade':
                 ANSWER = messages.IMAGE_INVENTORYUPGRADES
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'inventoryupgrades.jpg'))
-            case 'shrinecount' | 'shrinetotal' | 'shrinetypes':
+            case 'shrinecount' | 'shrinetotal' | 'shrinetype':
                 ANSWER = messages.IMAGE_SHRINECOUNTS
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'shrinecounts.jpg'))
             
