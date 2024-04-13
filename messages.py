@@ -547,8 +547,9 @@ Dugby's first quest is "The Ancient City Gorondia!" and has no pre-requisites in
 Dugby's second quest is "The Ancient City Gorondia?" and requires the completion of "Yunobo of Goron City" and at least 30 minutes of unpaused gameplay to have passed since the completion of his first quest. Dugby can be found at `1614, 2399, 397` for this quest.
 '''
 INFO_BASEELEMENTALDMG = '''
-Every enemy takes a specific amount of base damage from each element, although some element sources can have a bonus damage that is added to the base damage. You can find the exact numbers for each enemy's base elemental damage taken on the Monsters tab of Phil's Data Sheet:
-<https://docs.google.com/spreadsheets/d/1fBvQ17WHP3ASgtO8ode_rf1g4DfEHErMrHwwLppNTJM/edit#gid=143376740&range=A1>
+Every enemy takes a specific amount of base damage from each element, although some element sources can have a bonus damage that is added to the base damage.
+Here's a video going over the specifics for elemental damage in TotK:
+https://youtu.be/3vJc-ko00Gk
 '''
 INFO_MALANYALOCATION = '''
 The Horse God Malanya can revive and upgrade your registered horses in TotK. You can find his spring at Bloodleaf Lake in Deep Akkala, north of East Akkala Stable.
