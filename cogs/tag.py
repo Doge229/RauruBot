@@ -158,7 +158,7 @@ class Tag(commands.Cog):
             case 'rolereward':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
                     ANSWER = messages.INFO_ROLEREWARDS
-                    IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'rolerewards.jpg'))
+                    IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'rolerewards.png'))
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
             case 'arcaneexp' | 'arcanexp' | 'expsystem':
