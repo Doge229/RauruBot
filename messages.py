@@ -120,7 +120,7 @@ Here are the options for my `tag` command:
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`
 Page 1 of 2
     **Useful Links and Stuff**
-    `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
+    `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, bread/howtocookbread, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
     **Reference Images**
@@ -824,6 +824,10 @@ https://youtu.be/ho3fZyokkg8
 POINT_COOKCALC = '''
 Here's a link to Ghastly64's cooking calculator for TotK:
 https://www.totkcookbook.com/
+'''
+POINT_BREADRECIPE = '''
+Here's a link to a guide on making Bread in TotK:
+https://youtu.be/XYUhLxlqOH0
 '''
 
 POINT_LEVELCARDS = '''

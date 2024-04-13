@@ -404,6 +404,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_COOKING
             case 'cookcalc' | 'cookbook':
                 ANSWER = messages.POINT_COOKCALC
+            case 'bread' | 'howtocookbread':
+                ANSWER = messages.POINT_BREADRECIPE
 
             case 'levelcard' | 'lvlcard':
                 ANSWER = messages.POINT_LEVELCARDS
