@@ -193,10 +193,9 @@ class Tag(commands.Cog):
             # endregion
 
             # region Farming Stuff
-            case 'bloodmoon':
-                ANSWER = messages.INFO_BLOODMOON
-            case 'constructrespawn' | 'constructtimer':
-                ANSWER = messages.INFO_CONSTRUCTRESPAWN
+            case 'bloodmoon' | 'constructrespawn' | 'constructtimer':
+                ANSWER = messages.INFO_RESPAWNINGTITLE
+                EMBED = discord.Embed(description=messages.INFO_RESPAWNING)
             case 'forcebloodmoon':
                 ANSWER = messages.POINT_FORCEMOON
             case 'materialrespawn' | 'materialtimer':

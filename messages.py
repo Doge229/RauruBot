@@ -246,17 +246,35 @@ If you happen to be worried that TotK's final boss is in Hyrule Castle, don't be
 # endregion
 
 # region Farming Stuff
-INFO_BLOODMOON = '''
-Every 144 minutes of unpaused gameplay, the game will attempt to trigger a Blood Moon on the next midnight. If you are in a shrine or the Depths when that midnight occurs, then the game will postpone the Blood Moon until the next night. Blood Moons will respawn most enemies and weapons. Soldier, Captain, and Flux Constructs do not respawn on Blood Moons however, they use a separate timer.'''
-INFO_CONSTRUCTRESPAWN = '''
-Soldier Constructs, Captain Constructs, and Flux Constructs have a separate respawn timer to most enemies. Starting after your first attempt to open the front door of the Temple of Time, every 144 minutes of unpaused gameplay these Constructs will be set to respawn on the next midnight. Constructs will not be immediately respawned if Link is in the same general area as them, but they will be once Link travels far enough away. Aside from that, there is no known way to accelerate or delay this respawn effect.
+INFO_RESPAWNINGTITLE = '''
+TotK uses a set of timers to determine when to respawn enemies and equipment. Blood Moons control equipment and most enemies, while the "Zonai Respawn" controls when Soldier Constructs, Captain Constructs, and Flux Construct respawn.
+'''
+INFO_RESPAWNING = '''
+**Blood Moons**
+- Starting from when Link receives the Main Quest "The Closed Door", a timer will count until it reaches 6 in-game days (144 minutes) of unpaused gameplay.
+- Once the timer goes over 6 in-game days, TotK will attempt to cause a Blood Moon on the next midnight, at which point the Blood Moon timer is reset to 0.
+- Blood Moons can only occur if Link is outside of a dungeon/Shrine and on the Surface or in the Sky at 9pm, unless a save made after 9pm is loaded.
+- Sleeping through the night at a bed or campfire while the timer is over 6 days will still cause a Blood Moon, if Link is in a valid area.
+- Blood Moons cannot occur until Link has touched the Surface and unlocked the map layer for it.
+
+**Zonai Respawn**
+- Just like for Blood Moons, a timer starts when Link begins "The Closed Door", counting up until it reaches 6 in-game days (144 minutes) of unpaused gameplay.
+- After the timer reaches 6 in-game days, the game will set all the Constructs as "ready to respawn", however they will not respawn immediately.
+- Once Link warps or enters/exits a Shrine, all Construct enemies will respawn. Closing and re-opening the game or loading a save does not cause them to respawn.
+- The game will not set the Constructs as "ready to respawn" until the clock passes midnight *after* Link has unlocked the Surface map layer.
+This is how Zonai Respawns are currently understood, so it is possible that there are triggers for the Zonai Respawn other than warping and entering/exiting a Shrine.
+
+**More Info**
+If you'd like more details on how the respawn mechanics work, please check out bjm's [document on respawn mechanics and "No Blood Moons" playthroughs](<https://docs.google.com/document/d/1w59IZh1z7Empep1kCjqXLHuTPqu5DHnwKdYEzU3TC60/edit?usp=sharing>)
 '''
 POINT_FORCEMOON = '''
 Here's are some links to examples of how to force a Blood Moon to occur in TotK:
 - [Rock Wall Opal Method](<https://youtu.be/cBolBE0792k>)
 - [Water Shock Method](<https://youtu.be/WU01EY3dGc8>)
 '''
-INFO_MATERIALTIMER = '''TotK's map is divided into a 10x8 grid of "cells." Every minute that you are not in a map cell, there is an additive chance that every material and animal in that cell will respawn.'''
+INFO_MATERIALTIMER = '''
+TotK's map is divided into a 10x8 grid of "cells" that are used to determine when to respawn materials and animals. Every minute, each material/animal has a 1% chance to respawn, as long as Link is at least half a "cell" away from that material/animal's "cell".
+'''
 INFO_SHOPRESTOCK = '''Shops restock at midnight. You can make them restock by waiting at a campfire or bed, then reloading the shop by fast traveling, or saving and reloading. Menu-based shops only require passing time, as opening the shop causes them to reload.'''
 
 INFO_CHARGEFARMTITLE = '''You can farm Crystallized Charges by:'''
