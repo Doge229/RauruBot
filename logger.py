@@ -32,15 +32,18 @@ class Logger():
         if not os.path.exists(system.DIR_LOGS):
             os.mkdir(system.DIR_LOGS)
 
-        PADDING = 9
-        LINE = f'|{type:<{PADDING}}|{self.getlogdatetime()}| {msg}'
-        DIR_CURRENTLOG = os.path.join(system.DIR_LOGS, f'{self.getlogdate()}.txt')
-        log = open(DIR_CURRENTLOG, "a")
+        try:
+            PADDING = 9
+            LINE = f'|{type:<{PADDING}}|{self.getlogdatetime()}| {msg}'
+            DIR_CURRENTLOG = os.path.join(system.DIR_LOGS, f'{self.getlogdate()}.txt')
+            log = open(DIR_CURRENTLOG, "a")
 
-        log.write(LINE + '\n')
-        print(LINE)
+            log.write(LINE + '\n')
+            print(LINE)
 
-        log.close()
+            log.close()
+        except:
+            self.error('Unable to write to log file!')
     
     # Errors
     @classmethod
