@@ -139,7 +139,7 @@ HELP_TAG3 = ['''**General Command Help** (For when `/help` isn't available)''', 
 HELP_TAG4 = ['''**Story Stuff**''', '''
 `postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation`''']
 HELP_TAG5 = ['''**Farming Stuff**''', '''
-`bloodmoon/constructrespawn, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`''']
+`repsawninfo/bloodmoon/zonairespawn, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`''']
 HELP_TAG6 = ['''**Equipment Info**''', '''
 `octorok, naturalmodifiers, repairlegendary, legendarylist, fusedurability, shieldfuse, fragilematerials/fragilemats, breakitdown/pelison, pristineweapons, mastersword, truedmg, amiiborespawnalt/duskbow/whitesword, botwarmor/missingarmor`''']
 HELP_TAG7 = ['''**Mechanics and Hints**''', '''
