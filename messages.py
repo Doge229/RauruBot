@@ -247,10 +247,11 @@ If you happen to be worried that TotK's final boss is in Hyrule Castle, don't be
 
 # region Farming Stuff
 INFO_RESPAWNINGTITLE = '''
-TotK uses a set of timers to determine when to respawn enemies and equipment. Blood Moons control equipment and most enemies, while the "Zonai Respawn" controls when Soldier Constructs, Captain Constructs, and Flux Construct respawn.
+TotK uses a set of timers to determine when to respawn enemies and equipment.
 '''
 INFO_RESPAWNING = '''
 **Blood Moons**
+Blood Moons control when equipment and most enemies respawn, but not Construct enemies or materials/animals.
 - Starting from when Link receives the Main Quest "The Closed Door", a timer will count until it reaches 6 in-game days (144 minutes) of unpaused gameplay.
 - Once the timer goes over 6 in-game days, TotK will attempt to cause a Blood Moon on the next midnight, at which point the Blood Moon timer is reset to 0.
 - Blood Moons can only occur if Link is outside of a dungeon/Shrine and on the Surface or in the Sky at 9pm, unless a save made after 9pm is loaded.
@@ -258,6 +259,7 @@ INFO_RESPAWNING = '''
 - Blood Moons cannot occur until Link has touched the Surface and unlocked the map layer for it.
 
 **Zonai Respawn**
+Zonai Respawns control when Soldier Constructs, Captain Constructs, and Flux Constructs respawn.
 - Just like for Blood Moons, a timer starts when Link begins "The Closed Door", counting up until it reaches 6 in-game days (144 minutes) of unpaused gameplay.
 - After the timer reaches 6 in-game days, the game will set all the Constructs as "ready to respawn", however they will not respawn immediately.
 - Once Link warps or enters/exits a Shrine, all Construct enemies will respawn. Closing and re-opening the game or loading a save does not cause them to respawn.
@@ -265,6 +267,7 @@ INFO_RESPAWNING = '''
 This is how Zonai Respawns are currently understood, so it is possible that there are triggers for the Zonai Respawn other than warping and entering/exiting a Shrine.
 
 **More Info**
+For info about material/animal respawns, use `/tag materialtimer`.
 If you'd like more details on how the respawn mechanics work, please check out bjm's [document on respawn mechanics and "No Blood Moons" playthroughs](<https://docs.google.com/document/d/1w59IZh1z7Empep1kCjqXLHuTPqu5DHnwKdYEzU3TC60/edit?usp=sharing>)
 '''
 POINT_FORCEMOON = '''
