@@ -471,6 +471,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_WHEREDLC
             case 'nfctag':
                 ANSWER = messages.POINT_NFCTAGS if not context.guild.id == config.GENSERVERID else messages.ERROR_UNKNOWNCMD
+            case 'timestamp':
+                ANSWER = messages.POINT_TIMESTAMP
             # endregion
 
             # region Armor Totals

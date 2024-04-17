@@ -1046,6 +1046,10 @@ POINT_NFCTAGS = '''
 Here's a link to a guide on making NFC tags to use as amiibo:
 https://youtu.be/tBFSa4Tuzug
 '''
+POINT_TIMESTAMP = '''
+Here's a link to a website where you can create timestamps that automatically convert to other people's timezone:
+<https://sesh.fyi/timestamp/>
+'''
 # endregion
 
 # region Image Messages
