@@ -15,10 +15,7 @@ Small Scale
   -speak channel?
   -toggle auto profile and such
 -error for dellast after auto-delete
--materialtimer update
-
--material respawn, dragon shard respawn
--starfrag
+-dragon shard respawn
 
 Stuff to Make/Do
 -Wiki stuff
