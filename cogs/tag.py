@@ -206,7 +206,7 @@ class Tag(commands.Cog):
             case 'chargefarm':
                 ANSWER = messages.INFO_CHARGEFARMTITLE
                 EMBED = discord.Embed(description=messages.INFO_CHARGEFARM)
-            case 'starfragment':
+            case 'starfragment' | 'starfrag':
                 ANSWER = messages.POINT_STARFARM
             case 'dragon':
                 ANSWER = messages.POINT_DRAGON
