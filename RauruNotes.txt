@@ -18,6 +18,7 @@ Small Scale
 -materialtimer update
 
 -material respawn, dragon shard respawn
+-starfrag
 
 Stuff to Make/Do
 -Wiki stuff
