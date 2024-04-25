@@ -717,8 +717,8 @@ The Radiant set has no innate effects, but can be upgraded and grants the set bo
 
 # region Reference Info
 POINT_WIKI = '''
-Here's a link to the wiki for TotK:
-<https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom>
+Here's a link to the wiki for The Legend of Zelda:
+<https://zeldawiki.wiki/wiki/Main_Page>
 '''
 POINT_FANDOMBAD = '''
 Here's a link to a video explaining the situation surrounding Fandom and wiki migration:
