@@ -506,6 +506,9 @@ class Tag(commands.Cog):
             case 'otherparttotal' | 'othertotal':
                 ANSWER = messages.IMAGE_OTHERPARTTOTAL
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'otherparttotals.png'))
+            case 'zonaitotal':
+                ANSWER = messages.IMAGE_ZONAITOTAL
+                IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'zonaitotals.png'))
             # endregion
 
             # region Other Images

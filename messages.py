@@ -1062,6 +1062,7 @@ IMAGE_MEATANDADDITIVETOTAL = '''Here are the totals for Meats and Additives requ
 IMAGE_FRUITANDVEGGIETOTAL = '''Here are the totals for Fruits and Veggies required to upgrade every armor in TotK:'''
 IMAGE_OTHERPARTTOTAL = '''Here are the totals for Other Monster Parts required to upgrade every armor in TotK:'''
 IMAGE_CRITTERTOTAL = '''Here are the totals for Critters required to upgrade every armor in TotK:'''
+IMAGE_ZONAITOTAL = '''Here are the totals for Zonai materials required to upgrade every armor in TotK:'''
 
 IMAGE_ASCENDMAP = '''Here is a map of all the Ascend Ruins within the Depths:'''
 IMAGE_CHERRYMAP = '''Here is a map of all the Cherry Blossom Trees in TotK:'''
