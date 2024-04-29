@@ -261,7 +261,7 @@ Blood Moons control when equipment and most enemies respawn, but not Construct e
 **Zonai Respawn**
 Zonai Respawns control when Soldier Constructs, Captain Constructs, and Flux Constructs respawn.
 - Just like for Blood Moons, a timer starts when Link begins "The Closed Door", counting up until it reaches 6 in-game days (144 minutes) of unpaused gameplay.
-- After the timer reaches 6 in-game days and the in-game clock hits passes midnight, the game will set all the Constructs as "ready to respawn", however they will not respawn immediately.
+- After the timer reaches 6 in-game days and the in-game clock passes midnight, the game will set all the Constructs as "ready to respawn", however they will not respawn immediately.
 - Once Link warps or enters/exits a Shrine, all Construct enemies will respawn. Closing and re-opening the game or loading a save does not cause them to respawn.
 - The game will not set the Constructs as "ready to respawn" until the clock passes midnight *after* Link has unlocked the Surface map layer.
 This is how Zonai Respawns are currently understood, so it is possible that there are triggers for the Zonai Respawn other than warping and entering/exiting a Shrine.
