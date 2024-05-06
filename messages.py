@@ -137,7 +137,7 @@ HELP_TAG2 = ['''**Tag Command Help**''', '''
 HELP_TAG3 = ['''**General Command Help** (For when `/help` isn't available)''', '''
 `generalhelp, generalhelp show`''']
 HELP_TAG4 = ['''**Story Stuff**''', '''
-`postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation`''']
+`postgame, elitepics, permaquests, trueend, ringruins, josha, robbie, finalelocation/finalbosslocation, ritofirst/windfirst/firsttemple`''']
 HELP_TAG5 = ['''**Farming Stuff**''', '''
 `repsawninfo/bloodmoon/zonairespawn, forcebloodmoon, materialrespawn, shoprestock, chargefarm, starfragment, dragon, arrowfarm, freelynelbows, constructfarm, earlyrupees`''']
 HELP_TAG6 = ['''**Equipment Info**''', '''
@@ -242,6 +242,15 @@ There, Robbie can provide you with the Sensor, Sensor+, Travel Medallions, and H
 '''
 INFO_FINALEAPPROACHING = '''
 If you happen to be worried that TotK's final boss is in Hyrule Castle, don't be! The final boss is not located in Hyrule Castle, and you will ***definitely*** know when you're approaching it. Once you do get to the point where you're approaching the final boss, don't be afraid to place down a Travel Medallion so you can go prepare more before taking the finale on.
+'''
+INFO_RITOFIRST = '''
+Purah will tell you to head for the Rito Regional Phenomenon first for a good reason; Along the way to Rito Village, you can encounter a number of tutorials for the game's systems:
+
+- At New Serenne Stable, you can encounter a lot of nearby horses that you can easily tame and register with the stablehand, who explains the stabling system to you. If you've played BotW before, you may find a neat feature. (Use `?tag botwdata`)
+- Nearby New Serenne Stable, you can find Impa, who introduces you to the Geoglyphs, which are an important part of this game's storyline, and following her advice will allow you to view it in the proper order.
+- Between New Serenne Stable and Lindor's Brow Skyview Tower, you will find Hestu, who you can return Korok Seeds to in exchange for inventory upgrades. (Use `?tag hestu`)
+- Closer to Rito Village, you will find the Lucky Clover Gazette, which will allow you to start an important Side Adventure that leads to the ability to upgrade your armour later on, as well as providing some small boosts in cash for the early-mid game. (Use `?tag greatfairy`)
+- Rito Village's Main Quest also functions as a steady tutorial for the game's more intense temperature management, as you are expected to have gathered enough Rupees by the time you reached the village to purchase some cold resistance armour. (Use `?tag earlyrupees`)
 '''
 # endregion
 
@@ -583,9 +592,9 @@ Malanya cannot upgrade the stats for Epona, the Giant White Stallion, and the Gi
 '''
 
 INFO_GLEEOKSTRAT = '''
-The trick to taking down a Gleeok is to use Eyeball arrows while avoiding its attacks or staying behind cover. Multi-shot bows are strongly recommended for this.
-Flame Gleeok heads take 2x damage from ice attacks and 1.5x damage from water attacks.
-Frost Gleeok heads take 2x damage from fire attacks.
+The trick to taking down a Gleeok is to use Eyeball arrow fusions while avoiding its attacks or staying behind cover. It is also a good idea to use updrafts or shield fusions to gain height and shoot arrows while in midair. Multi-shot bows are strongly recommended for this.
+- Flame Gleeok heads take 2x damage from ice attacks and 1.5x damage from water attacks.
+- Frost Gleeok heads take 2x damage from fire attacks.
 '''
 INFO_MIDAIRWING = '''
 Here are the steps to deploy a Wing midair in TotK:
@@ -1293,12 +1302,3 @@ COMMAND_THANKS3 = '''Happy to help!'''
 # endregion
 
 # Unimplemented Messages --- UPDATE HELP ---
-INFO_RITOFIRST = '''
-Purah will tell you to head for the Rito Regional Phenomenon first for a good reason; Along the way to Rito Village, you can encounter a number of tutorials for the game's systems:
-
-- At New Serenne Stable, you can encounter a lot of nearby horses that you can easily tame and register with the stablehand, who explains the stabling system to you. If you've played BotW before, you may find a neat feature. (Use `?tag botwdata`)
-- Nearby New Serenne Stable, you can find Impa, who introduces you to the Geoglyphs, which are an important part of this game's storyline, and following her advice will allow you to view it in the proper order.
-- Between New Serenne Stable and Lindor's Brow Skyview Tower, you will find Hestu, who you can return Korok Seeds to in exchange for inventory upgrades. (Use `?tag hestu`)
-- Closer to Rito Village, you will find the Lucky Clover Gazette, which will allow you to start an important Side Adventure that leads to the ability to upgrade your armour later on, as well as providing some small boosts in cash for the early-mid game. (Use `?tag greatfairy`)
-- Rito Village's Main Quest also functions as a steady tutorial for the game's more intense temperature management, as you are expected to have gathered enough Rupees by the time you reached the village to purchase some cold resistance armour. (Use `?tag earlyrupees`)
-'''

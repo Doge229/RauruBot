@@ -190,6 +190,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.INFO_ROBBIE
             case 'finalelocation' | 'finalbosslocation':
                 ANSWER = messages.INFO_FINALEAPPROACHING
+            case 'ritofirst' | 'firstphenomenon' | 'windfirst' | 'firsttemple' | 'firstdungeon':
+                ANSWER = messages.INFO_RITOFIRST
             # endregion
 
             # region Farming Stuff
@@ -424,7 +426,7 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_ENERGYCELLSTATS
             case 'dispenserprice' | 'dispenserdrop' | 'dispenserrate':
                 ANSWER = messages.POINT_DISPENSERPRICES
-            case 'combatguide' | 'combattip':
+            case 'combatguide' | 'combattip' | 'advancedcombat':
                 ANSWER = messages.POINT_COMBATGUIDE
             case 'missableobject' | 'missableitem':
                 ANSWER = messages.POINT_MISSABLEOBJECTS
