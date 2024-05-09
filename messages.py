@@ -340,7 +340,7 @@ Please take a look at this spreadsheet to see the available modifiers and values
 
 You can save next to an Octorok before giving it equipment, and reload that save to reroll the modifier you get. 
 
-Each Octorok can only be used once per Blood Moon, and will need to be killed after use in order to recharge on the next Blood Moon.
+Each Octorok can only be used once per Blood Moon, and the area will need to be reloaded for the refresh to take effect.
 '''
 POINT_NATURALMODIFIERS = '''
 Here's a link to the Natural Modifier sheet for TotK:
