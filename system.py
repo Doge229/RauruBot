@@ -222,6 +222,12 @@ async def setprofilepic(bot, option):
         case 'pridepolyamory':
             PRIDE = True
             IMAGENAME = 'raurupolyamorypride.jpg'
+        case 'pridedemisexual':
+            PRIDE = True
+            IMAGENAME = 'raurudemisexualpride.jpg'
+        case 'prideintersex':
+            PRIDE = True
+            IMAGENAME = 'rauruintersexpride.jpg'
 
 
         case _:
