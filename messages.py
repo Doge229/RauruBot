@@ -1025,7 +1025,7 @@ INFO_DUPE121 = '''
 '''
 POINT_121FEZUGGLE = '''
 Here's a link to SuishiYT's guide on Fuse Entanglement and Zuggling in 1.2.1:
-<https://youtu.be/kJGVuI0fizk>
+https://youtu.be/kJGVuI0fizk
 '''
 INFO_DOWNPATCH = '''
 You cannot downpatch your game without losing your save data. You can only downpatch to 1.0, unless you have access to another Switch with a version in between 1.0 and current patch. 
