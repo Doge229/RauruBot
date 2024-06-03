@@ -430,6 +430,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_COMBATGUIDE
             case 'missableobject' | 'missableitem':
                 ANSWER = messages.POINT_MISSABLEOBJECTS
+            case 'gamblinggame' | 'luckytreasureshop' | 'luckytreasure' | 'lurelingambling':
+                ANSWER = messages.POINT_GAMBLINGGAME
 
             case 'hoverbike':
                 ANSWER = messages.POINT_HOVERBIKE

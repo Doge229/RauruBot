@@ -147,7 +147,7 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
+`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, 1.2.1FEzuggle/1.2.1FE/1.2.1zuggle, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
@@ -919,6 +919,10 @@ https://docs.google.com/document/d/1z0qViEN9cl7dTpTb2LP2vlUVp9qiFMu2QJS8KDFx-cM/
 POINT_MISSABLEOBJECTS = '''
 Here is a link to the Missable Objects List for TotK:
 https://docs.google.com/document/d/1Sfeh1OmGCQ200bGbWtuL7yhtj6Hqe_83JC87-ntQ4qU/edit?usp=sharing
+'''
+POINT_GAMBLINGGAME = '''
+Here is a link to a spreadsheet with the odds for the different rewards from the Lucky Treasure Shop in Lurelin Village:
+https://docs.google.com/spreadsheets/d/1OvdU1fdPh3gVOX4uVtT4WNNDob3HgdsX5uOtzQ5v8RY/edit?usp=sharing
 '''
 
 POINT_HOVERBIKE = '''
