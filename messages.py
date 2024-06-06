@@ -484,7 +484,7 @@ The Object Map coordinate system is based on the internal coordinate system, but
 
 For example, there is an Apple found at `0402, -1344, 1541` in-game, but the game internally spawns it at `402.47, 1646.41, 1343.78`, and the Object Map displays its location as `402.47, 1646.41, -1343.78`.
 
-Please feel free to use my `/coordconvert` command to turn a set of Object Map coordinates into their shown in-game values.
+If you need to see what the shown in-game coordinates are for an object on the Object Map, you can go to the Settings tab and select "Use In-Game Coordinates", or use my `/coordconvert` command.
 '''
 
 INFO_RITOFABRIC = '''The Ordinary and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
@@ -786,6 +786,7 @@ https://objmap-totk.zeldamods.org/#/map/z2,0,0
 -You can filter your search by scaling or non-scaling objects using `scale:1` or `scale:0`, respectively.
 -Use `/tag objectterms` to see some useful terms and actor names.
 -Sometimes, you will probably need to put your search term in quotes to prevent other objects from being included: `"Captain Construct II" Sky`
+-If you need to see the shown in-game coordinates for an object on the Object Map, go to the Settings tab and select "Use In-Game Coordinates".
 '''
 INFO_USEFULOBJECTTERMSTITLE = '''Here are some terms/actor names that might be useful when using the Object Map:'''
 INFO_USEFULOBJECTTERMS = '''
