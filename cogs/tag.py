@@ -380,7 +380,8 @@ class Tag(commands.Cog):
             case 'map' | 'interactivemap':
                 ANSWER = messages.POINT_INTERACTMAPS
             case 'objmap' | 'objectmap':
-                ANSWER = messages.INFO_OBJECTMAP
+                ANSWER = messages.INFO_OBJECTMAPTITLE
+                EMBED = discord.Embed(description=messages.INFO_OBJECTMAP, title="Tips for using the Object Map")
             case 'objectterm' | 'objterm' | 'objectmapterm' | 'objmapterm':
                 ANSWER = messages.INFO_USEFULOBJECTTERMSTITLE
                 EMBED = discord.Embed(description=messages.INFO_USEFULOBJECTTERMS)

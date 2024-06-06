@@ -484,7 +484,7 @@ The Object Map coordinate system is based on the internal coordinate system, but
 
 For example, there is an Apple found at `0402, -1344, 1541` in-game, but the game internally spawns it at `402.47, 1646.41, 1343.78`, and the Object Map displays its location as `402.47, 1646.41, -1343.78`.
 
-If you need to see what the shown in-game coordinates are for an object on the Object Map, you can go to the Settings tab and select "Use In-Game Coordinates", or use my `/coordconvert` command.
+If you need to see what the shown in-game coordinates are for an object on the Object Map, you can go to the Settings menu and select "Use In-Game Coordinates", or use my `/coordconvert` command.
 '''
 
 INFO_RITOFABRIC = '''The Ordinary and Nostalgic Fabrics are the stand-ins for the Rito Fabric, as the Paraglider was made by the Rito for Hylians.'''
@@ -771,22 +771,25 @@ AeonSake: <https://totk.aeonsake.com/>
 The Object Map doesn't have the same features as other interactive maps, but it is still very useful. Use `/tag objectmap` for more info.
 Object Map: <https://objmap-totk.zeldamods.org/#/map/z2,0,0>
 '''
-INFO_OBJECTMAP = '''
+INFO_OBJECTMAPTITLE = '''
 The Object Map is a very powerful tool for locating things within TotK: 
 https://objmap-totk.zeldamods.org/#/map/z2,0,0 
-
--Click on the "Help" button below the search bar to see some information on what terms to use.
--You can change what layer of the Object Map is shown with the Layer button in the top right corner.
--The Filters menu below the Search menu will allow you to reveal different icons and sections on the map. 
--You can use these terms to filter search results by map level: 
-`surface` 
-`depths` 
-`cave` 
-`sky`
--You can filter your search by scaling or non-scaling objects using `scale:1` or `scale:0`, respectively.
--Use `/tag objectterms` to see some useful terms and actor names.
--Sometimes, you will probably need to put your search term in quotes to prevent other objects from being included: `"Captain Construct II" Sky`
--If you need to see the shown in-game coordinates for an object on the Object Map, go to the Settings tab and select "Use In-Game Coordinates".
+'''
+INFO_OBJECTMAP = '''
+- Click on the **"Help" button below the search bar** to see some information on what terms to use.
+- **If you're on mobile**, use the magnifying glass button to close the Search menu and view the map.
+- You can **change what layer of the Object Map is shown** with the Layer button in the top right corner.
+- The Filters menu, found below the Search menu, will allow you to **reveal different icons and sections** on the map.
+- You can use these terms to filter search results by map level:
+    - `surface` (Includes `cave`)
+ - `cave`
+ - `depths`
+ - `sky`
+- Use `OR` and `NOT` in your search to show more results or **filter out results you don't want to see**.
+- You can filter your search by **scaling or non-scaling objects** using `scale:1` or `scale:0`, respectively.
+- Use `/tag objectterms` to see some useful terms and actor names.
+- Sometimes, you will need to put your search term in quotes to **prevent other objects from being included**: `"Captain Construct II" Sky`
+- If you need to see the **shown in-game coordinates for an object on the Object Map**, go to the Settings menu and select "Use In-Game Coordinates".
 '''
 INFO_USEFULOBJECTTERMSTITLE = '''Here are some terms/actor names that might be useful when using the Object Map:'''
 INFO_USEFULOBJECTTERMS = '''
