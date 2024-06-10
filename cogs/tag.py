@@ -393,7 +393,7 @@ class Tag(commands.Cog):
             case 'objectsheet':
                 ANSWER = messages.POINT_INTEROBJECTSHEET
             
-            case 'worldexp' | 'worldxp':
+            case 'worldexp' | 'worldxp' | 'worldlevel' | 'worldlvl':
                 ANSWER = messages.POINT_WORLDEXP
             case 'templescaling' | 'bossscaling' | 'dungeonscaling':
                 ANSWER = messages.POINT_TEMPLESCALING
