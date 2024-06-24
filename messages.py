@@ -1014,6 +1014,9 @@ INFO_DUPE120 = '''
 INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
 INFO_DUPE121 = '''
 **Equipment Dupes**
+- [Pelison Duping and Easy WST](<https://youtu.be/SfWqYmKAT5o>)
+    - Dupes any equipment, as long as it can be Fused to something else. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
+  - Allows for quick Weapon Stat Transfer (WST) while duping.
 - [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
     - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
 - Like-Like Stick Culling:
