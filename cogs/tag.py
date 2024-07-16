@@ -140,9 +140,9 @@ class Tag(commands.Cog):
                     ANSWER = messages.INFO_SPOILERTAG
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
-            case 'rule913' | 'piracy' | 'to':
+            case 'rule9' | 'piracy' | 'to':
                 if context.guild.id == config.GENSERVERID or context.guild.id == config.DEVSERVERID:
-                    ANSWER = messages.INFO_RULE913
+                    ANSWER = messages.INFO_RULETOS
                 else:
                     ANSWER = messages.ERROR_UNKNOWNCMD
             case 'selfpromotion' | 'selfpromo':

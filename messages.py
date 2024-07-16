@@ -196,7 +196,7 @@ You can spoiler tag images and videos **when attaching** them:
 - If you are on the desktop app, by clicking the small eye icon above the image.
 - If you are on mobile, by tapping and holding on the image to view the options for it.
 '''
-INFO_RULE913 = '''Please refer to rules 9 and 13 in <#1022236312209739846>, which state that discussion of hacking, piracy, emulation, modding, or anything else against Nintendo's Terms of Service is not allowed on this server.'''
+INFO_RULETOS = '''Please refer to rule 9 in <#1022236312209739846>, which states that promotion of methods or services that involve piracy, hacking, modification of consoles, or illegal emulation is not allowed on this server. Discussion of emulation or modding is permitted, as long as the discussion does not involve information about ***how*** to do either.'''
 INFO_SELFPROMOTION = '''
 Please keep all self promotion to <#753016129043169402>. In order to post in <#753016129043169402> you will need to have at least the **Member** role (lvl 1 or above).
 Please remember that you are not allowed to use this server solely for self promotion, and that the posting of server invites, NSFW stuff, or any of the other prohibited acts listed in the channel description will be dealt with accordingly.
