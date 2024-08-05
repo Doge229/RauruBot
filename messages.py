@@ -1035,8 +1035,9 @@ INFO_DUPE121 = '''
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
 POINT_121FEZUGGLE = '''
-Here's a link to SuishiYT's guide on Fuse Entanglement and Zuggling in 1.2.1:
-https://youtu.be/kJGVuI0fizk
+Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 1.2.1:
+- Intro to Entanglement & Zuggling - <https://youtu.be/kJGVuI0fizk>
+- Intermediate Entanglement & Zuggling - <https://youtu.be/on9x_uisocw>
 '''
 INFO_DOWNPATCH = '''
 You cannot downpatch your game without losing your save data. You can only downpatch to 1.0, unless you have access to another Switch with a version in between 1.0 and current patch. 
