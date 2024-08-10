@@ -463,6 +463,8 @@ class Tag(commands.Cog):
                 EMBED = discord.Embed(description=messages.INFO_DUPE121)
             case '1.2.1fezuggle' | '1.2.1fe' | '1.2.1zuggle' | '1.2.1fuseentanglement' | '1.2.1fuseentanglementzuggle' | '1.2.1feandzuggle' | 'fezuggle1.2.1' | 'fe1.2.1' | 'zuggle1.2.1' | 'fuseentanglement1.2.1' | 'fuseentanglementzuggle1.2.1' | 'feandzuggle1.2.1':
                 ANSWER = messages.POINT_121FEZUGGLE
+            case '1.2.1mnf' | '1.2.0mnf' | '1.2.1msgnotfound' | '1.2.0msgnotfound' | 'mnf1.2.1' | 'mnf1.2.0' | 'msgnotfound1.2.1' | 'msgnotfound1.2.0':
+                ANSWER = messages.POINT_121MNF
 
             case 'downpatch':
                 ANSWER = messages.INFO_DOWNPATCH
