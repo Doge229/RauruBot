@@ -1040,8 +1040,9 @@ Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 
 - Intermediate Entanglement & Zuggling - <https://youtu.be/on9x_uisocw>
 '''
 POINT_121MNF = '''
-Here is a link to Suishi's guide on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0 and 1.2.1 of TotK:
-https://youtu.be/bueZYVnq-QQ
+Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0 and 1.2.1 of TotK:
+- [Suishi's guide](<https://youtu.be/bueZYVnq-QQ>)
+- [El Duende's guide](<https://youtu.be/GlVJarlWaTo>)
 '''
 INFO_DOWNPATCH = '''
 You cannot downpatch your game without losing your save data. You can only downpatch to 1.0, unless you have access to another Switch with a version in between 1.0 and current patch. 
