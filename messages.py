@@ -709,7 +709,15 @@ Here's a link to Phil's Damage Calculator for TotK:
 Please feel free to [submit feedback](<https://docs.google.com/forms/d/e/1FAIpQLSdWgQW8VGALbCsqE25iIV-nFlz37l-pYmLtYqz4dm_N9TTzAQ/viewform>) if you find any potential errors or bugs!
 '''
 
-INFO_MOISTURE = '''The Froggy armor set pieces each have a hidden effect called Moisturizing, which increases the length of time that Link will be wet for, up to a max of 4 minutes.'''
+POINT_ADDEDEFFECTWIKI = '''
+Here is a link to the Zelda Wiki page for Added Effects:
+<https://zeldawiki.wiki/wiki/Added_Effect>
+'''
+POINT_SETBONUSWIKI = '''
+Here is a link to the Zelda Wiki page for Set Bonuses:
+<https://zeldawiki.wiki/wiki/Set_Bonus>
+'''
+INFO_MOISTURE = '''The Froggy armor set pieces each have a hidden effect called Moisturizing, which increases the length of time that Link will be wet for, up to a max of 4 minutes, depending on the water source used.'''
 INFO_WEATHERATK = '''The Weather Attack effects do not increase physical weapon damage. They add an elemental AoE to combo finishers and charge attacks, which increases in size with higher effect levels and has a bonus elemental damage of 5, regardless of level. The Weather Charge set bonus just gives you Quick Charge when active.'''
 INFO_GLOOMATKRES = '''The Gloom Attack Resist set bonus does not have any impact on gloom attacks. It only adds a fourth gloom resistance heart.'''
 INFO_SLIPRESIST = '''Slip Resistance increases the amount of time that Link can climb on slippery surfaces before slipping. With levels 1/2/3 of Slip Resistance, Link will be able to climb on slippery surfaces for 6/8/10 seconds before slipping. Slip Proof is the Froggy Armor set bonus, and makes Link immune to slipping.'''
@@ -853,7 +861,7 @@ https://docs.google.com/document/d/1w59IZh1z7Empep1kCjqXLHuTPqu5DHnwKdYEzU3TC60/
 
 POINT_COOKING = '''
 Here's a link to a guide about cooking: 
-https://youtu.be/ho3fZyokkg8
+https://www.reddit.com/r/tearsofthekingdom/comments/1f49tjk/a_complete_indepth_cooking_system_explanation/
 '''
 POINT_COOKCALC = '''
 Here's a link to Ghastly64's cooking calculator for TotK:
@@ -938,8 +946,9 @@ Here's a link to a guide on building the Hoverbike 4.0:
 https://youtu.be/AXWAEBlvIXs
 '''
 POINT_GOLDENWING = '''
-Here's a link to a guide to obtaining the Golden Wing/Infinity Wing in TotK:
-https://youtu.be/KTxbMQeIhno
+Here's are some links guides on obtaining the Golden Wing/Infinity Wing in TotK:
+Versions 1.0.0 - 1.1.2: <https://youtu.be/KTxbMQeIhno>
+Versions 1.2.0 - 1.2.1: <https://youtu.be/k7R94dGai0E>
 '''
 POINT_RAILPARTTITLE = '''Here are some links to videos showing how to detach an Elevator Rail:'''
 POINT_RAILPART = '''
@@ -1255,7 +1264,7 @@ Lightcast Island - 15%
 '''
 DISP_CANNON = '''
 North Necluda Sky Archipelago - 20%
-Sotuh Necluda Sky Archipelago - 20%
+South Necluda Sky Archipelago - 20%
 Sokkala Sky Archipelago - 15%
 '''
 DISP_STABILIZER = '''

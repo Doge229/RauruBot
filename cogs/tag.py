@@ -346,6 +346,10 @@ class Tag(commands.Cog):
             case 'dmgcalc' | 'damagecalc' | 'damagecalculator' | 'dmgcalculator':
                 ANSWER = messages.POINT_DMGCALC
             
+            case 'addedeffect' | 'effect':
+                ANSWER = messages.POINT_ADDEDEFFECTWIKI
+            case 'setbonu':
+                ANSWER = messages.POINT_SETBONUSWIKI
             case 'moisture':
                 ANSWER = messages.INFO_MOISTURE
             case 'weatherattack':

@@ -16,11 +16,7 @@ Small Scale
   -toggle auto profile and such
 -error for dellast after auto-delete
 -dragon shard respawn
--cooking info
--added effect info
 -OSP
--golden wing
--cannon capsule typo
 
 Stuff to Make/Do
 -Wiki stuff
