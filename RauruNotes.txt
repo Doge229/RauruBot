@@ -18,6 +18,9 @@ Small Scale
 -dragon shard respawn
 -cooking info
 -added effect info
+-OSP
+-golden wing
+-cannon capsule typo
 
 Stuff to Make/Do
 -Wiki stuff
