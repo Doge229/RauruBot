@@ -876,13 +876,13 @@ POINT_LEVELCARDS = '''
 Here are some links to galleries of level cards for you to use with Arcane's `/card image set` command:
 NOTE: It is recommended to use 70 percent opacity `/card opacity <number>`.
 TotK Level Cards:
-<https://imgur.com/gallery/jP6Adci>
+<https://imgur.com/gallery/totk-level-cards-T5bxKuT>
 HW:AoC Level Cards:
-<https://imgur.com/gallery/ITbZOy1>
+<https://imgur.com/gallery/hwaoc-level-cards-TulXkr5>
 Lucie's HW:AoC Level Cards:
-<https://imgur.com/gallery/TUoPFHa>
+<https://imgur.com/a/lucies-age-of-calamity-cards-wTUmiAp>
 Dash's Classic Zelda Level Cards:
-<https://imgur.com/a/gLiEcRY>
+<https://imgur.com/a/classic-zelda-level-cards-ss-oot-tp-gLiEcRY>
 '''
 INFO_DIRECTIMGLINK = '''
 In order to use Arcane's `/card image set` command, you will need to provide a direct link to the image you want to use. You can use Imgur to host your own images, but keep in mind that Arcane will stretch the image to fit 800x200 pixels.
