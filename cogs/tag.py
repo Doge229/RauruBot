@@ -413,8 +413,8 @@ class Tag(commands.Cog):
             case 'bread' | 'howtocookbread':
                 ANSWER = messages.POINT_BREADRECIPE
 
-            case 'levelcard' | 'lvlcard':
-                ANSWER = messages.POINT_LEVELCARDS
+            # case 'levelcard' | 'lvlcard':
+            #     ANSWER = messages.POINT_LEVELCARDS
             case 'directlink' | 'directimglink':
                 ANSWER = messages.INFO_DIRECTIMGLINK
             case 'beedletrade':

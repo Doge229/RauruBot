@@ -54,26 +54,26 @@ Here are some of my commands:
 
 `/help [option]`
     `show`
-    -See what commands I have available
+  -See what commands I have available
 
 `/tag help`
-    -See what options I have for `/tag`
+  -See what options I have for `/tag`
 
 `/find [search terms]`
-    -You can use this command to create an Object Map link with search terms integrated into it. Just put the exact text (including spaces and punctuation) for your search terms after the command.
+  -You can use this command to create an Object Map link with search terms integrated into it. Just put the exact text (including spaces and punctuation) for your search terms after the command.
 
 `/coordconvert [Object Map coordinates]`
-    -You can use this command to convert the coordinate of an object from the Object Map into its shown in-game coordinates.
-    -Just copy the coordinates of the object's position directly from the Object Map, then paste it in.
+  -You can use this command to convert the coordinate of an object from the Object Map into its shown in-game coordinates.
+  -Just copy the coordinates of the object's position directly from the Object Map, then paste it in.
     
     For Example:
     `/coordconvert -579.73, 129.61, -524.79` will give you the in-game coords: `-580, -525, 25`
 
 `/findpristine [weapon name]`
-    -You can use this command to create an Object Map link that will show which Depths Ghosts can spawn a weapon.
+  -You can use this command to create an Object Map link that will show which Depths Ghosts can spawn a weapon.
 
 `/finddispenser [device name]`
-    -You can use this command to see which Device Dispensers are most likely to dispense a specific Zonai Device.
+  -You can use this command to see which Device Dispensers are most likely to dispense a specific Zonai Device.
 '''
 
 HELP_GENERALTITLE = '''Here are some of my commands:'''
@@ -103,7 +103,7 @@ Here are the options for my `tag` command:
 
     **Tag Command Help**
     `help [page number], help show [page number]`
-    -*Note: Page number defaults to the 1st page if not specified*
+  -*Note: Page number defaults to the 1st page if not specified*
     **General Command Help** (For when `/help` isn't available)
     `helpgeneral, helpgeneral show`
     **Server Stuff**
@@ -147,7 +147,7 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
+`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
 `dupe1.1.2, dupe1.2.0, dupe1.2.1, 1.2.1FEzuggle/1.2.1FE/1.2.1zuggle, 1.2.1MNF/1.2.0MNF/1.2.1MsgNotFound/1.2.0MsgNotFound, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
@@ -175,16 +175,16 @@ Here's how to use my blacklist command:
 ***Please keep in mind that all of my responses to these commands will be sent to the channel in which you use the command!***
 
 `&blacklist show`
-    -Shows the currently blacklisted users and the reasons they were blacklisted
+  -Shows the currently blacklisted users and the reasons they were blacklisted
 
 `&blacklist add [userid] [reason (optional)]`
-    -Adds a user to the blacklist. Add information after the userid to save the reason they were blacklisted, or other info.
+  -Adds a user to the blacklist. Add information after the userid to save the reason they were blacklisted, or other info.
 
 `&blacklist remove [userid]`
-    -Remove a user from the blacklist
+  -Remove a user from the blacklist
 
 `&blacklist update [userid] [reason (optional)]`
-    -Update a user's blacklist reason/info
+  -Update a user's blacklist reason/info
 '''
 # endregion
 
@@ -295,7 +295,7 @@ INFO_CHARGEFARM = '''
 - Defeating Sub-Bosses in the Depths, which drop a Large Crystallized Charge (worth 20 normal Crystallized Charges) every Blood Moon.
 - Visiting various locations in the Depths, as some of them have treasure chests containing a Large Crystallized Charge.
   Here are the totals for each type of location:
-    - 34/34 Yiga Clan Bases
+  - 34/34 Yiga Clan Bases
   - 21/29 Canyon Mines
   - 9/10 Abandoned Mine Bonus Chests
   - 11/15 Groves
@@ -789,10 +789,10 @@ INFO_OBJECTMAP = '''
 - You can **change what layer of the Object Map is shown** with the Layer button in the top right corner.
 - The Filters menu, found below the Search menu, will allow you to **reveal different icons and sections** on the map.
 - You can use these terms to filter search results by map level:
-    - `surface` (Includes `cave`)
- - `cave`
- - `depths`
- - `sky`
+  - `surface` (Includes `cave`)
+  - `cave`
+  - `depths`
+  - `sky`
 - Use `OR` and `NOT` in your search to show more results or **filter out results you don't want to see**.
 - You can filter your search by **scaling or non-scaling objects** using `scale:1` or `scale:0`, respectively.
 - Use `/tag objectterms` to see some useful terms and actor names.
@@ -953,9 +953,9 @@ Versions 1.2.0 - 1.2.1: <https://youtu.be/k7R94dGai0E>
 POINT_RAILPARTTITLE = '''Here are some links to videos showing how to detach an Elevator Rail:'''
 POINT_RAILPART = '''
 - [Stabilizer Method](<https://www.reddit.com/r/HyruleEngineering/comments/14qj7qw/simple_and_low_part_cost_way_to_detach_the/>)
-    - Used in the Construct Factory's Right Leg Depot, on the elevators that move straight up and down.
+  - Used in the Construct Factory's Right Leg Depot, on the elevators that move straight up and down.
 - [Rocket Method](<https://youtu.be/d5LeqKkJdYQ>)
-    - Used on the elevators found at the bottom of Great Plateau West Chasm and Ancient Underground Fortress
+  - Used on the elevators found at the bottom of Great Plateau West Chasm and Ancient Underground Fortress
 
 '''
 POINT_BETTERPHOTOS = '''
@@ -984,7 +984,7 @@ INFO_DUPE112 = '''
 **Rupee Farming**
 - [Autobuild Duplication](<https://youtu.be/YLxu53iXB_w>)
 - Vendor Scamming
-    - [Horse Method](<https://youtu.be/mHC8BJpDxGE?t=76>) - Longer setup, early-mid game
+  - [Horse Method](<https://youtu.be/mHC8BJpDxGE?t=76>) - Longer setup, early-mid game
   - [Mineru Method](<https://youtu.be/mHC8BJpDxGE?t=277>) - Quick to set up, but requires the ||Vow of Mineru||.
 **Materials and Other Dupes**
 - [Tobio's Hollow Chasm Duplication](<https://youtu.be/E8nab6JNBts>) (For fusable materials)
@@ -1000,22 +1000,22 @@ INFO_DUPE120TITLE = '''Here are some duplication glitches for 1.2.0:'''
 INFO_DUPE120 = '''
 **Equipment Dupes**
 - [Like-Like Fuse Entanglement](<https://youtu.be/BZID7B_99QY?t=1207>)
-    - [Slugging](<https://youtu.be/BZID7B_99QY?t=1553>)
+  - [Slugging](<https://youtu.be/BZID7B_99QY?t=1553>)
   - [Weapon Stat Transfer (WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
 - [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
-    - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
+  - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
 - Like-Like Stick Culling:
-    - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
+  - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
   - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
   - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
 **Rupee Farming**
 - Vendor Scamming
-    - [Horse Method](<https://youtu.be/mHC8BJpDxGE?t=76>) - Longer setup, early-mid game
+  - [Horse Method](<https://youtu.be/mHC8BJpDxGE?t=76>) - Longer setup, early-mid game
   - [Mineru Method](<https://youtu.be/mHC8BJpDxGE?t=277>) - Quick to set up, but requires the ||Vow of Mineru||.
 **Materials and Other Dupes**
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
-    - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
+  - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
@@ -1024,21 +1024,21 @@ INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
 INFO_DUPE121 = '''
 **Equipment Dupes**
 - [Pelison Duping and Easy WST](<https://youtu.be/SfWqYmKAT5o>)
-    - Dupes any equipment, as long as it can be Fused to something else. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
+  - Dupes any equipment, as long as it can be Fused to something else. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
   - Allows for quick Weapon Stat Transfer (WST) while duping.
 - [Stal-Arm Smuggling](<https://youtu.be/OL64sy4Uucc>)
-    - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
+  - Dupes weapons, including their Fused item. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
 - Like-Like Stick Culling:
-    - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
+  - Allows for all equipment duplication, Fuse Entanglement/FE WST, and more.
   - [BlizeYT's guide](<https://youtu.be/iRkNT3NEVuQ>)
   - [Suishi's guide](<https://youtu.be/5SJvlf0iTcE>)
 **Rupee Farming**
 - [Vendor Scamming](<https://youtu.be/mHC8BJpDxGE?t=410>)
-    - NOTE: This glitch is limited, so the Hold Storage will need to be re-performed every 5 items on 1.2.1.
+  - NOTE: This glitch is limited, so the Hold Storage will need to be re-performed every 5 items on 1.2.1.
 **Materials and Other Dupes**
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/bV1KxESU9v8?t=283>)
-    - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>) - Guide from 1.2.0, but can still be used with the 1.2.1 MTD method
+  - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>) - Guide from 1.2.0, but can still be used with the 1.2.1 MTD method
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
