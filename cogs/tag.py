@@ -540,7 +540,7 @@ class Tag(commands.Cog):
             case 'koltinstallmap' | 'koltinmap':
                 ANSWER = messages.IMAGE_KOLTINSTALLMAP
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'koltinstallmap.jpg'))
-            case 'invupgrade':
+            case 'invupgrade' | 'koroktotal':
                 ANSWER = messages.IMAGE_INVENTORYUPGRADES
                 IMAGE = discord.File(os.path.join(system.DIR_RESOURCE, 'inventoryupgrades.jpg'))
             case 'shrinecount' | 'shrinetotal' | 'shrinetype':
