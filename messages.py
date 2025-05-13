@@ -861,7 +861,7 @@ https://docs.google.com/document/d/1w59IZh1z7Empep1kCjqXLHuTPqu5DHnwKdYEzU3TC60/
 
 POINT_COOKING = '''
 Here's a link to a guide about cooking: 
-https://www.reddit.com/r/tearsofthekingdom/comments/1f49tjk/a_complete_indepth_cooking_system_explanation/
+https://zeldawiki.wiki/wiki/Cooking
 '''
 POINT_COOKCALC = '''
 Here's a link to Ghastly64's cooking calculator for TotK:
