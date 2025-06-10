@@ -147,9 +147,9 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas`''']
+`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas, autobuildsharing, voicememories/voicememoryvids`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
-`dupe1.1.2, dupe1.2.0, dupe1.2.1, 1.2.1FEzuggle/1.2.1FE/1.2.1zuggle, 1.2.1MNF/1.2.0MNF/1.2.1MsgNotFound/1.2.0MsgNotFound, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
+`dupe1.1.2, dupe1.2.0, dupe1.2.1/dupe1.4.0, 1.2.1FEzuggle/1.2.1FE/1.2.1zuggle, 1.2.1MNF/1.2.0MNF/1.2.1MsgNotFound/1.2.0MsgNotFound, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
 `horseupgrades, ascendmap/ascendruinsmap, cherrymap, cherryareamap, koltinstallmap/koltinmap, invupgrades/koroktotals, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
 
@@ -971,6 +971,23 @@ POINT_FUSEIDEAS = '''
 Here's a link to video demonstrating some of the useful Fuse options in TotK:
 https://youtu.be/3f7PiBOgAuk
 '''
+
+POINT_AUTOBUILDSHARING = '''
+Here is a link to the community Zelda Wiki page for sharing Autobuild designs:
+<https://zeldawiki.wiki/wiki/Community:Autobuild_Sharing>
+'''
+POINT_VOICEMEMORYVIDS = '''
+Here are some links to Zelda Universe's videos compiling the Voice Memories available in Zelda Notes:
+
+BotW:
+- [Zelda](<https://youtube.com/watch?v=uydyVY2aMXo>)
+TotK:
+- [Zelda](<https://youtube.com/watch?v=j5LSmGLq6fE>)
+- [Rauru](<https://youtube.com/watch?v=VMz_v0M2ufQ>)
+- [Master Kohga](<https://youtube.com/watch?v=AGjUdviyJpw>)
+
+Please remember to use spoiler tags (\||like this||) to respect those who wish to discover the Voice Memories and their contents on their own.
+'''
 # endregion
 
 # region Meta Info
@@ -999,6 +1016,7 @@ INFO_DUPE112 = '''
 INFO_DUPE120TITLE = '''Here are some duplication glitches for 1.2.0:'''
 INFO_DUPE120 = '''
 **Equipment Dupes**
+- [Cull Transmutation and Overload Duping](<https://youtu.be/gAwqDumlH4g>)
 - [Like-Like Fuse Entanglement](<https://youtu.be/BZID7B_99QY?t=1207>)
   - [Slugging](<https://youtu.be/BZID7B_99QY?t=1553>)
   - [Weapon Stat Transfer (WST) w/ Like-Like Fuse Entanglement](<https://youtu.be/Jw2HWQTKS8w>)
@@ -1020,9 +1038,10 @@ INFO_DUPE120 = '''
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
-INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1:'''
+INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1 or 1.4.0:'''
 INFO_DUPE121 = '''
 **Equipment Dupes**
+- [Cull Transmutation and Overload Duping](<https://youtu.be/gAwqDumlH4g>)
 - [Pelison Duping and Easy WST](<https://youtu.be/SfWqYmKAT5o>)
   - Dupes any equipment, as long as it can be Fused to something else. Note that when any equipment is fused to other equipment it will lose its modifier, if applicable.
   - Allows for quick Weapon Stat Transfer (WST) while duping.

@@ -453,6 +453,11 @@ class Tag(commands.Cog):
                 ANSWER = messages.POINT_PARACOPTER
             case 'fuseidea':
                 ANSWER = messages.POINT_FUSEIDEAS
+            
+            case 'autobuildsharing':
+                ANSWER = messages.POINT_AUTOBUILDSHARING
+            case 'voicememory' | 'voicememorie' | 'voicememoryvid' | 'voicememoryvideo' | 'voicememoriesvideo' | 'voicememoriesvid':
+                ANSWER = messages.POINT_VOICEMEMORYVIDS
             # endregion
 
             # region Meta Info
@@ -462,7 +467,7 @@ class Tag(commands.Cog):
             case 'dupe1.2.0':
                 ANSWER = messages.INFO_DUPE120TITLE
                 EMBED = discord.Embed(description=messages.INFO_DUPE120)
-            case 'dupe1.2.1':
+            case 'dupe1.2.1' | 'dupe1.4.0':
                 ANSWER = messages.INFO_DUPE121TITLE
                 EMBED = discord.Embed(description=messages.INFO_DUPE121)
             case '1.2.1fezuggle' | '1.2.1fe' | '1.2.1zuggle' | '1.2.1fuseentanglement' | '1.2.1fuseentanglementzuggle' | '1.2.1feandzuggle' | 'fezuggle1.2.1' | 'fe1.2.1' | 'zuggle1.2.1' | 'fuseentanglement1.2.1' | 'fuseentanglementzuggle1.2.1' | 'feandzuggle1.2.1':
