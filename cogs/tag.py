@@ -457,7 +457,8 @@ class Tag(commands.Cog):
             case 'autobuildsharing':
                 ANSWER = messages.POINT_AUTOBUILDSHARING
             case 'voicememory' | 'voicememorie' | 'voicememoryvid' | 'voicememoryvideo' | 'voicememoriesvideo' | 'voicememoriesvid':
-                ANSWER = messages.POINT_VOICEMEMORYVIDS
+                ANSWER = messages.POINT_VOICEMEMORYTITLE
+                EMBED = discord.Embed(description=messages.POINT_VOICEMEMORY)
             # endregion
 
             # region Meta Info

@@ -976,9 +976,9 @@ POINT_AUTOBUILDSHARING = '''
 Here is a link to the community Zelda Wiki page for sharing Autobuild designs:
 <https://zeldawiki.wiki/wiki/Community:Autobuild_Sharing>
 '''
-POINT_VOICEMEMORYVIDS = '''
-Here are some links to Zelda Universe's videos compiling the Voice Memories available in Zelda Notes:
-
+POINT_VOICEMEMORYTITLE = '''Here are some links to recordings and transcriptions of the Voice Memories available in Zelda Notes:'''
+POINT_VOICEMEMORY = '''
+**Zelda Universe's Videos**
 BotW:
 - [Zelda](<https://youtube.com/watch?v=uydyVY2aMXo>)
 TotK:
@@ -986,7 +986,9 @@ TotK:
 - [Rauru](<https://youtube.com/watch?v=VMz_v0M2ufQ>)
 - [Master Kohga](<https://youtube.com/watch?v=AGjUdviyJpw>)
 
-Please remember to use spoiler tags (\||like this||) to respect those who wish to discover the Voice Memories and their contents on their own.
+**Zelda Wiki Pages**
+- [Breath of the Wild](<https://zeldawiki.wiki/wiki/Voice_Memories_in_Breath_of_the_Wild>)
+- [Tears of the Kingdom](<https://zeldawiki.wiki/wiki/Voice_Memories_in_Tears_of_the_Kingdom>)
 '''
 # endregion
 
