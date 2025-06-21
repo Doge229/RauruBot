@@ -1012,6 +1012,7 @@ INFO_DUPE112 = '''
 - [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
 - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
+  - Read the description if your on version 1.1.2 or under.
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
