@@ -1041,7 +1041,7 @@ INFO_DUPE120 = '''
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
-INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1-1.4.0:'''
+INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1 to 1.4.1:'''
 INFO_DUPE121 = '''
 **Equipment Dupes**
 - [Cull Transmutation and Overload Duping](<https://youtu.be/gAwqDumlH4g>)
