@@ -1068,12 +1068,12 @@ INFO_DUPE121 = '''
 - [Changes on 1.4.1 and Switch 2](<https://youtu.be/HoGgmzej2-o>)
 '''
 POINT_121FEZUGGLE = '''
-Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 1.2.1:
+Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 1.2.0-1.4.1:
 - Intro to Entanglement & Zuggling - <https://youtu.be/kJGVuI0fizk>
 - Intermediate Entanglement & Zuggling - <https://youtu.be/on9x_uisocw>
 '''
 POINT_121MNF = '''
-Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0 and 1.2.1 of TotK:
+Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0-1.2.1 of TotK:
 - [Suishi's guide](<https://youtu.be/bueZYVnq-QQ>)
 - [El Duende's guide](<https://youtu.be/GlVJarlWaTo>)
 '''
