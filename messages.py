@@ -147,9 +147,9 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas, autobuildsharing, voicememories/voicememoryvids`''']
+`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses, fuseideas, autobuildsharing, voicememories/voicememoryvids`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
-`dupe1.1.2, dupe1.2.0, dupe1.2.1/dupe1.4.0, 1.2.1FEzuggle/1.2.1FE/1.2.1zuggle, 1.2.1MNF/1.2.0MNF/1.2.1MsgNotFound/1.2.0MsgNotFound, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
+`dupe1.1.2, dupe1.2.0, dupe1.2.1/dupe1.4.0/dupe1.4.1, 1.2.0FEzuggle/1.2.1FEzuggle/1.4.0FEzuggle/1.4.1FEzuggle/1.2.0FE/1.2.0zuggle, 1.4.1MNF/1.4.0MNF/1.2.1MNF/1.2.0MNF/1.2.1MsgNotFound/1.2.0MsgNotFound, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
 `horseupgrades, ascendmap/ascendruinsmap, cherrymap, cherryareamap, koltinstallmap/koltinmap, invupgrades/koroktotals, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
 
@@ -948,7 +948,8 @@ https://youtu.be/AXWAEBlvIXs
 POINT_GOLDENWING = '''
 Here's are some links guides on obtaining the Golden Wing/Infinity Wing in TotK:
 Versions 1.0.0 - 1.1.2: <https://youtu.be/KTxbMQeIhno>
-Versions 1.2.0 - 1.2.1: <https://youtu.be/k7R94dGai0E>
+Versions 1.2.0 - 1.4.1: <https://youtu.be/k7R94dGai0E>
+-# If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
 '''
 POINT_RAILPARTTITLE = '''Here are some links to videos showing how to detach an Elevator Rail:'''
 POINT_RAILPART = '''
@@ -1073,14 +1074,14 @@ Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 
 - Intro to Entanglement & Zuggling - <https://youtu.be/kJGVuI0fizk>
 - Intermediate Entanglement & Zuggling - <https://youtu.be/on9x_uisocw>
 
-> If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
+-# If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
 '''
 POINT_121MNF = '''
 Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0-1.2.1 of TotK:
 - [Suishi's guide](<https://youtu.be/bueZYVnq-QQ>)
 - [El Duende's guide](<https://youtu.be/GlVJarlWaTo>)
 
-> If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
+-# If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
 '''
 INFO_DOWNPATCH = '''
 You cannot downpatch your game without losing your save data. You can only downpatch to 1.0, unless you have access to another Switch with a version in between 1.0 and current patch. 
