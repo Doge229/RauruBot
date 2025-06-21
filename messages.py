@@ -1094,7 +1094,7 @@ INFO_PREVENTUPDATES = '''
 
 **If you launch a software and you get a pop-up saying that you need to restart your Switch to install a *system* update,** then you can do so without fear of your software being updated, if the update data is not downloaded and waiting to be installed.
 '''
-INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
+INFO_CHECKGAMEVERSION = '''You can check your [game version](<https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom/Version_History>) by pressing `+` on your controller from the Switch Home Screen.'''
 POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch:'''
 POINT_TRANSFERALBUM = '''
 - [Transfer to your smartphone via QR code](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>)
