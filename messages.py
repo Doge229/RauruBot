@@ -1040,7 +1040,7 @@ INFO_DUPE120 = '''
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
-INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1 or 1.4.0:'''
+INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1-1.4.0:'''
 INFO_DUPE121 = '''
 **Equipment Dupes**
 - [Cull Transmutation and Overload Duping](<https://youtu.be/gAwqDumlH4g>)
@@ -1063,6 +1063,9 @@ INFO_DUPE121 = '''
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
+
+**Changes on 1.4.1 and Switch 2**
+- [Changes on 1.4.1 and Switch 2](<https://youtu.be/HoGgmzej2-o>)
 '''
 POINT_121FEZUGGLE = '''
 Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 1.2.1:
