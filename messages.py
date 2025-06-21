@@ -1077,6 +1077,8 @@ POINT_121MNF = '''
 Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0-1.2.1 of TotK:
 - [Suishi's guide](<https://youtu.be/bueZYVnq-QQ>)
 - [El Duende's guide](<https://youtu.be/GlVJarlWaTo>)
+
+> If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
 '''
 INFO_DOWNPATCH = '''
 You cannot downpatch your game without losing your save data. You can only downpatch to 1.0, unless you have access to another Switch with a version in between 1.0 and current patch. 
