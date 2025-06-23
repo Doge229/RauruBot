@@ -1038,6 +1038,7 @@ INFO_DUPE120 = '''
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
   - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
+- [Split Item Duplucation (SID)](<https://youtu.be/CLBkn-ujCFM>) (For Fusable materials)
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
@@ -1062,6 +1063,7 @@ INFO_DUPE121 = '''
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/bV1KxESU9v8?t=283>)
   - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>) - Guide from 1.2.0, but can still be used with the 1.2.1 MTD method
+- [Split Item Duplucation (SID)](<https://youtu.be/CLBkn-ujCFM>) (For Fusable materials)
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
