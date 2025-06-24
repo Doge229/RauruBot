@@ -34,8 +34,8 @@ Massive thanks to:
 -Everyone else in the botw and totk communities who have created resources for these games
 -The testers on the RauruBot Devlab server:
     -glitchtest
-    -phoenixguy123
-    -luciebox
+    -phoenixbird1231
+    -iceboxcv
     -gudpotato
 '''
 INFO_REPOSITORY = '''
@@ -1102,10 +1102,14 @@ INFO_PREVENTUPDATES = '''
 **If you launch a software and you get a pop-up saying that you need to restart your Switch to install a *system* update,** then you can do so without fear of your software being updated, if the update data is not downloaded and waiting to be installed.
 '''
 INFO_CHECKGAMEVERSION = '''You can check your [game version](<https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom/Version_History>) by pressing `+` on your controller from the Switch Home Screen.'''
-POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch:'''
+POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch and Switch 2:'''
 POINT_TRANSFERALBUM = '''
+**For the Switch:**
 - [Transfer to your smartphone via QR code](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>)
 - [Transfer to your computer via USB](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>)
+**For the Switch 2:**
+- [Transfer to your smartphone via the Nintendo Switch App](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/68386/~/how-to-upload-screenshots-and-videos-from-nintendo-switch%26nbsp%3B2-to-the>)
+- [Transfer to your computer via USB](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/68343/~/how-to-transfer-screenshots-and-video-captures-from-nintendo-switch%26nbsp%3B2-to-a>)
 '''
 
 POINT_WHEREDLC = '''
