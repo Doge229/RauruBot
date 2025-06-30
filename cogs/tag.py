@@ -468,12 +468,15 @@ class Tag(commands.Cog):
             case 'dupe1.2.0':
                 ANSWER = messages.INFO_DUPE120TITLE
                 EMBED = discord.Embed(description=messages.INFO_DUPE120)
-            case 'dupe1.2.1' | 'dupe1.4.0':
+            case 'dupe1.2.1' | 'dupe1.4.0' | 'dupe1.4.1':
                 ANSWER = messages.INFO_DUPE121TITLE
                 EMBED = discord.Embed(description=messages.INFO_DUPE121)
-            case '1.2.1fezuggle' | '1.2.1fe' | '1.2.1zuggle' | '1.2.1fuseentanglement' | '1.2.1fuseentanglementzuggle' | '1.2.1feandzuggle' | 'fezuggle1.2.1' | 'fe1.2.1' | 'zuggle1.2.1' | 'fuseentanglement1.2.1' | 'fuseentanglementzuggle1.2.1' | 'feandzuggle1.2.1':
+            case '1.2.1fezuggle' | '1.2.1fe' | '1.2.1zuggle' | '1.2.1fuseentanglement' | '1.2.1fuseentanglementzuggle' | '1.2.1feandzuggle' | 'fezuggle1.2.1' | 'fe1.2.1' | 'zuggle1.2.1' | 'fuseentanglement1.2.1' | 'fuseentanglementzuggle1.2.1' | 'feandzuggle1.2.1' | \
+            '1.4.0fezuggle' | '1.4.0fe' | '1.4.0zuggle' | '1.4.0fuseentanglement' | '1.4.0fuseentanglementzuggle' | '1.4.0feandzuggle' | 'fezuggle1.4.0' | 'fe1.4.0' | 'zuggle1.4.0' | 'fuseentanglement1.4.0' | 'fuseentanglementzuggle1.4.0' | 'feandzuggle1.4.0' | \
+            '1.4.1fezuggle' | '1.4.1fe' | '1.4.1zuggle' | '1.4.1fuseentanglement' | '1.4.1fuseentanglementzuggle' | '1.4.1feandzuggle' | 'fezuggle1.4.1' | 'fe1.4.1' | 'zuggle1.4.1' | 'fuseentanglement1.4.1' | 'fuseentanglementzuggle1.4.1' | 'feandzuggle1.4.1':
                 ANSWER = messages.POINT_121FEZUGGLE
-            case '1.2.1mnf' | '1.2.0mnf' | '1.2.1msgnotfound' | '1.2.0msgnotfound' | 'mnf1.2.1' | 'mnf1.2.0' | 'msgnotfound1.2.1' | 'msgnotfound1.2.0':
+            case '1.2.1mnf' | '1.2.0mnf' | '1.2.1msgnotfound' | '1.2.0msgnotfound' | 'mnf1.2.1' | 'mnf1.2.0' | 'msgnotfound1.2.1' | 'msgnotfound1.2.0' \
+            '1.4.1mnf' | '1.4.0mnf' | '1.4.1msgnotfound' | '1.4.0msgnotfound' | 'mnf1.4.1' | 'mnf1.4.0' | 'msgnotfound1.4.1' | 'msgnotfound1.4.0':
                 ANSWER = messages.POINT_121MNF
 
             case 'downpatch':

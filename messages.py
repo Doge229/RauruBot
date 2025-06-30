@@ -34,8 +34,8 @@ Massive thanks to:
 -Everyone else in the botw and totk communities who have created resources for these games
 -The testers on the RauruBot Devlab server:
     -glitchtest
-    -phoenixguy123
-    -luciebox
+    -phoenixbird1231
+    -iceboxcv
     -gudpotato
 '''
 INFO_REPOSITORY = '''
@@ -147,9 +147,9 @@ HELP_TAG7 = ['''**Mechanics and Hints**''', '''
 HELP_TAG8 = ['''**Effects and Builds**''', '''
 `defense, bestarmor, bestfuse, gloomdmg, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`''']
 HELP_TAG9 = ['''**Useful Links and Stuff**''', '''
-`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, fuseideas, autobuildsharing, voicememories/voicememoryvids`''']
+`wiki, fandom/wikimigration, tracker, botwtracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp/worldlevel, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, dispenserprices, combatguide/combattips, missableobjects, gamblinggame/luckytreasureshop, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses, fuseideas, autobuildsharing, voicememories/voicememoryvids`''']
 HELP_TAG10 = ['''**Meta Info**''', '''
-`dupe1.1.2, dupe1.2.0, dupe1.2.1/dupe1.4.0, 1.2.1FEzuggle/1.2.1FE/1.2.1zuggle, 1.2.1MNF/1.2.0MNF/1.2.1MsgNotFound/1.2.0MsgNotFound, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
+`dupe1.1.2, dupe1.2.0, dupe1.2.1/dupe1.4.0/dupe1.4.1, 1.2.0FEzuggle/1.2.1FEzuggle/1.4.0FEzuggle/1.4.1FEzuggle/1.2.0FE/1.2.0zuggle, 1.4.1MNF/1.4.0MNF/1.2.1MNF/1.2.0MNF/1.2.1MsgNotFound/1.2.0MsgNotFound, downpatch, preventupdates, versioncheck, transferalbum, whereDLC, timestamp`''']
 HELP_TAG11 = ['''**Reference Images**''', '''
 `horseupgrades, ascendmap/ascendruinsmap, cherrymap, cherryareamap, koltinstallmap/koltinmap, invupgrades/koroktotals, shrinecounts, dmgformula, armortotals, fruitandveggietotals, meattotals, horntotals, gutsandtailtotals, otherparttotals, oretotals, zonaitotals, dragontotals`''']
 
@@ -948,7 +948,8 @@ https://youtu.be/AXWAEBlvIXs
 POINT_GOLDENWING = '''
 Here's are some links guides on obtaining the Golden Wing/Infinity Wing in TotK:
 Versions 1.0.0 - 1.1.2: <https://youtu.be/KTxbMQeIhno>
-Versions 1.2.0 - 1.2.1: <https://youtu.be/k7R94dGai0E>
+Versions 1.2.0 - 1.4.1: <https://youtu.be/k7R94dGai0E>
+-# If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
 '''
 POINT_RAILPARTTITLE = '''Here are some links to videos showing how to detach an Elevator Rail:'''
 POINT_RAILPART = '''
@@ -1012,6 +1013,7 @@ INFO_DUPE112 = '''
 - [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
 - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
+  - Read the description if your on version 1.1.2 or under.
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
@@ -1036,11 +1038,12 @@ INFO_DUPE120 = '''
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/BZID7B_99QY?t=827>) (For throwable materials)
   - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>)
+- [Split Item Duplucation (SID)](<https://youtu.be/CLBkn-ujCFM>) (For Fusable materials)
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/BZID7B_99QY?t=685>) (For Zonai Devices)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
 '''
-INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1 or 1.4.0:'''
+INFO_DUPE121TITLE = '''Here are some duplication glitches for 1.2.1 to 1.4.1:'''
 INFO_DUPE121 = '''
 **Equipment Dupes**
 - [Cull Transmutation and Overload Duping](<https://youtu.be/gAwqDumlH4g>)
@@ -1060,19 +1063,27 @@ INFO_DUPE121 = '''
 - [Minus Duping w/ Dispenser Storage](<https://youtu.be/StAzqZ_YAEI>) (For throwable materials)
 - [Midair Throw Duplication (MTD)](<https://youtu.be/bV1KxESU9v8?t=283>)
   - [MTD w/ Dispenser Storage](<https://youtu.be/BZID7B_99QY?t=977>) - Guide from 1.2.0, but can still be used with the 1.2.1 MTD method
+- [Split Item Duplucation (SID)](<https://youtu.be/CLBkn-ujCFM>) (For Fusable materials)
 - [Bundle Item Duplication (BID)](<https://youtu.be/LAmtplodqWQ>) (For critters or mass duping)
 - [Zonai Inventory Shift Duplication (ZISD)](<https://youtu.be/LCc1525GlHo?t=561>)
 - [Bomb/Elemental Fruit "Dupe"](<https://youtu.be/BZID7B_99QY?t=21>)
+
+**Changes on 1.4.1 and Switch 2**
+- [Changes on 1.4.1 and Switch 2](<https://youtu.be/HoGgmzej2-o>)
 '''
 POINT_121FEZUGGLE = '''
-Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 1.2.1:
+Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 1.2.0-1.4.1:
 - Intro to Entanglement & Zuggling - <https://youtu.be/kJGVuI0fizk>
 - Intermediate Entanglement & Zuggling - <https://youtu.be/on9x_uisocw>
+
+-# If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
 '''
 POINT_121MNF = '''
-Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0 and 1.2.1 of TotK:
+Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0-1.2.1 of TotK:
 - [Suishi's guide](<https://youtu.be/bueZYVnq-QQ>)
 - [El Duende's guide](<https://youtu.be/GlVJarlWaTo>)
+
+-# If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
 '''
 INFO_DOWNPATCH = '''
 You cannot downpatch your game without losing your save data. You can only downpatch to 1.0, unless you have access to another Switch with a version in between 1.0 and current patch. 
@@ -1090,11 +1101,15 @@ INFO_PREVENTUPDATES = '''
 
 **If you launch a software and you get a pop-up saying that you need to restart your Switch to install a *system* update,** then you can do so without fear of your software being updated, if the update data is not downloaded and waiting to be installed.
 '''
-INFO_CHECKGAMEVERSION = '''You can check your game version by pressing `+` on your controller from the Switch Home Screen.'''
-POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch:'''
+INFO_CHECKGAMEVERSION = '''You can check your [game version](<https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom/Version_History>) by pressing `+` on your controller from the Switch Home Screen.'''
+POINT_TRANSFERALBUMTITLE = '''Here are some guides on how to transfer screenshots and clips from your Switch and Switch 2:'''
 POINT_TRANSFERALBUM = '''
+**For the Switch:**
 - [Transfer to your smartphone via QR code](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53138/kw/how-to-transfer-Screenshots-and-Video-Captures-to-a-Smart-Device-Wirelessly>)
 - [Transfer to your computer via USB](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/53664/~/how-to-transfer-screenshots-and-video-captures-to-a-computer-via-a-usb-cable>)
+**For the Switch 2:**
+- [Transfer to your smartphone via the Nintendo Switch App](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/68386/~/how-to-upload-screenshots-and-videos-from-nintendo-switch%26nbsp%3B2-to-the>)
+- [Transfer to your computer via USB](<https://en-americas-support.nintendo.com/app/answers/detail/a_id/68343/~/how-to-transfer-screenshots-and-video-captures-from-nintendo-switch%26nbsp%3B2-to-a>)
 '''
 
 POINT_WHEREDLC = '''
