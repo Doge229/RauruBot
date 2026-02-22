@@ -343,8 +343,8 @@ class Tag(commands.Cog):
             
             case 'backscratcher' | 'lynelbackscratcher':
                 ANSWER = messages.INFO_BACKSCRATCH
-            case 'dmgcalc' | 'damagecalc' | 'damagecalculator' | 'dmgcalculator':
-                ANSWER = messages.POINT_DMGCALC
+            # case 'dmgcalc' | 'damagecalc' | 'damagecalculator' | 'dmgcalculator':
+            #     ANSWER = messages.POINT_DMGCALC
             
             case 'addedeffect' | 'effect':
                 ANSWER = messages.POINT_ADDEDEFFECTWIKI
@@ -440,8 +440,8 @@ class Tag(commands.Cog):
 
             case 'hoverbike':
                 ANSWER = messages.POINT_HOVERBIKE
-            case 'hoverbike4.0' | 'railbike':
-                ANSWER = messages.POINT_HOVERBIKEv4
+            # case 'hoverbike4.0' | 'railbike':
+            #     ANSWER = messages.POINT_HOVERBIKEv4
             case 'goldenwing' | 'infinitywing' | 'infinitewing':
                 ANSWER = messages.POINT_GOLDENWING
             case 'railingpart' | 'railpart' | 'elevatorpart' | 'elevatorrail':
