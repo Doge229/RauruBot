@@ -701,11 +701,11 @@ The current maximum damage that you can consistently output can be referred to a
 Then wear a Bone Proficiency armor set and eat a level 3 Attack Up meal, and take the weapon and only use it for mounted attacks on a Lynel. The mounted attacks take no durability, so you can continually deal last hit critical damage with the almost broken claymore. 
 
 Here is the full math behind this:
-rounddown(42 Base Weapon Damage + rounddown((10 Modifier Buff + 32 Molduga Jaw Fuse Damage) * 1.052632 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
+rounddown(42 Base Weapon Damage + rounddowntotk-damage((10 Modifier Buff + 32 Molduga Jaw Fuse Damage) * 1.052632 Two-Handed Weapon Multiplier) * 1.5 Attack Up Meal * 1.8 Bone Proficiency * 2 Breaking Point * 2 Last Hit Critical) = 928 total damage per hit.
 '''
 POINT_DMGCALC = '''
 Here's a link to Phil's Damage Calculator for TotK:
-<https://philidea.com/totk-calculator>
+<https://restite.org/totk-damage>
 Please feel free to [submit feedback](<https://docs.google.com/forms/d/e/1FAIpQLSdWgQW8VGALbCsqE25iIV-nFlz37l-pYmLtYqz4dm_N9TTzAQ/viewform>) if you find any potential errors or bugs!
 '''
 
