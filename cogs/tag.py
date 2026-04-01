@@ -343,8 +343,8 @@ class Tag(commands.Cog):
             
             case 'backscratcher' | 'lynelbackscratcher':
                 ANSWER = messages.INFO_BACKSCRATCH
-            # case 'dmgcalc' | 'damagecalc' | 'damagecalculator' | 'dmgcalculator':
-            #     ANSWER = messages.POINT_DMGCALC
+            case 'dmgcalc' | 'damagecalc' | 'damagecalculator' | 'dmgcalculator':
+                ANSWER = messages.POINT_DMGCALC
             
             case 'addedeffect' | 'effect':
                 ANSWER = messages.POINT_ADDEDEFFECTWIKI
