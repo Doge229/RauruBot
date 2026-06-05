@@ -168,7 +168,7 @@ This is limited to 3 uses per command per message (1 use for `/finddispenser` pe
 
 HELP_NOTIFY = '''Sending you my response to that command'''
 HELP_NOTIFYERROR1 = '''My apologies'''
-HELP_NOTIFYERROR2 = ''', but I can't send you my response!. Please try using the slash command or visible version of that command.'''
+HELP_NOTIFYERROR2 = ''', but I can't send you my response! Please try using the slash command or visible version of that command.'''
 
 HELP_BLACKLIST = '''
 Here's how to use my blacklist command: 
