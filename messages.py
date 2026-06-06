@@ -24,14 +24,15 @@ This bot and its files were developed by Doge229.
 Massive thanks to:
 -Zanaras, for helping with development and server setup
 -Everyone else who helped with development, cause discord.py has really bad documentation
--Echocolat, Phil, dt13269, bjm, and everyone else on the TOTK Data Collection and Research Discord server who provided truly obscene amounts of information about the game
+-Echocolat, Phil, dt13269, bjm, and everyone else on the Zelda Data Collection and Research Discord server who provided truly obscene amounts of information about the game
 -savage13 and the Object Map team
 -Austin John Plays on Youtube
 -u/Silver_Foxx on Reddit/@Lexeon on Youtube
 -Suishi on Youtube
+-Timber on YouTube
 -riso for their UI icons
 -Shozutko for their map images, and work on various resource documents
--Everyone else in the botw and totk communities who have created resources for these games
+-Everyone else in the BotW and TotK communities who have created resources for these games
 -The testers on the RauruBot Devlab server:
     -glitchtest
     -phoenixbird1231
@@ -1072,11 +1073,14 @@ INFO_DUPE121 = '''
 - [Changes on 1.4.1 and Switch 2](<https://youtu.be/HoGgmzej2-o>)
 '''
 POINT_121FEZUGGLE = '''
-Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling in 1.2.0-1.4.1:
-- Intro to Entanglement & Zuggling - <https://youtu.be/kJGVuI0fizk>
-- Intermediate Entanglement & Zuggling - <https://youtu.be/on9x_uisocw>
-
--# If you are on versions 1.3.0 to 1.4.1, please check out [this video](<https://www.youtube.com/watch?v=HoGgmzej2-o>) first.
+Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling on versions 1.2.0 and onward:
+- [Intro to Entanglement & Zuggling](https://youtu.be/kJGVuI0fizk)
+  - [Additional support for Fuse Storage](https://youtu.be/HOtWocW0I94&t=441s)
+  - [An additional method for Fuse Storage for those playing on the NS2E](https://youtu.be/IWqrrToXDII&t=378)
+- [Intermediate Entanglement & Zuggling](https://youtu.be/on9x_uisocw)
+  - [Further details for Mineru FE](https://youtu.be/pLCrhklnOOc&t=73s)
+    - Note: The sacrificial Equipment is merely the target in broader contexts. For non-Equipment targets, perform Portacull before unpausing.
+-# If you are on the NS2E, and/or versions 1.3.0 and onward, please check out [this video](https://youtu.be/HoGgmzej2-o) first.
 '''
 POINT_121MNF = '''
 Here are some guides on obtaining and upgrading an unbreakable Master Sword in versions 1.2.0-1.2.1 of TotK:
