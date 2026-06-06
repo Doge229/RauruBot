@@ -1079,7 +1079,6 @@ Here's are some links to SuishiYT's guides on Fuse Entanglement and Zuggling on 
 - [Intermediate Entanglement & Zuggling](https://youtu.be/on9x_uisocw)
   - [Further details for Mineru FE](https://youtu.be/pLCrhklnOOc&t=73s)
     - Note: The sacrificial Equipment is merely the target in broader contexts. For non-Equipment targets, perform Portacull before unpausing.
-
 -# If you are on the NS2E, and/or versions 1.3.0 and onward, please check out [this video](https://youtu.be/HoGgmzej2-o) first.
 '''
 POINT_121MNF = '''
