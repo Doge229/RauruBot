@@ -898,8 +898,8 @@ Here's a link to a list of all Beedle Trades:
 https://docs.google.com/spreadsheets/d/1QMCSV19HFazu-dQuz0vN5lBDlMwXDYciUEYgG3h57ZQ/edit?usp=sharing
 '''
 POINT_AMIIBODROPTABLES = '''
-Here's a link to the Amiibo Drop Tables Spreadsheet for TotK:
-https://docs.google.com/spreadsheets/d/1BF5WDN09z0evruAQH-3qIMjnPe6dfKyomfLT_0aIZrg/edit?usp=sharing
+Here's a link to all the amiibo drop rates for TotK on Zelda Wiki:
+https://zeldawiki.wiki/wiki/Amiibo_in_Tears_of_the_Kingdom
 '''
 POINT_GLITCHSHEET = '''
 Here's a link to the Glitch Spreadsheet:
