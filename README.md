@@ -5,7 +5,6 @@ Developed by Doge229 for use in select Discord servers:<br>
 -Zelda: Tears of the Kingdom<br>
 -TotK Data Collection and Research<br>
 -Zelda Wiki<br>
--Zelda Bingo<br>
 -Zelda: Tears of the Kingdom Speedrunning
 
 DISCLAIMER: RauruBot is not designed for use in unauthorized servers. Any unintended behavior as a result of using him or his code on unauthorized servers is not my responsibility. 
