@@ -865,8 +865,8 @@ Here's a link to a guide about cooking:
 https://zeldawiki.wiki/wiki/Cooking
 '''
 POINT_COOKCALC = '''
-Here's a link to Ghastly64's cooking calculator for TotK:
-https://www.totkcookbook.com/
+Here's a link to Echolat's cooking calculator for TotK:
+https://echocolat.github.io/TOTK-Cooking-Calculator/
 '''
 POINT_BREADRECIPE = '''
 Here's a link to a guide on making Bread in TotK:
