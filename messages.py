@@ -922,8 +922,8 @@ Battery usage:
 <https://youtu.be/ZVk7u7L2dEA>
 '''
 POINT_DISPENSERPRICES = '''
-Here is a link to a sheet with the Device Dispenser prices:
-https://docs.google.com/spreadsheets/d/1mYfBsunmPgVa3ANXgeAhCtk1csOKlKFoTipVypf_nYE/edit?usp=sharing
+Here is a link to Zelda Wiki's Device Dispenser article with the Device Dispenser prices:
+https://zeldawiki.wiki/wiki/Device_Dispenser#Device_Dispenser_Exchange_Rates
 '''
 POINT_COMBATGUIDE = '''
 Here is a link to RinHara5aki's Advanced Combat Glossary for TotK:
