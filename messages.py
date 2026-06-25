@@ -121,7 +121,7 @@ Here are the options for my `tag` command:
     `defense, bestarmor, backscratcher, dmgcalc, moisture, weatherattack, gloomattackresist, slipresist, attackupstacking, boneprof`
 Page 1 of 2
     **Useful Links and Stuff**
-    `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, bread/howtocookbread, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses/fuseideas`
+    `wiki, fandom/wikimigration, tracker, armorcalc, mapcompletion, shrinefinder, maps, objectmap, objectterms, datasheet/phildatasheet, echodatasheet, objectsheet, worldexp, templescaling, sagelevel, bloodmoondoc/respawndoc, cooking, cookcalc, bread/howtocookbread, levelcards, directimglink, beedletrades, amiibodrops, glitchsheet, dondon, horsecolors, devicedrain/energycelldrain, hoverbike, hoverbike4.0, goldenwing/infinitywing, railpart/elevatorrail, betterpics, paracopter, bestfuses, fuseideas`
     **Meta Info**
     `dupe1.1.2, dupe1.2.0, dupe1.2.1, downpatch, preventupdates, versioncheck, transferalbum, whereDLC`
     **Reference Images**
@@ -865,8 +865,8 @@ Here's a link to a guide about cooking:
 https://zeldawiki.wiki/wiki/Cooking
 '''
 POINT_COOKCALC = '''
-Here's a link to Ghastly64's cooking calculator for TotK:
-https://www.totkcookbook.com/
+Here's a link to Echolat's cooking calculator for TotK:
+https://echocolat.github.io/TOTK-Cooking-Calculator/
 '''
 POINT_BREADRECIPE = '''
 Here's a link to a guide on making Bread in TotK:
@@ -922,8 +922,8 @@ Battery usage:
 <https://youtu.be/ZVk7u7L2dEA>
 '''
 POINT_DISPENSERPRICES = '''
-Here is a link to a sheet with the Device Dispenser prices:
-https://docs.google.com/spreadsheets/d/1mYfBsunmPgVa3ANXgeAhCtk1csOKlKFoTipVypf_nYE/edit?usp=sharing
+Here is a link to Zelda Wiki's Device Dispenser article with the Device Dispenser prices:
+https://zeldawiki.wiki/wiki/Device_Dispenser#Device_Dispenser_Exchange_Rates
 '''
 POINT_COMBATGUIDE = '''
 Here is a link to RinHara5aki's Advanced Combat Glossary for TotK:
