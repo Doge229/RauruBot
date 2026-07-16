@@ -41,8 +41,8 @@ class DailyProfile(commands.Cog):
         if int == 1:
             PICCHOICE = 'funny'
         elif int == 2:
-            NICKCHOICE == 'cursed'
-            PICCHOICE == 'cursed'
+            NICKCHOICE = 'cursed'
+            PICCHOICE = 'cursed'
         elif int > 51:
             PICCHOICE = 'pride'
 
