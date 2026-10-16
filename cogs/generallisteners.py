@@ -56,25 +56,25 @@ class GeneralListeners(commands.Cog):
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
-    @commands.Cog.listener('on_message')
-    async def autoobjmaplinkcreator(self, message):
-        pattern = re.compile(r'f\{(.*?)\}')
-
-        ctx = await self.bot.get_context(message)
-        if pattern.search(message.content):
-            if not message.guild or not system.check_banned(ctx) or message.author.bot:
-                return
-        else:
-            return
-        
-        matches = pattern.finditer(message.content)
-        unique_matches = set()
-        for match in matches:
-            if len(unique_matches) < 3 and not match == '':
-                unique_matches.add(match.group(1))
-        
-        for TERMS in unique_matches:
-            await General.objmaplinkcreator(context=ctx, arg=TERMS)
+    # @commands.Cog.listener('on_message')
+    # async def autoobjmaplinkcreator(self, message):
+    #     pattern = re.compile(r'f\{(.*?)\}')
+# 
+    #     ctx = await self.bot.get_context(message)
+    #     if pattern.search(message.content):
+    #         if not message.guild or not system.check_banned(ctx) or message.author.bot:
+    #             return
+    #     else:
+    #         return
+    #     
+    #     matches = pattern.finditer(message.content)
+    #     unique_matches = set()
+    #     for match in matches:
+    #         if len(unique_matches) < 3 and not match == '':
+    #             unique_matches.add(match.group(1))
+    #     
+    #     for TERMS in unique_matches:
+    #         await General.objmaplinkcreator(context=ctx, arg=TERMS)
 
     
     @commands.command(name='coordconvert')
@@ -107,25 +107,25 @@ class GeneralListeners(commands.Cog):
         else:
             await system.respond(interaction, message=messages.ERROR_GUILDONLY)
 
-    @commands.Cog.listener('on_message')
-    async def autofindpristine(self, message):
-        pattern = re.compile(r'p\{(.*?)\}')
-
-        ctx = await self.bot.get_context(message)
-        if pattern.search(message.content):
-            if not message.guild or not system.check_banned(ctx) or message.author.bot:
-                return
-        else:
-            return
-        
-        matches = pattern.finditer(message.content)
-        unique_matches = set()
-        for match in matches:
-            if len(unique_matches) < 3 and not match == '':
-                unique_matches.add(match.group(1))
-        
-        for TERMS in unique_matches:
-            await General.findpristine(context=ctx, arg=TERMS)
+    # @commands.Cog.listener('on_message')
+    # async def autofindpristine(self, message):
+    #     pattern = re.compile(r'p\{(.*?)\}')
+# 
+    #     ctx = await self.bot.get_context(message)
+    #     if pattern.search(message.content):
+    #         if not message.guild or not system.check_banned(ctx) or message.author.bot:
+    #             return
+    #     else:
+    #         return
+    #     
+    #     matches = pattern.finditer(message.content)
+    #     unique_matches = set()
+    #     for match in matches:
+    #         if len(unique_matches) < 3 and not match == '':
+    #             unique_matches.add(match.group(1))
+    #     
+    #     for TERMS in unique_matches:
+    #         await General.findpristine(context=ctx, arg=TERMS)
 
     
     @commands.command(name='finddispenser', aliases=['dispenser'])
@@ -152,17 +152,17 @@ class GeneralListeners(commands.Cog):
                         data.append(app_commands.Choice(name=choice, value=choice))
         return data
 
-    @commands.Cog.listener('on_message')
-    async def autofinddispenser(self, message):
-        pattern = re.compile(r'd\{(.*?)\}')
-
-        ctx = await self.bot.get_context(message)
-        MATCH = pattern.search(message.content)
-        if MATCH and not MATCH == '':
-            if not message.guild or not system.check_banned(ctx) or message.author.bot:
-                return
-            else:
-                await General.finddispenser(context=ctx, arg=MATCH.group(1))
+    # @commands.Cog.listener('on_message')
+    # async def autofinddispenser(self, message):
+    #     pattern = re.compile(r'd\{(.*?)\}')
+# 
+    #     ctx = await self.bot.get_context(message)
+    #     MATCH = pattern.search(message.content)
+    #     if MATCH and not MATCH == '':
+    #         if not message.guild or not system.check_banned(ctx) or message.author.bot:
+    #             return
+    #         else:
+    #             await General.finddispenser(context=ctx, arg=MATCH.group(1))
 
 
     @commands.command(name='hi', aliases=['hello', 'howdy', 'hola', 'aloha', 'bonjour', 'ciao', 'greetings', 'g\'day', 'yo', 'konichiwa', 'hallo', 'salutations', 'konnichiwa', 'gday'])
