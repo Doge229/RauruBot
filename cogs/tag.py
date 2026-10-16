@@ -107,8 +107,8 @@ class Tag(commands.Cog):
                 ANSWER = messages.HELP_GENERALTITLE
                 EMBED = Tag.EMBED_HELPGENERAL
             
-            case 'helpshortcut' | 'shortcuthelp':
-                ANSWER = messages.HELP_COMMANDSHORTCUT
+            #case 'helpshortcut' | 'shortcuthelp':
+            #    ANSWER = messages.HELP_COMMANDSHORTCUT
             # endregion
 
             # region Tag Help Stuff
